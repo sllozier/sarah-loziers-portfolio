@@ -8,7 +8,7 @@ const AboutMe = () => {
             <div className="container">
                 <div className="columns is-centered">
                     <div className="column is-three-fifths">
-                        <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Hi. I'm Sarah. Glad you are here.</h1>
+                        <h1 className="title is-primary is-spaced is-size-3-desktop is-size-4-mobile">Hi. I'm Sarah. Glad you are here.</h1>
                         <h2 className="subtitle is-size-4-desktop has-text-weight-normal">
                             "I am a Full Stack Software Engineer located in Maine, USA. As my father-in-law
                             likes to say, I am not your "average bear". I discovered my passion for engineering
