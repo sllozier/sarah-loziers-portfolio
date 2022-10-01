@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('./database');
+const db = require('./database.js');
 
 const Project = db.define('project', {
     title: {
@@ -31,4 +31,6 @@ const Project = db.define('project', {
         type: Sequelize.ARRAY(Sequelize.STRING),
         defaultValue: [],
     },
-})
+});
+
+module.exports = Project;
