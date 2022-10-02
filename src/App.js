@@ -1,6 +1,7 @@
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
+import Technologies from './components/Technologies';
 import ProjectGrid from './components/ProjectGrid';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <Hero />
         <AboutMe />
+        <Technologies />
         <ProjectGrid />
       {/* <Routes>
         <Route path="/" element={<Hero/>}/>

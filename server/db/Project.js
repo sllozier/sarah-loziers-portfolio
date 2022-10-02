@@ -27,10 +27,10 @@ const Project = db.define('project', {
             notEmpty: true,
         },
     },
-    techUsed: {
-        type: Sequelize.ARRAY(Sequelize.STRING),
-        defaultValue: [],
-    },
+    // techUsed: {
+    //     type: Sequelize.ARRAY(Sequelize.STRING),
+    //     defaultValue: [],
+    // },
 });
 
 module.exports = Project;

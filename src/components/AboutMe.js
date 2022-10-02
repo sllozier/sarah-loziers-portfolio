@@ -4,7 +4,7 @@ import React from "react";
 const AboutMe = () => {
 
     return(
-        <section className="section is-medium has-text-centered is-long">
+        <section className="section is-primary is-medium has-text-centered is-long">
             <div className="container">
                 <div className="columns is-centered">
                     <div className="column is-three-fifths">

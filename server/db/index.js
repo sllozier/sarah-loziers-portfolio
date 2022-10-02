@@ -15,7 +15,7 @@ const syncAndSeed = async () => {
       image: '/piccies/emotionFlash.png',
       gitHub: 'https://github.com/sllozier/emotion-flashcards-project',
       heroku: 'https://emotion-flashcards.herokuapp.com/',
-      techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
+      //techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
       })
 
   const project2 = await Project.create({
@@ -23,7 +23,7 @@ const syncAndSeed = async () => {
     image: '/piccies/schoolManagement.png',
     gitHub: 'https://github.com/sllozier/lozier-school-management',
     heroku: 'https://lozier-school-management.herokuapp.com/',
-    techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
+    //techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
       })
 
   const project3 = await Project.create({
@@ -31,7 +31,7 @@ const syncAndSeed = async () => {
     image: '/piccies/eComm.png',
     gitHub: 'https://github.com/sllozier/lozier-ecommerce-site',
     heroku: 'https://lozier-ecommerce-site.herokuapp.com/',
-    techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
+    //techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
     });
     
     

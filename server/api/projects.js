@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Project = require('../db/Project');
 
-router.get('/', async(req, res, next) => {
+router.get('/projects', async(req, res, next) => {
     try{
     const projects = await Project.findAll();
     res.send(projects);
@@ -10,7 +10,7 @@ router.get('/', async(req, res, next) => {
     }
 });
 
-router.get('/:id', async(req, res, next) => {
+router.get('/projects/:id', async(req, res, next) => {
     try{
     const singleProject = await Project.findByPk(req.params.id);
     res.send(singleProject);
