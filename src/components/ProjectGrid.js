@@ -14,7 +14,7 @@ const ProjectGrid = () => {
                 <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">My Recent Projects</h1>
                 <h2 className="subtitle has-text-black is-size-5-desktop">
                     These are a few of my full-stack applications. Let me know if you want to see more.
-                    <a className="has-text-weight-normal" href="mailto:sarah.lozier@gmail.com"> Email me</a>
+                    <a className="has-text-weight-normal has-text-danger" href="mailto:sarah.lozier@gmail.com"> Email me</a>
                     </h2>
             <div className="project-grid">
                 <div className="columns is-vcentered is-multiline is-mobile">

@@ -5978,7 +5978,7 @@ var ProjectGrid = function ProjectGrid() {
   }, "My Recent Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "subtitle has-text-black is-size-5-desktop"
   }, "These are a few of my full-stack applications. Let me know if you want to see more.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "has-text-weight-normal",
+    className: "has-text-weight-normal has-text-danger",
     href: "mailto:sarah.lozier@gmail.com"
   }, " Email me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "project-grid"

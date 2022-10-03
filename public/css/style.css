@@ -19315,3 +19315,9 @@ footer .social-icons a.button .icon.is-small {
   height: 1.4em;
   width: 1.4em;
 }
+
+.projects .button.is-primary.is-outlined.is-medium {
+  padding: 1.25em 2em;
+  border-width: 2px;
+  margin-top: 2rem;
+}
