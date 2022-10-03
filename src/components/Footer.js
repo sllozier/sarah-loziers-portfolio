@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="section is-primary is-small has-text-centered">
             <div className="container is-narrow">
                 <a className="logo has-text-white" href="/">
-                <img src="/piccies/lozier.png" alt="Logo"/>
+                <img className='logo' src="/piccies/lozier.png" alt="Logo"/>
                 </a>
                 <div className="columns is-centered">
                     <div className="column is-one-third">
@@ -18,20 +18,20 @@ const Footer = () => {
                 <div className="social-icons">
                     <p className="field">
                         <a className="button-is-medium" href="https://www.linkedin.com/in/sarah-lozier-563271195/" target="_blank">
-                            <span className="icon is-medium">
-                            <i className="fa-brands fa-linkedin">
+                            <span className="icon is-medium ">
+                            <i className="has-text-danger fa-brands fa-linkedin">
                                         </i>
                             </span>
                         </a>
                         <a className="button-is-medium" href="mailto:sarah.lozier@gmail.com" target="_blank">
-                            <span className="icon is-medium">
-                            <i className="fa-solid fa-envelope">
+                            <span className="icon is-medium ">
+                            <i className="has-text-danger fa-solid fa-envelope">
                                         </i>
                             </span>
                         </a>
                         <a className="button-is-medium" href="https://github.com/sllozier" target="_blank">
                             <span className="icon is-medium">
-                            <i className="fa-brands fa-github">
+                            <i className="has-text-danger fa-brands fa-github">
                                         </i>
                             </span>
                         </a>

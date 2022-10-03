@@ -5692,9 +5692,9 @@ var AboutMe = function AboutMe() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column is-three-fifths"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title is-primary is-spaced is-size-3-desktop is-size-4-mobile"
+    className: "title has-text-white is-spaced is-size-3-desktop is-size-4-mobile"
   }, "Hi. I'm Sarah. Glad you are here."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "subtitle is-size-4-desktop has-text-weight-normal"
+    className: "subtitle has-text-white is-size-4-desktop has-text-weight-normal"
   }, "\"I am a Full Stack Software Engineer located in Maine, USA. As my father-in-law likes to say, I am not your \"average bear\". I discovered my passion for engineering later in my career and I consider this an advantage. The drive, curiousity and compassion I bring to engineering is just who I am.\"")))));
 };
 
@@ -5721,23 +5721,23 @@ __webpack_require__.r(__webpack_exports__);
 
 var CallToAction = function CallToAction() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "section call-to-action is-info has-text-centered"
+    className: "section call-to-action is-primary has-text-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container is-narrow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "box"
+    className: "box is-danger has-background-danger"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "columns level has-text-black"
+    className: "columns level has-text-white"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column level-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title"
+    className: "title has-text-white"
   }, "Start a project")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column level-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Interested in working together? Let make time for coffee and a chat!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column level-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "button is-danger is-outlined is-rounded is-medium has-text-weight-normal",
+    className: "button is-success is-outlined is-rounded is-medium has-text-weight-normal",
     to: "/chatForm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
@@ -5774,6 +5774,7 @@ var Footer = function Footer() {
     className: "logo has-text-white",
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "logo",
     src: "/piccies/lozier.png",
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5793,17 +5794,17 @@ var Footer = function Footer() {
     href: "https://www.linkedin.com/in/sarah-lozier-563271195/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-medium"
+    className: "icon is-medium "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-brands fa-linkedin"
+    className: "has-text-danger fa-brands fa-linkedin"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
     href: "mailto:sarah.lozier@gmail.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-medium"
+    className: "icon is-medium "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-solid fa-envelope"
+    className: "has-text-danger fa-solid fa-envelope"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
     href: "https://github.com/sllozier",
@@ -5811,7 +5812,7 @@ var Footer = function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon is-medium"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-brands fa-github"
+    className: "has-text-danger fa-brands fa-github"
   })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "copyright"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -5922,9 +5923,10 @@ var NavBar = function NavBar() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "navbar-brand"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "navbar-item",
+    className: "navbar-logo",
     href: "/projects"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "logo",
     src: "/piccies/lozier.png",
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -5938,7 +5940,7 @@ var NavBar = function NavBar() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "navbar-item is-active"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "button is-link is-outlined is-rounded has-text-weight-normal",
+    className: "button is-danger is-outlined is-rounded has-text-weight-normal",
     href: "/contact"
   }, "Contact Me"))))));
 };
@@ -5968,7 +5970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProjectGrid = function ProjectGrid() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "section projects is-medium has-background-white has-text-centered"
+    className: "section projects is-medium has-background-white has-text-centered has-border-top"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container is-narrow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
@@ -5985,61 +5987,61 @@ var ProjectGrid = function ProjectGrid() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column is-12-mobile is-half-tablet is-one-third-desktop"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2"
+    className: "image is-3by2 hovereffect"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "project-thumb",
     src: "/piccies/schoolManagement.png"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "overlay"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
   }, "Student and campus tracking system."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "button is-link is-outlined is-rounded",
+    className: "button is-danger is-outlined is-rounded",
     href: "https://lozier-school-management.herokuapp.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-solid fa-angle-right is-link"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column is-1-mobile is-half-tablet is-one-third-desktop"
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-12-mobile is-half-tablet is-one-third-desktop"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2 "
+    className: "image is-3by2 hovereffect"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "project-thumb",
     src: "/piccies/emotionFlash.png"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "overlay"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
   }, "Emotion Flashcards."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "info button is-link is-outlined is-rounded",
+    className: "button is-danger is-outlined is-rounded",
     href: "https://emotion-flashcards.herokuapp.com/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-solid fa-angle-right is-link"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column is-12-mobile is-half-tablet is-one-third-desktop"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2"
+    className: "image is-3by2 hovereffect"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "project-thumb",
     src: "/piccies/eComm.png"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "overlay"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
   }, "E-Commerce Site."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "info button is-link is-outlined is-rounded",
+    className: "button is-danger is-outlined is-rounded",
     href: "https://lozier-ecommerce-site.herokuapp.com/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-solid fa-angle-right is-link"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column"
@@ -6093,7 +6095,7 @@ var Technologies = function Technologies() {
     className: "fa-layer-plus fa-stack has-text-black fa-1x fa-solid fa-hand-holding-hand"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "title has-text-black is-size-4 is-spaced"
-  }, "Collaborator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I genuinely enjoy working with a team of developers to produce creative design solutions."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Collaborator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I genuinely enjoy working with a team of developers producing creative designs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "title has-text-primary is-size-5"
   }, "Team Tools:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "has-text-black is-size-5 is-unstyled"
@@ -6118,7 +6120,7 @@ var Technologies = function Technologies() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-solid fa-circle fa-stack-2x has-text-success"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-layer-plus fa-stack has-text-black fa-1x fa-regular fa-building-ngo"
+    className: "fa-layer-plus fa-stack has-text-black fa-1x fa-brands fa-hive"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "title has-text-black is-size-4 is-spaced"
   }, "Non-Profit Interests"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I am passionate about engineering for the greater-good."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {

@@ -16,7 +16,7 @@ const Technologies = () => {
                                         </i>
                                 </span>
                                 <h1 className='title has-text-black is-size-4 is-spaced'>Collaborator</h1>
-                                <p>I genuinely enjoy working with a team of developers to produce creative design solutions.</p>
+                                <p>I genuinely enjoy working with a team of developers producing creative designs.</p>
                                 <p className='title has-text-primary is-size-5'>Team Tools:</p>
                                 <ul className='has-text-black is-size-5 is-unstyled'>
                                     <li>Git</li>
@@ -51,7 +51,7 @@ const Technologies = () => {
                                 <span className='fa-stack fa-2x'>
                                 <i className='fa-solid fa-circle fa-stack-2x has-text-success'>
                                     </i>
-                                <i className="fa-layer-plus fa-stack has-text-black fa-1x fa-regular fa-building-ngo">
+                                <i className="fa-layer-plus fa-stack has-text-black fa-1x fa-brands fa-hive">
                                         </i>
                                 </span>
                                 <h1 className='title has-text-black is-size-4 is-spaced'>Non-Profit Interests</h1>
