@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const ProjectGrid = () => {
@@ -65,6 +66,17 @@ const ProjectGrid = () => {
                         <div className="overlay"></div>
                     </figure>
                 </div>
+                </div>
+            </div>
+            <div className='columns is-centered'>
+                <div className='column'>
+                    <Link className="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" to="/projectList">
+                        <span>See Project Details</span>
+                        <span className="icon">
+                                    <i className="fa-solid fa-angle-right is-link">
+                                        </i>
+                                </span>
+                    </Link>
                 </div>
             </div>
             </div>

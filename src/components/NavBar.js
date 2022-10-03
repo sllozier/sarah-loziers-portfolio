@@ -11,7 +11,7 @@ return(
       <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="/projects">
-            <img src="/piccies/Lozier.png" alt="Logo"/>
+            <img src="/piccies/lozier.png" alt="Logo"/>
           </a>
           <span className="navbar-burger" data-target="navbarMenuHeroC">
             <span></span>
