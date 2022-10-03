@@ -14,7 +14,7 @@ const Footer = () => {
                         <h1 className="subtitle has-text-white is-size-4-touch has-text-weight-normal">Coding for a better world.</h1>
                     </div>
                 </div>
-                <div className="columns is-3 is-centered">
+                <div className="columns is-centered">
                 <div className="social-icons">
                     <p className="field">
                         <a className="button-is-medium" href="https://www.linkedin.com/in/sarah-lozier-563271195/" target="_blank">

@@ -5737,7 +5737,7 @@ var CallToAction = function CallToAction() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Interested in working together? Let make time for coffee and a chat!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column level-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "button is-success is-outlined is-rounded is-medium has-text-weight-normal",
+    className: "button is-white is-outlined is-rounded is-medium has-text-weight-normal",
     to: "/chatForm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
@@ -5784,7 +5784,7 @@ var Footer = function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "subtitle has-text-white is-size-4-touch has-text-weight-normal"
   }, "Coding for a better world."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "columns is-3 is-centered"
+    className: "columns is-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "social-icons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
