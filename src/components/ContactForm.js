@@ -30,7 +30,7 @@ const ContactForm = () => {
         setStatus('Sending...');
         const { name, email, projectType, payRange, details } = event.target.elements;
 
-        let form = {
+        let formInfo = {
             name: name.value,
             email: email.value,
             projectType: projectType.value,
@@ -43,7 +43,7 @@ const ContactForm = () => {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
             },
-            body: JSON.stringify(form),
+            body: JSON.stringify(formInfo),
         });
             setStatus('submit');
             let result = await res.json();
