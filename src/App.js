@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home/>}/>
         <Route path="/contactForm" element={<ContactForm />}/>
-        <Route path="/projects" element={<ProjectList/>}/>
+        <Route path="/projectList" element={<ProjectList/>}/>
         <Route path="/emailConfirmation" element={<EmailConfirmation/>}/>
       </Routes>
       <Footer />

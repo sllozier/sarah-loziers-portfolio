@@ -16,7 +16,7 @@ const CallToAction = () => {
                             <p>Interested in working together? Let make time for coffee and a chat!</p>
                         </div>
                         <div className='column level-item'>
-                            <Link className='button is-white is-outlined is-rounded is-medium has-text-weight-normal' to='/chatForm'>
+                            <Link className='button is-white is-outlined is-rounded is-medium has-text-weight-normal' to='/contactForm'>
                                 <span className='icon'>
                                 <i className="fa-regular fa-hand-spock">
                                         </i>

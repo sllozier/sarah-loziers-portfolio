@@ -11,7 +11,7 @@ return(
     <nav className="navbar is-transparent">
       <div className="container">
         <div className="navbar-brand">
-          <Link className="image is-64x64" to="/projects">
+          <Link className="image is-64x64" to="/">
             <img  src="/piccies/lozier-logo.svg" alt="Logo"/>
           </Link>
           <span className="navbar-burger" data-target="navbarMenuHeroC">
