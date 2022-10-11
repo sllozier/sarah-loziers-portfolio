@@ -38,35 +38,35 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).send(err.message || 'Internal server error.')
 })
 
-const contactEmail = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'sarah.lozier@gmail.com',
-        pass: 'tmqecpwmehuoguys'
-    },
-});
+// const contactEmail = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: 'sarah.lozier@gmail.com',
+//         pass: 'tmqecpwmehuoguys'
+//     },
+// });
 
-contactEmail.verify((error) => {
-    if(error){
-        console.log(error);
-    }else{
-        console.log("Ready to send!");
-    }
-});
+// contactEmail.verify((error) => {
+//     if(error){
+//         console.log(error);
+//     }else{
+//         console.log("Ready to send!");
+//     }
+// });
 
-const mailDetails = {
-    from: 'thelozierfamily@gmail.com',
-    to: 'sarah.lozier@gmail.com',
-    subject: "Testing mail",
-    text: 'initial nodemailer test'
-};
-contactEmail.sendMail(mailDetails, (error, data) => {
-    if(error){
-        console.log('NODEMAILER ERROR');
-    }else {
-        console.log('EMAIL SENT!');
-    }
-});
+// const mailDetails = {
+//     from: 'thelozierfamily@gmail.com',
+//     to: 'sarah.lozier@gmail.com',
+//     subject: "Testing mail",
+//     text: 'initial nodemailer test'
+// };
+// contactEmail.sendMail(mailDetails, (error, data) => {
+//     if(error){
+//         console.log('NODEMAILER ERROR');
+//     }else {
+//         console.log('EMAIL SENT!');
+//     }
+// });
 
 
 

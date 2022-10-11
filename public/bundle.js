@@ -5798,7 +5798,8 @@ var ContactForm = function ContactForm() {
     email: '',
     projectType: '',
     payRange: '',
-    details: ''
+    details: '',
+    to: ''
   }),
       _useState2 = _slicedToArray(_useState, 2),
       form = _useState2[0],
@@ -5806,17 +5807,15 @@ var ContactForm = function ContactForm() {
 
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
-    (0,emailjs_com__WEBPACK_IMPORTED_MODULE_1__.send)('service_l0cgp5o', 'template_y4yirec', form, 'pGfeSYBA1M9SEbdKl').then(function (response) {
-      console.log('SUCCESS!', response.staus, response.text);
+    (0,emailjs_com__WEBPACK_IMPORTED_MODULE_1__.send)('service_l0cgp5o', 'contact_form', form, 'pGfeSYBA1M9SEbdKl').then(function (response) {
+      console.log('SUCCESS!', response.status, response.text);
     })["catch"](function (error) {
       console.log('EMAIL FAILED...', error);
     });
   };
 
-  var handleChange = function handleChange(prop) {
-    return function (event) {
-      setForm(_objectSpread(_objectSpread({}, form), {}, _defineProperty({}, prop, event.target.value)));
-    };
+  var handleChange = function handleChange(event) {
+    setForm(_objectSpread(_objectSpread({}, form), {}, _defineProperty({}, event.target.name, event.target.value)));
   }; // const handleSubmit = async (event) => {
   //     event.preventDefault();
   //     setStatus('Sending...');
@@ -5879,6 +5878,7 @@ var ContactForm = function ContactForm() {
     className: "input is-large",
     name: "name",
     type: "text",
+    value: form.name,
     onChange: handleChange,
     required: true
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5894,6 +5894,7 @@ var ContactForm = function ContactForm() {
     className: "input is-large",
     name: "email",
     type: "email",
+    value: form.email,
     onChange: handleChange,
     required: true
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5912,6 +5913,7 @@ var ContactForm = function ContactForm() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "is-large",
     name: "projectType",
+    value: form.projectType,
     onChange: handleChange,
     required: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Select One:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Personal Blog/Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "NGO Project"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Full-time Position")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5928,6 +5930,7 @@ var ContactForm = function ContactForm() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "is-large",
     name: "payRange",
+    value: form.payRange,
     onChange: handleChange,
     required: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Select One:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Undecided"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "$5,000 - $10,000"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "$10,000 - $25,000"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5945,6 +5948,7 @@ var ContactForm = function ContactForm() {
     className: "textarea is-large",
     name: "details",
     rows: "5",
+    value: form.details,
     onChange: handleChange,
     required: true
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -5955,7 +5959,8 @@ var ContactForm = function ContactForm() {
     className: "control is-expanded is-hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "is-hidden",
-    name: "_gotcha",
+    name: "to",
+    value: "Sarah Lozier",
     type: "hidden"
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-centered"

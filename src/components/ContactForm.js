@@ -12,32 +12,34 @@ const ContactForm = () => {
         projectType: '',
         payRange: '',
         details: '',
+        to: '',
     });
+
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
         send(
             'service_l0cgp5o',
-            'template_y4yirec',
+            'contact_form',
             form,
             'pGfeSYBA1M9SEbdKl'
         )
         .then((response) => {
-            console.log('SUCCESS!', response.staus, response.text);
+            console.log('SUCCESS!', response.status, response.text);
         })
         .catch((error) => {
             console.log('EMAIL FAILED...', error);
         });
     };
 
-    const handleChange = prop => event => {
+
+    const handleChange = event => {
         setForm({
             ...form,
-            [prop]: event.target.value
-        })
+            [ event.target.name ]: event.target.value
+        });
     };
-
-
 
     // const handleSubmit = async (event) => {
     //     event.preventDefault();
@@ -90,7 +92,7 @@ const ContactForm = () => {
                                 <div className='field'>
                                     <label className='label is-medium has-text-white' htmlFor='name'>Name</label>
                                     <div className='control is-expanded'>
-                                        <input className='input is-large' name='name' type='text' onChange={handleChange} required/>
+                                        <input className='input is-large' name='name' type='text' value={form.name} onChange={handleChange} required/>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +100,7 @@ const ContactForm = () => {
                                 <div className='field'>
                                     <label className='label is-medium has-text-white' htmlFor='email'>Email</label>
                                     <div className='control is-expanded'>
-                                        <input className='input is-large' name='email' type='email' onChange={handleChange}required/>
+                                        <input className='input is-large' name='email' type='email' value={form.email} onChange={handleChange}required/>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +112,7 @@ const ContactForm = () => {
                                     <label className='label is-medium has-text-white' htmlFor='projectType'>Type of project</label>
                                     <div className='control is-expanded'>
                                         <div className='select is-fullwidth'>
-                                            <select className='is-large' name='projectType' onChange={handleChange} required>
+                                            <select className='is-large' name='projectType' value={form.projectType} onChange={handleChange} required>
                                                 {/* <option value='0' disabled selected hidden></option> */}
                                                 <option>Select One:</option>
                                                 <option>Personal Blog/Website</option>
@@ -127,7 +129,7 @@ const ContactForm = () => {
                                     <label className='label is-medium has-text-white' htmlFor='payRange'>Pay Range</label>
                                     <div className='control is-expanded'>
                                         <div className='select is-fullwidth'>
-                                            <select className='is-large' name='payRange' onChange={handleChange} required>
+                                            <select className='is-large' name='payRange' value={form.payRange} onChange={handleChange} required>
                                                 {/* <option value='0' disabled selected hidden></option> */}
                                                 <option>Select One:</option>
                                                 <option>Undecided</option>
@@ -145,13 +147,13 @@ const ContactForm = () => {
                                 <div className='field'>
                                     <label className='label is-medium has-text-white' htmlFor='details'>Additional details</label>
                                     <div className='control is-expanded'>
-                                       <textarea className='textarea is-large' name="details" rows='5' onChange={handleChange}required></textarea>
+                                       <textarea className='textarea is-large' name="details" rows='5' value={form.details} onChange={handleChange}required></textarea>
                                     </div>
                                 </div>
                                 <div className='field is-hidden'>
                                     <label className='is-hidden'></label>
                                     <div className='control is-expanded is-hidden'>
-                                        <input className='is-hidden' name='_gotcha' type='hidden'/>
+                                        <input className='is-hidden' name='to' value='Sarah Lozier' type='hidden'/>
                                     </div>
                                 </div>
                             </div>
