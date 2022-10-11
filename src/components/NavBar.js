@@ -8,11 +8,11 @@ const NavBar = () => {
 
 return(
 
-    <header className="navbar">
+    <nav className="navbar is-transparent">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/projects" className="navbar-logo">
-            <img className="logo" src="/piccies/lozier.png" alt="Logo"/>
+          <Link className="image is-64x64" to="/projects">
+            <img  src="/piccies/lozier-logo.svg" alt="Logo"/>
           </Link>
           <span className="navbar-burger" data-target="navbarMenuHeroC">
             <span></span>
@@ -28,7 +28,7 @@ return(
         </div>
       </div>
       </div>
-    </header>
+    </nav>
 
 
 )

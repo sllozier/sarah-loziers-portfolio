@@ -5643,9 +5643,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
 /* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ContactForm */ "./src/components/ContactForm.js");
 /* harmony import */ var _components_ProjectList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/ProjectList */ "./src/components/ProjectList.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/EmailConfirmation */ "./src/components/EmailConfirmation.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+
 
 
 
@@ -5655,19 +5657,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement("div", {
     className: "App"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     index: true,
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/contactForm",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/projects",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_ProjectList__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ProjectList__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/emailConfirmation",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -5771,6 +5776,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! emailjs-com */ "./node_modules/emailjs-com/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -5792,7 +5798,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var ContactForm = function ContactForm() {
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useNavigate)();
+
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     name: '',
     email: '',
@@ -5808,6 +5817,7 @@ var ContactForm = function ContactForm() {
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
     (0,emailjs_com__WEBPACK_IMPORTED_MODULE_1__.send)('service_l0cgp5o', 'contact_form', form, 'pGfeSYBA1M9SEbdKl').then(function (response) {
+      navigate('/emailConfirmation');
       console.log('SUCCESS!', response.status, response.text);
     })["catch"](function (error) {
       console.log('EMAIL FAILED...', error);
@@ -5816,29 +5826,7 @@ var ContactForm = function ContactForm() {
 
   var handleChange = function handleChange(event) {
     setForm(_objectSpread(_objectSpread({}, form), {}, _defineProperty({}, event.target.name, event.target.value)));
-  }; // const handleSubmit = async (event) => {
-  //     event.preventDefault();
-  //     setStatus('Sending...');
-  //     const { name, email, projectType, payRange, details } = event.target.elements;
-  //     let formInfo = {
-  //         name: name.value,
-  //         email: email.value,
-  //         projectType: projectType.value,
-  //         payRange: payRange.value,
-  //         details: details.value,
-  //     };
-  //     let res = await fetch("https://localhost:3000/contactForm", {
-  //         method: "POST",
-  //         headers: {
-  //             'Content-Type': 'application/json;charset=utf-8',
-  //         },
-  //         body: JSON.stringify(formInfo),
-  //     });
-  //         setStatus('submit');
-  //         let result = await res.json();
-  //         alert(result.status);
-  // };
-
+  };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "is-form-page animate-fadeUp"
@@ -5979,6 +5967,50 @@ var ContactForm = function ContactForm() {
 
 /***/ }),
 
+/***/ "./src/components/EmailConfirmation.js":
+/*!*********************************************!*\
+  !*** ./src/components/EmailConfirmation.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var EmailConfirmation = function EmailConfirmation() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "hero is-warning is-fullheight has-text-centered splash"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "hero-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "columns is-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-three-fifths"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "avatar",
+    src: "/piccies/hero-image.png",
+    alt: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "title has-text-info is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
+  }, "Email recieved. Thanks!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "subtitle has-text-info is-size-4-desktop"
+  }, "I'll email you shortly and find a time to chat!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "button is-primary is-outlined is-medium is-rounded mt-5 has-text-weight-medium",
+    href: "/"
+  }, "Head back home"))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmailConfirmation);
+
+/***/ }),
+
 /***/ "./src/components/Footer.js":
 /*!**********************************!*\
   !*** ./src/components/Footer.js ***!
@@ -5999,14 +6031,17 @@ var Footer = function Footer() {
     className: "section is-primary is-small has-text-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container is-narrow"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "columns is-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "logo has-text-white",
+    className: "image is-square",
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "logo",
-    src: "/piccies/lozier.png",
+    src: "/piccies/lozier-logo.svg",
     alt: "Logo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column is-one-third"
@@ -6015,41 +6050,39 @@ var Footer = function Footer() {
   }, "Coding for a better world."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "social-icons"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "field"
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "icon is-medium mx-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
     href: "https://www.linkedin.com/in/sarah-lozier-563271195/",
     target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-medium "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "has-text-danger fa-brands fa-linkedin"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "has-text-danger fa-brands fa-linkedin fas fa-2x"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "icon is-medium mx-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
     href: "mailto:sarah.lozier@gmail.com",
     target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-medium "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "has-text-danger fa-solid fa-envelope"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "has-text-danger fa-solid fa-envelope fas fa-2x"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "icon is-medium mx-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
     href: "https://github.com/sllozier",
     target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-medium"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "has-text-danger fa-brands fa-github"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "has-text-danger fa-brands fa-github fas fa-2x"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "copyright"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon is-small"
+    className: "icon is-small mx-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-regular fa-heart"
   })), "Made by yours-truly", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon has-white-text"
+    className: "icon has-white-text mx-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "fa-solid fa-copyright"
   })), "2022"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6120,7 +6153,7 @@ var Hero = function Hero() {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "is-bottom",
-    src: "/piccies/Hero image.png",
+    src: "/piccies/hero-image.png",
     alt: ""
   }))))));
 };
@@ -6180,18 +6213,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var NavBar = function NavBar() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-    className: "navbar"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "navbar is-transparent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "navbar-brand"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/projects",
-    className: "navbar-logo"
+    className: "image is-64x64",
+    to: "/projects"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "logo",
-    src: "/piccies/lozier.png",
+    src: "/piccies/lozier-logo.svg",
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "navbar-burger",
@@ -6259,8 +6291,8 @@ var ProjectGrid = function ProjectGrid() {
     className: "overlay"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
-  }, "Student and campus tracking system."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "button is-danger is-outlined is-rounded",
+  }, "Student and campus tracking system"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "info button is-danger is-outlined is-rounded",
     href: "https://lozier-school-management.herokuapp.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -6278,8 +6310,8 @@ var ProjectGrid = function ProjectGrid() {
     className: "overlay"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
-  }, "Emotion Flashcards."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "button is-danger is-outlined is-rounded",
+  }, "Emotion Flashcards"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "info button is-danger is-outlined is-rounded",
     href: "https://emotion-flashcards.herokuapp.com/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -6297,8 +6329,8 @@ var ProjectGrid = function ProjectGrid() {
     className: "overlay"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "title is-size-5 is-size-4-widescreen"
-  }, "E-Commerce Site."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "button is-danger is-outlined is-rounded",
+  }, "E-Commerce Site"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "info button is-danger is-outlined is-rounded",
     href: "https://lozier-ecommerce-site.herokuapp.com/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {

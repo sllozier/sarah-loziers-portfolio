@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
 import { send } from 'emailjs-com';
+import { useNavigate } from 'react-router-dom';
 
 const ContactForm = () => {
 
-    
+    const navigate = useNavigate();
 
     const [ form, setForm ] = useState({
         name: '',
@@ -26,6 +27,7 @@ const ContactForm = () => {
             'pGfeSYBA1M9SEbdKl'
         )
         .then((response) => {
+            navigate('/emailConfirmation')
             console.log('SUCCESS!', response.status, response.text);
         })
         .catch((error) => {
@@ -41,31 +43,6 @@ const ContactForm = () => {
         });
     };
 
-    // const handleSubmit = async (event) => {
-    //     event.preventDefault();
-    //     setStatus('Sending...');
-    //     const { name, email, projectType, payRange, details } = event.target.elements;
-
-    //     let formInfo = {
-    //         name: name.value,
-    //         email: email.value,
-    //         projectType: projectType.value,
-    //         payRange: payRange.value,
-    //         details: details.value,
-    //     };
-
-    //     let res = await fetch("https://localhost:3000/contactForm", {
-    //         method: "POST",
-    //         headers: {
-    //             'Content-Type': 'application/json;charset=utf-8',
-    //         },
-    //         body: JSON.stringify(formInfo),
-    //     });
-    //         setStatus('submit');
-    //         let result = await res.json();
-    //         alert(result.status);
-    // };
-    
     
     
 

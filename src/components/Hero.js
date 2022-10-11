@@ -37,7 +37,7 @@ const Hero = () => {
   <div className="hero-foot">
     <nav className="tabs is-boxed is-fullwidth">
       <div className="container">
-        <img className="is-bottom" src="/piccies/Hero image.png" alt=""/>
+        <img className="is-bottom" src="/piccies/hero-image.png" alt=""/>
       </div>
     </nav>
   </div>

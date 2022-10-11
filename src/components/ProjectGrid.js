@@ -24,8 +24,8 @@ const ProjectGrid = () => {
                         
                         <figcaption>
                         <div className="overlay">
-                            <h2 className="title is-size-5 is-size-4-widescreen">Student and campus tracking system.</h2>
-                            <a className="button is-danger is-outlined is-rounded" href="https://lozier-school-management.herokuapp.com" target="_blank">
+                            <h2 className="title is-size-5 is-size-4-widescreen">Student and campus tracking system</h2>
+                            <a className="info button is-danger is-outlined is-rounded" href="https://lozier-school-management.herokuapp.com" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -41,8 +41,8 @@ const ProjectGrid = () => {
                         <img className="project-thumb" src="/piccies/emotionFlash.png"/>
                         <figcaption>
                         <div className="overlay">
-                            <h2 className="title is-size-5 is-size-4-widescreen">Emotion Flashcards.</h2>
-                            <a className="button is-danger is-outlined is-rounded" href="https://emotion-flashcards.herokuapp.com/" target="_blank">
+                            <h2 className="title is-size-5 is-size-4-widescreen">Emotion Flashcards</h2>
+                            <a className="info button is-danger is-outlined is-rounded" href="https://emotion-flashcards.herokuapp.com/" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -58,8 +58,8 @@ const ProjectGrid = () => {
                         <img className="project-thumb" src="/piccies/eComm.png"/>
                         <figcaption>
                         <div className="overlay">
-                            <h2 className="title is-size-5 is-size-4-widescreen">E-Commerce Site.</h2>
-                            <a className="button is-danger is-outlined is-rounded" href="https://lozier-ecommerce-site.herokuapp.com/" target="_blank">
+                            <h2 className="title is-size-5 is-size-4-widescreen">E-Commerce Site</h2>
+                            <a className="info button is-danger is-outlined is-rounded" href="https://lozier-ecommerce-site.herokuapp.com/" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
