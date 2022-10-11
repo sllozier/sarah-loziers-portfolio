@@ -54,6 +54,21 @@ contactEmail.verify((error) => {
     }
 });
 
+const mailDetails = {
+    from: 'thelozierfamily@gmail.com',
+    to: 'sarah.lozier@gmail.com',
+    subject: "Testing mail",
+    text: 'initial nodemailer test'
+};
+contactEmail.sendMail(mailDetails, (error, data) => {
+    if(error){
+        console.log('NODEMAILER ERROR');
+    }else {
+        console.log('EMAIL SENT!');
+    }
+});
+
+
 
 module.exports = app;
 
