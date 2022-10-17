@@ -27,10 +27,17 @@ const Project = db.define('project', {
             notEmpty: true,
         },
     },
-    // techUsed: {
-    //     type: Sequelize.ARRAY(Sequelize.STRING),
-    //     defaultValue: [],
-    // },
+    techUsed: {
+        type: Sequelize.ARRAY(Sequelize.STRING),
+        defaultValue: [],
+    },
+    description: {
+        type: Sequelize.TEXT,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        },
+    },
 });
 
 module.exports = Project;

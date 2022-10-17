@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import AOS from 'aos';
 import { getProjectsThunk } from "../store/reducers/projectsReducer";
@@ -6,7 +6,7 @@ import { getProjectsThunk } from "../store/reducers/projectsReducer";
 const ProjectList = () => {
     const dispatch = useDispatch();
     const projectList = useSelector((state) => state.projects);
-
+   
     console.log(projectList)
 
     useEffect(() => {
@@ -15,108 +15,76 @@ const ProjectList = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 2000,
+            duration: 3000,
         });
     }, []);
-//add turnary data-aos ? project.id % 2 === 0 ? fade-up left : fade up right : project.image 
-//maybe set state and then call onChange inside of data-aos?
-    return(
-        <>
-        <section className="hero is-large  has-background-white has-text-centered has-border-top">
-            {projectList
-            ? projectList.map((project) => (
-            <><div class="tile is-ancestor" key={`${project.id}`}>
-                    <div className="tile is-12 is-parent">
-                        <div class="tile is-6 is-child">
-                        <div className="media" data-aos={'fade-up-left'}>
-                <figure className='media-left image is-64x64'>
-                    <img  src={`${project.image}`}/>
-                </figure>
-                </div>
+  
+  return (
+    <section className="section is-large has-background-white has-text-centered has-border-top">
+        {projectList ?
+        projectList.map((project) => (
+            project.id % 2 === 0 ? (
+                <div className="tile is-ancestor mg-large">
+                    <div className="tile is-12">
+                        <div className="tile is-parent">
+                            <article className="tile is-child ">
+                                <div className="image" data-aos={'fade-up-left'}>
+                                    <figure className='image is-2x1'>
+                                        <img src={`${project.image}`}/>
+                                    </figure>
+                                </div>
+                            </article>
                         </div>
-                        <div class="tile is-6 is-child">
-                        <div className="media-content">
-                <div className="content">
-                    <h3>{`${project.title}`}</h3>
-                </div>
-                </div>
+                        <div className="tile is-parent">
+                            <article className="tile is-child ">
+                                <div className="media-content">
+                                    <div className="content">
+                                        <h3>{`${project.title}`}</h3>
+                                        <p>{`${project.description}`}</p>
+                                        <p>{`${project.gitHub}`}</p>
+                                        <p>{`${project.heroku}`}</p>
+                                        <p>{`${project.techUsed}`}</p>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
-                </div></>
- ))
- :null}
-      </section>      
-
-            
-
-
-
-
-
-
-
-
-
-         {/* {projectList
-            ? projectList.map((project) => (
-         <section className="section is-medium  has-background-white has-text-centered has-border-top" key={`${project.id}`}>
-        
-         
-        <div className="level" >
-        <div className="level-item has-text-centered" >
-        <div className="media" data-aos={'fade-up-left'}>
-                <figure className='media-left image is-64x64'>
-                    <img  src={`${project.image}`}/>
-                </figure>
                 </div>
-                </div>
-                <div className="level-item has-text-centered">
-                <div className="media-content">
-                <div className="content">
-                    <h3>{`${project.title}`}</h3>
-                </div>
-                </div>
-        </div>
-        </div>
-        <div className="level" >
-        <div className="level-item has-text-centered">
-        <div className="media" data-aos={'fade-up-right'}>
-        <figure className='media-right image is-64x64'>
-            <img src={`${project.image}`}/>
-        </figure>
-        </div>
-        <div className="level-item has-text-centered">
-        <div className="media-content">
-        <div className="content">
-        <h3>{`${project.title}`}</h3>
-        </div>
-             </div>
-        </div>
-            </div>
+            ): (
+                <div className="tile is-ancestor mg-large" >
+                    <div className="tile is-12">
+                        <div className="tile is-parent">
+                            <article className="tile is-child ">
+                                <div className="media-content">
+                                    <div className="content">
+                                        <h3>{`${project.title}`}</h3>
+                                        <p>{`${project.description}`}</p>
+                                        <p>{`${project.gitHub}`}</p>
+                                        <p>{`${project.heroku}`}</p>
+                                        <p>{`${project.techUsed}`}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div className="tile is-parent">
+                            <article className="tile is-child ">
+                                <div className="image" data-aos={'fade-up-right'}>
+                                    <figure className='image is-2x1'>
+                                        <img src={`${project.image}`}/>
+                                    </figure>
 
-        </div>
-        
-        <div className="level" >
-        <div className="level-item has-text-centered">
-        <div className="media" data-aos={'fade-up-left'}>
-                <figure className='media-left image is-64x64'>
-                    <img src={`${project.image}`}/>
-                </figure>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <div className="level-item has-text-centered">
-        <div className="media-content">
-                <div className="content">
-                <h3>{`${project.title}`}</h3>
-                </div>
-               </div>
-        </div>
-        </div>
-    </section>
+            )
         ))
-        :null} */}
-        </>
-    )
-};
+    :null}
+
+
+    </section>
+  )
+            }
 
 export default ProjectList;
