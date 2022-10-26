@@ -6205,6 +6205,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var NavBar = function NavBar() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    $navbarBurgers.forEach(function (el) {
+      el.addEventListener('click', function () {
+        var target = el.dataset.target;
+        var $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "navbar is-transparent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6217,9 +6228,11 @@ var NavBar = function NavBar() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: "/piccies/lozier-logo.svg",
     alt: "Logo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    role: "button",
     className: "navbar-burger",
-    "data-target": "navbarMenuHeroC"
+    "data-target": "navbarMenuHeroC",
+    to: "/contactForm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "navbarMenuHeroC",
     className: "navbar-menu"
