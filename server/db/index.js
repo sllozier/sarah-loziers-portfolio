@@ -1,11 +1,6 @@
-// The purpose of this module is to bring your Sequelize instance (`db`) together
-// with your models, for which you'll find some blank files in this directory:
-
 const db = require('./database');
 const Project = require('./Project');
-//models go here
 
-//associations go here
 
 const syncAndSeed = async () => {
     await db.sync({ force: true });
@@ -36,18 +31,12 @@ const syncAndSeed = async () => {
     techUsed: ['vanilla JS', "css", 'postsql', 'node', 'express', 'redux', 'react'],
     description: "An e-commerce website with user and administrative experiences. This project integrates JWT authorization with Express routing and Sequelize database management. Front-end designed with React and React-Redux."
     });
-    
-    
-      
 
     console.log(`
     Seeding successful!
     NOW, GET A JOB!
   `);
 };
-
-
-
 
 
 module.exports = {

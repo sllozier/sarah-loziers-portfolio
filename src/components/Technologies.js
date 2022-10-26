@@ -16,16 +16,9 @@ const Technologies = () => {
                                         </i>
                                 </span>
                                 <h1 className='title has-text-black is-size-4 is-spaced'>Collaborator</h1>
-                                <p>I genuinely enjoy working with a team of developers producing creative designs.</p>
-                                <p className='title has-text-primary is-size-5'>Team Tools:</p>
-                                <ul className='has-text-black is-size-5 is-unstyled'>
-                                    <li>Git</li>
-                                    <li>Zoom</li>
-                                    <li>Google Meet</li>
-                                    <li>Slack</li>
-                                    <li>Google Docs</li>
-                                    <li>Google Spaces</li>
-                                </ul>
+                                <p className='mx-4'>I genuinely enjoy working with a team of developers producing creative designs.</p>
+                                <p className='title has-text-primary is-size-4'>Team Tools:</p>
+                                <p className='mx-3 is-size-5'>Git, Zoom, Google Meet, Slack, Google Docs, Google Spaces</p>
                             </div>
                             <div className='column'>
                             <span className='fa-stack fa-2x'>
@@ -35,17 +28,9 @@ const Technologies = () => {
                             </i>
                     </span>
                     <h1 className='title has-text-black is-size-4 is-spaced'>Full Stack Developer</h1>
-                                <p>I love bringing ideas to reality, and geek out on back-end structure and design.</p>
-                                <p className='title has-text-primary is-size-5'>My Languages:</p>
-                                <ul className='has-text-black is-size-5 is-unstyled'>
-                                    <li>JS</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Sass</li>
-                                    <li>React</li>
-                                    <li>PSQL</li>
-                                </ul> 
-                                
+                                <p className='mx-4'>I love bringing ideas to reality, and geek out on back-end structure and design.</p>
+                                <p className='title has-text-primary is-size-4'>My Languages:</p>
+                                <p className='mx-3 is-size-5'>JS, HTML, CSS, SASS, REACT, PSQL</p>
                             </div>
                             <div className='column'>
                                 <span className='fa-stack fa-2x'>
@@ -55,17 +40,9 @@ const Technologies = () => {
                                         </i>
                                 </span>
                                 <h1 className='title has-text-black is-size-4 is-spaced'>Non-Profit Interests</h1>
-                                <p>I am passionate about engineering for the greater-good.</p>
-                                <p className='title has-text-primary is-size-5'>Future Projects:</p>
-                                <ul className='has-text-black is-size-5 is-unstyled'>
-                                    <li>Updated Amber Alert</li>
-                                    <li>Agriculture Technologies</li>
-                                    <li>Neuro-Diversity Education</li>
-                                    <li>Medical Outreach</li>
-                                    <li>Online Homeschool Organization</li>
-                                    <li>Veteran's Social Network</li>
-                                </ul>
-                           
+                                <p className='mx-4'>I am passionate about engineering for the greater-good.</p>
+                                <p className='title has-text-primary is-size-4'>Future Projects:</p>
+                                <p className='mx-3 is-size-5'>Updated Amber Alert, Agricultural Tech, Neuro-Diverse Education Tools, Medical Outreach, Veteran's Social Networking</p>
                             </div>
                         </div>
                     </div>

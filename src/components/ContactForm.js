@@ -154,4 +154,3 @@ const ContactForm = () => {
 
 export default ContactForm;
 
-// https://sarah-loziers-portfolio.herokuapp.com/contactForm

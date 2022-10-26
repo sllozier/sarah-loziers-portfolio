@@ -1,7 +1,4 @@
 import React from "react";
-//import Projects from "./Projects";
-//import AboutMe from "./AboutMe";
-//import Footer from "./Footer";
 
 import Typewriter from 'typewriter-effect';
 

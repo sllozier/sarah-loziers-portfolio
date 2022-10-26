@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from 'react';
+
 
 
 const ProjectGrid = () => {
@@ -20,12 +19,12 @@ const ProjectGrid = () => {
                 <div className="columns is-vcentered is-multiline is-mobile">
                 <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
                     <figure className="image is-3by2 hovereffect">
-                        <img className="project-thumb" src="/piccies/schoolManagement.png"/>
+                        <img className="project-thumb" src="/piccies/schoolManagement.svg"/>
                         
                         <figcaption>
                         <div className="overlay">
                             <h2 className="title is-size-5 is-size-4-widescreen">Student and campus tracking system</h2>
-                            <a className="info button is-danger is-outlined is-rounded" href="https://lozier-school-management.herokuapp.com" target="_blank">
+                            <a className="info button is-link is-outlined is-rounded" href="https://lozier-school-management.herokuapp.com" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -38,11 +37,11 @@ const ProjectGrid = () => {
                 </div>
                 <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
                     <figure className="image is-3by2 hovereffect">
-                        <img className="project-thumb" src="/piccies/emotionFlash.png"/>
+                        <img className="project-thumb" src="/piccies/emotionFlashcards.svg"/>
                         <figcaption>
                         <div className="overlay">
                             <h2 className="title is-size-5 is-size-4-widescreen">Emotion Flashcards</h2>
-                            <a className="info button is-danger is-outlined is-rounded" href="https://emotion-flashcards.herokuapp.com/" target="_blank">
+                            <a className="info button is-link is-outlined is-rounded" href="https://emotion-flashcards.herokuapp.com/" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -55,11 +54,11 @@ const ProjectGrid = () => {
                 </div>
                 <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
                     <figure className="image is-3by2 hovereffect">
-                        <img className="project-thumb" src="/piccies/eComm.png"/>
+                        <img className="project-thumb" src="/piccies/waybackVinyl.svg"/>
                         <figcaption>
                         <div className="overlay">
-                            <h2 className="title is-size-5 is-size-4-widescreen">E-Commerce Site</h2>
-                            <a className="info button is-danger is-outlined is-rounded" href="https://lozier-ecommerce-site.herokuapp.com/" target="_blank">
+                            <h2 className="title is-size-5 is-size-4-widescreen">WayBack Vinyl</h2>
+                            <a className="info button is-link is-outlined is-rounded" href="https://lozier-ecommerce-site.herokuapp.com/" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -70,17 +69,6 @@ const ProjectGrid = () => {
                         </figcaption>
                     </figure>
                 </div>
-                </div>
-            </div>
-            <div className='columns is-centered'>
-                <div className='column'>
-                    <Link className="button is-primary is-outlined is-rounded is-medium has-text-weight-normal" to="/projectList">
-                        <span>See Project Details</span>
-                        <span className="icon">
-                                    <i className="fa-solid fa-angle-right is-link">
-                                        </i>
-                                </span>
-                    </Link>
                 </div>
             </div>
             </div>

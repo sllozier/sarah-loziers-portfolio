@@ -3,7 +3,6 @@ import axios from 'axios';
 const SET_PROJECT = 'SET_PROJECT';
 
 export const setProject = (data) => {
-    // single album
     return {
       type: SET_PROJECT,
       singleProject: data,
