@@ -5643,9 +5643,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
 /* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ContactForm */ "./src/components/ContactForm.js");
 /* harmony import */ var _components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/EmailConfirmation */ "./src/components/EmailConfirmation.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _components_ProjectsTest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/ProjectsTest */ "./src/components/ProjectsTest.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+
 
 
 
@@ -5655,19 +5657,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement("div", {
     className: "App"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     index: true,
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/contactForm",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/emailConfirmation",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/projects/:id",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ProjectsTest__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -6345,6 +6350,61 @@ var ProjectGrid = function ProjectGrid() {
 
 /***/ }),
 
+/***/ "./src/components/ProjectsTest.js":
+/*!****************************************!*\
+  !*** ./src/components/ProjectsTest.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _store_reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/reducers/singleProjectReducer */ "./src/store/reducers/singleProjectReducer.js");
+
+
+
+
+
+var ProjectsTest = function ProjectsTest() {
+  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  var params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.useParams)();
+  var project = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
+    return state.singleProject;
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    dispatch((0,_store_reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_2__.setSingleProjectThunk)(params.id));
+  }, []);
+  console.log("PROJECTS TEST", project);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "section is-primary has-text-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "columns level has-text-white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column level-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "title has-text-white"
+  }, project.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column level-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
+    className: "image is-3by2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "project-thumb",
+    src: "".concat(project.image)
+  }))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjectsTest);
+
+/***/ }),
+
 /***/ "./src/components/Technologies.js":
 /*!****************************************!*\
   !*** ./src/components/Technologies.js ***!
@@ -6570,32 +6630,34 @@ var setProject = function setProject(data) {
 var setSingleProjectThunk = function setSingleProjectThunk(id) {
   return /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(dispatch) {
-      var singleProject;
+      var _yield$axios$get, singleProject;
+
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/projects.".concat(id));
+              return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/projects/".concat(id));
 
             case 3:
-              singleProject = _context.sent;
+              _yield$axios$get = _context.sent;
+              singleProject = _yield$axios$get.data;
               dispatch(setProject(singleProject));
-              _context.next = 10;
+              _context.next = 11;
               break;
 
-            case 7:
-              _context.prev = 7;
+            case 8:
+              _context.prev = 8;
               _context.t0 = _context["catch"](0);
               console.log('SINGLE PROJECT THUNK ERROR ', _context.t0);
 
-            case 10:
+            case 11:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[0, 7]]);
+      }, _callee, null, [[0, 8]]);
     }));
 
     return function (_x) {

@@ -6,6 +6,7 @@ import ProjectGrid from './ProjectGrid';
 import CallToAction from './CallToAction';
 
 
+
 const Home = () => {
 
     return(

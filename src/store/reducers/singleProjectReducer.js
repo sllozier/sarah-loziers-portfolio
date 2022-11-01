@@ -12,7 +12,7 @@ export const setProject = (data) => {
 export const setSingleProjectThunk = (id) => {
     return async(dispatch) => {
         try{
-            const singleProject = await axios.get(`/api/projects.${id}`);
+            const { data:singleProject } = await axios.get(`/api/projects/${id}`);
             dispatch(setProject(singleProject));
         }catch(error){
             console.log('SINGLE PROJECT THUNK ERROR ', error);
