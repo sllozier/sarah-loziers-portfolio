@@ -6299,7 +6299,7 @@ var ProjectGrid = function ProjectGrid() {
     className: "title is-size-5 is-size-4-widescreen"
   }, "Student and campus tracking system"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "info button is-link is-outlined is-rounded",
-    href: "https://lozier-school-management.herokuapp.com",
+    href: "https://lozier-school-management.onrender.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
@@ -6318,7 +6318,7 @@ var ProjectGrid = function ProjectGrid() {
     className: "title is-size-5 is-size-4-widescreen"
   }, "Emotion Flashcards"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "info button is-link is-outlined is-rounded",
-    href: "https://emotion-flashcards.herokuapp.com/",
+    href: "https://emotion-flashcards-project.onrender.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"
@@ -6337,7 +6337,7 @@ var ProjectGrid = function ProjectGrid() {
     className: "title is-size-5 is-size-4-widescreen"
   }, "WayBack Vinyl"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "info button is-link is-outlined is-rounded",
-    href: "https://lozier-ecommerce-site.herokuapp.com/",
+    href: "https://flintstones-grace-shopper.onrender.com",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "icon"

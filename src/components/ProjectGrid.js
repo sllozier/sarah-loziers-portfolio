@@ -24,7 +24,7 @@ const ProjectGrid = () => {
                         <figcaption>
                         <div className="overlay">
                             <h2 className="title is-size-5 is-size-4-widescreen">Student and campus tracking system</h2>
-                            <a className="info button is-link is-outlined is-rounded" href="https://lozier-school-management.herokuapp.com" target="_blank">
+                            <a className="info button is-link is-outlined is-rounded" href="https://lozier-school-management.onrender.com" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -41,7 +41,7 @@ const ProjectGrid = () => {
                         <figcaption>
                         <div className="overlay">
                             <h2 className="title is-size-5 is-size-4-widescreen">Emotion Flashcards</h2>
-                            <a className="info button is-link is-outlined is-rounded" href="https://emotion-flashcards.herokuapp.com/" target="_blank">
+                            <a className="info button is-link is-outlined is-rounded" href="https://emotion-flashcards-project.onrender.com" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">
@@ -58,7 +58,7 @@ const ProjectGrid = () => {
                         <figcaption>
                         <div className="overlay">
                             <h2 className="title is-size-5 is-size-4-widescreen">WayBack Vinyl</h2>
-                            <a className="info button is-link is-outlined is-rounded" href="https://lozier-ecommerce-site.herokuapp.com/" target="_blank">
+                            <a className="info button is-link is-outlined is-rounded" href="https://flintstones-grace-shopper.onrender.com" target="_blank">
                                 <span>Visit Website</span>
                                 <span className="icon">
                                     <i className="fa-solid fa-angle-right is-link">

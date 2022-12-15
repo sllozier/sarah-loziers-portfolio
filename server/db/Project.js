@@ -20,7 +20,7 @@ const Project = db.define('project', {
             notEmpty: true,
         },
     },
-    heroku: {
+    onRender: {
         type: Sequelize.STRING,
         allowNull: false,
         validate: {
