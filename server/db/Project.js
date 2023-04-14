@@ -1,43 +1,43 @@
-const Sequelize = require('sequelize');
-const db = require('./database.js');
+const Sequelize = require("sequelize");
+const db = require("./database.js");
 
-const Project = db.define('project', {
-    title: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true,
-        },
+const Project = db.define("project", {
+  title: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
     },
-    image:{
-        type: Sequelize.STRING,
-        defaultValue: '/public/piccies/image-not-found.jpg'
+  },
+  image: {
+    type: Sequelize.STRING,
+    defaultValue: "/public/piccies/image-not-found.jpg",
+  },
+  gitHub: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
     },
-    gitHub:{
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true,
-        },
+  },
+  onRender: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
     },
-    onRender: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true,
-        },
+  },
+  techUsed: {
+    type: Sequelize.ARRAY(Sequelize.STRING),
+    defaultValue: [],
+  },
+  description: {
+    type: Sequelize.TEXT,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
     },
-    techUsed: {
-        type: Sequelize.ARRAY(Sequelize.STRING),
-        defaultValue: [],
-    },
-    description: {
-        type: Sequelize.TEXT,
-        allowNull: false,
-        validate: {
-            notEmpty: true,
-        },
-    },
+  },
 });
 
 module.exports = Project;
