@@ -1,5 +1,7 @@
 import React from "react";
 
+// Add a link for my resume
+
 const Footer = () => {
   return (
     <footer className="section is-primary is-small has-text-centered">

@@ -1,5 +1,7 @@
 import React from "react";
 
+// Add link to resume
+
 const EmailConfirmation = () => {
   return (
     <section className="hero is-warning is-fullheight has-text-centered splash">

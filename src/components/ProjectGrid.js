@@ -19,10 +19,9 @@ const ProjectGrid = () => {
   }, [projects]);
 
   console.log("PROJECT GRID", projects);
-
-  return loading ? (
-    <div>Projects Loading...</div>
-  ) : (
+  const repos = projects.map((p) => p.repo);
+  console.log("REPO", repos);
+  return (
     <section className="section projects is-medium has-background-white has-text-centered has-border-top">
       <div className="container is-narrow">
         <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
@@ -48,7 +47,8 @@ const ProjectGrid = () => {
               >
                 <figure className="image is-3by2 hovereffect">
                   <img className="project-thumb" src={project.image} />
-
+                  {/* Change this to be a video on hover using : https://www.npmjs.com/package/react-hover-video-player 
+              and https://codesandbox.io/s/hovervideoplayer-example-6y0fn?file=/src/PausedOverlay.js */}
                   <figcaption>
                     <div className="overlay">
                       {/* <h2 className="title is-size-5 is-size-4-widescreen">
@@ -59,6 +59,8 @@ const ProjectGrid = () => {
                         href={project.repo}
                         target="_blank"
                       >
+                        {/* Change this to be a small arrow icon that goes to individual project description and
+                        holds the links for each project there. */}
                         <span>Visit Website</span>
                         <span className="icon">
                           <i className="fa-solid fa-angle-right is-link"></i>
