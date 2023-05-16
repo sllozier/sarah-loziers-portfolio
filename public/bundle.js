@@ -1,6 +1,2048 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EnhancerArray": () => (/* binding */ EnhancerArray),
+/* harmony export */   "MiddlewareArray": () => (/* binding */ MiddlewareArray),
+/* harmony export */   "SHOULD_AUTOBATCH": () => (/* binding */ SHOULD_AUTOBATCH),
+/* harmony export */   "TaskAbortError": () => (/* binding */ TaskAbortError),
+/* harmony export */   "__DO_NOT_USE__ActionTypes": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.__DO_NOT_USE__ActionTypes),
+/* harmony export */   "addListener": () => (/* binding */ addListener),
+/* harmony export */   "applyMiddleware": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.applyMiddleware),
+/* harmony export */   "autoBatchEnhancer": () => (/* binding */ autoBatchEnhancer),
+/* harmony export */   "bindActionCreators": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.bindActionCreators),
+/* harmony export */   "clearAllListeners": () => (/* binding */ clearAllListeners),
+/* harmony export */   "combineReducers": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.combineReducers),
+/* harmony export */   "compose": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.compose),
+/* harmony export */   "configureStore": () => (/* binding */ configureStore),
+/* harmony export */   "createAction": () => (/* binding */ createAction),
+/* harmony export */   "createAsyncThunk": () => (/* binding */ createAsyncThunk),
+/* harmony export */   "createDraftSafeSelector": () => (/* binding */ createDraftSafeSelector),
+/* harmony export */   "createEntityAdapter": () => (/* binding */ createEntityAdapter),
+/* harmony export */   "createImmutableStateInvariantMiddleware": () => (/* binding */ createImmutableStateInvariantMiddleware),
+/* harmony export */   "createListenerMiddleware": () => (/* binding */ createListenerMiddleware),
+/* harmony export */   "createNextState": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "createReducer": () => (/* binding */ createReducer),
+/* harmony export */   "createSelector": () => (/* reexport safe */ reselect__WEBPACK_IMPORTED_MODULE_1__.createSelector),
+/* harmony export */   "createSerializableStateInvariantMiddleware": () => (/* binding */ createSerializableStateInvariantMiddleware),
+/* harmony export */   "createSlice": () => (/* binding */ createSlice),
+/* harmony export */   "createStore": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.createStore),
+/* harmony export */   "current": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.current),
+/* harmony export */   "findNonSerializableValue": () => (/* binding */ findNonSerializableValue),
+/* harmony export */   "freeze": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.freeze),
+/* harmony export */   "getDefaultMiddleware": () => (/* binding */ getDefaultMiddleware),
+/* harmony export */   "getType": () => (/* binding */ getType),
+/* harmony export */   "isAction": () => (/* binding */ isAction),
+/* harmony export */   "isAllOf": () => (/* binding */ isAllOf),
+/* harmony export */   "isAnyOf": () => (/* binding */ isAnyOf),
+/* harmony export */   "isAsyncThunkAction": () => (/* binding */ isAsyncThunkAction),
+/* harmony export */   "isDraft": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.isDraft),
+/* harmony export */   "isFluxStandardAction": () => (/* binding */ isFSA),
+/* harmony export */   "isFulfilled": () => (/* binding */ isFulfilled),
+/* harmony export */   "isImmutableDefault": () => (/* binding */ isImmutableDefault),
+/* harmony export */   "isPending": () => (/* binding */ isPending),
+/* harmony export */   "isPlain": () => (/* binding */ isPlain),
+/* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
+/* harmony export */   "isRejected": () => (/* binding */ isRejected),
+/* harmony export */   "isRejectedWithValue": () => (/* binding */ isRejectedWithValue),
+/* harmony export */   "legacy_createStore": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.legacy_createStore),
+/* harmony export */   "miniSerializeError": () => (/* binding */ miniSerializeError),
+/* harmony export */   "nanoid": () => (/* binding */ nanoid),
+/* harmony export */   "original": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.original),
+/* harmony export */   "prepareAutoBatched": () => (/* binding */ prepareAutoBatched),
+/* harmony export */   "removeListener": () => (/* binding */ removeListener),
+/* harmony export */   "unwrapResult": () => (/* binding */ unwrapResult)
+/* harmony export */ });
+/* harmony import */ var immer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! immer */ "./node_modules/immer/dist/immer.esm.mjs");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var reselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reselect */ "./node_modules/reselect/es/index.js");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
+};
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = function (obj, key, value) { return key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value: value }) : obj[key] = value; };
+var __spreadValues = function (a, b) {
+    for (var prop in b || (b = {}))
+        if (__hasOwnProp.call(b, prop))
+            __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols)
+        for (var _i = 0, _c = __getOwnPropSymbols(b); _i < _c.length; _i++) {
+            var prop = _c[_i];
+            if (__propIsEnum.call(b, prop))
+                __defNormalProp(a, prop, b[prop]);
+        }
+    return a;
+};
+var __spreadProps = function (a, b) { return __defProps(a, __getOwnPropDescs(b)); };
+var __async = function (__this, __arguments, generator) {
+    return new Promise(function (resolve, reject) {
+        var fulfilled = function (value) {
+            try {
+                step(generator.next(value));
+            }
+            catch (e) {
+                reject(e);
+            }
+        };
+        var rejected = function (value) {
+            try {
+                step(generator.throw(value));
+            }
+            catch (e) {
+                reject(e);
+            }
+        };
+        var step = function (x) { return x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected); };
+        step((generator = generator.apply(__this, __arguments)).next());
+    });
+};
+// src/index.ts
+
+
+
+
+// src/createDraftSafeSelector.ts
+
+
+var createDraftSafeSelector = function () {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    var selector = reselect__WEBPACK_IMPORTED_MODULE_1__.createSelector.apply(void 0, args);
+    var wrappedSelector = function (value) {
+        var rest = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            rest[_i - 1] = arguments[_i];
+        }
+        return selector.apply(void 0, __spreadArray([(0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(value) ? (0,immer__WEBPACK_IMPORTED_MODULE_2__.current)(value) : value], rest));
+    };
+    return wrappedSelector;
+};
+// src/configureStore.ts
+
+// src/devtoolsExtension.ts
+
+var composeWithDevTools = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : function () {
+    if (arguments.length === 0)
+        return void 0;
+    if (typeof arguments[0] === "object")
+        return redux__WEBPACK_IMPORTED_MODULE_0__.compose;
+    return redux__WEBPACK_IMPORTED_MODULE_0__.compose.apply(null, arguments);
+};
+var devToolsEnhancer = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ : function () {
+    return function (noop2) {
+        return noop2;
+    };
+};
+// src/isPlainObject.ts
+function isPlainObject(value) {
+    if (typeof value !== "object" || value === null)
+        return false;
+    var proto = Object.getPrototypeOf(value);
+    if (proto === null)
+        return true;
+    var baseProto = proto;
+    while (Object.getPrototypeOf(baseProto) !== null) {
+        baseProto = Object.getPrototypeOf(baseProto);
+    }
+    return proto === baseProto;
+}
+// src/getDefaultMiddleware.ts
+
+// src/utils.ts
+
+function getTimeMeasureUtils(maxDelay, fnName) {
+    var elapsed = 0;
+    return {
+        measureTime: function (fn) {
+            var started = Date.now();
+            try {
+                return fn();
+            }
+            finally {
+                var finished = Date.now();
+                elapsed += finished - started;
+            }
+        },
+        warnIfExceeded: function () {
+            if (elapsed > maxDelay) {
+                console.warn(fnName + " took " + elapsed + "ms, which is more than the warning threshold of " + maxDelay + "ms. \nIf your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.\nIt is disabled in production builds, so you don't need to worry about that.");
+            }
+        }
+    };
+}
+var MiddlewareArray = /** @class */ (function (_super) {
+    __extends(MiddlewareArray, _super);
+    function MiddlewareArray() {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        var _this = _super.apply(this, args) || this;
+        Object.setPrototypeOf(_this, MiddlewareArray.prototype);
+        return _this;
+    }
+    Object.defineProperty(MiddlewareArray, Symbol.species, {
+        get: function () {
+            return MiddlewareArray;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    MiddlewareArray.prototype.concat = function () {
+        var arr = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            arr[_i] = arguments[_i];
+        }
+        return _super.prototype.concat.apply(this, arr);
+    };
+    MiddlewareArray.prototype.prepend = function () {
+        var arr = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            arr[_i] = arguments[_i];
+        }
+        if (arr.length === 1 && Array.isArray(arr[0])) {
+            return new (MiddlewareArray.bind.apply(MiddlewareArray, __spreadArray([void 0], arr[0].concat(this))))();
+        }
+        return new (MiddlewareArray.bind.apply(MiddlewareArray, __spreadArray([void 0], arr.concat(this))))();
+    };
+    return MiddlewareArray;
+}(Array));
+var EnhancerArray = /** @class */ (function (_super) {
+    __extends(EnhancerArray, _super);
+    function EnhancerArray() {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        var _this = _super.apply(this, args) || this;
+        Object.setPrototypeOf(_this, EnhancerArray.prototype);
+        return _this;
+    }
+    Object.defineProperty(EnhancerArray, Symbol.species, {
+        get: function () {
+            return EnhancerArray;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    EnhancerArray.prototype.concat = function () {
+        var arr = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            arr[_i] = arguments[_i];
+        }
+        return _super.prototype.concat.apply(this, arr);
+    };
+    EnhancerArray.prototype.prepend = function () {
+        var arr = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            arr[_i] = arguments[_i];
+        }
+        if (arr.length === 1 && Array.isArray(arr[0])) {
+            return new (EnhancerArray.bind.apply(EnhancerArray, __spreadArray([void 0], arr[0].concat(this))))();
+        }
+        return new (EnhancerArray.bind.apply(EnhancerArray, __spreadArray([void 0], arr.concat(this))))();
+    };
+    return EnhancerArray;
+}(Array));
+function freezeDraftable(val) {
+    return (0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraftable)(val) ? (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(val, function () {
+    }) : val;
+}
+// src/immutableStateInvariantMiddleware.ts
+var isProduction = "development" === "production";
+var prefix = "Invariant failed";
+function invariant(condition, message) {
+    if (condition) {
+        return;
+    }
+    if (isProduction) {
+        throw new Error(prefix);
+    }
+    throw new Error(prefix + ": " + (message || ""));
+}
+function stringify(obj, serializer, indent, decycler) {
+    return JSON.stringify(obj, getSerialize(serializer, decycler), indent);
+}
+function getSerialize(serializer, decycler) {
+    var stack = [], keys = [];
+    if (!decycler)
+        decycler = function (_, value) {
+            if (stack[0] === value)
+                return "[Circular ~]";
+            return "[Circular ~." + keys.slice(0, stack.indexOf(value)).join(".") + "]";
+        };
+    return function (key, value) {
+        if (stack.length > 0) {
+            var thisPos = stack.indexOf(this);
+            ~thisPos ? stack.splice(thisPos + 1) : stack.push(this);
+            ~thisPos ? keys.splice(thisPos, Infinity, key) : keys.push(key);
+            if (~stack.indexOf(value))
+                value = decycler.call(this, key, value);
+        }
+        else
+            stack.push(value);
+        return serializer == null ? value : serializer.call(this, key, value);
+    };
+}
+function isImmutableDefault(value) {
+    return typeof value !== "object" || value == null || Object.isFrozen(value);
+}
+function trackForMutations(isImmutable, ignorePaths, obj) {
+    var trackedProperties = trackProperties(isImmutable, ignorePaths, obj);
+    return {
+        detectMutations: function () {
+            return detectMutations(isImmutable, ignorePaths, trackedProperties, obj);
+        }
+    };
+}
+function trackProperties(isImmutable, ignorePaths, obj, path) {
+    if (ignorePaths === void 0) { ignorePaths = []; }
+    if (path === void 0) { path = ""; }
+    var tracked = { value: obj };
+    if (!isImmutable(obj)) {
+        tracked.children = {};
+        for (var key in obj) {
+            var childPath = path ? path + "." + key : key;
+            if (ignorePaths.length && ignorePaths.indexOf(childPath) !== -1) {
+                continue;
+            }
+            tracked.children[key] = trackProperties(isImmutable, ignorePaths, obj[key], childPath);
+        }
+    }
+    return tracked;
+}
+function detectMutations(isImmutable, ignoredPaths, trackedProperty, obj, sameParentRef, path) {
+    if (ignoredPaths === void 0) { ignoredPaths = []; }
+    if (sameParentRef === void 0) { sameParentRef = false; }
+    if (path === void 0) { path = ""; }
+    var prevObj = trackedProperty ? trackedProperty.value : void 0;
+    var sameRef = prevObj === obj;
+    if (sameParentRef && !sameRef && !Number.isNaN(obj)) {
+        return { wasMutated: true, path: path };
+    }
+    if (isImmutable(prevObj) || isImmutable(obj)) {
+        return { wasMutated: false };
+    }
+    var keysToDetect = {};
+    for (var key in trackedProperty.children) {
+        keysToDetect[key] = true;
+    }
+    for (var key in obj) {
+        keysToDetect[key] = true;
+    }
+    var hasIgnoredPaths = ignoredPaths.length > 0;
+    var _loop_1 = function (key) {
+        var nestedPath = path ? path + "." + key : key;
+        if (hasIgnoredPaths) {
+            var hasMatches = ignoredPaths.some(function (ignored) {
+                if (ignored instanceof RegExp) {
+                    return ignored.test(nestedPath);
+                }
+                return nestedPath === ignored;
+            });
+            if (hasMatches) {
+                return "continue";
+            }
+        }
+        var result = detectMutations(isImmutable, ignoredPaths, trackedProperty.children[key], obj[key], sameRef, nestedPath);
+        if (result.wasMutated) {
+            return { value: result };
+        }
+    };
+    for (var key in keysToDetect) {
+        var state_1 = _loop_1(key);
+        if (typeof state_1 === "object")
+            return state_1.value;
+    }
+    return { wasMutated: false };
+}
+function createImmutableStateInvariantMiddleware(options) {
+    if (options === void 0) { options = {}; }
+    if (false) {}
+    var _c = options.isImmutable, isImmutable = _c === void 0 ? isImmutableDefault : _c, ignoredPaths = options.ignoredPaths, _d = options.warnAfter, warnAfter = _d === void 0 ? 32 : _d, ignore = options.ignore;
+    ignoredPaths = ignoredPaths || ignore;
+    var track = trackForMutations.bind(null, isImmutable, ignoredPaths);
+    return function (_c) {
+        var getState = _c.getState;
+        var state = getState();
+        var tracker = track(state);
+        var result;
+        return function (next) { return function (action) {
+            var measureUtils = getTimeMeasureUtils(warnAfter, "ImmutableStateInvariantMiddleware");
+            measureUtils.measureTime(function () {
+                state = getState();
+                result = tracker.detectMutations();
+                tracker = track(state);
+                invariant(!result.wasMutated, "A state mutation was detected between dispatches, in the path '" + (result.path || "") + "'.  This may cause incorrect behavior. (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)");
+            });
+            var dispatchedAction = next(action);
+            measureUtils.measureTime(function () {
+                state = getState();
+                result = tracker.detectMutations();
+                tracker = track(state);
+                result.wasMutated && invariant(!result.wasMutated, "A state mutation was detected inside a dispatch, in the path: " + (result.path || "") + ". Take a look at the reducer(s) handling the action " + stringify(action) + ". (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)");
+            });
+            measureUtils.warnIfExceeded();
+            return dispatchedAction;
+        }; };
+    };
+}
+// src/serializableStateInvariantMiddleware.ts
+function isPlain(val) {
+    var type = typeof val;
+    return val == null || type === "string" || type === "boolean" || type === "number" || Array.isArray(val) || isPlainObject(val);
+}
+function findNonSerializableValue(value, path, isSerializable, getEntries, ignoredPaths, cache) {
+    if (path === void 0) { path = ""; }
+    if (isSerializable === void 0) { isSerializable = isPlain; }
+    if (ignoredPaths === void 0) { ignoredPaths = []; }
+    var foundNestedSerializable;
+    if (!isSerializable(value)) {
+        return {
+            keyPath: path || "<root>",
+            value: value
+        };
+    }
+    if (typeof value !== "object" || value === null) {
+        return false;
+    }
+    if (cache == null ? void 0 : cache.has(value))
+        return false;
+    var entries = getEntries != null ? getEntries(value) : Object.entries(value);
+    var hasIgnoredPaths = ignoredPaths.length > 0;
+    var _loop_2 = function (key, nestedValue) {
+        var nestedPath = path ? path + "." + key : key;
+        if (hasIgnoredPaths) {
+            var hasMatches = ignoredPaths.some(function (ignored) {
+                if (ignored instanceof RegExp) {
+                    return ignored.test(nestedPath);
+                }
+                return nestedPath === ignored;
+            });
+            if (hasMatches) {
+                return "continue";
+            }
+        }
+        if (!isSerializable(nestedValue)) {
+            return { value: {
+                    keyPath: nestedPath,
+                    value: nestedValue
+                } };
+        }
+        if (typeof nestedValue === "object") {
+            foundNestedSerializable = findNonSerializableValue(nestedValue, nestedPath, isSerializable, getEntries, ignoredPaths, cache);
+            if (foundNestedSerializable) {
+                return { value: foundNestedSerializable };
+            }
+        }
+    };
+    for (var _i = 0, entries_1 = entries; _i < entries_1.length; _i++) {
+        var _c = entries_1[_i], key = _c[0], nestedValue = _c[1];
+        var state_2 = _loop_2(key, nestedValue);
+        if (typeof state_2 === "object")
+            return state_2.value;
+    }
+    if (cache && isNestedFrozen(value))
+        cache.add(value);
+    return false;
+}
+function isNestedFrozen(value) {
+    if (!Object.isFrozen(value))
+        return false;
+    for (var _i = 0, _c = Object.values(value); _i < _c.length; _i++) {
+        var nestedValue = _c[_i];
+        if (typeof nestedValue !== "object" || nestedValue === null)
+            continue;
+        if (!isNestedFrozen(nestedValue))
+            return false;
+    }
+    return true;
+}
+function createSerializableStateInvariantMiddleware(options) {
+    if (options === void 0) { options = {}; }
+    if (false) {}
+    var _c = options.isSerializable, isSerializable = _c === void 0 ? isPlain : _c, getEntries = options.getEntries, _d = options.ignoredActions, ignoredActions = _d === void 0 ? [] : _d, _e = options.ignoredActionPaths, ignoredActionPaths = _e === void 0 ? ["meta.arg", "meta.baseQueryMeta"] : _e, _f = options.ignoredPaths, ignoredPaths = _f === void 0 ? [] : _f, _g = options.warnAfter, warnAfter = _g === void 0 ? 32 : _g, _h = options.ignoreState, ignoreState = _h === void 0 ? false : _h, _j = options.ignoreActions, ignoreActions = _j === void 0 ? false : _j, _k = options.disableCache, disableCache = _k === void 0 ? false : _k;
+    var cache = !disableCache && WeakSet ? new WeakSet() : void 0;
+    return function (storeAPI) { return function (next) { return function (action) {
+        var result = next(action);
+        var measureUtils = getTimeMeasureUtils(warnAfter, "SerializableStateInvariantMiddleware");
+        if (!ignoreActions && !(ignoredActions.length && ignoredActions.indexOf(action.type) !== -1)) {
+            measureUtils.measureTime(function () {
+                var foundActionNonSerializableValue = findNonSerializableValue(action, "", isSerializable, getEntries, ignoredActionPaths, cache);
+                if (foundActionNonSerializableValue) {
+                    var keyPath = foundActionNonSerializableValue.keyPath, value = foundActionNonSerializableValue.value;
+                    console.error("A non-serializable value was detected in an action, in the path: `" + keyPath + "`. Value:", value, "\nTake a look at the logic that dispatched this action: ", action, "\n(See https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants)", "\n(To allow non-serializable values see: https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)");
+                }
+            });
+        }
+        if (!ignoreState) {
+            measureUtils.measureTime(function () {
+                var state = storeAPI.getState();
+                var foundStateNonSerializableValue = findNonSerializableValue(state, "", isSerializable, getEntries, ignoredPaths, cache);
+                if (foundStateNonSerializableValue) {
+                    var keyPath = foundStateNonSerializableValue.keyPath, value = foundStateNonSerializableValue.value;
+                    console.error("A non-serializable value was detected in the state, in the path: `" + keyPath + "`. Value:", value, "\nTake a look at the reducer(s) handling this action type: " + action.type + ".\n(See https://redux.js.org/faq/organizing-state#can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state)");
+                }
+            });
+            measureUtils.warnIfExceeded();
+        }
+        return result;
+    }; }; };
+}
+// src/getDefaultMiddleware.ts
+function isBoolean(x) {
+    return typeof x === "boolean";
+}
+function curryGetDefaultMiddleware() {
+    return function curriedGetDefaultMiddleware(options) {
+        return getDefaultMiddleware(options);
+    };
+}
+function getDefaultMiddleware(options) {
+    if (options === void 0) { options = {}; }
+    var _c = options.thunk, thunk = _c === void 0 ? true : _c, _d = options.immutableCheck, immutableCheck = _d === void 0 ? true : _d, _e = options.serializableCheck, serializableCheck = _e === void 0 ? true : _e;
+    var middlewareArray = new MiddlewareArray();
+    if (thunk) {
+        if (isBoolean(thunk)) {
+            middlewareArray.push(redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"]);
+        }
+        else {
+            middlewareArray.push(redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"].withExtraArgument(thunk.extraArgument));
+        }
+    }
+    if (true) {
+        if (immutableCheck) {
+            var immutableOptions = {};
+            if (!isBoolean(immutableCheck)) {
+                immutableOptions = immutableCheck;
+            }
+            middlewareArray.unshift(createImmutableStateInvariantMiddleware(immutableOptions));
+        }
+        if (serializableCheck) {
+            var serializableOptions = {};
+            if (!isBoolean(serializableCheck)) {
+                serializableOptions = serializableCheck;
+            }
+            middlewareArray.push(createSerializableStateInvariantMiddleware(serializableOptions));
+        }
+    }
+    return middlewareArray;
+}
+// src/configureStore.ts
+var IS_PRODUCTION = "development" === "production";
+function configureStore(options) {
+    var curriedGetDefaultMiddleware = curryGetDefaultMiddleware();
+    var _c = options || {}, _d = _c.reducer, reducer = _d === void 0 ? void 0 : _d, _e = _c.middleware, middleware = _e === void 0 ? curriedGetDefaultMiddleware() : _e, _f = _c.devTools, devTools = _f === void 0 ? true : _f, _g = _c.preloadedState, preloadedState = _g === void 0 ? void 0 : _g, _h = _c.enhancers, enhancers = _h === void 0 ? void 0 : _h;
+    var rootReducer;
+    if (typeof reducer === "function") {
+        rootReducer = reducer;
+    }
+    else if (isPlainObject(reducer)) {
+        rootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_0__.combineReducers)(reducer);
+    }
+    else {
+        throw new Error('"reducer" is a required argument, and must be a function or an object of functions that can be passed to combineReducers');
+    }
+    var finalMiddleware = middleware;
+    if (typeof finalMiddleware === "function") {
+        finalMiddleware = finalMiddleware(curriedGetDefaultMiddleware);
+        if (!IS_PRODUCTION && !Array.isArray(finalMiddleware)) {
+            throw new Error("when using a middleware builder function, an array of middleware must be returned");
+        }
+    }
+    if (!IS_PRODUCTION && finalMiddleware.some(function (item) { return typeof item !== "function"; })) {
+        throw new Error("each middleware provided to configureStore must be a function");
+    }
+    var middlewareEnhancer = redux__WEBPACK_IMPORTED_MODULE_0__.applyMiddleware.apply(void 0, finalMiddleware);
+    var finalCompose = redux__WEBPACK_IMPORTED_MODULE_0__.compose;
+    if (devTools) {
+        finalCompose = composeWithDevTools(__spreadValues({
+            trace: !IS_PRODUCTION
+        }, typeof devTools === "object" && devTools));
+    }
+    var defaultEnhancers = new EnhancerArray(middlewareEnhancer);
+    var storeEnhancers = defaultEnhancers;
+    if (Array.isArray(enhancers)) {
+        storeEnhancers = __spreadArray([middlewareEnhancer], enhancers);
+    }
+    else if (typeof enhancers === "function") {
+        storeEnhancers = enhancers(defaultEnhancers);
+    }
+    var composedEnhancer = finalCompose.apply(void 0, storeEnhancers);
+    return (0,redux__WEBPACK_IMPORTED_MODULE_0__.createStore)(rootReducer, preloadedState, composedEnhancer);
+}
+// src/createAction.ts
+function createAction(type, prepareAction) {
+    function actionCreator() {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        if (prepareAction) {
+            var prepared = prepareAction.apply(void 0, args);
+            if (!prepared) {
+                throw new Error("prepareAction did not return an object");
+            }
+            return __spreadValues(__spreadValues({
+                type: type,
+                payload: prepared.payload
+            }, "meta" in prepared && { meta: prepared.meta }), "error" in prepared && { error: prepared.error });
+        }
+        return { type: type, payload: args[0] };
+    }
+    actionCreator.toString = function () { return "" + type; };
+    actionCreator.type = type;
+    actionCreator.match = function (action) { return action.type === type; };
+    return actionCreator;
+}
+function isAction(action) {
+    return isPlainObject(action) && "type" in action;
+}
+function isFSA(action) {
+    return isAction(action) && typeof action.type === "string" && Object.keys(action).every(isValidKey);
+}
+function isValidKey(key) {
+    return ["type", "payload", "error", "meta"].indexOf(key) > -1;
+}
+function getType(actionCreator) {
+    return "" + actionCreator;
+}
+// src/createReducer.ts
+
+// src/mapBuilders.ts
+function executeReducerBuilderCallback(builderCallback) {
+    var actionsMap = {};
+    var actionMatchers = [];
+    var defaultCaseReducer;
+    var builder = {
+        addCase: function (typeOrActionCreator, reducer) {
+            if (true) {
+                if (actionMatchers.length > 0) {
+                    throw new Error("`builder.addCase` should only be called before calling `builder.addMatcher`");
+                }
+                if (defaultCaseReducer) {
+                    throw new Error("`builder.addCase` should only be called before calling `builder.addDefaultCase`");
+                }
+            }
+            var type = typeof typeOrActionCreator === "string" ? typeOrActionCreator : typeOrActionCreator.type;
+            if (type in actionsMap) {
+                throw new Error("addCase cannot be called with two reducers for the same action type");
+            }
+            actionsMap[type] = reducer;
+            return builder;
+        },
+        addMatcher: function (matcher, reducer) {
+            if (true) {
+                if (defaultCaseReducer) {
+                    throw new Error("`builder.addMatcher` should only be called before calling `builder.addDefaultCase`");
+                }
+            }
+            actionMatchers.push({ matcher: matcher, reducer: reducer });
+            return builder;
+        },
+        addDefaultCase: function (reducer) {
+            if (true) {
+                if (defaultCaseReducer) {
+                    throw new Error("`builder.addDefaultCase` can only be called once");
+                }
+            }
+            defaultCaseReducer = reducer;
+            return builder;
+        }
+    };
+    builderCallback(builder);
+    return [actionsMap, actionMatchers, defaultCaseReducer];
+}
+// src/createReducer.ts
+function isStateFunction(x) {
+    return typeof x === "function";
+}
+var hasWarnedAboutObjectNotation = false;
+function createReducer(initialState, mapOrBuilderCallback, actionMatchers, defaultCaseReducer) {
+    if (actionMatchers === void 0) { actionMatchers = []; }
+    if (true) {
+        if (typeof mapOrBuilderCallback === "object") {
+            if (!hasWarnedAboutObjectNotation) {
+                hasWarnedAboutObjectNotation = true;
+                console.warn("The object notation for `createReducer` is deprecated, and will be removed in RTK 2.0. Please use the 'builder callback' notation instead: https://redux-toolkit.js.org/api/createReducer");
+            }
+        }
+    }
+    var _c = typeof mapOrBuilderCallback === "function" ? executeReducerBuilderCallback(mapOrBuilderCallback) : [mapOrBuilderCallback, actionMatchers, defaultCaseReducer], actionsMap = _c[0], finalActionMatchers = _c[1], finalDefaultCaseReducer = _c[2];
+    var getInitialState;
+    if (isStateFunction(initialState)) {
+        getInitialState = function () { return freezeDraftable(initialState()); };
+    }
+    else {
+        var frozenInitialState_1 = freezeDraftable(initialState);
+        getInitialState = function () { return frozenInitialState_1; };
+    }
+    function reducer(state, action) {
+        if (state === void 0) { state = getInitialState(); }
+        var caseReducers = __spreadArray([
+            actionsMap[action.type]
+        ], finalActionMatchers.filter(function (_c) {
+            var matcher = _c.matcher;
+            return matcher(action);
+        }).map(function (_c) {
+            var reducer2 = _c.reducer;
+            return reducer2;
+        }));
+        if (caseReducers.filter(function (cr) { return !!cr; }).length === 0) {
+            caseReducers = [finalDefaultCaseReducer];
+        }
+        return caseReducers.reduce(function (previousState, caseReducer) {
+            if (caseReducer) {
+                if ((0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(previousState)) {
+                    var draft = previousState;
+                    var result = caseReducer(draft, action);
+                    if (result === void 0) {
+                        return previousState;
+                    }
+                    return result;
+                }
+                else if (!(0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraftable)(previousState)) {
+                    var result = caseReducer(previousState, action);
+                    if (result === void 0) {
+                        if (previousState === null) {
+                            return previousState;
+                        }
+                        throw Error("A case reducer on a non-draftable value must not return undefined");
+                    }
+                    return result;
+                }
+                else {
+                    return (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(previousState, function (draft) {
+                        return caseReducer(draft, action);
+                    });
+                }
+            }
+            return previousState;
+        }, state);
+    }
+    reducer.getInitialState = getInitialState;
+    return reducer;
+}
+// src/createSlice.ts
+var hasWarnedAboutObjectNotation2 = false;
+function getType2(slice, actionKey) {
+    return slice + "/" + actionKey;
+}
+function createSlice(options) {
+    var name = options.name;
+    if (!name) {
+        throw new Error("`name` is a required option for createSlice");
+    }
+    if (typeof process !== "undefined" && "development" === "development") {
+        if (options.initialState === void 0) {
+            console.error("You must provide an `initialState` value that is not `undefined`. You may have misspelled `initialState`");
+        }
+    }
+    var initialState = typeof options.initialState == "function" ? options.initialState : freezeDraftable(options.initialState);
+    var reducers = options.reducers || {};
+    var reducerNames = Object.keys(reducers);
+    var sliceCaseReducersByName = {};
+    var sliceCaseReducersByType = {};
+    var actionCreators = {};
+    reducerNames.forEach(function (reducerName) {
+        var maybeReducerWithPrepare = reducers[reducerName];
+        var type = getType2(name, reducerName);
+        var caseReducer;
+        var prepareCallback;
+        if ("reducer" in maybeReducerWithPrepare) {
+            caseReducer = maybeReducerWithPrepare.reducer;
+            prepareCallback = maybeReducerWithPrepare.prepare;
+        }
+        else {
+            caseReducer = maybeReducerWithPrepare;
+        }
+        sliceCaseReducersByName[reducerName] = caseReducer;
+        sliceCaseReducersByType[type] = caseReducer;
+        actionCreators[reducerName] = prepareCallback ? createAction(type, prepareCallback) : createAction(type);
+    });
+    function buildReducer() {
+        if (true) {
+            if (typeof options.extraReducers === "object") {
+                if (!hasWarnedAboutObjectNotation2) {
+                    hasWarnedAboutObjectNotation2 = true;
+                    console.warn("The object notation for `createSlice.extraReducers` is deprecated, and will be removed in RTK 2.0. Please use the 'builder callback' notation instead: https://redux-toolkit.js.org/api/createSlice");
+                }
+            }
+        }
+        var _c = typeof options.extraReducers === "function" ? executeReducerBuilderCallback(options.extraReducers) : [options.extraReducers], _d = _c[0], extraReducers = _d === void 0 ? {} : _d, _e = _c[1], actionMatchers = _e === void 0 ? [] : _e, _f = _c[2], defaultCaseReducer = _f === void 0 ? void 0 : _f;
+        var finalCaseReducers = __spreadValues(__spreadValues({}, extraReducers), sliceCaseReducersByType);
+        return createReducer(initialState, function (builder) {
+            for (var key in finalCaseReducers) {
+                builder.addCase(key, finalCaseReducers[key]);
+            }
+            for (var _i = 0, actionMatchers_1 = actionMatchers; _i < actionMatchers_1.length; _i++) {
+                var m = actionMatchers_1[_i];
+                builder.addMatcher(m.matcher, m.reducer);
+            }
+            if (defaultCaseReducer) {
+                builder.addDefaultCase(defaultCaseReducer);
+            }
+        });
+    }
+    var _reducer;
+    return {
+        name: name,
+        reducer: function (state, action) {
+            if (!_reducer)
+                _reducer = buildReducer();
+            return _reducer(state, action);
+        },
+        actions: actionCreators,
+        caseReducers: sliceCaseReducersByName,
+        getInitialState: function () {
+            if (!_reducer)
+                _reducer = buildReducer();
+            return _reducer.getInitialState();
+        }
+    };
+}
+// src/entities/entity_state.ts
+function getInitialEntityState() {
+    return {
+        ids: [],
+        entities: {}
+    };
+}
+function createInitialStateFactory() {
+    function getInitialState(additionalState) {
+        if (additionalState === void 0) { additionalState = {}; }
+        return Object.assign(getInitialEntityState(), additionalState);
+    }
+    return { getInitialState: getInitialState };
+}
+// src/entities/state_selectors.ts
+function createSelectorsFactory() {
+    function getSelectors(selectState) {
+        var selectIds = function (state) { return state.ids; };
+        var selectEntities = function (state) { return state.entities; };
+        var selectAll = createDraftSafeSelector(selectIds, selectEntities, function (ids, entities) { return ids.map(function (id) { return entities[id]; }); });
+        var selectId = function (_, id) { return id; };
+        var selectById = function (entities, id) { return entities[id]; };
+        var selectTotal = createDraftSafeSelector(selectIds, function (ids) { return ids.length; });
+        if (!selectState) {
+            return {
+                selectIds: selectIds,
+                selectEntities: selectEntities,
+                selectAll: selectAll,
+                selectTotal: selectTotal,
+                selectById: createDraftSafeSelector(selectEntities, selectId, selectById)
+            };
+        }
+        var selectGlobalizedEntities = createDraftSafeSelector(selectState, selectEntities);
+        return {
+            selectIds: createDraftSafeSelector(selectState, selectIds),
+            selectEntities: selectGlobalizedEntities,
+            selectAll: createDraftSafeSelector(selectState, selectAll),
+            selectTotal: createDraftSafeSelector(selectState, selectTotal),
+            selectById: createDraftSafeSelector(selectGlobalizedEntities, selectId, selectById)
+        };
+    }
+    return { getSelectors: getSelectors };
+}
+// src/entities/state_adapter.ts
+
+function createSingleArgumentStateOperator(mutator) {
+    var operator = createStateOperator(function (_, state) { return mutator(state); });
+    return function operation(state) {
+        return operator(state, void 0);
+    };
+}
+function createStateOperator(mutator) {
+    return function operation(state, arg) {
+        function isPayloadActionArgument(arg2) {
+            return isFSA(arg2);
+        }
+        var runMutator = function (draft) {
+            if (isPayloadActionArgument(arg)) {
+                mutator(arg.payload, draft);
+            }
+            else {
+                mutator(arg, draft);
+            }
+        };
+        if ((0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(state)) {
+            runMutator(state);
+            return state;
+        }
+        else {
+            return (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(state, runMutator);
+        }
+    };
+}
+// src/entities/utils.ts
+function selectIdValue(entity, selectId) {
+    var key = selectId(entity);
+    if ( true && key === void 0) {
+        console.warn("The entity passed to the `selectId` implementation returned undefined.", "You should probably provide your own `selectId` implementation.", "The entity that was passed:", entity, "The `selectId` implementation:", selectId.toString());
+    }
+    return key;
+}
+function ensureEntitiesArray(entities) {
+    if (!Array.isArray(entities)) {
+        entities = Object.values(entities);
+    }
+    return entities;
+}
+function splitAddedUpdatedEntities(newEntities, selectId, state) {
+    newEntities = ensureEntitiesArray(newEntities);
+    var added = [];
+    var updated = [];
+    for (var _i = 0, newEntities_1 = newEntities; _i < newEntities_1.length; _i++) {
+        var entity = newEntities_1[_i];
+        var id = selectIdValue(entity, selectId);
+        if (id in state.entities) {
+            updated.push({ id: id, changes: entity });
+        }
+        else {
+            added.push(entity);
+        }
+    }
+    return [added, updated];
+}
+// src/entities/unsorted_state_adapter.ts
+function createUnsortedStateAdapter(selectId) {
+    function addOneMutably(entity, state) {
+        var key = selectIdValue(entity, selectId);
+        if (key in state.entities) {
+            return;
+        }
+        state.ids.push(key);
+        state.entities[key] = entity;
+    }
+    function addManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        for (var _i = 0, newEntities_2 = newEntities; _i < newEntities_2.length; _i++) {
+            var entity = newEntities_2[_i];
+            addOneMutably(entity, state);
+        }
+    }
+    function setOneMutably(entity, state) {
+        var key = selectIdValue(entity, selectId);
+        if (!(key in state.entities)) {
+            state.ids.push(key);
+        }
+        state.entities[key] = entity;
+    }
+    function setManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        for (var _i = 0, newEntities_3 = newEntities; _i < newEntities_3.length; _i++) {
+            var entity = newEntities_3[_i];
+            setOneMutably(entity, state);
+        }
+    }
+    function setAllMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        state.ids = [];
+        state.entities = {};
+        addManyMutably(newEntities, state);
+    }
+    function removeOneMutably(key, state) {
+        return removeManyMutably([key], state);
+    }
+    function removeManyMutably(keys, state) {
+        var didMutate = false;
+        keys.forEach(function (key) {
+            if (key in state.entities) {
+                delete state.entities[key];
+                didMutate = true;
+            }
+        });
+        if (didMutate) {
+            state.ids = state.ids.filter(function (id) { return id in state.entities; });
+        }
+    }
+    function removeAllMutably(state) {
+        Object.assign(state, {
+            ids: [],
+            entities: {}
+        });
+    }
+    function takeNewKey(keys, update, state) {
+        var original2 = state.entities[update.id];
+        var updated = Object.assign({}, original2, update.changes);
+        var newKey = selectIdValue(updated, selectId);
+        var hasNewKey = newKey !== update.id;
+        if (hasNewKey) {
+            keys[update.id] = newKey;
+            delete state.entities[update.id];
+        }
+        state.entities[newKey] = updated;
+        return hasNewKey;
+    }
+    function updateOneMutably(update, state) {
+        return updateManyMutably([update], state);
+    }
+    function updateManyMutably(updates, state) {
+        var newKeys = {};
+        var updatesPerEntity = {};
+        updates.forEach(function (update) {
+            if (update.id in state.entities) {
+                updatesPerEntity[update.id] = {
+                    id: update.id,
+                    changes: __spreadValues(__spreadValues({}, updatesPerEntity[update.id] ? updatesPerEntity[update.id].changes : null), update.changes)
+                };
+            }
+        });
+        updates = Object.values(updatesPerEntity);
+        var didMutateEntities = updates.length > 0;
+        if (didMutateEntities) {
+            var didMutateIds = updates.filter(function (update) { return takeNewKey(newKeys, update, state); }).length > 0;
+            if (didMutateIds) {
+                state.ids = Object.keys(state.entities);
+            }
+        }
+    }
+    function upsertOneMutably(entity, state) {
+        return upsertManyMutably([entity], state);
+    }
+    function upsertManyMutably(newEntities, state) {
+        var _c = splitAddedUpdatedEntities(newEntities, selectId, state), added = _c[0], updated = _c[1];
+        updateManyMutably(updated, state);
+        addManyMutably(added, state);
+    }
+    return {
+        removeAll: createSingleArgumentStateOperator(removeAllMutably),
+        addOne: createStateOperator(addOneMutably),
+        addMany: createStateOperator(addManyMutably),
+        setOne: createStateOperator(setOneMutably),
+        setMany: createStateOperator(setManyMutably),
+        setAll: createStateOperator(setAllMutably),
+        updateOne: createStateOperator(updateOneMutably),
+        updateMany: createStateOperator(updateManyMutably),
+        upsertOne: createStateOperator(upsertOneMutably),
+        upsertMany: createStateOperator(upsertManyMutably),
+        removeOne: createStateOperator(removeOneMutably),
+        removeMany: createStateOperator(removeManyMutably)
+    };
+}
+// src/entities/sorted_state_adapter.ts
+function createSortedStateAdapter(selectId, sort) {
+    var _c = createUnsortedStateAdapter(selectId), removeOne = _c.removeOne, removeMany = _c.removeMany, removeAll = _c.removeAll;
+    function addOneMutably(entity, state) {
+        return addManyMutably([entity], state);
+    }
+    function addManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        var models = newEntities.filter(function (model) { return !(selectIdValue(model, selectId) in state.entities); });
+        if (models.length !== 0) {
+            merge(models, state);
+        }
+    }
+    function setOneMutably(entity, state) {
+        return setManyMutably([entity], state);
+    }
+    function setManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        if (newEntities.length !== 0) {
+            merge(newEntities, state);
+        }
+    }
+    function setAllMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        state.entities = {};
+        state.ids = [];
+        addManyMutably(newEntities, state);
+    }
+    function updateOneMutably(update, state) {
+        return updateManyMutably([update], state);
+    }
+    function updateManyMutably(updates, state) {
+        var appliedUpdates = false;
+        for (var _i = 0, updates_1 = updates; _i < updates_1.length; _i++) {
+            var update = updates_1[_i];
+            var entity = state.entities[update.id];
+            if (!entity) {
+                continue;
+            }
+            appliedUpdates = true;
+            Object.assign(entity, update.changes);
+            var newId = selectId(entity);
+            if (update.id !== newId) {
+                delete state.entities[update.id];
+                state.entities[newId] = entity;
+            }
+        }
+        if (appliedUpdates) {
+            resortEntities(state);
+        }
+    }
+    function upsertOneMutably(entity, state) {
+        return upsertManyMutably([entity], state);
+    }
+    function upsertManyMutably(newEntities, state) {
+        var _c = splitAddedUpdatedEntities(newEntities, selectId, state), added = _c[0], updated = _c[1];
+        updateManyMutably(updated, state);
+        addManyMutably(added, state);
+    }
+    function areArraysEqual(a, b) {
+        if (a.length !== b.length) {
+            return false;
+        }
+        for (var i = 0; i < a.length && i < b.length; i++) {
+            if (a[i] === b[i]) {
+                continue;
+            }
+            return false;
+        }
+        return true;
+    }
+    function merge(models, state) {
+        models.forEach(function (model) {
+            state.entities[selectId(model)] = model;
+        });
+        resortEntities(state);
+    }
+    function resortEntities(state) {
+        var allEntities = Object.values(state.entities);
+        allEntities.sort(sort);
+        var newSortedIds = allEntities.map(selectId);
+        var ids = state.ids;
+        if (!areArraysEqual(ids, newSortedIds)) {
+            state.ids = newSortedIds;
+        }
+    }
+    return {
+        removeOne: removeOne,
+        removeMany: removeMany,
+        removeAll: removeAll,
+        addOne: createStateOperator(addOneMutably),
+        updateOne: createStateOperator(updateOneMutably),
+        upsertOne: createStateOperator(upsertOneMutably),
+        setOne: createStateOperator(setOneMutably),
+        setMany: createStateOperator(setManyMutably),
+        setAll: createStateOperator(setAllMutably),
+        addMany: createStateOperator(addManyMutably),
+        updateMany: createStateOperator(updateManyMutably),
+        upsertMany: createStateOperator(upsertManyMutably)
+    };
+}
+// src/entities/create_adapter.ts
+function createEntityAdapter(options) {
+    if (options === void 0) { options = {}; }
+    var _c = __spreadValues({
+        sortComparer: false,
+        selectId: function (instance) { return instance.id; }
+    }, options), selectId = _c.selectId, sortComparer = _c.sortComparer;
+    var stateFactory = createInitialStateFactory();
+    var selectorsFactory = createSelectorsFactory();
+    var stateAdapter = sortComparer ? createSortedStateAdapter(selectId, sortComparer) : createUnsortedStateAdapter(selectId);
+    return __spreadValues(__spreadValues(__spreadValues({
+        selectId: selectId,
+        sortComparer: sortComparer
+    }, stateFactory), selectorsFactory), stateAdapter);
+}
+// src/nanoid.ts
+var urlAlphabet = "ModuleSymbhasOwnPr-0123456789ABCDEFGHNRVfgctiUvz_KqYTJkLxpZXIjQW";
+var nanoid = function (size) {
+    if (size === void 0) { size = 21; }
+    var id = "";
+    var i = size;
+    while (i--) {
+        id += urlAlphabet[Math.random() * 64 | 0];
+    }
+    return id;
+};
+// src/createAsyncThunk.ts
+var commonProperties = [
+    "name",
+    "message",
+    "stack",
+    "code"
+];
+var RejectWithValue = /** @class */ (function () {
+    function RejectWithValue(payload, meta) {
+        this.payload = payload;
+        this.meta = meta;
+    }
+    return RejectWithValue;
+}());
+var FulfillWithMeta = /** @class */ (function () {
+    function FulfillWithMeta(payload, meta) {
+        this.payload = payload;
+        this.meta = meta;
+    }
+    return FulfillWithMeta;
+}());
+var miniSerializeError = function (value) {
+    if (typeof value === "object" && value !== null) {
+        var simpleError = {};
+        for (var _i = 0, commonProperties_1 = commonProperties; _i < commonProperties_1.length; _i++) {
+            var property = commonProperties_1[_i];
+            if (typeof value[property] === "string") {
+                simpleError[property] = value[property];
+            }
+        }
+        return simpleError;
+    }
+    return { message: String(value) };
+};
+var createAsyncThunk = (function () {
+    function createAsyncThunk2(typePrefix, payloadCreator, options) {
+        var fulfilled = createAction(typePrefix + "/fulfilled", function (payload, requestId, arg, meta) { return ({
+            payload: payload,
+            meta: __spreadProps(__spreadValues({}, meta || {}), {
+                arg: arg,
+                requestId: requestId,
+                requestStatus: "fulfilled"
+            })
+        }); });
+        var pending = createAction(typePrefix + "/pending", function (requestId, arg, meta) { return ({
+            payload: void 0,
+            meta: __spreadProps(__spreadValues({}, meta || {}), {
+                arg: arg,
+                requestId: requestId,
+                requestStatus: "pending"
+            })
+        }); });
+        var rejected = createAction(typePrefix + "/rejected", function (error, requestId, arg, payload, meta) { return ({
+            payload: payload,
+            error: (options && options.serializeError || miniSerializeError)(error || "Rejected"),
+            meta: __spreadProps(__spreadValues({}, meta || {}), {
+                arg: arg,
+                requestId: requestId,
+                rejectedWithValue: !!payload,
+                requestStatus: "rejected",
+                aborted: (error == null ? void 0 : error.name) === "AbortError",
+                condition: (error == null ? void 0 : error.name) === "ConditionError"
+            })
+        }); });
+        var displayedWarning = false;
+        var AC = typeof AbortController !== "undefined" ? AbortController : /** @class */ (function () {
+            function class_1() {
+                this.signal = {
+                    aborted: false,
+                    addEventListener: function () {
+                    },
+                    dispatchEvent: function () {
+                        return false;
+                    },
+                    onabort: function () {
+                    },
+                    removeEventListener: function () {
+                    },
+                    reason: void 0,
+                    throwIfAborted: function () {
+                    }
+                };
+            }
+            class_1.prototype.abort = function () {
+                if (true) {
+                    if (!displayedWarning) {
+                        displayedWarning = true;
+                        console.info("This platform does not implement AbortController. \nIf you want to use the AbortController to react to `abort` events, please consider importing a polyfill like 'abortcontroller-polyfill/dist/abortcontroller-polyfill-only'.");
+                    }
+                }
+            };
+            return class_1;
+        }());
+        function actionCreator(arg) {
+            return function (dispatch, getState, extra) {
+                var requestId = (options == null ? void 0 : options.idGenerator) ? options.idGenerator(arg) : nanoid();
+                var abortController = new AC();
+                var abortReason;
+                var started = false;
+                function abort(reason) {
+                    abortReason = reason;
+                    abortController.abort();
+                }
+                var promise2 = function () {
+                    return __async(this, null, function () {
+                        var _a, _b, finalAction, conditionResult, abortedPromise, err_1, skipDispatch;
+                        return __generator(this, function (_c) {
+                            switch (_c.label) {
+                                case 0:
+                                    _c.trys.push([0, 4, , 5]);
+                                    conditionResult = (_a = options == null ? void 0 : options.condition) == null ? void 0 : _a.call(options, arg, { getState: getState, extra: extra });
+                                    if (!isThenable(conditionResult)) return [3 /*break*/, 2];
+                                    return [4 /*yield*/, conditionResult];
+                                case 1:
+                                    conditionResult = _c.sent();
+                                    _c.label = 2;
+                                case 2:
+                                    if (conditionResult === false || abortController.signal.aborted) {
+                                        throw {
+                                            name: "ConditionError",
+                                            message: "Aborted due to condition callback returning false."
+                                        };
+                                    }
+                                    started = true;
+                                    abortedPromise = new Promise(function (_, reject) { return abortController.signal.addEventListener("abort", function () { return reject({
+                                        name: "AbortError",
+                                        message: abortReason || "Aborted"
+                                    }); }); });
+                                    dispatch(pending(requestId, arg, (_b = options == null ? void 0 : options.getPendingMeta) == null ? void 0 : _b.call(options, { requestId: requestId, arg: arg }, { getState: getState, extra: extra })));
+                                    return [4 /*yield*/, Promise.race([
+                                            abortedPromise,
+                                            Promise.resolve(payloadCreator(arg, {
+                                                dispatch: dispatch,
+                                                getState: getState,
+                                                extra: extra,
+                                                requestId: requestId,
+                                                signal: abortController.signal,
+                                                abort: abort,
+                                                rejectWithValue: function (value, meta) {
+                                                    return new RejectWithValue(value, meta);
+                                                },
+                                                fulfillWithValue: function (value, meta) {
+                                                    return new FulfillWithMeta(value, meta);
+                                                }
+                                            })).then(function (result) {
+                                                if (result instanceof RejectWithValue) {
+                                                    throw result;
+                                                }
+                                                if (result instanceof FulfillWithMeta) {
+                                                    return fulfilled(result.payload, requestId, arg, result.meta);
+                                                }
+                                                return fulfilled(result, requestId, arg);
+                                            })
+                                        ])];
+                                case 3:
+                                    finalAction = _c.sent();
+                                    return [3 /*break*/, 5];
+                                case 4:
+                                    err_1 = _c.sent();
+                                    finalAction = err_1 instanceof RejectWithValue ? rejected(null, requestId, arg, err_1.payload, err_1.meta) : rejected(err_1, requestId, arg);
+                                    return [3 /*break*/, 5];
+                                case 5:
+                                    skipDispatch = options && !options.dispatchConditionRejection && rejected.match(finalAction) && finalAction.meta.condition;
+                                    if (!skipDispatch) {
+                                        dispatch(finalAction);
+                                    }
+                                    return [2 /*return*/, finalAction];
+                            }
+                        });
+                    });
+                }();
+                return Object.assign(promise2, {
+                    abort: abort,
+                    requestId: requestId,
+                    arg: arg,
+                    unwrap: function () {
+                        return promise2.then(unwrapResult);
+                    }
+                });
+            };
+        }
+        return Object.assign(actionCreator, {
+            pending: pending,
+            rejected: rejected,
+            fulfilled: fulfilled,
+            typePrefix: typePrefix
+        });
+    }
+    createAsyncThunk2.withTypes = function () { return createAsyncThunk2; };
+    return createAsyncThunk2;
+})();
+function unwrapResult(action) {
+    if (action.meta && action.meta.rejectedWithValue) {
+        throw action.payload;
+    }
+    if (action.error) {
+        throw action.error;
+    }
+    return action.payload;
+}
+function isThenable(value) {
+    return value !== null && typeof value === "object" && typeof value.then === "function";
+}
+// src/tsHelpers.ts
+var hasMatchFunction = function (v) {
+    return v && typeof v.match === "function";
+};
+// src/matchers.ts
+var matches = function (matcher, action) {
+    if (hasMatchFunction(matcher)) {
+        return matcher.match(action);
+    }
+    else {
+        return matcher(action);
+    }
+};
+function isAnyOf() {
+    var matchers = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        matchers[_i] = arguments[_i];
+    }
+    return function (action) {
+        return matchers.some(function (matcher) { return matches(matcher, action); });
+    };
+}
+function isAllOf() {
+    var matchers = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        matchers[_i] = arguments[_i];
+    }
+    return function (action) {
+        return matchers.every(function (matcher) { return matches(matcher, action); });
+    };
+}
+function hasExpectedRequestMetadata(action, validStatus) {
+    if (!action || !action.meta)
+        return false;
+    var hasValidRequestId = typeof action.meta.requestId === "string";
+    var hasValidRequestStatus = validStatus.indexOf(action.meta.requestStatus) > -1;
+    return hasValidRequestId && hasValidRequestStatus;
+}
+function isAsyncThunkArray(a) {
+    return typeof a[0] === "function" && "pending" in a[0] && "fulfilled" in a[0] && "rejected" in a[0];
+}
+function isPending() {
+    var asyncThunks = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        asyncThunks[_i] = arguments[_i];
+    }
+    if (asyncThunks.length === 0) {
+        return function (action) { return hasExpectedRequestMetadata(action, ["pending"]); };
+    }
+    if (!isAsyncThunkArray(asyncThunks)) {
+        return isPending()(asyncThunks[0]);
+    }
+    return function (action) {
+        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.pending; });
+        var combinedMatcher = isAnyOf.apply(void 0, matchers);
+        return combinedMatcher(action);
+    };
+}
+function isRejected() {
+    var asyncThunks = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        asyncThunks[_i] = arguments[_i];
+    }
+    if (asyncThunks.length === 0) {
+        return function (action) { return hasExpectedRequestMetadata(action, ["rejected"]); };
+    }
+    if (!isAsyncThunkArray(asyncThunks)) {
+        return isRejected()(asyncThunks[0]);
+    }
+    return function (action) {
+        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.rejected; });
+        var combinedMatcher = isAnyOf.apply(void 0, matchers);
+        return combinedMatcher(action);
+    };
+}
+function isRejectedWithValue() {
+    var asyncThunks = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        asyncThunks[_i] = arguments[_i];
+    }
+    var hasFlag = function (action) {
+        return action && action.meta && action.meta.rejectedWithValue;
+    };
+    if (asyncThunks.length === 0) {
+        return function (action) {
+            var combinedMatcher = isAllOf(isRejected.apply(void 0, asyncThunks), hasFlag);
+            return combinedMatcher(action);
+        };
+    }
+    if (!isAsyncThunkArray(asyncThunks)) {
+        return isRejectedWithValue()(asyncThunks[0]);
+    }
+    return function (action) {
+        var combinedMatcher = isAllOf(isRejected.apply(void 0, asyncThunks), hasFlag);
+        return combinedMatcher(action);
+    };
+}
+function isFulfilled() {
+    var asyncThunks = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        asyncThunks[_i] = arguments[_i];
+    }
+    if (asyncThunks.length === 0) {
+        return function (action) { return hasExpectedRequestMetadata(action, ["fulfilled"]); };
+    }
+    if (!isAsyncThunkArray(asyncThunks)) {
+        return isFulfilled()(asyncThunks[0]);
+    }
+    return function (action) {
+        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.fulfilled; });
+        var combinedMatcher = isAnyOf.apply(void 0, matchers);
+        return combinedMatcher(action);
+    };
+}
+function isAsyncThunkAction() {
+    var asyncThunks = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        asyncThunks[_i] = arguments[_i];
+    }
+    if (asyncThunks.length === 0) {
+        return function (action) { return hasExpectedRequestMetadata(action, ["pending", "fulfilled", "rejected"]); };
+    }
+    if (!isAsyncThunkArray(asyncThunks)) {
+        return isAsyncThunkAction()(asyncThunks[0]);
+    }
+    return function (action) {
+        var matchers = [];
+        for (var _i = 0, asyncThunks_1 = asyncThunks; _i < asyncThunks_1.length; _i++) {
+            var asyncThunk = asyncThunks_1[_i];
+            matchers.push(asyncThunk.pending, asyncThunk.rejected, asyncThunk.fulfilled);
+        }
+        var combinedMatcher = isAnyOf.apply(void 0, matchers);
+        return combinedMatcher(action);
+    };
+}
+// src/listenerMiddleware/utils.ts
+var assertFunction = function (func, expected) {
+    if (typeof func !== "function") {
+        throw new TypeError(expected + " is not a function");
+    }
+};
+var noop = function () {
+};
+var catchRejection = function (promise2, onError) {
+    if (onError === void 0) { onError = noop; }
+    promise2.catch(onError);
+    return promise2;
+};
+var addAbortSignalListener = function (abortSignal, callback) {
+    abortSignal.addEventListener("abort", callback, { once: true });
+    return function () { return abortSignal.removeEventListener("abort", callback); };
+};
+var abortControllerWithReason = function (abortController, reason) {
+    var signal = abortController.signal;
+    if (signal.aborted) {
+        return;
+    }
+    if (!("reason" in signal)) {
+        Object.defineProperty(signal, "reason", {
+            enumerable: true,
+            value: reason,
+            configurable: true,
+            writable: true
+        });
+    }
+    ;
+    abortController.abort(reason);
+};
+// src/listenerMiddleware/exceptions.ts
+var task = "task";
+var listener = "listener";
+var completed = "completed";
+var cancelled = "cancelled";
+var taskCancelled = "task-" + cancelled;
+var taskCompleted = "task-" + completed;
+var listenerCancelled = listener + "-" + cancelled;
+var listenerCompleted = listener + "-" + completed;
+var TaskAbortError = /** @class */ (function () {
+    function TaskAbortError(code) {
+        this.code = code;
+        this.name = "TaskAbortError";
+        this.message = task + " " + cancelled + " (reason: " + code + ")";
+    }
+    return TaskAbortError;
+}());
+// src/listenerMiddleware/task.ts
+var validateActive = function (signal) {
+    if (signal.aborted) {
+        throw new TaskAbortError(signal.reason);
+    }
+};
+function raceWithSignal(signal, promise2) {
+    var cleanup = noop;
+    return new Promise(function (resolve, reject) {
+        var notifyRejection = function () { return reject(new TaskAbortError(signal.reason)); };
+        if (signal.aborted) {
+            notifyRejection();
+            return;
+        }
+        cleanup = addAbortSignalListener(signal, notifyRejection);
+        promise2.finally(function () { return cleanup(); }).then(resolve, reject);
+    }).finally(function () {
+        cleanup = noop;
+    });
+}
+var runTask = function (task2, cleanUp) { return __async(void 0, null, function () {
+    var value, error_1;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 3, 4, 5]);
+                return [4 /*yield*/, Promise.resolve()];
+            case 1:
+                _c.sent();
+                return [4 /*yield*/, task2()];
+            case 2:
+                value = _c.sent();
+                return [2 /*return*/, {
+                        status: "ok",
+                        value: value
+                    }];
+            case 3:
+                error_1 = _c.sent();
+                return [2 /*return*/, {
+                        status: error_1 instanceof TaskAbortError ? "cancelled" : "rejected",
+                        error: error_1
+                    }];
+            case 4:
+                cleanUp == null ? void 0 : cleanUp();
+                return [7 /*endfinally*/];
+            case 5: return [2 /*return*/];
+        }
+    });
+}); };
+var createPause = function (signal) {
+    return function (promise2) {
+        return catchRejection(raceWithSignal(signal, promise2).then(function (output) {
+            validateActive(signal);
+            return output;
+        }));
+    };
+};
+var createDelay = function (signal) {
+    var pause = createPause(signal);
+    return function (timeoutMs) {
+        return pause(new Promise(function (resolve) { return setTimeout(resolve, timeoutMs); }));
+    };
+};
+// src/listenerMiddleware/index.ts
+var assign = Object.assign;
+var INTERNAL_NIL_TOKEN = {};
+var alm = "listenerMiddleware";
+var createFork = function (parentAbortSignal) {
+    var linkControllers = function (controller) { return addAbortSignalListener(parentAbortSignal, function () { return abortControllerWithReason(controller, parentAbortSignal.reason); }); };
+    return function (taskExecutor) {
+        assertFunction(taskExecutor, "taskExecutor");
+        var childAbortController = new AbortController();
+        linkControllers(childAbortController);
+        var result = runTask(function () { return __async(void 0, null, function () {
+            var result2;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        validateActive(parentAbortSignal);
+                        validateActive(childAbortController.signal);
+                        return [4 /*yield*/, taskExecutor({
+                                pause: createPause(childAbortController.signal),
+                                delay: createDelay(childAbortController.signal),
+                                signal: childAbortController.signal
+                            })];
+                    case 1:
+                        result2 = _c.sent();
+                        validateActive(childAbortController.signal);
+                        return [2 /*return*/, result2];
+                }
+            });
+        }); }, function () { return abortControllerWithReason(childAbortController, taskCompleted); });
+        return {
+            result: createPause(parentAbortSignal)(result),
+            cancel: function () {
+                abortControllerWithReason(childAbortController, taskCancelled);
+            }
+        };
+    };
+};
+var createTakePattern = function (startListening, signal) {
+    var take = function (predicate, timeout) { return __async(void 0, null, function () {
+        var unsubscribe, tuplePromise, promises, output;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    validateActive(signal);
+                    unsubscribe = function () {
+                    };
+                    tuplePromise = new Promise(function (resolve, reject) {
+                        var stopListening = startListening({
+                            predicate: predicate,
+                            effect: function (action, listenerApi) {
+                                listenerApi.unsubscribe();
+                                resolve([
+                                    action,
+                                    listenerApi.getState(),
+                                    listenerApi.getOriginalState()
+                                ]);
+                            }
+                        });
+                        unsubscribe = function () {
+                            stopListening();
+                            reject();
+                        };
+                    });
+                    promises = [
+                        tuplePromise
+                    ];
+                    if (timeout != null) {
+                        promises.push(new Promise(function (resolve) { return setTimeout(resolve, timeout, null); }));
+                    }
+                    _c.label = 1;
+                case 1:
+                    _c.trys.push([1, , 3, 4]);
+                    return [4 /*yield*/, raceWithSignal(signal, Promise.race(promises))];
+                case 2:
+                    output = _c.sent();
+                    validateActive(signal);
+                    return [2 /*return*/, output];
+                case 3:
+                    unsubscribe();
+                    return [7 /*endfinally*/];
+                case 4: return [2 /*return*/];
+            }
+        });
+    }); };
+    return function (predicate, timeout) { return catchRejection(take(predicate, timeout)); };
+};
+var getListenerEntryPropsFrom = function (options) {
+    var type = options.type, actionCreator = options.actionCreator, matcher = options.matcher, predicate = options.predicate, effect = options.effect;
+    if (type) {
+        predicate = createAction(type).match;
+    }
+    else if (actionCreator) {
+        type = actionCreator.type;
+        predicate = actionCreator.match;
+    }
+    else if (matcher) {
+        predicate = matcher;
+    }
+    else if (predicate) {
+    }
+    else {
+        throw new Error("Creating or removing a listener requires one of the known fields for matching an action");
+    }
+    assertFunction(effect, "options.listener");
+    return { predicate: predicate, type: type, effect: effect };
+};
+var createListenerEntry = function (options) {
+    var _c = getListenerEntryPropsFrom(options), type = _c.type, predicate = _c.predicate, effect = _c.effect;
+    var id = nanoid();
+    var entry = {
+        id: id,
+        effect: effect,
+        type: type,
+        predicate: predicate,
+        pending: new Set(),
+        unsubscribe: function () {
+            throw new Error("Unsubscribe not initialized");
+        }
+    };
+    return entry;
+};
+var cancelActiveListeners = function (entry) {
+    entry.pending.forEach(function (controller) {
+        abortControllerWithReason(controller, listenerCancelled);
+    });
+};
+var createClearListenerMiddleware = function (listenerMap) {
+    return function () {
+        listenerMap.forEach(cancelActiveListeners);
+        listenerMap.clear();
+    };
+};
+var safelyNotifyError = function (errorHandler, errorToNotify, errorInfo) {
+    try {
+        errorHandler(errorToNotify, errorInfo);
+    }
+    catch (errorHandlerError) {
+        setTimeout(function () {
+            throw errorHandlerError;
+        }, 0);
+    }
+};
+var addListener = createAction(alm + "/add");
+var clearAllListeners = createAction(alm + "/removeAll");
+var removeListener = createAction(alm + "/remove");
+var defaultErrorHandler = function () {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    console.error.apply(console, __spreadArray([alm + "/error"], args));
+};
+function createListenerMiddleware(middlewareOptions) {
+    var _this = this;
+    if (middlewareOptions === void 0) { middlewareOptions = {}; }
+    var listenerMap = new Map();
+    var extra = middlewareOptions.extra, _c = middlewareOptions.onError, onError = _c === void 0 ? defaultErrorHandler : _c;
+    assertFunction(onError, "onError");
+    var insertEntry = function (entry) {
+        entry.unsubscribe = function () { return listenerMap.delete(entry.id); };
+        listenerMap.set(entry.id, entry);
+        return function (cancelOptions) {
+            entry.unsubscribe();
+            if (cancelOptions == null ? void 0 : cancelOptions.cancelActive) {
+                cancelActiveListeners(entry);
+            }
+        };
+    };
+    var findListenerEntry = function (comparator) {
+        for (var _i = 0, _c = Array.from(listenerMap.values()); _i < _c.length; _i++) {
+            var entry = _c[_i];
+            if (comparator(entry)) {
+                return entry;
+            }
+        }
+        return void 0;
+    };
+    var startListening = function (options) {
+        var entry = findListenerEntry(function (existingEntry) { return existingEntry.effect === options.effect; });
+        if (!entry) {
+            entry = createListenerEntry(options);
+        }
+        return insertEntry(entry);
+    };
+    var stopListening = function (options) {
+        var _c = getListenerEntryPropsFrom(options), type = _c.type, effect = _c.effect, predicate = _c.predicate;
+        var entry = findListenerEntry(function (entry2) {
+            var matchPredicateOrType = typeof type === "string" ? entry2.type === type : entry2.predicate === predicate;
+            return matchPredicateOrType && entry2.effect === effect;
+        });
+        if (entry) {
+            entry.unsubscribe();
+            if (options.cancelActive) {
+                cancelActiveListeners(entry);
+            }
+        }
+        return !!entry;
+    };
+    var notifyListener = function (entry, action, api, getOriginalState) { return __async(_this, null, function () {
+        var internalTaskController, take, listenerError_1;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    internalTaskController = new AbortController();
+                    take = createTakePattern(startListening, internalTaskController.signal);
+                    _c.label = 1;
+                case 1:
+                    _c.trys.push([1, 3, 4, 5]);
+                    entry.pending.add(internalTaskController);
+                    return [4 /*yield*/, Promise.resolve(entry.effect(action, assign({}, api, {
+                            getOriginalState: getOriginalState,
+                            condition: function (predicate, timeout) { return take(predicate, timeout).then(Boolean); },
+                            take: take,
+                            delay: createDelay(internalTaskController.signal),
+                            pause: createPause(internalTaskController.signal),
+                            extra: extra,
+                            signal: internalTaskController.signal,
+                            fork: createFork(internalTaskController.signal),
+                            unsubscribe: entry.unsubscribe,
+                            subscribe: function () {
+                                listenerMap.set(entry.id, entry);
+                            },
+                            cancelActiveListeners: function () {
+                                entry.pending.forEach(function (controller, _, set) {
+                                    if (controller !== internalTaskController) {
+                                        abortControllerWithReason(controller, listenerCancelled);
+                                        set.delete(controller);
+                                    }
+                                });
+                            }
+                        })))];
+                case 2:
+                    _c.sent();
+                    return [3 /*break*/, 5];
+                case 3:
+                    listenerError_1 = _c.sent();
+                    if (!(listenerError_1 instanceof TaskAbortError)) {
+                        safelyNotifyError(onError, listenerError_1, {
+                            raisedBy: "effect"
+                        });
+                    }
+                    return [3 /*break*/, 5];
+                case 4:
+                    abortControllerWithReason(internalTaskController, listenerCompleted);
+                    entry.pending.delete(internalTaskController);
+                    return [7 /*endfinally*/];
+                case 5: return [2 /*return*/];
+            }
+        });
+    }); };
+    var clearListenerMiddleware = createClearListenerMiddleware(listenerMap);
+    var middleware = function (api) { return function (next) { return function (action) {
+        if (!isAction(action)) {
+            return next(action);
+        }
+        if (addListener.match(action)) {
+            return startListening(action.payload);
+        }
+        if (clearAllListeners.match(action)) {
+            clearListenerMiddleware();
+            return;
+        }
+        if (removeListener.match(action)) {
+            return stopListening(action.payload);
+        }
+        var originalState = api.getState();
+        var getOriginalState = function () {
+            if (originalState === INTERNAL_NIL_TOKEN) {
+                throw new Error(alm + ": getOriginalState can only be called synchronously");
+            }
+            return originalState;
+        };
+        var result;
+        try {
+            result = next(action);
+            if (listenerMap.size > 0) {
+                var currentState = api.getState();
+                var listenerEntries = Array.from(listenerMap.values());
+                for (var _i = 0, listenerEntries_1 = listenerEntries; _i < listenerEntries_1.length; _i++) {
+                    var entry = listenerEntries_1[_i];
+                    var runListener = false;
+                    try {
+                        runListener = entry.predicate(action, currentState, originalState);
+                    }
+                    catch (predicateError) {
+                        runListener = false;
+                        safelyNotifyError(onError, predicateError, {
+                            raisedBy: "predicate"
+                        });
+                    }
+                    if (!runListener) {
+                        continue;
+                    }
+                    notifyListener(entry, action, api, getOriginalState);
+                }
+            }
+        }
+        finally {
+            originalState = INTERNAL_NIL_TOKEN;
+        }
+        return result;
+    }; }; };
+    return {
+        middleware: middleware,
+        startListening: startListening,
+        stopListening: stopListening,
+        clearListeners: clearListenerMiddleware
+    };
+}
+// src/autoBatchEnhancer.ts
+var SHOULD_AUTOBATCH = "RTK_autoBatch";
+var prepareAutoBatched = function () { return function (payload) {
+    var _c;
+    return ({
+        payload: payload,
+        meta: (_c = {}, _c[SHOULD_AUTOBATCH] = true, _c)
+    });
+}; };
+var promise;
+var queueMicrotaskShim = typeof queueMicrotask === "function" ? queueMicrotask.bind(typeof window !== "undefined" ? window : typeof __webpack_require__.g !== "undefined" ? __webpack_require__.g : globalThis) : function (cb) { return (promise || (promise = Promise.resolve())).then(cb).catch(function (err) { return setTimeout(function () {
+    throw err;
+}, 0); }); };
+var createQueueWithTimer = function (timeout) {
+    return function (notify) {
+        setTimeout(notify, timeout);
+    };
+};
+var rAF = typeof window !== "undefined" && window.requestAnimationFrame ? window.requestAnimationFrame : createQueueWithTimer(10);
+var autoBatchEnhancer = function (options) {
+    if (options === void 0) { options = { type: "raf" }; }
+    return function (next) { return function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        var store = next.apply(void 0, args);
+        var notifying = true;
+        var shouldNotifyAtEndOfTick = false;
+        var notificationQueued = false;
+        var listeners = new Set();
+        var queueCallback = options.type === "tick" ? queueMicrotaskShim : options.type === "raf" ? rAF : options.type === "callback" ? options.queueNotification : createQueueWithTimer(options.timeout);
+        var notifyListeners = function () {
+            notificationQueued = false;
+            if (shouldNotifyAtEndOfTick) {
+                shouldNotifyAtEndOfTick = false;
+                listeners.forEach(function (l) { return l(); });
+            }
+        };
+        return Object.assign({}, store, {
+            subscribe: function (listener2) {
+                var wrappedListener = function () { return notifying && listener2(); };
+                var unsubscribe = store.subscribe(wrappedListener);
+                listeners.add(listener2);
+                return function () {
+                    unsubscribe();
+                    listeners.delete(listener2);
+                };
+            },
+            dispatch: function (action) {
+                var _a;
+                try {
+                    notifying = !((_a = action == null ? void 0 : action.meta) == null ? void 0 : _a[SHOULD_AUTOBATCH]);
+                    shouldNotifyAtEndOfTick = !notifying;
+                    if (shouldNotifyAtEndOfTick) {
+                        if (!notificationQueued) {
+                            notificationQueued = true;
+                            queueCallback(notifyListeners);
+                        }
+                    }
+                    return store.dispatch(action);
+                }
+                finally {
+                    notifying = true;
+                }
+            }
+        });
+    }; };
+};
+// src/index.ts
+(0,immer__WEBPACK_IMPORTED_MODULE_2__.enableES5)();
+
+//# sourceMappingURL=redux-toolkit.esm.js.map
+
+/***/ }),
+
 /***/ "./node_modules/@remix-run/router/dist/router.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@remix-run/router/dist/router.js ***!
@@ -13,19 +2055,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AbortedDeferredError": () => (/* binding */ AbortedDeferredError),
 /* harmony export */   "Action": () => (/* binding */ Action),
 /* harmony export */   "ErrorResponse": () => (/* binding */ ErrorResponse),
+/* harmony export */   "IDLE_BLOCKER": () => (/* binding */ IDLE_BLOCKER),
 /* harmony export */   "IDLE_FETCHER": () => (/* binding */ IDLE_FETCHER),
 /* harmony export */   "IDLE_NAVIGATION": () => (/* binding */ IDLE_NAVIGATION),
+/* harmony export */   "UNSAFE_DEFERRED_SYMBOL": () => (/* binding */ UNSAFE_DEFERRED_SYMBOL),
+/* harmony export */   "UNSAFE_DeferredData": () => (/* binding */ DeferredData),
 /* harmony export */   "UNSAFE_convertRoutesToDataRoutes": () => (/* binding */ convertRoutesToDataRoutes),
+/* harmony export */   "UNSAFE_getPathContributingMatches": () => (/* binding */ getPathContributingMatches),
+/* harmony export */   "UNSAFE_invariant": () => (/* binding */ invariant),
+/* harmony export */   "UNSAFE_warning": () => (/* binding */ warning),
 /* harmony export */   "createBrowserHistory": () => (/* binding */ createBrowserHistory),
 /* harmony export */   "createHashHistory": () => (/* binding */ createHashHistory),
 /* harmony export */   "createMemoryHistory": () => (/* binding */ createMemoryHistory),
 /* harmony export */   "createPath": () => (/* binding */ createPath),
 /* harmony export */   "createRouter": () => (/* binding */ createRouter),
+/* harmony export */   "createStaticHandler": () => (/* binding */ createStaticHandler),
 /* harmony export */   "defer": () => (/* binding */ defer),
 /* harmony export */   "generatePath": () => (/* binding */ generatePath),
 /* harmony export */   "getStaticContextFromError": () => (/* binding */ getStaticContextFromError),
 /* harmony export */   "getToPathname": () => (/* binding */ getToPathname),
-/* harmony export */   "invariant": () => (/* binding */ invariant),
+/* harmony export */   "isDeferredData": () => (/* binding */ isDeferredData),
 /* harmony export */   "isRouteErrorResponse": () => (/* binding */ isRouteErrorResponse),
 /* harmony export */   "joinPaths": () => (/* binding */ joinPaths),
 /* harmony export */   "json": () => (/* binding */ json),
@@ -36,12 +2085,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "redirect": () => (/* binding */ redirect),
 /* harmony export */   "resolvePath": () => (/* binding */ resolvePath),
 /* harmony export */   "resolveTo": () => (/* binding */ resolveTo),
-/* harmony export */   "stripBasename": () => (/* binding */ stripBasename),
-/* harmony export */   "unstable_createStaticHandler": () => (/* binding */ unstable_createStaticHandler),
-/* harmony export */   "warning": () => (/* binding */ warning)
+/* harmony export */   "stripBasename": () => (/* binding */ stripBasename)
 /* harmony export */ });
 /**
- * @remix-run/router v1.0.1
+ * @remix-run/router v1.6.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -137,8 +2184,12 @@ function createMemoryHistory(options) {
     }
 
     let location = createLocation(entries ? getCurrentLocation().pathname : "/", to, state, key);
-    warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in memory history: " + JSON.stringify(to));
+    warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in memory history: " + JSON.stringify(to));
     return location;
+  }
+
+  function createHref(to) {
+    return typeof to === "string" ? to : createPath(to);
   }
 
   let history = {
@@ -154,8 +2205,19 @@ function createMemoryHistory(options) {
       return getCurrentLocation();
     },
 
-    createHref(to) {
-      return typeof to === "string" ? to : createPath(to);
+    createHref,
+
+    createURL(to) {
+      return new URL(createHref(to), "http://localhost");
+    },
+
+    encodeLocation(to) {
+      let path = typeof to === "string" ? parsePath(to) : to;
+      return {
+        pathname: path.pathname || "",
+        search: path.search || "",
+        hash: path.hash || ""
+      };
     },
 
     push(to, state) {
@@ -167,7 +2229,8 @@ function createMemoryHistory(options) {
       if (v5Compat && listener) {
         listener({
           action,
-          location: nextLocation
+          location: nextLocation,
+          delta: 1
         });
       }
     },
@@ -180,19 +2243,23 @@ function createMemoryHistory(options) {
       if (v5Compat && listener) {
         listener({
           action,
-          location: nextLocation
+          location: nextLocation,
+          delta: 0
         });
       }
     },
 
     go(delta) {
       action = Action.Pop;
-      index = clampIndex(index + delta);
+      let nextIndex = clampIndex(index + delta);
+      let nextLocation = entries[nextIndex];
+      index = nextIndex;
 
       if (listener) {
         listener({
           action,
-          location: getCurrentLocation()
+          location: nextLocation,
+          delta
         });
       }
     },
@@ -282,16 +2349,17 @@ function createHashHistory(options) {
   }
 
   function validateHashLocation(location, to) {
-    warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
+    warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
   }
 
   return getUrlBasedHistory(createHashLocation, createHashHref, validateHashLocation, options);
-} //#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region UTILS
-////////////////////////////////////////////////////////////////////////////////
-
-function warning$1(cond, message) {
+}
+function invariant(value, message) {
+  if (value === false || value === null || typeof value === "undefined") {
+    throw new Error(message);
+  }
+}
+function warning(cond, message) {
   if (!cond) {
     // eslint-disable-next-line no-console
     if (typeof console !== "undefined") console.warn(message);
@@ -315,10 +2383,11 @@ function createKey() {
  */
 
 
-function getHistoryState(location) {
+function getHistoryState(location, index) {
   return {
     usr: location.state,
-    key: location.key
+    key: location.key,
+    idx: index
   };
 }
 /**
@@ -402,14 +2471,35 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
   let globalHistory = window.history;
   let action = Action.Pop;
   let listener = null;
+  let index = getIndex(); // Index should only be null when we initialize. If not, it's because the
+  // user called history.pushState or history.replaceState directly, in which
+  // case we should log a warning as it will result in bugs.
+
+  if (index == null) {
+    index = 0;
+    globalHistory.replaceState(_extends({}, globalHistory.state, {
+      idx: index
+    }), "");
+  }
+
+  function getIndex() {
+    let state = globalHistory.state || {
+      idx: null
+    };
+    return state.idx;
+  }
 
   function handlePop() {
     action = Action.Pop;
+    let nextIndex = getIndex();
+    let delta = nextIndex == null ? null : nextIndex - index;
+    index = nextIndex;
 
     if (listener) {
       listener({
         action,
-        location: history.location
+        location: history.location,
+        delta
       });
     }
   }
@@ -418,7 +2508,8 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
     action = Action.Push;
     let location = createLocation(history.location, to, state);
     if (validateLocation) validateLocation(location, to);
-    let historyState = getHistoryState(location);
+    index = getIndex() + 1;
+    let historyState = getHistoryState(location, index);
     let url = history.createHref(location); // try...catch because iOS limits us to 100 pushState calls :/
 
     try {
@@ -432,7 +2523,8 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
     if (v5Compat && listener) {
       listener({
         action,
-        location
+        location: history.location,
+        delta: 1
       });
     }
   }
@@ -441,16 +2533,28 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
     action = Action.Replace;
     let location = createLocation(history.location, to, state);
     if (validateLocation) validateLocation(location, to);
-    let historyState = getHistoryState(location);
+    index = getIndex();
+    let historyState = getHistoryState(location, index);
     let url = history.createHref(location);
     globalHistory.replaceState(historyState, "", url);
 
     if (v5Compat && listener) {
       listener({
         action,
-        location: location
+        location: history.location,
+        delta: 0
       });
     }
+  }
+
+  function createURL(to) {
+    // window.location.origin is "null" (the literal string value) in Firefox
+    // under certain conditions, notably when serving from a local HTML file
+    // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
+    let base = window.location.origin !== "null" ? window.location.origin : window.location.href;
+    let href = typeof to === "string" ? to : createPath(to);
+    invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
+    return new URL(href, base);
   }
 
   let history = {
@@ -479,6 +2583,18 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
       return createHref(window, to);
     },
 
+    createURL,
+
+    encodeLocation(to) {
+      // Encode a Location the same way window.location would
+      let url = createURL(to);
+      return {
+        pathname: url.pathname,
+        search: url.search,
+        hash: url.hash
+      };
+    },
+
     push,
     replace,
 
@@ -497,37 +2613,58 @@ var ResultType;
   ResultType["deferred"] = "deferred";
   ResultType["redirect"] = "redirect";
   ResultType["error"] = "error";
-})(ResultType || (ResultType = {})); // Walk the route tree generating unique IDs where necessary so we are working
+})(ResultType || (ResultType = {}));
+
+const immutableRouteKeys = new Set(["lazy", "caseSensitive", "path", "id", "index", "children"]);
+
+function isIndexRoute(route) {
+  return route.index === true;
+} // Walk the route tree generating unique IDs where necessary so we are working
 // solely with AgnosticDataRouteObject's within the Router
 
 
-function convertRoutesToDataRoutes(routes, parentPath, allIds) {
+function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manifest) {
   if (parentPath === void 0) {
     parentPath = [];
   }
 
-  if (allIds === void 0) {
-    allIds = new Set();
+  if (manifest === void 0) {
+    manifest = {};
   }
 
   return routes.map((route, index) => {
     let treePath = [...parentPath, index];
     let id = typeof route.id === "string" ? route.id : treePath.join("-");
-    invariant(!allIds.has(id), "Found a route id collision on id \"" + id + "\".  Route " + "id's must be globally unique within Data Router usages");
-    allIds.add(id);
+    invariant(route.index !== true || !route.children, "Cannot specify children on an index route");
+    invariant(!manifest[id], "Found a route id collision on id \"" + id + "\".  Route " + "id's must be globally unique within Data Router usages");
 
-    let dataRoute = _extends({}, route, {
-      id,
-      children: route.children ? convertRoutesToDataRoutes(route.children, treePath, allIds) : undefined
-    });
+    if (isIndexRoute(route)) {
+      let indexRoute = _extends({}, route, mapRouteProperties(route), {
+        id
+      });
 
-    return dataRoute;
+      manifest[id] = indexRoute;
+      return indexRoute;
+    } else {
+      let pathOrLayoutRoute = _extends({}, route, mapRouteProperties(route), {
+        id,
+        children: undefined
+      });
+
+      manifest[id] = pathOrLayoutRoute;
+
+      if (route.children) {
+        pathOrLayoutRoute.children = convertRoutesToDataRoutes(route.children, mapRouteProperties, treePath, manifest);
+      }
+
+      return pathOrLayoutRoute;
+    }
   });
 }
 /**
  * Matches the given routes to a location and returns the match data.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/match-routes
+ * @see https://reactrouter.com/utils/match-routes
  */
 
 function matchRoutes(routes, locationArg, basename) {
@@ -547,7 +2684,13 @@ function matchRoutes(routes, locationArg, basename) {
   let matches = null;
 
   for (let i = 0; matches == null && i < branches.length; ++i) {
-    matches = matchRouteBranch(branches[i], pathname);
+    matches = matchRouteBranch(branches[i], // Incoming pathnames are generally encoded from either window.location
+    // or from router.navigate, but we want to match against the unencoded
+    // paths in the route definitions.  Memory router locations won't be
+    // encoded here but there also shouldn't be anything to decode so this
+    // should be a safe operation.  This avoids needing matchRoutes to be
+    // history-aware.
+    safelyDecodeURI(pathname));
   }
 
   return matches;
@@ -566,9 +2709,9 @@ function flattenRoutes(routes, branches, parentsMeta, parentPath) {
     parentPath = "";
   }
 
-  routes.forEach((route, index) => {
+  let flattenRoute = (route, index, relativePath) => {
     let meta = {
-      relativePath: route.path || "",
+      relativePath: relativePath === undefined ? route.path || "" : relativePath,
       caseSensitive: route.caseSensitive === true,
       childrenIndex: index,
       route
@@ -585,7 +2728,9 @@ function flattenRoutes(routes, branches, parentsMeta, parentPath) {
     // the "flattened" version.
 
     if (route.children && route.children.length > 0) {
-      invariant(route.index !== true, "Index routes must not have child routes. Please remove " + ("all child routes from route path \"" + path + "\"."));
+      invariant( // Our types know better, but runtime JS may not!
+      // @ts-expect-error
+      route.index !== true, "Index routes must not have child routes. Please remove " + ("all child routes from route path \"" + path + "\"."));
       flattenRoutes(route.children, branches, routesMeta, path);
     } // Routes without a path shouldn't ever match by themselves unless they are
     // index routes, so don't add them to the list of possible branches.
@@ -600,8 +2745,70 @@ function flattenRoutes(routes, branches, parentsMeta, parentPath) {
       score: computeScore(path, route.index),
       routesMeta
     });
+  };
+
+  routes.forEach((route, index) => {
+    var _route$path;
+
+    // coarse-grain check for optional params
+    if (route.path === "" || !((_route$path = route.path) != null && _route$path.includes("?"))) {
+      flattenRoute(route, index);
+    } else {
+      for (let exploded of explodeOptionalSegments(route.path)) {
+        flattenRoute(route, index, exploded);
+      }
+    }
   });
   return branches;
+}
+/**
+ * Computes all combinations of optional path segments for a given path,
+ * excluding combinations that are ambiguous and of lower priority.
+ *
+ * For example, `/one/:two?/three/:four?/:five?` explodes to:
+ * - `/one/three`
+ * - `/one/:two/three`
+ * - `/one/three/:four`
+ * - `/one/three/:five`
+ * - `/one/:two/three/:four`
+ * - `/one/:two/three/:five`
+ * - `/one/three/:four/:five`
+ * - `/one/:two/three/:four/:five`
+ */
+
+
+function explodeOptionalSegments(path) {
+  let segments = path.split("/");
+  if (segments.length === 0) return [];
+  let [first, ...rest] = segments; // Optional path segments are denoted by a trailing `?`
+
+  let isOptional = first.endsWith("?"); // Compute the corresponding required segment: `foo?` -> `foo`
+
+  let required = first.replace(/\?$/, "");
+
+  if (rest.length === 0) {
+    // Intepret empty string as omitting an optional segment
+    // `["one", "", "three"]` corresponds to omitting `:two` from `/one/:two?/three` -> `/one/three`
+    return isOptional ? [required, ""] : [required];
+  }
+
+  let restExploded = explodeOptionalSegments(rest.join("/"));
+  let result = []; // All child paths with the prefix.  Do this for all children before the
+  // optional version for all children so we get consistent ordering where the
+  // parent optional aspect is preferred as required.  Otherwise, we can get
+  // child sections interspersed where deeper optional segments are higher than
+  // parent optional segments, where for example, /:two would explodes _earlier_
+  // then /:one.  By always including the parent as required _for all children_
+  // first, we avoid this issue
+
+  result.push(...restExploded.map(subpath => subpath === "" ? required : [required, subpath].join("/"))); // Then if this is an optional value, add all child versions without
+
+  if (isOptional) {
+    result.push(...restExploded);
+  } // for absolute paths, ensure `/` instead of empty segment
+
+
+  return result.map(exploded => path.startsWith("/") && exploded === "" ? "/" : exploded);
 }
 
 function rankRouteBranches(branches) {
@@ -682,36 +2889,62 @@ function matchRouteBranch(branch, pathname) {
 /**
  * Returns a path with params interpolated.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/generate-path
+ * @see https://reactrouter.com/utils/generate-path
  */
 
 
-function generatePath(path, params) {
+function generatePath(originalPath, params) {
   if (params === void 0) {
     params = {};
   }
 
-  return path.replace(/:(\w+)/g, (_, key) => {
-    invariant(params[key] != null, "Missing \":" + key + "\" param");
-    return params[key];
-  }).replace(/(\/?)\*/, (_, prefix, __, str) => {
-    const star = "*";
+  let path = originalPath;
 
-    if (params[star] == null) {
-      // If no splat was provided, trim the trailing slash _unless_ it's
-      // the entire path
-      return str === "/*" ? "/" : "";
-    } // Apply the splat
+  if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
+    warning(false, "Route path \"" + path + "\" will be treated as if it were " + ("\"" + path.replace(/\*$/, "/*") + "\" because the `*` character must ") + "always follow a `/` in the pattern. To get rid of this warning, " + ("please change the route path to \"" + path.replace(/\*$/, "/*") + "\"."));
+    path = path.replace(/\*$/, "/*");
+  } // ensure `/` is added at the beginning if the path is absolute
 
 
-    return "" + prefix + params[star];
-  });
+  const prefix = path.startsWith("/") ? "/" : "";
+  const segments = path.split(/\/+/).map((segment, index, array) => {
+    const isLastSegment = index === array.length - 1; // only apply the splat if it's the last segment
+
+    if (isLastSegment && segment === "*") {
+      const star = "*";
+      const starParam = params[star]; // Apply the splat
+
+      return starParam;
+    }
+
+    const keyMatch = segment.match(/^:(\w+)(\??)$/);
+
+    if (keyMatch) {
+      const [, key, optional] = keyMatch;
+      let param = params[key];
+
+      if (optional === "?") {
+        return param == null ? "" : param;
+      }
+
+      if (param == null) {
+        invariant(false, "Missing \":" + key + "\" param");
+      }
+
+      return param;
+    } // Remove any optional markers from optional static segments
+
+
+    return segment.replace(/\?$/g, "");
+  }) // Remove empty segments
+  .filter(segment => !!segment);
+  return prefix + segments.join("/");
 }
 /**
  * Performs pattern matching on a URL pathname and returns information about
  * the match.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/match-path
+ * @see https://reactrouter.com/utils/match-path
  */
 
 function matchPath(pattern, pathname) {
@@ -762,28 +2995,40 @@ function compilePath(path, caseSensitive, end) {
   let regexpSource = "^" + path.replace(/\/*\*?$/, "") // Ignore trailing / and /*, we'll handle it below
   .replace(/^\/*/, "/") // Make sure it has a leading /
   .replace(/[\\.*+^$?{}|()[\]]/g, "\\$&") // Escape special regex chars
-  .replace(/:(\w+)/g, (_, paramName) => {
+  .replace(/\/:(\w+)/g, (_, paramName) => {
     paramNames.push(paramName);
-    return "([^\\/]+)";
+    return "/([^\\/]+)";
   });
 
   if (path.endsWith("*")) {
     paramNames.push("*");
     regexpSource += path === "*" || path === "/*" ? "(.*)$" // Already matched the initial /, just match the rest
     : "(?:\\/(.+)|\\/*)$"; // Don't include the / in params["*"]
-  } else {
-    regexpSource += end ? "\\/*$" // When matching to the end, ignore trailing slashes
-    : // Otherwise, match a word boundary or a proceeding /. The word boundary restricts
-    // parent routes to matching only their own words and nothing more, e.g. parent
-    // route "/home" should not match "/home2".
-    // Additionally, allow paths starting with `.`, `-`, `~`, and url-encoded entities,
-    // but do not consume the character in the matched path so they can match against
-    // nested paths.
-    "(?:(?=[@.~-]|%[0-9A-F]{2})|\\b|\\/|$)";
-  }
+  } else if (end) {
+    // When matching to the end, ignore trailing slashes
+    regexpSource += "\\/*$";
+  } else if (path !== "" && path !== "/") {
+    // If our path is non-empty and contains anything beyond an initial slash,
+    // then we have _some_ form of path in our regex so we should expect to
+    // match only if we find the end of this path segment.  Look for an optional
+    // non-captured trailing slash (to match a portion of the URL) or the end
+    // of the path (if we've matched to the end).  We used to do this with a
+    // word boundary but that gives false positives on routes like
+    // /user-preferences since `-` counts as a word boundary.
+    regexpSource += "(?:(?=\\/|$))";
+  } else ;
 
   let matcher = new RegExp(regexpSource, caseSensitive ? undefined : "i");
   return [matcher, paramNames];
+}
+
+function safelyDecodeURI(value) {
+  try {
+    return decodeURI(value);
+  } catch (error) {
+    warning(false, "The URL path \"" + value + "\" could not be decoded because it is is a " + "malformed URL segment. This is probably due to a bad percent " + ("encoding (" + error + ")."));
+    return value;
+  }
 }
 
 function safelyDecodeURIComponent(value, paramName) {
@@ -818,34 +3063,10 @@ function stripBasename(pathname, basename) {
 
   return pathname.slice(startIndex) || "/";
 }
-function invariant(value, message) {
-  if (value === false || value === null || typeof value === "undefined") {
-    throw new Error(message);
-  }
-}
-/**
- * @private
- */
-
-function warning(cond, message) {
-  if (!cond) {
-    // eslint-disable-next-line no-console
-    if (typeof console !== "undefined") console.warn(message);
-
-    try {
-      // Welcome to debugging React Router!
-      //
-      // This error is thrown as a convenience so you can more easily
-      // find the source for a warning that appears in the console by
-      // enabling "pause on exceptions" in your JavaScript debugger.
-      throw new Error(message); // eslint-disable-next-line no-empty
-    } catch (e) {}
-  }
-}
 /**
  * Returns a resolved path object relative to the given pathname.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/resolve-path
+ * @see https://reactrouter.com/utils/resolve-path
  */
 
 function resolvePath(to, fromPathname) {
@@ -879,17 +3100,58 @@ function resolvePathname(relativePath, fromPathname) {
   });
   return segments.length > 1 ? segments.join("/") : "/";
 }
+
+function getInvalidPathError(char, field, dest, path) {
+  return "Cannot include a '" + char + "' character in a manually specified " + ("`to." + field + "` field [" + JSON.stringify(path) + "].  Please separate it out to the ") + ("`to." + dest + "` field. Alternatively you may provide the full path as ") + "a string in <Link to=\"...\"> and the router will parse it for you.";
+}
+/**
+ * @private
+ *
+ * When processing relative navigation we want to ignore ancestor routes that
+ * do not contribute to the path, such that index/pathless layout routes don't
+ * interfere.
+ *
+ * For example, when moving a route element into an index route and/or a
+ * pathless layout route, relative link behavior contained within should stay
+ * the same.  Both of the following examples should link back to the root:
+ *
+ *   <Route path="/">
+ *     <Route path="accounts" element={<Link to=".."}>
+ *   </Route>
+ *
+ *   <Route path="/">
+ *     <Route path="accounts">
+ *       <Route element={<AccountsLayout />}>       // <-- Does not contribute
+ *         <Route index element={<Link to=".."} />  // <-- Does not contribute
+ *       </Route
+ *     </Route>
+ *   </Route>
+ */
+
+
+function getPathContributingMatches(matches) {
+  return matches.filter((match, index) => index === 0 || match.route.path && match.route.path.length > 0);
+}
 /**
  * @private
  */
-
 
 function resolveTo(toArg, routePathnames, locationPathname, isPathRelative) {
   if (isPathRelative === void 0) {
     isPathRelative = false;
   }
 
-  let to = typeof toArg === "string" ? parsePath(toArg) : _extends({}, toArg);
+  let to;
+
+  if (typeof toArg === "string") {
+    to = parsePath(toArg);
+  } else {
+    to = _extends({}, toArg);
+    invariant(!to.pathname || !to.pathname.includes("?"), getInvalidPathError("?", "pathname", "search", to));
+    invariant(!to.pathname || !to.pathname.includes("#"), getInvalidPathError("#", "pathname", "hash", to));
+    invariant(!to.search || !to.search.includes("#"), getInvalidPathError("#", "search", "hash", to));
+  }
+
   let isEmptyPath = toArg === "" || to.pathname === "";
   let toPathname = isEmptyPath ? "/" : to.pathname;
   let from; // Routing is relative to the current pathname if explicitly requested.
@@ -990,9 +3252,10 @@ const json = function json(data, init) {
 };
 class AbortedDeferredError extends Error {}
 class DeferredData {
-  constructor(data) {
-    this.pendingKeys = new Set();
-    this.subscriber = undefined;
+  constructor(data, responseInit) {
+    this.pendingKeysSet = new Set();
+    this.subscribers = new Set();
+    this.deferredKeys = [];
     invariant(data && typeof data === "object" && !Array.isArray(data), "defer() only accepts plain objects"); // Set up an AbortController + Promise we can race against to exit early
     // cancellation
 
@@ -1011,6 +3274,13 @@ class DeferredData {
         [key]: this.trackPromise(key, value)
       });
     }, {});
+
+    if (this.done) {
+      // All incoming values were resolved
+      this.unlistenAbortSignal();
+    }
+
+    this.init = responseInit;
   }
 
   trackPromise(key, value) {
@@ -1018,7 +3288,8 @@ class DeferredData {
       return value;
     }
 
-    this.pendingKeys.add(key); // We store a little wrapper promise that will be extended with
+    this.deferredKeys.push(key);
+    this.pendingKeysSet.add(key); // We store a little wrapper promise that will be extended with
     // _data/_error props upon resolve/reject
 
     let promise = Promise.race([value, this.abortPromise]).then(data => this.onSettle(promise, key, null, data), error => this.onSettle(promise, key, error)); // Register rejection listeners to avoid uncaught promise rejections on
@@ -1040,39 +3311,41 @@ class DeferredData {
       return Promise.reject(error);
     }
 
-    this.pendingKeys.delete(key);
+    this.pendingKeysSet.delete(key);
 
     if (this.done) {
       // Nothing left to abort!
       this.unlistenAbortSignal();
     }
 
-    const subscriber = this.subscriber;
-
     if (error) {
       Object.defineProperty(promise, "_error", {
         get: () => error
       });
-      subscriber && subscriber(false);
+      this.emit(false, key);
       return Promise.reject(error);
     }
 
     Object.defineProperty(promise, "_data", {
       get: () => data
     });
-    subscriber && subscriber(false);
+    this.emit(false, key);
     return data;
   }
 
+  emit(aborted, settledKey) {
+    this.subscribers.forEach(subscriber => subscriber(aborted, settledKey));
+  }
+
   subscribe(fn) {
-    this.subscriber = fn;
+    this.subscribers.add(fn);
+    return () => this.subscribers.delete(fn);
   }
 
   cancel() {
     this.controller.abort();
-    this.pendingKeys.forEach((v, k) => this.pendingKeys.delete(k));
-    let subscriber = this.subscriber;
-    subscriber && subscriber(true);
+    this.pendingKeysSet.forEach((v, k) => this.pendingKeysSet.delete(k));
+    this.emit(true);
   }
 
   async resolveData(signal) {
@@ -1097,7 +3370,7 @@ class DeferredData {
   }
 
   get done() {
-    return this.pendingKeys.size === 0;
+    return this.pendingKeysSet.size === 0;
   }
 
   get unwrappedData() {
@@ -1108,6 +3381,10 @@ class DeferredData {
         [key]: unwrapTrackedPromise(value)
       });
     }, {});
+  }
+
+  get pendingKeys() {
+    return Array.from(this.pendingKeysSet);
   }
 
 }
@@ -1128,9 +3405,16 @@ function unwrapTrackedPromise(value) {
   return value._data;
 }
 
-function defer(data) {
-  return new DeferredData(data);
-}
+const defer = function defer(data, init) {
+  if (init === void 0) {
+    init = {};
+  }
+
+  let responseInit = typeof init === "number" ? {
+    status: init
+  } : init;
+  return new DeferredData(data, responseInit);
+};
 /**
  * A redirect response. Sets the status code and the `Location` header.
  * Defaults to "302 Found".
@@ -1163,22 +3447,39 @@ const redirect = function redirect(url, init) {
  */
 
 class ErrorResponse {
-  constructor(status, statusText, data) {
+  constructor(status, statusText, data, internal) {
+    if (internal === void 0) {
+      internal = false;
+    }
+
     this.status = status;
     this.statusText = statusText || "";
-    this.data = data;
+    this.internal = internal;
+
+    if (data instanceof Error) {
+      this.data = data.toString();
+      this.error = data;
+    } else {
+      this.data = data;
+    }
   }
 
 }
 /**
  * Check if the given error is an ErrorResponse generated from a 4xx/5xx
- * Response throw from an action/loader
+ * Response thrown from an action/loader
  */
 
-function isRouteErrorResponse(e) {
-  return e instanceof ErrorResponse;
+function isRouteErrorResponse(error) {
+  return error != null && typeof error.status === "number" && typeof error.statusText === "string" && typeof error.internal === "boolean" && "data" in error;
 }
 
+const validMutationMethodsArr = ["post", "put", "patch", "delete"];
+const validMutationMethods = new Set(validMutationMethodsArr);
+const validRequestMethodsArr = ["get", ...validMutationMethodsArr];
+const validRequestMethods = new Set(validRequestMethodsArr);
+const redirectStatusCodes = new Set([301, 302, 303, 307, 308]);
+const redirectPreserveMethodStatusCodes = new Set([307, 308]);
 const IDLE_NAVIGATION = {
   state: "idle",
   location: undefined,
@@ -1194,7 +3495,20 @@ const IDLE_FETCHER = {
   formAction: undefined,
   formEncType: undefined,
   formData: undefined
-}; //#endregion
+};
+const IDLE_BLOCKER = {
+  state: "unblocked",
+  proceed: undefined,
+  reset: undefined,
+  location: undefined
+};
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+const isServer = !isBrowser;
+
+const defaultMapRouteProperties = route => ({
+  hasErrorBoundary: Boolean(route.hasErrorBoundary)
+}); //#endregion
 ////////////////////////////////////////////////////////////////////////////////
 //#region createRouter
 ////////////////////////////////////////////////////////////////////////////////
@@ -1203,9 +3517,36 @@ const IDLE_FETCHER = {
  * Create a router and listen to history POP navigations
  */
 
+
 function createRouter(init) {
   invariant(init.routes.length > 0, "You must provide a non-empty routes array to createRouter");
-  let dataRoutes = convertRoutesToDataRoutes(init.routes); // Cleanup function for history
+  let mapRouteProperties;
+
+  if (init.mapRouteProperties) {
+    mapRouteProperties = init.mapRouteProperties;
+  } else if (init.detectErrorBoundary) {
+    // If they are still using the deprecated version, wrap it with the new API
+    let detectErrorBoundary = init.detectErrorBoundary;
+
+    mapRouteProperties = route => ({
+      hasErrorBoundary: detectErrorBoundary(route)
+    });
+  } else {
+    mapRouteProperties = defaultMapRouteProperties;
+  } // Routes keyed by ID
+
+
+  let manifest = {}; // Routes in tree format for matching
+
+  let dataRoutes = convertRoutesToDataRoutes(init.routes, mapRouteProperties, undefined, manifest);
+  let inFlightDataRoutes;
+  let basename = init.basename || "/"; // Config driven behavior flags
+
+  let future = _extends({
+    v7_normalizeFormMethod: false,
+    v7_prependBasename: false
+  }, init.future); // Cleanup function for history
+
 
   let unlistenHistory = null; // Externally-provided functions to call on all state changes
 
@@ -1219,26 +3560,33 @@ function createRouter(init) {
   // we don't get the saved positions from <ScrollRestoration /> until _after_
   // the initial render, we need to manually trigger a separate updateState to
   // send along the restoreScrollPosition
+  // Set to true if we have `hydrationData` since we assume we were SSR'd and that
+  // SSR did the initial scroll restoration.
 
-  let initialScrollRestored = false;
-  let initialMatches = matchRoutes(dataRoutes, init.history.location, init.basename);
+  let initialScrollRestored = init.hydrationData != null;
+  let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
   let initialErrors = null;
 
   if (initialMatches == null) {
     // If we do not match a user-provided-route, fall back to the root
     // to allow the error boundary to take over
+    let error = getInternalRouterError(404, {
+      pathname: init.history.location.pathname
+    });
     let {
       matches,
-      route,
-      error
-    } = getNotFoundMatches(dataRoutes);
+      route
+    } = getShortCircuitMatches(dataRoutes);
     initialMatches = matches;
     initialErrors = {
       [route.id]: error
     };
   }
 
-  let initialized = !initialMatches.some(m => m.route.loader) || init.hydrationData != null;
+  let initialized = // All initialMatches need to be loaded before we're ready.  If we have lazy
+  // functions around still then we'll need to run them in initialize()
+  !initialMatches.some(m => m.route.lazy) && ( // And we have to either have no loaders or have been provided hydrationData
+  !initialMatches.some(m => m.route.loader) || init.hydrationData != null);
   let router;
   let state = {
     historyAction: init.history.action,
@@ -1246,13 +3594,15 @@ function createRouter(init) {
     matches: initialMatches,
     initialized,
     navigation: IDLE_NAVIGATION,
-    restoreScrollPosition: null,
+    // Don't restore on initial updateState() if we were SSR'd
+    restoreScrollPosition: init.hydrationData != null ? false : null,
     preventScrollReset: false,
     revalidation: "idle",
     loaderData: init.hydrationData && init.hydrationData.loaderData || {},
     actionData: init.hydrationData && init.hydrationData.actionData || null,
     errors: init.hydrationData && init.hydrationData.errors || initialErrors,
-    fetchers: new Map()
+    fetchers: new Map(),
+    blockers: new Map()
   }; // -- Stateful internal variables to manage navigations --
   // Current navigation in progress (to be committed in completeNavigation)
 
@@ -1266,7 +3616,7 @@ function createRouter(init) {
 
   let isUninterruptedRevalidation = false; // Use this internal flag to force revalidation of all loaders:
   //  - submissions (completed or interrupted)
-  //  - useRevalidate()
+  //  - useRevalidator()
   //  - X-Remix-Revalidate (from redirect)
 
   let isRevalidationRequired = false; // Use this internal array to capture routes that require revalidation due
@@ -1285,7 +3635,7 @@ function createRouter(init) {
 
   let pendingNavigationLoadId = -1; // Fetchers that triggered data reloads as a result of their actions
 
-  let fetchReloadIds = new Map(); // Fetchers that triggered redirect navigations from their actions
+  let fetchReloadIds = new Map(); // Fetchers that triggered redirect navigations
 
   let fetchRedirectIds = new Set(); // Most recent href/match for fetcher.load calls for fetchers
 
@@ -1294,7 +3644,13 @@ function createRouter(init) {
   // promise resolves we update loaderData.  If a new navigation starts we
   // cancel active deferreds for eliminated routes.
 
-  let activeDeferreds = new Map(); // Initialize the router, all side effects should be kicked off from here.
+  let activeDeferreds = new Map(); // Store blocker functions in a separate Map outside of router state since
+  // we don't need to update UI state if they change
+
+  let blockerFunctions = new Map(); // Flag to ignore the next history update, so we can revert the URL change on
+  // a POP navigation that was blocked by the user without touching router state
+
+  let ignoreNextHistoryUpdate = false; // Initialize the router, all side effects should be kicked off from here.
   // Implemented as a Fluent API for ease of:
   //   let router = createRouter(init).initialize();
 
@@ -1304,10 +3660,61 @@ function createRouter(init) {
     unlistenHistory = init.history.listen(_ref => {
       let {
         action: historyAction,
-        location
+        location,
+        delta
       } = _ref;
+
+      // Ignore this event if it was just us resetting the URL from a
+      // blocked POP navigation
+      if (ignoreNextHistoryUpdate) {
+        ignoreNextHistoryUpdate = false;
+        return;
+      }
+
+      warning(blockerFunctions.size === 0 || delta != null, "You are trying to use a blocker on a POP navigation to a location " + "that was not created by @remix-run/router. This will fail silently in " + "production. This can happen if you are navigating outside the router " + "via `window.history.pushState`/`window.location.hash` instead of using " + "router navigation APIs.  This can also happen if you are using " + "createHashRouter and the user manually changes the URL.");
+      let blockerKey = shouldBlockNavigation({
+        currentLocation: state.location,
+        nextLocation: location,
+        historyAction
+      });
+
+      if (blockerKey && delta != null) {
+        // Restore the URL to match the current UI, but don't update router state
+        ignoreNextHistoryUpdate = true;
+        init.history.go(delta * -1); // Put the blocker into a blocked state
+
+        updateBlocker(blockerKey, {
+          state: "blocked",
+          location,
+
+          proceed() {
+            updateBlocker(blockerKey, {
+              state: "proceeding",
+              proceed: undefined,
+              reset: undefined,
+              location
+            }); // Re-do the same POP navigation we just blocked
+
+            init.history.go(delta);
+          },
+
+          reset() {
+            deleteBlocker(blockerKey);
+            updateState({
+              blockers: new Map(router.state.blockers)
+            });
+          }
+
+        });
+        return;
+      }
+
       return startNavigation(historyAction, location);
     }); // Kick off initial data load if needed.  Use Pop to avoid modifying history
+    // Note we don't do any handling of lazy here.  For SPA's it'll get handled
+    // in the normal navigation flow.  For SSR it's expected that lazy modules are
+    // resolved prior to router creation since we can't go into a fallbackElement
+    // UI for SSR'd apps
 
     if (!state.initialized) {
       startNavigation(Action.Pop, state.location);
@@ -1325,6 +3732,7 @@ function createRouter(init) {
     subscribers.clear();
     pendingNavigationController && pendingNavigationController.abort();
     state.fetchers.forEach((_, key) => deleteFetcher(key));
+    state.blockers.forEach((_, key) => deleteBlocker(key));
   } // Subscribe to state updates for the router
 
 
@@ -1345,30 +3753,59 @@ function createRouter(init) {
 
 
   function completeNavigation(location, newState) {
+    var _location$state, _location$state2;
+
     // Deduce if we're in a loading/actionReload state:
     // - We have committed actionData in the store
-    // - The current navigation was a submission
+    // - The current navigation was a mutation submission
     // - We're past the submitting state and into the loading state
-    // - This should not be susceptible to false positives for
-    //   loading/submissionRedirect since there would not be actionData in the
-    //   state since the prior action would have returned a redirect response
-    //   and short circuited
-    let isActionReload = state.actionData != null && state.navigation.formMethod != null && state.navigation.state === "loading"; // Always preserve any existing loaderData from re-used routes
+    // - The location being loaded is not the result of a redirect
+    let isActionReload = state.actionData != null && state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && state.navigation.state === "loading" && ((_location$state = location.state) == null ? void 0 : _location$state._isRedirect) !== true;
+    let actionData;
 
-    let newLoaderData = newState.loaderData ? {
-      loaderData: mergeLoaderData(state.loaderData, newState.loaderData, newState.matches || [])
-    } : {};
-    updateState(_extends({}, isActionReload ? {} : {
-      actionData: null
-    }, newState, newLoaderData, {
+    if (newState.actionData) {
+      if (Object.keys(newState.actionData).length > 0) {
+        actionData = newState.actionData;
+      } else {
+        // Empty actionData -> clear prior actionData due to an action error
+        actionData = null;
+      }
+    } else if (isActionReload) {
+      // Keep the current data if we're wrapping up the action reload
+      actionData = state.actionData;
+    } else {
+      // Clear actionData on any other completed navigations
+      actionData = null;
+    } // Always preserve any existing loaderData from re-used routes
+
+
+    let loaderData = newState.loaderData ? mergeLoaderData(state.loaderData, newState.loaderData, newState.matches || [], newState.errors) : state.loaderData; // On a successful navigation we can assume we got through all blockers
+    // so we can start fresh
+
+    for (let [key] of blockerFunctions) {
+      deleteBlocker(key);
+    } // Always respect the user flag.  Otherwise don't reset on mutation
+    // submission navigations unless they redirect
+
+
+    let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && ((_location$state2 = location.state) == null ? void 0 : _location$state2._isRedirect) !== true;
+
+    if (inFlightDataRoutes) {
+      dataRoutes = inFlightDataRoutes;
+      inFlightDataRoutes = undefined;
+    }
+
+    updateState(_extends({}, newState, {
+      actionData,
+      loaderData,
       historyAction: pendingAction,
       location,
       initialized: true,
       navigation: IDLE_NAVIGATION,
       revalidation: "idle",
-      // Don't restore on submission navigations
-      restoreScrollPosition: state.navigation.formData ? false : getSavedScrollPosition(location, newState.matches || state.matches),
-      preventScrollReset: pendingPreventScrollReset
+      restoreScrollPosition: getSavedScrollPosition(location, newState.matches || state.matches),
+      preventScrollReset,
+      blockers: new Map(state.blockers)
     }));
 
     if (isUninterruptedRevalidation) ; else if (pendingAction === Action.Pop) ; else if (pendingAction === Action.Push) {
@@ -1394,15 +3831,69 @@ function createRouter(init) {
       return;
     }
 
+    let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, to, opts == null ? void 0 : opts.fromRouteId, opts == null ? void 0 : opts.relative);
     let {
       path,
       submission,
       error
-    } = normalizeNavigateOptions(to, opts);
-    let location = createLocation(state.location, path, opts && opts.state);
-    let historyAction = (opts && opts.replace) === true || submission != null ? Action.Replace : Action.Push;
+    } = normalizeNavigateOptions(future.v7_normalizeFormMethod, false, normalizedPath, opts);
+    let currentLocation = state.location;
+    let nextLocation = createLocation(state.location, path, opts && opts.state); // When using navigate as a PUSH/REPLACE we aren't reading an already-encoded
+    // URL from window.location, so we need to encode it here so the behavior
+    // remains the same as POP and non-data-router usages.  new URL() does all
+    // the same encoding we'd get from a history.pushState/window.location read
+    // without having to touch history
+
+    nextLocation = _extends({}, nextLocation, init.history.encodeLocation(nextLocation));
+    let userReplace = opts && opts.replace != null ? opts.replace : undefined;
+    let historyAction = Action.Push;
+
+    if (userReplace === true) {
+      historyAction = Action.Replace;
+    } else if (userReplace === false) ; else if (submission != null && isMutationMethod(submission.formMethod) && submission.formAction === state.location.pathname + state.location.search) {
+      // By default on submissions to the current location we REPLACE so that
+      // users don't have to double-click the back button to get to the prior
+      // location.  If the user redirects to a different location from the
+      // action/loader this will be ignored and the redirect will be a PUSH
+      historyAction = Action.Replace;
+    }
+
     let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : undefined;
-    return await startNavigation(historyAction, location, {
+    let blockerKey = shouldBlockNavigation({
+      currentLocation,
+      nextLocation,
+      historyAction
+    });
+
+    if (blockerKey) {
+      // Put the blocker into a blocked state
+      updateBlocker(blockerKey, {
+        state: "blocked",
+        location: nextLocation,
+
+        proceed() {
+          updateBlocker(blockerKey, {
+            state: "proceeding",
+            proceed: undefined,
+            reset: undefined,
+            location: nextLocation
+          }); // Send the same navigation through
+
+          navigate(to, opts);
+        },
+
+        reset() {
+          deleteBlocker(blockerKey);
+          updateState({
+            blockers: new Map(state.blockers)
+          });
+        }
+
+      });
+      return;
+    }
+
+    return await startNavigation(historyAction, nextLocation, {
       submission,
       // Send through the formData serialization error if we have one so we can
       // render at the right error boundary after we match routes
@@ -1459,15 +3950,18 @@ function createRouter(init) {
 
     saveScrollPosition(state.location, state.matches);
     pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
+    let routesToUse = inFlightDataRoutes || dataRoutes;
     let loadingNavigation = opts && opts.overrideNavigation;
-    let matches = matchRoutes(dataRoutes, location, init.basename); // Short circuit with a 404 on the root error boundary if we match nothing
+    let matches = matchRoutes(routesToUse, location, basename); // Short circuit with a 404 on the root error boundary if we match nothing
 
     if (!matches) {
+      let error = getInternalRouterError(404, {
+        pathname: location.pathname
+      });
       let {
         matches: notFoundMatches,
-        route,
-        error
-      } = getNotFoundMatches(dataRoutes); // Cancel all pending deferred on 404s since we don't keep any routes
+        route
+      } = getShortCircuitMatches(routesToUse); // Cancel all pending deferred on 404s since we don't keep any routes
 
       cancelActiveDeferreds();
       completeNavigation(location, {
@@ -1478,10 +3972,12 @@ function createRouter(init) {
         }
       });
       return;
-    } // Short circuit if it's only a hash change
+    } // Short circuit if it's only a hash change and not a mutation submission
+    // For example, on /page#hash and submit a <Form method="post"> which will
+    // default to a navigation to /page
 
 
-    if (isHashChangeOnly(state.location, location)) {
+    if (isHashChangeOnly(state.location, location) && !(opts && opts.submission && isMutationMethod(opts.submission.formMethod))) {
       completeNavigation(location, {
         matches
       });
@@ -1490,7 +3986,7 @@ function createRouter(init) {
 
 
     pendingNavigationController = new AbortController();
-    let request = createRequest(location, pendingNavigationController.signal, opts && opts.submission);
+    let request = createClientSideRequest(init.history, location, pendingNavigationController.signal, opts && opts.submission);
     let pendingActionData;
     let pendingError;
 
@@ -1502,7 +3998,7 @@ function createRouter(init) {
       pendingError = {
         [findNearestBoundary(matches).route.id]: opts.pendingError
       };
-    } else if (opts && opts.submission) {
+    } else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
       // Call action if we received an action submission
       let actionOutput = await handleAction(request, location, opts.submission, matches, {
         replace: opts.replace
@@ -1520,7 +4016,11 @@ function createRouter(init) {
         location
       }, opts.submission);
 
-      loadingNavigation = navigation;
+      loadingNavigation = navigation; // Create a GET request for the loaders
+
+      request = new Request(request.url, {
+        signal: request.signal
+      });
     } // Call loaders
 
 
@@ -1528,7 +4028,7 @@ function createRouter(init) {
       shortCircuited,
       loaderData,
       errors
-    } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.replace, pendingActionData, pendingError);
+    } = await handleLoaders(request, location, matches, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, pendingActionData, pendingError);
 
     if (shortCircuited) {
       return;
@@ -1538,11 +4038,14 @@ function createRouter(init) {
 
 
     pendingNavigationController = null;
-    completeNavigation(location, {
-      matches,
+    completeNavigation(location, _extends({
+      matches
+    }, pendingActionData ? {
+      actionData: pendingActionData
+    } : {}, {
       loaderData,
       errors
-    });
+    }));
   } // Call the action matched by the leaf route for this navigation and handle
   // redirects/errors
 
@@ -1562,10 +4065,17 @@ function createRouter(init) {
     let result;
     let actionMatch = getTargetMatch(matches, location);
 
-    if (!actionMatch.route.action) {
-      result = getMethodNotAllowedResult(location);
+    if (!actionMatch.route.action && !actionMatch.route.lazy) {
+      result = {
+        type: ResultType.error,
+        error: getInternalRouterError(405, {
+          method: request.method,
+          pathname: location.pathname,
+          routeId: actionMatch.route.id
+        })
+      };
     } else {
-      result = await callLoaderOrAction("action", request, actionMatch);
+      result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename);
 
       if (request.signal.aborted) {
         return {
@@ -1575,12 +4085,21 @@ function createRouter(init) {
     }
 
     if (isRedirectResult(result)) {
-      let redirectNavigation = _extends({
-        state: "loading",
-        location: createLocation(state.location, result.location)
-      }, submission);
+      let replace;
 
-      await startRedirectNavigation(result, redirectNavigation, opts && opts.replace);
+      if (opts && opts.replace != null) {
+        replace = opts.replace;
+      } else {
+        // If the user didn't explicity indicate replace behavior, replace if
+        // we redirected to the exact same location we're currently at to avoid
+        // double back-buttons
+        replace = result.location === state.location.pathname + state.location.search;
+      }
+
+      await startRedirectNavigation(state, result, {
+        submission,
+        replace
+      });
       return {
         shortCircuited: true
       };
@@ -1599,6 +4118,8 @@ function createRouter(init) {
       }
 
       return {
+        // Send back an empty object we can use to clear out any prior actionData
+        pendingActionData: {},
         pendingActionError: {
           [boundaryMatch.route.id]: result.error
         }
@@ -1606,7 +4127,9 @@ function createRouter(init) {
     }
 
     if (isDeferredResult(result)) {
-      throw new Error("defer() is not supported in actions");
+      throw getInternalRouterError(400, {
+        type: "defer-action"
+      });
     }
 
     return {
@@ -1618,36 +4141,50 @@ function createRouter(init) {
   // errors, etc.
 
 
-  async function handleLoaders(request, location, matches, overrideNavigation, submission, replace, pendingActionData, pendingError) {
+  async function handleLoaders(request, location, matches, overrideNavigation, submission, fetcherSubmission, replace, pendingActionData, pendingError) {
     // Figure out the right navigation we want to use for data loading
     let loadingNavigation = overrideNavigation;
 
     if (!loadingNavigation) {
-      let navigation = {
+      let navigation = _extends({
         state: "loading",
         location,
         formMethod: undefined,
         formAction: undefined,
         formEncType: undefined,
         formData: undefined
-      };
-      loadingNavigation = navigation;
-    }
+      }, submission);
 
-    let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, pendingActionData, pendingError, fetchLoadMatches); // Cancel pending deferreds for no-longer-matched routes or routes we're
+      loadingNavigation = navigation;
+    } // If this was a redirect from an action we don't have a "submission" but
+    // we have it on the loading navigation so use that if available
+
+
+    let activeSubmission = submission || fetcherSubmission ? submission || fetcherSubmission : loadingNavigation.formMethod && loadingNavigation.formAction && loadingNavigation.formData && loadingNavigation.formEncType ? {
+      formMethod: loadingNavigation.formMethod,
+      formAction: loadingNavigation.formAction,
+      formData: loadingNavigation.formData,
+      formEncType: loadingNavigation.formEncType
+    } : undefined;
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, pendingActionData, pendingError); // Cancel pending deferreds for no-longer-matched routes or routes we're
     // about to reload.  Note that if this is an action reload we would have
     // already cancelled all pending deferreds so this would be a no-op
 
     cancelActiveDeferreds(routeId => !(matches && matches.some(m => m.route.id === routeId)) || matchesToLoad && matchesToLoad.some(m => m.route.id === routeId)); // Short circuit if we have no loaders to run
 
     if (matchesToLoad.length === 0 && revalidatingFetchers.length === 0) {
-      completeNavigation(location, {
+      let updatedFetchers = markFetchRedirectsDone();
+      completeNavigation(location, _extends({
         matches,
-        loaderData: mergeLoaderData(state.loaderData, {}, matches),
+        loaderData: {},
         // Commit pending error if we're short circuiting
-        errors: pendingError || null,
-        actionData: pendingActionData || null
-      });
+        errors: pendingError || null
+      }, pendingActionData ? {
+        actionData: pendingActionData
+      } : {}, updatedFetchers ? {
+        fetchers: new Map(state.fetchers)
+      } : {}));
       return {
         shortCircuited: true
       };
@@ -1658,37 +4195,52 @@ function createRouter(init) {
 
 
     if (!isUninterruptedRevalidation) {
-      revalidatingFetchers.forEach(_ref2 => {
-        let [key] = _ref2;
-        const fetcher = state.fetchers.get(key);
+      revalidatingFetchers.forEach(rf => {
+        let fetcher = state.fetchers.get(rf.key);
         let revalidatingFetcher = {
           state: "loading",
           data: fetcher && fetcher.data,
           formMethod: undefined,
           formAction: undefined,
           formEncType: undefined,
-          formData: undefined
+          formData: undefined,
+          " _hasFetcherDoneAnything ": true
         };
-        state.fetchers.set(key, revalidatingFetcher);
+        state.fetchers.set(rf.key, revalidatingFetcher);
       });
+      let actionData = pendingActionData || state.actionData;
       updateState(_extends({
-        navigation: loadingNavigation,
-        actionData: pendingActionData || state.actionData || null
-      }, revalidatingFetchers.length > 0 ? {
+        navigation: loadingNavigation
+      }, actionData ? Object.keys(actionData).length === 0 ? {
+        actionData: null
+      } : {
+        actionData
+      } : {}, revalidatingFetchers.length > 0 ? {
         fetchers: new Map(state.fetchers)
       } : {}));
     }
 
     pendingNavigationLoadId = ++incrementingLoadId;
-    revalidatingFetchers.forEach(_ref3 => {
-      let [key] = _ref3;
-      return fetchControllers.set(key, pendingNavigationController);
-    });
+    revalidatingFetchers.forEach(rf => {
+      if (rf.controller) {
+        // Fetchers use an independent AbortController so that aborting a fetcher
+        // (via deleteFetcher) does not abort the triggering navigation that
+        // triggered the revalidation
+        fetchControllers.set(rf.key, rf.controller);
+      }
+    }); // Proxy navigation abort through to revalidation fetchers
+
+    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach(f => abortFetcher(f.key));
+
+    if (pendingNavigationController) {
+      pendingNavigationController.signal.addEventListener("abort", abortPendingFetchRevalidations);
+    }
+
     let {
       results,
       loaderResults,
       fetcherResults
-    } = await callLoadersAndMaybeResolveData(state.matches, matchesToLoad, revalidatingFetchers, request);
+    } = await callLoadersAndMaybeResolveData(state.matches, matches, matchesToLoad, revalidatingFetchers, request);
 
     if (request.signal.aborted) {
       return {
@@ -1699,16 +4251,18 @@ function createRouter(init) {
     // reassigned to new controllers for the next navigation
 
 
-    revalidatingFetchers.forEach(_ref4 => {
-      let [key] = _ref4;
-      return fetchControllers.delete(key);
-    }); // If any loaders returned a redirect Response, start a new REPLACE navigation
+    if (pendingNavigationController) {
+      pendingNavigationController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
+    }
+
+    revalidatingFetchers.forEach(rf => fetchControllers.delete(rf.key)); // If any loaders returned a redirect Response, start a new REPLACE navigation
 
     let redirect = findRedirect(results);
 
     if (redirect) {
-      let redirectNavigation = getLoaderRedirect(state, redirect);
-      await startRedirectNavigation(redirect, redirectNavigation, replace);
+      await startRedirectNavigation(state, redirect, {
+        replace
+      });
       return {
         shortCircuited: true
       };
@@ -1730,12 +4284,13 @@ function createRouter(init) {
         }
       });
     });
-    markFetchRedirectsDone();
+    let updatedFetchers = markFetchRedirectsDone();
     let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
+    let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
     return _extends({
       loaderData,
       errors
-    }, didAbortFetchLoads || revalidatingFetchers.length > 0 ? {
+    }, shouldUpdateFetchers ? {
       fetchers: new Map(state.fetchers)
     } : {});
   }
@@ -1746,45 +4301,55 @@ function createRouter(init) {
 
 
   function fetch(key, routeId, href, opts) {
-    if (typeof AbortController === "undefined") {
+    if (isServer) {
       throw new Error("router.fetch() was called during the server render, but it shouldn't be. " + "You are likely calling a useFetcher() method in the body of your component. " + "Try moving it to a useEffect or a callback.");
     }
 
     if (fetchControllers.has(key)) abortFetcher(key);
-    let matches = matchRoutes(dataRoutes, href, init.basename);
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, routeId, opts == null ? void 0 : opts.relative);
+    let matches = matchRoutes(routesToUse, normalizedPath, basename);
 
     if (!matches) {
-      setFetcherError(key, routeId, new ErrorResponse(404, "Not Found", null));
+      setFetcherError(key, routeId, getInternalRouterError(404, {
+        pathname: normalizedPath
+      }));
       return;
     }
 
     let {
       path,
       submission
-    } = normalizeNavigateOptions(href, opts, true);
+    } = normalizeNavigateOptions(future.v7_normalizeFormMethod, true, normalizedPath, opts);
     let match = getTargetMatch(matches, path);
+    pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
 
-    if (submission) {
-      handleFetcherAction(key, routeId, path, match, submission);
+    if (submission && isMutationMethod(submission.formMethod)) {
+      handleFetcherAction(key, routeId, path, match, matches, submission);
       return;
     } // Store off the match so we can call it's shouldRevalidate on subsequent
     // revalidations
 
 
-    fetchLoadMatches.set(key, [path, match]);
-    handleFetcherLoader(key, routeId, path, match);
+    fetchLoadMatches.set(key, {
+      routeId,
+      path
+    });
+    handleFetcherLoader(key, routeId, path, match, matches, submission);
   } // Call the action for the matched fetcher.submit(), and then handle redirects,
   // errors, and revalidation
 
 
-  async function handleFetcherAction(key, routeId, path, match, submission) {
+  async function handleFetcherAction(key, routeId, path, match, requestMatches, submission) {
     interruptActiveLoads();
     fetchLoadMatches.delete(key);
 
-    if (!match.route.action) {
-      let {
-        error
-      } = getMethodNotAllowedResult(path);
+    if (!match.route.action && !match.route.lazy) {
+      let error = getInternalRouterError(405, {
+        method: submission.formMethod,
+        pathname: path,
+        routeId: routeId
+      });
       setFetcherError(key, routeId, error);
       return;
     } // Put this fetcher into it's submitting state
@@ -1795,7 +4360,8 @@ function createRouter(init) {
     let fetcher = _extends({
       state: "submitting"
     }, submission, {
-      data: existingFetcher && existingFetcher.data
+      data: existingFetcher && existingFetcher.data,
+      " _hasFetcherDoneAnything ": true
     });
 
     state.fetchers.set(key, fetcher);
@@ -1804,9 +4370,9 @@ function createRouter(init) {
     }); // Call the action for the fetcher
 
     let abortController = new AbortController();
-    let fetchRequest = createRequest(path, abortController.signal, submission);
+    let fetchRequest = createClientSideRequest(init.history, path, abortController.signal, submission);
     fetchControllers.set(key, abortController);
-    let actionResult = await callLoaderOrAction("action", fetchRequest, match);
+    let actionResult = await callLoaderOrAction("action", fetchRequest, match, requestMatches, manifest, mapRouteProperties, basename);
 
     if (fetchRequest.signal.aborted) {
       // We can delete this so long as we weren't aborted by ou our own fetcher
@@ -1825,21 +4391,18 @@ function createRouter(init) {
       let loadingFetcher = _extends({
         state: "loading"
       }, submission, {
-        data: undefined
+        data: undefined,
+        " _hasFetcherDoneAnything ": true
       });
 
       state.fetchers.set(key, loadingFetcher);
       updateState({
         fetchers: new Map(state.fetchers)
       });
-
-      let redirectNavigation = _extends({
-        state: "loading",
-        location: createLocation(state.location, actionResult.location)
-      }, submission);
-
-      await startRedirectNavigation(actionResult, redirectNavigation);
-      return;
+      return startRedirectNavigation(state, actionResult, {
+        submission,
+        isFetchActionRedirect: true
+      });
     } // Process any non-redirect errors thrown
 
 
@@ -1849,14 +4412,17 @@ function createRouter(init) {
     }
 
     if (isDeferredResult(actionResult)) {
-      invariant(false, "defer() is not supported in actions");
+      throw getInternalRouterError(400, {
+        type: "defer-action"
+      });
     } // Start the data load for current matches, or the next location if we're
     // in the middle of a navigation
 
 
     let nextLocation = state.navigation.location || state.location;
-    let revalidationRequest = createRequest(nextLocation, abortController.signal);
-    let matches = state.navigation.state !== "idle" ? matchRoutes(dataRoutes, state.navigation.location, init.basename) : state.matches;
+    let revalidationRequest = createClientSideRequest(init.history, nextLocation, abortController.signal);
+    let routesToUse = inFlightDataRoutes || dataRoutes;
+    let matches = state.navigation.state !== "idle" ? matchRoutes(routesToUse, state.navigation.location, basename) : state.matches;
     invariant(matches, "Didn't find any matches after fetcher action");
     let loadId = ++incrementingLoadId;
     fetchReloadIds.set(key, loadId);
@@ -1864,21 +4430,20 @@ function createRouter(init) {
     let loadFetcher = _extends({
       state: "loading",
       data: actionResult.data
-    }, submission);
+    }, submission, {
+      " _hasFetcherDoneAnything ": true
+    });
 
     state.fetchers.set(key, loadFetcher);
-    let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(state, matches, submission, nextLocation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, {
+    let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, {
       [match.route.id]: actionResult.data
-    }, undefined, // No need to send through errors since we short circuit above
-    fetchLoadMatches); // Put all revalidating fetchers into the loading state, except for the
+    }, undefined // No need to send through errors since we short circuit above
+    ); // Put all revalidating fetchers into the loading state, except for the
     // current fetcher which we want to keep in it's current loading state which
     // contains it's action submission info + action data
 
-    revalidatingFetchers.filter(_ref5 => {
-      let [staleKey] = _ref5;
-      return staleKey !== key;
-    }).forEach(_ref6 => {
-      let [staleKey] = _ref6;
+    revalidatingFetchers.filter(rf => rf.key !== key).forEach(rf => {
+      let staleKey = rf.key;
       let existingFetcher = state.fetchers.get(staleKey);
       let revalidatingFetcher = {
         state: "loading",
@@ -1886,36 +4451,40 @@ function createRouter(init) {
         formMethod: undefined,
         formAction: undefined,
         formEncType: undefined,
-        formData: undefined
+        formData: undefined,
+        " _hasFetcherDoneAnything ": true
       };
       state.fetchers.set(staleKey, revalidatingFetcher);
-      fetchControllers.set(staleKey, abortController);
+
+      if (rf.controller) {
+        fetchControllers.set(staleKey, rf.controller);
+      }
     });
     updateState({
       fetchers: new Map(state.fetchers)
     });
+
+    let abortPendingFetchRevalidations = () => revalidatingFetchers.forEach(rf => abortFetcher(rf.key));
+
+    abortController.signal.addEventListener("abort", abortPendingFetchRevalidations);
     let {
       results,
       loaderResults,
       fetcherResults
-    } = await callLoadersAndMaybeResolveData(state.matches, matchesToLoad, revalidatingFetchers, revalidationRequest);
+    } = await callLoadersAndMaybeResolveData(state.matches, matches, matchesToLoad, revalidatingFetchers, revalidationRequest);
 
     if (abortController.signal.aborted) {
       return;
     }
 
+    abortController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
     fetchReloadIds.delete(key);
     fetchControllers.delete(key);
-    revalidatingFetchers.forEach(_ref7 => {
-      let [staleKey] = _ref7;
-      return fetchControllers.delete(staleKey);
-    });
+    revalidatingFetchers.forEach(r => fetchControllers.delete(r.key));
     let redirect = findRedirect(results);
 
     if (redirect) {
-      let redirectNavigation = getLoaderRedirect(state, redirect);
-      await startRedirectNavigation(redirect, redirectNavigation);
-      return;
+      return startRedirectNavigation(state, redirect);
     } // Process and commit output from loaders
 
 
@@ -1929,7 +4498,8 @@ function createRouter(init) {
       formMethod: undefined,
       formAction: undefined,
       formEncType: undefined,
-      formData: undefined
+      formData: undefined,
+      " _hasFetcherDoneAnything ": true
     };
     state.fetchers.set(key, doneFetcher);
     let didAbortFetchLoads = abortStaleFetchLoads(loadId); // If we are currently in a navigation loading state and this fetcher is
@@ -1951,7 +4521,7 @@ function createRouter(init) {
       // manually merge here since we aren't going through completeNavigation
       updateState(_extends({
         errors,
-        loaderData: mergeLoaderData(state.loaderData, loaderData, matches)
+        loaderData: mergeLoaderData(state.loaderData, loaderData, matches, errors)
       }, didAbortFetchLoads ? {
         fetchers: new Map(state.fetchers)
       } : {}));
@@ -1960,33 +4530,36 @@ function createRouter(init) {
   } // Call the matched loader for fetcher.load(), handling redirects, errors, etc.
 
 
-  async function handleFetcherLoader(key, routeId, path, match) {
+  async function handleFetcherLoader(key, routeId, path, match, matches, submission) {
     let existingFetcher = state.fetchers.get(key); // Put this fetcher into it's loading state
 
-    let loadingFetcher = {
+    let loadingFetcher = _extends({
       state: "loading",
       formMethod: undefined,
       formAction: undefined,
       formEncType: undefined,
-      formData: undefined,
-      data: existingFetcher && existingFetcher.data
-    };
+      formData: undefined
+    }, submission, {
+      data: existingFetcher && existingFetcher.data,
+      " _hasFetcherDoneAnything ": true
+    });
+
     state.fetchers.set(key, loadingFetcher);
     updateState({
       fetchers: new Map(state.fetchers)
     }); // Call the loader for this fetcher route match
 
     let abortController = new AbortController();
-    let fetchRequest = createRequest(path, abortController.signal);
+    let fetchRequest = createClientSideRequest(init.history, path, abortController.signal);
     fetchControllers.set(key, abortController);
-    let result = await callLoaderOrAction("loader", fetchRequest, match); // Deferred isn't supported or fetcher loads, await everything and treat it
+    let result = await callLoaderOrAction("loader", fetchRequest, match, matches, manifest, mapRouteProperties, basename); // Deferred isn't supported for fetcher loads, await everything and treat it
     // as a normal load.  resolveDeferredData will return undefined if this
     // fetcher gets aborted, so we just leave result untouched and short circuit
     // below if that happens
 
     if (isDeferredResult(result)) {
       result = (await resolveDeferredData(result, fetchRequest.signal, true)) || result;
-    } // We can delete this so long as we weren't aborted by ou our own fetcher
+    } // We can delete this so long as we weren't aborted by our our own fetcher
     // re-load which would have put _new_ controller is in fetchControllers
 
 
@@ -2000,8 +4573,8 @@ function createRouter(init) {
 
 
     if (isRedirectResult(result)) {
-      let redirectNavigation = getLoaderRedirect(state, result);
-      await startRedirectNavigation(result, redirectNavigation);
+      fetchRedirectIds.add(key);
+      await startRedirectNavigation(state, result);
       return;
     } // Process any non-redirect errors thrown
 
@@ -2029,7 +4602,8 @@ function createRouter(init) {
       formMethod: undefined,
       formAction: undefined,
       formEncType: undefined,
-      formData: undefined
+      formData: undefined,
+      " _hasFetcherDoneAnything ": true
     };
     state.fetchers.set(key, doneFetcher);
     updateState({
@@ -2057,35 +4631,129 @@ function createRouter(init) {
    */
 
 
-  async function startRedirectNavigation(redirect, navigation, replace) {
+  async function startRedirectNavigation(state, redirect, _temp) {
+    var _window;
+
+    let {
+      submission,
+      replace,
+      isFetchActionRedirect
+    } = _temp === void 0 ? {} : _temp;
+
     if (redirect.revalidate) {
       isRevalidationRequired = true;
     }
 
-    invariant(navigation.location, "Expected a location on the redirect navigation"); // There's no need to abort on redirects, since we don't detect the
+    let redirectLocation = createLocation(state.location, redirect.location, // TODO: This can be removed once we get rid of useTransition in Remix v2
+    _extends({
+      _isRedirect: true
+    }, isFetchActionRedirect ? {
+      _isFetchActionRedirect: true
+    } : {}));
+    invariant(redirectLocation, "Expected a location on the redirect navigation"); // Check if this an absolute external redirect that goes to a new origin
+
+    if (ABSOLUTE_URL_REGEX.test(redirect.location) && isBrowser && typeof ((_window = window) == null ? void 0 : _window.location) !== "undefined") {
+      let url = init.history.createURL(redirect.location);
+      let isDifferentBasename = stripBasename(url.pathname, basename) == null;
+
+      if (window.location.origin !== url.origin || isDifferentBasename) {
+        if (replace) {
+          window.location.replace(redirect.location);
+        } else {
+          window.location.assign(redirect.location);
+        }
+
+        return;
+      }
+    } // There's no need to abort on redirects, since we don't detect the
     // redirect until the action/loaders have settled
 
+
     pendingNavigationController = null;
-    let redirectHistoryAction = replace === true ? Action.Replace : Action.Push;
-    await startNavigation(redirectHistoryAction, navigation.location, {
-      overrideNavigation: navigation
-    });
+    let redirectHistoryAction = replace === true ? Action.Replace : Action.Push; // Use the incoming submission if provided, fallback on the active one in
+    // state.navigation
+
+    let {
+      formMethod,
+      formAction,
+      formEncType,
+      formData
+    } = state.navigation;
+
+    if (!submission && formMethod && formAction && formData && formEncType) {
+      submission = {
+        formMethod,
+        formAction,
+        formEncType,
+        formData
+      };
+    } // If this was a 307/308 submission we want to preserve the HTTP method and
+    // re-submit the GET/POST/PUT/PATCH/DELETE as a submission navigation to the
+    // redirected location
+
+
+    if (redirectPreserveMethodStatusCodes.has(redirect.status) && submission && isMutationMethod(submission.formMethod)) {
+      await startNavigation(redirectHistoryAction, redirectLocation, {
+        submission: _extends({}, submission, {
+          formAction: redirect.location
+        }),
+        // Preserve this flag across redirects
+        preventScrollReset: pendingPreventScrollReset
+      });
+    } else if (isFetchActionRedirect) {
+      // For a fetch action redirect, we kick off a new loading navigation
+      // without the fetcher submission, but we send it along for shouldRevalidate
+      await startNavigation(redirectHistoryAction, redirectLocation, {
+        overrideNavigation: {
+          state: "loading",
+          location: redirectLocation,
+          formMethod: undefined,
+          formAction: undefined,
+          formEncType: undefined,
+          formData: undefined
+        },
+        fetcherSubmission: submission,
+        // Preserve this flag across redirects
+        preventScrollReset: pendingPreventScrollReset
+      });
+    } else {
+      // Otherwise, we kick off a new loading navigation, preserving the
+      // submission info for the duration of this navigation
+      await startNavigation(redirectHistoryAction, redirectLocation, {
+        overrideNavigation: {
+          state: "loading",
+          location: redirectLocation,
+          formMethod: submission ? submission.formMethod : undefined,
+          formAction: submission ? submission.formAction : undefined,
+          formEncType: submission ? submission.formEncType : undefined,
+          formData: submission ? submission.formData : undefined
+        },
+        // Preserve this flag across redirects
+        preventScrollReset: pendingPreventScrollReset
+      });
+    }
   }
 
-  async function callLoadersAndMaybeResolveData(currentMatches, matchesToLoad, fetchersToLoad, request) {
+  async function callLoadersAndMaybeResolveData(currentMatches, matches, matchesToLoad, fetchersToLoad, request) {
     // Call all navigation loaders and revalidating fetcher loaders in parallel,
     // then slice off the results into separate arrays so we can handle them
     // accordingly
-    let results = await Promise.all([...matchesToLoad.map(m => callLoaderOrAction("loader", request, m)), ...fetchersToLoad.map(_ref8 => {
-      let [, href, match] = _ref8;
-      return callLoaderOrAction("loader", createRequest(href, request.signal), match);
+    let results = await Promise.all([...matchesToLoad.map(match => callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename)), ...fetchersToLoad.map(f => {
+      if (f.matches && f.match && f.controller) {
+        return callLoaderOrAction("loader", createClientSideRequest(init.history, f.path, f.controller.signal), f.match, f.matches, manifest, mapRouteProperties, basename);
+      } else {
+        let error = {
+          type: ResultType.error,
+          error: getInternalRouterError(404, {
+            pathname: f.path
+          })
+        };
+        return error;
+      }
     })]);
     let loaderResults = results.slice(0, matchesToLoad.length);
     let fetcherResults = results.slice(matchesToLoad.length);
-    await Promise.all([resolveDeferredResults(currentMatches, matchesToLoad, loaderResults, request.signal, false, state.loaderData), resolveDeferredResults(currentMatches, fetchersToLoad.map(_ref9 => {
-      let [,, match] = _ref9;
-      return match;
-    }), fetcherResults, request.signal, true)]);
+    await Promise.all([resolveDeferredResults(currentMatches, matchesToLoad, loaderResults, loaderResults.map(() => request.signal), false, state.loaderData), resolveDeferredResults(currentMatches, fetchersToLoad.map(f => f.match), fetcherResults, fetchersToLoad.map(f => f.controller ? f.controller.signal : null), true)]);
     return {
       results,
       loaderResults,
@@ -2143,7 +4811,8 @@ function createRouter(init) {
         formMethod: undefined,
         formAction: undefined,
         formEncType: undefined,
-        formData: undefined
+        formData: undefined,
+        " _hasFetcherDoneAnything ": true
       };
       state.fetchers.set(key, doneFetcher);
     }
@@ -2151,6 +4820,7 @@ function createRouter(init) {
 
   function markFetchRedirectsDone() {
     let doneKeys = [];
+    let updatedFetchers = false;
 
     for (let key of fetchRedirectIds) {
       let fetcher = state.fetchers.get(key);
@@ -2159,10 +4829,12 @@ function createRouter(init) {
       if (fetcher.state === "loading") {
         fetchRedirectIds.delete(key);
         doneKeys.push(key);
+        updatedFetchers = true;
       }
     }
 
     markFetchersDone(doneKeys);
+    return updatedFetchers;
   }
 
   function abortStaleFetchLoads(landedId) {
@@ -2183,6 +4855,71 @@ function createRouter(init) {
 
     markFetchersDone(yeetedKeys);
     return yeetedKeys.length > 0;
+  }
+
+  function getBlocker(key, fn) {
+    let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+
+    if (blockerFunctions.get(key) !== fn) {
+      blockerFunctions.set(key, fn);
+    }
+
+    return blocker;
+  }
+
+  function deleteBlocker(key) {
+    state.blockers.delete(key);
+    blockerFunctions.delete(key);
+  } // Utility function to update blockers, ensuring valid state transitions
+
+
+  function updateBlocker(key, newBlocker) {
+    let blocker = state.blockers.get(key) || IDLE_BLOCKER; // Poor mans state machine :)
+    // https://mermaid.live/edit#pako:eNqVkc9OwzAMxl8l8nnjAYrEtDIOHEBIgwvKJTReGy3_lDpIqO27k6awMG0XcrLlnz87nwdonESogKXXBuE79rq75XZO3-yHds0RJVuv70YrPlUrCEe2HfrORS3rubqZfuhtpg5C9wk5tZ4VKcRUq88q9Z8RS0-48cE1iHJkL0ugbHuFLus9L6spZy8nX9MP2CNdomVaposqu3fGayT8T8-jJQwhepo_UtpgBQaDEUom04dZhAN1aJBDlUKJBxE1ceB2Smj0Mln-IBW5AFU2dwUiktt_2Qaq2dBfaKdEup85UV7Yd-dKjlnkabl2Pvr0DTkTreM
+
+    invariant(blocker.state === "unblocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "proceeding" || blocker.state === "blocked" && newBlocker.state === "unblocked" || blocker.state === "proceeding" && newBlocker.state === "unblocked", "Invalid blocker state transition: " + blocker.state + " -> " + newBlocker.state);
+    state.blockers.set(key, newBlocker);
+    updateState({
+      blockers: new Map(state.blockers)
+    });
+  }
+
+  function shouldBlockNavigation(_ref2) {
+    let {
+      currentLocation,
+      nextLocation,
+      historyAction
+    } = _ref2;
+
+    if (blockerFunctions.size === 0) {
+      return;
+    } // We ony support a single active blocker at the moment since we don't have
+    // any compelling use cases for multi-blocker yet
+
+
+    if (blockerFunctions.size > 1) {
+      warning(false, "A router only supports one blocker at a time");
+    }
+
+    let entries = Array.from(blockerFunctions.entries());
+    let [blockerKey, blockerFunction] = entries[entries.length - 1];
+    let blocker = state.blockers.get(blockerKey);
+
+    if (blocker && blocker.state === "proceeding") {
+      // If the blocker is currently proceeding, we don't need to re-check
+      // it and can let this navigation continue
+      return;
+    } // At this point, we know we're unblocked/blocked so we need to check the
+    // user-provided blocker function
+
+
+    if (blockerFunction({
+      currentLocation,
+      nextLocation,
+      historyAction
+    })) {
+      return blockerKey;
+    }
   }
 
   function cancelActiveDeferreds(predicate) {
@@ -2251,9 +4988,13 @@ function createRouter(init) {
     return null;
   }
 
+  function _internalSetRoutes(newRoutes) {
+    inFlightDataRoutes = newRoutes;
+  }
+
   router = {
     get basename() {
-      return init.basename;
+      return basename;
     },
 
     get state() {
@@ -2270,12 +5011,20 @@ function createRouter(init) {
     navigate,
     fetch,
     revalidate,
-    createHref,
+    // Passthrough to history-aware createHref used by useHref so we get proper
+    // hash-aware URLs in DOM paths
+    createHref: to => init.history.createHref(to),
+    encodeLocation: to => init.history.encodeLocation(to),
     getFetcher,
     deleteFetcher,
     dispose,
+    getBlocker,
+    deleteBlocker,
     _internalFetchControllers: fetchControllers,
-    _internalActiveDeferreds: activeDeferreds
+    _internalActiveDeferreds: activeDeferreds,
+    // TODO: Remove setRoutes, it's temporary to avoid dealing with
+    // updating the tree while validating the update algorithm.
+    _internalSetRoutes
   };
   return router;
 } //#endregion
@@ -2283,17 +5032,105 @@ function createRouter(init) {
 //#region createStaticHandler
 ////////////////////////////////////////////////////////////////////////////////
 
-function unstable_createStaticHandler(routes) {
-  invariant(routes.length > 0, "You must provide a non-empty routes array to unstable_createStaticHandler");
-  let dataRoutes = convertRoutesToDataRoutes(routes);
+const UNSAFE_DEFERRED_SYMBOL = Symbol("deferred");
+function createStaticHandler(routes, opts) {
+  invariant(routes.length > 0, "You must provide a non-empty routes array to createStaticHandler");
+  let manifest = {};
+  let basename = (opts ? opts.basename : null) || "/";
+  let mapRouteProperties;
 
-  async function query(request) {
+  if (opts != null && opts.mapRouteProperties) {
+    mapRouteProperties = opts.mapRouteProperties;
+  } else if (opts != null && opts.detectErrorBoundary) {
+    // If they are still using the deprecated version, wrap it with the new API
+    let detectErrorBoundary = opts.detectErrorBoundary;
+
+    mapRouteProperties = route => ({
+      hasErrorBoundary: detectErrorBoundary(route)
+    });
+  } else {
+    mapRouteProperties = defaultMapRouteProperties;
+  }
+
+  let dataRoutes = convertRoutesToDataRoutes(routes, mapRouteProperties, undefined, manifest);
+  /**
+   * The query() method is intended for document requests, in which we want to
+   * call an optional action and potentially multiple loaders for all nested
+   * routes.  It returns a StaticHandlerContext object, which is very similar
+   * to the router state (location, loaderData, actionData, errors, etc.) and
+   * also adds SSR-specific information such as the statusCode and headers
+   * from action/loaders Responses.
+   *
+   * It _should_ never throw and should report all errors through the
+   * returned context.errors object, properly associating errors to their error
+   * boundary.  Additionally, it tracks _deepestRenderedBoundaryId which can be
+   * used to emulate React error boundaries during SSr by performing a second
+   * pass only down to the boundaryId.
+   *
+   * The one exception where we do not return a StaticHandlerContext is when a
+   * redirect response is returned or thrown from any action/loader.  We
+   * propagate that out and return the raw Response so the HTTP server can
+   * return it directly.
+   */
+
+  async function query(request, _temp2) {
     let {
-      location,
-      result
-    } = await queryImpl(request);
+      requestContext
+    } = _temp2 === void 0 ? {} : _temp2;
+    let url = new URL(request.url);
+    let method = request.method;
+    let location = createLocation("", createPath(url), null, "default");
+    let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
 
-    if (result instanceof Response) {
+    if (!isValidMethod(method) && method !== "HEAD") {
+      let error = getInternalRouterError(405, {
+        method
+      });
+      let {
+        matches: methodNotAllowedMatches,
+        route
+      } = getShortCircuitMatches(dataRoutes);
+      return {
+        basename,
+        location,
+        matches: methodNotAllowedMatches,
+        loaderData: {},
+        actionData: null,
+        errors: {
+          [route.id]: error
+        },
+        statusCode: error.status,
+        loaderHeaders: {},
+        actionHeaders: {},
+        activeDeferreds: null
+      };
+    } else if (!matches) {
+      let error = getInternalRouterError(404, {
+        pathname: location.pathname
+      });
+      let {
+        matches: notFoundMatches,
+        route
+      } = getShortCircuitMatches(dataRoutes);
+      return {
+        basename,
+        location,
+        matches: notFoundMatches,
+        loaderData: {},
+        actionData: null,
+        errors: {
+          [route.id]: error
+        },
+        statusCode: error.status,
+        loaderHeaders: {},
+        actionHeaders: {},
+        activeDeferreds: null
+      };
+    }
+
+    let result = await queryImpl(request, location, matches, requestContext);
+
+    if (isResponse(result)) {
       return result;
     } // When returning StaticHandlerContext, we patch back in the location here
     // since we need it for React Context.  But this helps keep our submit and
@@ -2301,86 +5138,158 @@ function unstable_createStaticHandler(routes) {
 
 
     return _extends({
-      location
+      location,
+      basename
     }, result);
   }
+  /**
+   * The queryRoute() method is intended for targeted route requests, either
+   * for fetch ?_data requests or resource route requests.  In this case, we
+   * are only ever calling a single action or loader, and we are returning the
+   * returned value directly.  In most cases, this will be a Response returned
+   * from the action/loader, but it may be a primitive or other value as well -
+   * and in such cases the calling context should handle that accordingly.
+   *
+   * We do respect the throw/return differentiation, so if an action/loader
+   * throws, then this method will throw the value.  This is important so we
+   * can do proper boundary identification in Remix where a thrown Response
+   * must go to the Catch Boundary but a returned Response is happy-path.
+   *
+   * One thing to note is that any Router-initiated Errors that make sense
+   * to associate with a status code will be thrown as an ErrorResponse
+   * instance which include the raw Error, such that the calling context can
+   * serialize the error as they see fit while including the proper response
+   * code.  Examples here are 404 and 405 errors that occur prior to reaching
+   * any user-defined loaders.
+   */
 
-  async function queryRoute(request, routeId) {
+
+  async function queryRoute(request, _temp3) {
     let {
-      result
-    } = await queryImpl(request, routeId);
+      routeId,
+      requestContext
+    } = _temp3 === void 0 ? {} : _temp3;
+    let url = new URL(request.url);
+    let method = request.method;
+    let location = createLocation("", createPath(url), null, "default");
+    let matches = matchRoutes(dataRoutes, location, basename); // SSR supports HEAD requests while SPA doesn't
 
-    if (result instanceof Response) {
-      return result;
-    } // Pick off the right state value to return
-
-
-    let routeData = [result.errors, result.actionData, result.loaderData].find(v => v);
-    let value = Object.values(routeData || {})[0];
-
-    if (isRouteErrorResponse(value)) {
-      return new Response(value.data, {
-        status: value.status,
-        statusText: value.statusText
+    if (!isValidMethod(method) && method !== "HEAD" && method !== "OPTIONS") {
+      throw getInternalRouterError(405, {
+        method
+      });
+    } else if (!matches) {
+      throw getInternalRouterError(404, {
+        pathname: location.pathname
       });
     }
 
-    return value;
+    let match = routeId ? matches.find(m => m.route.id === routeId) : getTargetMatch(matches, location);
+
+    if (routeId && !match) {
+      throw getInternalRouterError(403, {
+        pathname: location.pathname,
+        routeId
+      });
+    } else if (!match) {
+      // This should never hit I don't think?
+      throw getInternalRouterError(404, {
+        pathname: location.pathname
+      });
+    }
+
+    let result = await queryImpl(request, location, matches, requestContext, match);
+
+    if (isResponse(result)) {
+      return result;
+    }
+
+    let error = result.errors ? Object.values(result.errors)[0] : undefined;
+
+    if (error !== undefined) {
+      // If we got back result.errors, that means the loader/action threw
+      // _something_ that wasn't a Response, but it's not guaranteed/required
+      // to be an `instanceof Error` either, so we have to use throw here to
+      // preserve the "error" state outside of queryImpl.
+      throw error;
+    } // Pick off the right state value to return
+
+
+    if (result.actionData) {
+      return Object.values(result.actionData)[0];
+    }
+
+    if (result.loaderData) {
+      var _result$activeDeferre;
+
+      let data = Object.values(result.loaderData)[0];
+
+      if ((_result$activeDeferre = result.activeDeferreds) != null && _result$activeDeferre[match.route.id]) {
+        data[UNSAFE_DEFERRED_SYMBOL] = result.activeDeferreds[match.route.id];
+      }
+
+      return data;
+    }
+
+    return undefined;
   }
 
-  async function queryImpl(request, routeId) {
-    invariant(request.method !== "HEAD", "query()/queryRoute() do not support HEAD requests");
+  async function queryImpl(request, location, matches, requestContext, routeMatch) {
     invariant(request.signal, "query()/queryRoute() requests must contain an AbortController signal");
-    let {
-      location,
-      matches,
-      shortCircuitState
-    } = matchRequest(request, routeId);
 
     try {
-      if (shortCircuitState) {
-        return {
-          location,
-          result: shortCircuitState
-        };
+      if (isMutationMethod(request.method.toLowerCase())) {
+        let result = await submit(request, matches, routeMatch || getTargetMatch(matches, location), requestContext, routeMatch != null);
+        return result;
       }
 
-      if (request.method !== "GET") {
-        let result = await submit(request, matches, getTargetMatch(matches, location), routeId != null);
-        return {
-          location,
-          result
-        };
-      }
-
-      let result = await loadRouteData(request, matches, routeId != null);
-      return {
-        location,
-        result: _extends({}, result, {
-          actionData: null,
-          actionHeaders: {}
-        })
-      };
+      let result = await loadRouteData(request, matches, requestContext, routeMatch);
+      return isResponse(result) ? result : _extends({}, result, {
+        actionData: null,
+        actionHeaders: {}
+      });
     } catch (e) {
-      if (e instanceof Response) {
-        return {
-          location,
-          result: e
-        };
+      // If the user threw/returned a Response in callLoaderOrAction, we throw
+      // it to bail out and then return or throw here based on whether the user
+      // returned or threw
+      if (isQueryRouteResponse(e)) {
+        if (e.type === ResultType.error && !isRedirectResponse(e.response)) {
+          throw e.response;
+        }
+
+        return e.response;
+      } // Redirects are always returned since they don't propagate to catch
+      // boundaries
+
+
+      if (isRedirectResponse(e)) {
+        return e;
       }
 
       throw e;
     }
   }
 
-  async function submit(request, matches, actionMatch, isRouteRequest) {
+  async function submit(request, matches, actionMatch, requestContext, isRouteRequest) {
     let result;
 
-    if (!actionMatch.route.action) {
-      let href = createHref(new URL(request.url));
-      result = getMethodNotAllowedResult(href);
+    if (!actionMatch.route.action && !actionMatch.route.lazy) {
+      let error = getInternalRouterError(405, {
+        method: request.method,
+        pathname: new URL(request.url).pathname,
+        routeId: actionMatch.route.id
+      });
+
+      if (isRouteRequest) {
+        throw error;
+      }
+
+      result = {
+        type: ResultType.error,
+        error
+      };
     } else {
-      result = await callLoaderOrAction("action", request, actionMatch, true, isRouteRequest);
+      result = await callLoaderOrAction("action", request, actionMatch, matches, manifest, mapRouteProperties, basename, true, isRouteRequest, requestContext);
 
       if (request.signal.aborted) {
         let method = isRouteRequest ? "queryRoute" : "query";
@@ -2390,7 +5299,7 @@ function unstable_createStaticHandler(routes) {
 
     if (isRedirectResult(result)) {
       // Uhhhh - this should never happen, we should always throw these from
-      // calLoaderOrAction, but the type narrowing here keeps TS happy and we
+      // callLoaderOrAction, but the type narrowing here keeps TS happy and we
       // can get back on the "throw all redirect responses" train here should
       // this ever happen :/
       throw new Response(null, {
@@ -2402,25 +5311,25 @@ function unstable_createStaticHandler(routes) {
     }
 
     if (isDeferredResult(result)) {
-      throw new Error("defer() is not supported in actions");
+      let error = getInternalRouterError(400, {
+        type: "defer-action"
+      });
+
+      if (isRouteRequest) {
+        throw error;
+      }
+
+      result = {
+        type: ResultType.error,
+        error
+      };
     }
 
     if (isRouteRequest) {
+      // Note: This should only be non-Response values if we get here, since
+      // isRouteRequest should throw any Response received in callLoaderOrAction
       if (isErrorResult(result)) {
-        let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
-        return {
-          matches: [actionMatch],
-          loaderData: {},
-          actionData: null,
-          errors: {
-            [boundaryMatch.route.id]: result.error
-          },
-          // Note: statusCode + headers are unused here since queryRoute will
-          // return the raw Response or value
-          statusCode: 500,
-          loaderHeaders: {},
-          actionHeaders: {}
-        };
+        throw result.error;
       }
 
       return {
@@ -2434,7 +5343,8 @@ function unstable_createStaticHandler(routes) {
         // return the raw Response or value
         statusCode: 200,
         loaderHeaders: {},
-        actionHeaders: {}
+        actionHeaders: {},
+        activeDeferreds: null
       };
     }
 
@@ -2442,7 +5352,7 @@ function unstable_createStaticHandler(routes) {
       // Store off the pending error - we use it to determine which loaders
       // to call and will commit it when we complete the navigation
       let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
-      let context = await loadRouteData(request, matches, isRouteRequest, {
+      let context = await loadRouteData(request, matches, requestContext, undefined, {
         [boundaryMatch.route.id]: result.error
       }); // action status codes take precedence over loader status codes
 
@@ -2453,9 +5363,15 @@ function unstable_createStaticHandler(routes) {
           [actionMatch.route.id]: result.headers
         } : {})
       });
-    }
+    } // Create a GET request for the loaders
 
-    let context = await loadRouteData(request, matches, isRouteRequest);
+
+    let loaderRequest = new Request(request.url, {
+      headers: request.headers,
+      redirect: request.redirect,
+      signal: request.signal
+    });
+    let context = await loadRouteData(loaderRequest, matches, requestContext);
     return _extends({}, context, result.statusCode ? {
       statusCode: result.statusCode
     } : {}, {
@@ -2468,77 +5384,55 @@ function unstable_createStaticHandler(routes) {
     });
   }
 
-  async function loadRouteData(request, matches, isRouteRequest, pendingActionError) {
-    let matchesToLoad = getLoaderMatchesUntilBoundary(matches, Object.keys(pendingActionError || {})[0]).filter(m => m.route.loader); // Short circuit if we have no loaders to run
+  async function loadRouteData(request, matches, requestContext, routeMatch, pendingActionError) {
+    let isRouteRequest = routeMatch != null; // Short circuit if we have no loaders to run (queryRoute())
+
+    if (isRouteRequest && !(routeMatch != null && routeMatch.route.loader) && !(routeMatch != null && routeMatch.route.lazy)) {
+      throw getInternalRouterError(400, {
+        method: request.method,
+        pathname: new URL(request.url).pathname,
+        routeId: routeMatch == null ? void 0 : routeMatch.route.id
+      });
+    }
+
+    let requestMatches = routeMatch ? [routeMatch] : getLoaderMatchesUntilBoundary(matches, Object.keys(pendingActionError || {})[0]);
+    let matchesToLoad = requestMatches.filter(m => m.route.loader || m.route.lazy); // Short circuit if we have no loaders to run (query())
 
     if (matchesToLoad.length === 0) {
       return {
         matches,
-        loaderData: {},
+        // Add a null for all matched routes for proper revalidation on the client
+        loaderData: matches.reduce((acc, m) => Object.assign(acc, {
+          [m.route.id]: null
+        }), {}),
         errors: pendingActionError || null,
         statusCode: 200,
-        loaderHeaders: {}
+        loaderHeaders: {},
+        activeDeferreds: null
       };
     }
 
-    let results = await Promise.all([...matchesToLoad.map(m => callLoaderOrAction("loader", request, m, true, isRouteRequest))]);
+    let results = await Promise.all([...matchesToLoad.map(match => callLoaderOrAction("loader", request, match, matches, manifest, mapRouteProperties, basename, true, isRouteRequest, requestContext))]);
 
     if (request.signal.aborted) {
       let method = isRouteRequest ? "queryRoute" : "query";
       throw new Error(method + "() call aborted");
-    } // Can't do anything with these without the Remix side of things, so just
-    // cancel them for now
+    } // Process and commit output from loaders
 
 
-    results.forEach(result => {
-      if (isDeferredResult(result)) {
-        result.deferredData.cancel();
+    let activeDeferreds = new Map();
+    let context = processRouteLoaderData(matches, matchesToLoad, results, pendingActionError, activeDeferreds); // Add a null for any non-loader matches for proper revalidation on the client
+
+    let executedLoaders = new Set(matchesToLoad.map(match => match.route.id));
+    matches.forEach(match => {
+      if (!executedLoaders.has(match.route.id)) {
+        context.loaderData[match.route.id] = null;
       }
-    }); // Process and commit output from loaders
-
-    let context = processRouteLoaderData(matches, matchesToLoad, results, pendingActionError);
-    return _extends({}, context, {
-      matches
     });
-  }
-
-  function matchRequest(req, routeId) {
-    let url = new URL(req.url);
-    let location = createLocation("", createPath(url), null, "default");
-    let matches = matchRoutes(dataRoutes, location);
-
-    if (matches && routeId) {
-      matches = matches.filter(m => m.route.id === routeId);
-    } // Short circuit with a 404 if we match nothing
-
-
-    if (!matches) {
-      let {
-        matches: notFoundMatches,
-        route,
-        error
-      } = getNotFoundMatches(dataRoutes);
-      return {
-        location,
-        matches: notFoundMatches,
-        shortCircuitState: {
-          matches: notFoundMatches,
-          loaderData: {},
-          actionData: null,
-          errors: {
-            [route.id]: error
-          },
-          statusCode: 404,
-          loaderHeaders: {},
-          actionHeaders: {}
-        }
-      };
-    }
-
-    return {
-      location,
-      matches
-    };
+    return _extends({}, context, {
+      matches,
+      activeDeferreds: activeDeferreds.size > 0 ? Object.fromEntries(activeDeferreds.entries()) : null
+    });
   }
 
   return {
@@ -2565,83 +5459,116 @@ function getStaticContextFromError(routes, context, error) {
   });
 
   return newContext;
+}
+
+function isSubmissionNavigation(opts) {
+  return opts != null && "formData" in opts;
+}
+
+function normalizeTo(location, matches, basename, prependBasename, to, fromRouteId, relative) {
+  let contextualMatches;
+  let activeRouteMatch;
+
+  if (fromRouteId != null && relative !== "path") {
+    // Grab matches up to the calling route so our route-relative logic is
+    // relative to the correct source route.  When using relative:path,
+    // fromRouteId is ignored since that is always relative to the current
+    // location path
+    contextualMatches = [];
+
+    for (let match of matches) {
+      contextualMatches.push(match);
+
+      if (match.route.id === fromRouteId) {
+        activeRouteMatch = match;
+        break;
+      }
+    }
+  } else {
+    contextualMatches = matches;
+    activeRouteMatch = matches[matches.length - 1];
+  } // Resolve the relative path
+
+
+  let path = resolveTo(to ? to : ".", getPathContributingMatches(contextualMatches).map(m => m.pathnameBase), stripBasename(location.pathname, basename) || location.pathname, relative === "path"); // When `to` is not specified we inherit search/hash from the current
+  // location, unlike when to="." and we just inherit the path.
+  // See https://github.com/remix-run/remix/issues/927
+
+  if (to == null) {
+    path.search = location.search;
+    path.hash = location.hash;
+  } // Add an ?index param for matched index routes if we don't already have one
+
+
+  if ((to == null || to === "" || to === ".") && activeRouteMatch && activeRouteMatch.route.index && !hasNakedIndexQuery(path.search)) {
+    path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+  } // If we're operating within a basename, prepend it to the pathname.  If
+  // this is a root navigation, then just use the raw basename which allows
+  // the basename to have full control over the presence of a trailing slash
+  // on root actions
+
+
+  if (prependBasename && basename !== "/") {
+    path.pathname = path.pathname === "/" ? basename : joinPaths([basename, path.pathname]);
+  }
+
+  return createPath(path);
 } // Normalize navigation options by converting formMethod=GET formData objects to
 // URLSearchParams so they behave identically to links with query params
 
-function normalizeNavigateOptions(to, opts, isFetcher) {
-  if (isFetcher === void 0) {
-    isFetcher = false;
-  }
 
-  let path = typeof to === "string" ? to : createPath(to); // Return location verbatim on non-submission navigations
-
-  if (!opts || !("formMethod" in opts) && !("formData" in opts)) {
+function normalizeNavigateOptions(normalizeFormMethod, isFetcher, path, opts) {
+  // Return location verbatim on non-submission navigations
+  if (!opts || !isSubmissionNavigation(opts)) {
     return {
       path
+    };
+  }
+
+  if (opts.formMethod && !isValidMethod(opts.formMethod)) {
+    return {
+      path,
+      error: getInternalRouterError(405, {
+        method: opts.formMethod
+      })
     };
   } // Create a Submission on non-GET navigations
 
 
-  if (opts.formMethod != null && opts.formMethod !== "get") {
-    return {
-      path,
-      submission: {
-        formMethod: opts.formMethod,
-        formAction: createHref(parsePath(path)),
-        formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
-        formData: opts.formData
-      }
-    };
-  } // No formData to flatten for GET submission
+  let submission;
 
-
-  if (!opts.formData) {
-    return {
-      path
+  if (opts.formData) {
+    let formMethod = opts.formMethod || "get";
+    submission = {
+      formMethod: normalizeFormMethod ? formMethod.toUpperCase() : formMethod.toLowerCase(),
+      formAction: stripHashFromPath(path),
+      formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
+      formData: opts.formData
     };
+
+    if (isMutationMethod(submission.formMethod)) {
+      return {
+        path,
+        submission
+      };
+    }
   } // Flatten submission onto URLSearchParams for GET submissions
 
 
   let parsedPath = parsePath(path);
+  let searchParams = convertFormDataToSearchParams(opts.formData); // On GET navigation submissions we can drop the ?index param from the
+  // resulting location since all loaders will run.  But fetcher GET submissions
+  // only run a single loader so we need to preserve any incoming ?index params
 
-  try {
-    let searchParams = convertFormDataToSearchParams(opts.formData); // Since fetcher GET submissions only run a single loader (as opposed to
-    // navigation GET submissions which run all loaders), we need to preserve
-    // any incoming ?index params
-
-    if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) {
-      searchParams.append("index", "");
-    }
-
-    parsedPath.search = "?" + searchParams;
-  } catch (e) {
-    return {
-      path,
-      error: new ErrorResponse(400, "Bad Request", "Cannot submit binary form data using GET")
-    };
+  if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) {
+    searchParams.append("index", "");
   }
 
+  parsedPath.search = "?" + searchParams;
   return {
-    path: createPath(parsedPath)
+    path: createPath(parsedPath),
+    submission
   };
-}
-
-function getLoaderRedirect(state, redirect) {
-  let {
-    formMethod,
-    formAction,
-    formEncType,
-    formData
-  } = state.navigation;
-  let navigation = {
-    state: "loading",
-    location: createLocation(state.location, redirect.location),
-    formMethod: formMethod || undefined,
-    formAction: formAction || undefined,
-    formEncType: formEncType || undefined,
-    formData: formData || undefined
-  };
-  return navigation;
 } // Filter out all routes below any caught error as they aren't going to
 // render so we don't need to load them
 
@@ -2660,27 +5587,108 @@ function getLoaderMatchesUntilBoundary(matches, boundaryId) {
   return boundaryMatches;
 }
 
-function getMatchesToLoad(state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, pendingActionData, pendingError, fetchLoadMatches) {
-  let actionResult = pendingError ? Object.values(pendingError)[0] : pendingActionData ? Object.values(pendingActionData)[0] : null; // Pick navigation matches that are net-new or qualify for revalidation
+function getMatchesToLoad(history, state, matches, submission, location, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, fetchLoadMatches, routesToUse, basename, pendingActionData, pendingError) {
+  let actionResult = pendingError ? Object.values(pendingError)[0] : pendingActionData ? Object.values(pendingActionData)[0] : undefined;
+  let currentUrl = history.createURL(state.location);
+  let nextUrl = history.createURL(location); // Pick navigation matches that are net-new or qualify for revalidation
 
   let boundaryId = pendingError ? Object.keys(pendingError)[0] : undefined;
   let boundaryMatches = getLoaderMatchesUntilBoundary(matches, boundaryId);
-  let navigationMatches = boundaryMatches.filter((match, index) => match.route.loader != null && (isNewLoader(state.loaderData, state.matches[index], match) || // If this route had a pending deferred cancelled it must be revalidated
-  cancelledDeferredRoutes.some(id => id === match.route.id) || shouldRevalidateLoader(state.location, state.matches[index], submission, location, match, isRevalidationRequired, actionResult))); // Pick fetcher.loads that need to be revalidated
+  let navigationMatches = boundaryMatches.filter((match, index) => {
+    if (match.route.lazy) {
+      // We haven't loaded this route yet so we don't know if it's got a loader!
+      return true;
+    }
+
+    if (match.route.loader == null) {
+      return false;
+    } // Always call the loader on new route instances and pending defer cancellations
+
+
+    if (isNewLoader(state.loaderData, state.matches[index], match) || cancelledDeferredRoutes.some(id => id === match.route.id)) {
+      return true;
+    } // This is the default implementation for when we revalidate.  If the route
+    // provides it's own implementation, then we give them full control but
+    // provide this value so they can leverage it if needed after they check
+    // their own specific use cases
+
+
+    let currentRouteMatch = state.matches[index];
+    let nextRouteMatch = match;
+    return shouldRevalidateLoader(match, _extends({
+      currentUrl,
+      currentParams: currentRouteMatch.params,
+      nextUrl,
+      nextParams: nextRouteMatch.params
+    }, submission, {
+      actionResult,
+      defaultShouldRevalidate: // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
+      isRevalidationRequired || // Clicked the same link, resubmitted a GET form
+      currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search || // Search params affect all loaders
+      currentUrl.search !== nextUrl.search || isNewRouteInstance(currentRouteMatch, nextRouteMatch)
+    }));
+  }); // Pick fetcher.loads that need to be revalidated
 
   let revalidatingFetchers = [];
-  fetchLoadMatches && fetchLoadMatches.forEach((_ref10, key) => {
-    let [href, match] = _ref10;
+  fetchLoadMatches.forEach((f, key) => {
+    // Don't revalidate if fetcher won't be present in the subsequent render
+    if (!matches.some(m => m.route.id === f.routeId)) {
+      return;
+    }
 
-    // This fetcher was cancelled from a prior action submission - force reload
+    let fetcherMatches = matchRoutes(routesToUse, f.path, basename); // If the fetcher path no longer matches, push it in with null matches so
+    // we can trigger a 404 in callLoadersAndMaybeResolveData
+
+    if (!fetcherMatches) {
+      revalidatingFetchers.push({
+        key,
+        routeId: f.routeId,
+        path: f.path,
+        matches: null,
+        match: null,
+        controller: null
+      });
+      return;
+    }
+
+    let fetcherMatch = getTargetMatch(fetcherMatches, f.path);
+
     if (cancelledFetcherLoads.includes(key)) {
-      revalidatingFetchers.push([key, href, match]);
-    } else if (isRevalidationRequired) {
-      let shouldRevalidate = shouldRevalidateLoader(href, match, submission, href, match, isRevalidationRequired, actionResult);
+      revalidatingFetchers.push({
+        key,
+        routeId: f.routeId,
+        path: f.path,
+        matches: fetcherMatches,
+        match: fetcherMatch,
+        controller: new AbortController()
+      });
+      return;
+    } // Revalidating fetchers are decoupled from the route matches since they
+    // hit a static href, so they _always_ check shouldRevalidate and the
+    // default is strictly if a revalidation is explicitly required (action
+    // submissions, useRevalidator, X-Remix-Revalidate).
 
-      if (shouldRevalidate) {
-        revalidatingFetchers.push([key, href, match]);
-      }
+
+    let shouldRevalidate = shouldRevalidateLoader(fetcherMatch, _extends({
+      currentUrl,
+      currentParams: state.matches[state.matches.length - 1].params,
+      nextUrl,
+      nextParams: matches[matches.length - 1].params
+    }, submission, {
+      actionResult,
+      // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
+      defaultShouldRevalidate: isRevalidationRequired
+    }));
+
+    if (shouldRevalidate) {
+      revalidatingFetchers.push({
+        key,
+        routeId: f.routeId,
+        path: f.path,
+        matches: fetcherMatches,
+        match: fetcherMatch,
+        controller: new AbortController()
+      });
     }
   });
   return [navigationMatches, revalidatingFetchers];
@@ -2702,48 +5710,79 @@ function isNewRouteInstance(currentMatch, match) {
   return (// param change for this match, /users/123 -> /users/456
     currentMatch.pathname !== match.pathname || // splat param changed, which is not present in match.path
     // e.g. /files/images/avatar.jpg -> files/finances.xls
-    currentPath && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"]
+    currentPath != null && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"]
   );
 }
 
-function shouldRevalidateLoader(currentLocation, currentMatch, submission, location, match, isRevalidationRequired, actionResult) {
-  let currentUrl = createURL(currentLocation);
-  let currentParams = currentMatch.params;
-  let nextUrl = createURL(location);
-  let nextParams = match.params; // This is the default implementation as to when we revalidate.  If the route
-  // provides it's own implementation, then we give them full control but
-  // provide this value so they can leverage it if needed after they check
-  // their own specific use cases
-  // Note that fetchers always provide the same current/next locations so the
-  // URL-based checks here don't apply to fetcher shouldRevalidate calls
-
-  let defaultShouldRevalidate = isNewRouteInstance(currentMatch, match) || // Clicked the same link, resubmitted a GET form
-  currentUrl.toString() === nextUrl.toString() || // Search params affect all loaders
-  currentUrl.search !== nextUrl.search || // Forced revalidation due to submission, useRevalidate, or X-Remix-Revalidate
-  isRevalidationRequired;
-
-  if (match.route.shouldRevalidate) {
-    let routeChoice = match.route.shouldRevalidate(_extends({
-      currentUrl,
-      currentParams,
-      nextUrl,
-      nextParams
-    }, submission, {
-      actionResult,
-      defaultShouldRevalidate
-    }));
+function shouldRevalidateLoader(loaderMatch, arg) {
+  if (loaderMatch.route.shouldRevalidate) {
+    let routeChoice = loaderMatch.route.shouldRevalidate(arg);
 
     if (typeof routeChoice === "boolean") {
       return routeChoice;
     }
   }
 
-  return defaultShouldRevalidate;
+  return arg.defaultShouldRevalidate;
+}
+/**
+ * Execute route.lazy() methods to lazily load route modules (loader, action,
+ * shouldRevalidate) and update the routeManifest in place which shares objects
+ * with dataRoutes so those get updated as well.
+ */
+
+
+async function loadLazyRouteModule(route, mapRouteProperties, manifest) {
+  if (!route.lazy) {
+    return;
+  }
+
+  let lazyRoute = await route.lazy(); // If the lazy route function was executed and removed by another parallel
+  // call then we can return - first lazy() to finish wins because the return
+  // value of lazy is expected to be static
+
+  if (!route.lazy) {
+    return;
+  }
+
+  let routeToUpdate = manifest[route.id];
+  invariant(routeToUpdate, "No route found in manifest"); // Update the route in place.  This should be safe because there's no way
+  // we could yet be sitting on this route as we can't get there without
+  // resolving lazy() first.
+  //
+  // This is different than the HMR "update" use-case where we may actively be
+  // on the route being updated.  The main concern boils down to "does this
+  // mutation affect any ongoing navigations or any current state.matches
+  // values?".  If not, it should be safe to update in place.
+
+  let routeUpdates = {};
+
+  for (let lazyRouteProperty in lazyRoute) {
+    let staticRouteValue = routeToUpdate[lazyRouteProperty];
+    let isPropertyStaticallyDefined = staticRouteValue !== undefined && // This property isn't static since it should always be updated based
+    // on the route updates
+    lazyRouteProperty !== "hasErrorBoundary";
+    warning(!isPropertyStaticallyDefined, "Route \"" + routeToUpdate.id + "\" has a static property \"" + lazyRouteProperty + "\" " + "defined but its lazy function is also returning a value for this property. " + ("The lazy route property \"" + lazyRouteProperty + "\" will be ignored."));
+
+    if (!isPropertyStaticallyDefined && !immutableRouteKeys.has(lazyRouteProperty)) {
+      routeUpdates[lazyRouteProperty] = lazyRoute[lazyRouteProperty];
+    }
+  } // Mutate the route with the provided updates.  Do this first so we pass
+  // the updated version to mapRouteProperties
+
+
+  Object.assign(routeToUpdate, routeUpdates); // Mutate the `hasErrorBoundary` property on the route based on the route
+  // updates and remove the `lazy` function so we don't resolve the lazy
+  // route again.
+
+  Object.assign(routeToUpdate, _extends({}, mapRouteProperties(routeToUpdate), {
+    lazy: undefined
+  }));
 }
 
-async function callLoaderOrAction(type, request, match, skipRedirects, isRouteRequest) {
-  if (skipRedirects === void 0) {
-    skipRedirects = false;
+async function callLoaderOrAction(type, request, match, matches, manifest, mapRouteProperties, basename, isStaticRequest, isRouteRequest, requestContext) {
+  if (isStaticRequest === void 0) {
+    isStaticRequest = false;
   }
 
   if (isRouteRequest === void 0) {
@@ -2751,44 +5790,107 @@ async function callLoaderOrAction(type, request, match, skipRedirects, isRouteRe
   }
 
   let resultType;
-  let result; // Setup a promise we can race against so that abort signals short circuit
+  let result;
+  let onReject;
 
-  let reject;
-  let abortPromise = new Promise((_, r) => reject = r);
+  let runHandler = handler => {
+    // Setup a promise we can race against so that abort signals short circuit
+    let reject;
+    let abortPromise = new Promise((_, r) => reject = r);
 
-  let onReject = () => reject();
+    onReject = () => reject();
 
-  request.signal.addEventListener("abort", onReject);
+    request.signal.addEventListener("abort", onReject);
+    return Promise.race([handler({
+      request,
+      params: match.params,
+      context: requestContext
+    }), abortPromise]);
+  };
 
   try {
     let handler = match.route[type];
-    invariant(handler, "Could not find the " + type + " to run on the \"" + match.route.id + "\" route");
-    result = await Promise.race([handler({
-      request,
-      params: match.params
-    }), abortPromise]);
+
+    if (match.route.lazy) {
+      if (handler) {
+        // Run statically defined handler in parallel with lazy()
+        let values = await Promise.all([runHandler(handler), loadLazyRouteModule(match.route, mapRouteProperties, manifest)]);
+        result = values[0];
+      } else {
+        // Load lazy route module, then run any returned handler
+        await loadLazyRouteModule(match.route, mapRouteProperties, manifest);
+        handler = match.route[type];
+
+        if (handler) {
+          // Handler still run even if we got interrupted to maintain consistency
+          // with un-abortable behavior of handler execution on non-lazy or
+          // previously-lazy-loaded routes
+          result = await runHandler(handler);
+        } else if (type === "action") {
+          let url = new URL(request.url);
+          let pathname = url.pathname + url.search;
+          throw getInternalRouterError(405, {
+            method: request.method,
+            pathname,
+            routeId: match.route.id
+          });
+        } else {
+          // lazy() route has no loader to run.  Short circuit here so we don't
+          // hit the invariant below that errors on returning undefined.
+          return {
+            type: ResultType.data,
+            data: undefined
+          };
+        }
+      }
+    } else if (!handler) {
+      let url = new URL(request.url);
+      let pathname = url.pathname + url.search;
+      throw getInternalRouterError(404, {
+        pathname
+      });
+    } else {
+      result = await runHandler(handler);
+    }
+
+    invariant(result !== undefined, "You defined " + (type === "action" ? "an action" : "a loader") + " for route " + ("\"" + match.route.id + "\" but didn't return anything from your `" + type + "` ") + "function. Please return a value or `null`.");
   } catch (e) {
     resultType = ResultType.error;
     result = e;
   } finally {
-    request.signal.removeEventListener("abort", onReject);
+    if (onReject) {
+      request.signal.removeEventListener("abort", onReject);
+    }
   }
 
-  if (result instanceof Response) {
-    // Process redirects
-    let status = result.status;
-    let location = result.headers.get("Location"); // For SSR single-route requests, we want to hand Responses back directly
-    // without unwrapping
+  if (isResponse(result)) {
+    let status = result.status; // Process redirects
 
-    if (isRouteRequest) {
-      throw result;
-    }
+    if (redirectStatusCodes.has(status)) {
+      let location = result.headers.get("Location");
+      invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header"); // Support relative routing in internal redirects
 
-    if (status >= 300 && status <= 399 && location != null) {
-      // Don't process redirects in the router during SSR document requests.
+      if (!ABSOLUTE_URL_REGEX.test(location)) {
+        location = normalizeTo(new URL(request.url), matches.slice(0, matches.indexOf(match) + 1), basename, true, location);
+      } else if (!isStaticRequest) {
+        // Strip off the protocol+origin for same-origin + same-basename absolute
+        // redirects. If this is a static request, we can let it go back to the
+        // browser as-is
+        let currentUrl = new URL(request.url);
+        let url = location.startsWith("//") ? new URL(currentUrl.protocol + location) : new URL(location);
+        let isSameBasename = stripBasename(url.pathname, basename) != null;
+
+        if (url.origin === currentUrl.origin && isSameBasename) {
+          location = url.pathname + url.search + url.hash;
+        }
+      } // Don't process redirects in the router during static requests requests.
       // Instead, throw the Response and let the server handle it with an HTTP
-      // redirect
-      if (skipRedirects) {
+      // redirect.  We also update the Location header in place in this flow so
+      // basename and relative routing is taken into account
+
+
+      if (isStaticRequest) {
+        result.headers.set("Location", location);
         throw result;
       }
 
@@ -2798,12 +5900,24 @@ async function callLoaderOrAction(type, request, match, skipRedirects, isRouteRe
         location,
         revalidate: result.headers.get("X-Remix-Revalidate") !== null
       };
+    } // For SSR single-route requests, we want to hand Responses back directly
+    // without unwrapping.  We do this with the QueryRouteResponse wrapper
+    // interface so we can know whether it was returned or thrown
+
+
+    if (isRouteRequest) {
+      // eslint-disable-next-line no-throw-literal
+      throw {
+        type: resultType || ResultType.data,
+        response: result
+      };
     }
 
     let data;
-    let contentType = result.headers.get("Content-Type");
+    let contentType = result.headers.get("Content-Type"); // Check between word boundaries instead of startsWith() due to the last
+    // paragraph of https://httpwg.org/specs/rfc9110.html#field.content-type
 
-    if (contentType && contentType.startsWith("application/json")) {
+    if (contentType && /\bapplication\/json\b/.test(contentType)) {
       data = await result.json();
     } else {
       data = await result.text();
@@ -2832,10 +5946,14 @@ async function callLoaderOrAction(type, request, match, skipRedirects, isRouteRe
     };
   }
 
-  if (result instanceof DeferredData) {
+  if (isDeferredData(result)) {
+    var _result$init, _result$init2;
+
     return {
       type: ResultType.deferred,
-      deferredData: result
+      deferredData: result,
+      statusCode: (_result$init = result.init) == null ? void 0 : _result$init.status,
+      headers: ((_result$init2 = result.init) == null ? void 0 : _result$init2.headers) && new Headers(result.init.headers)
     };
   }
 
@@ -2843,20 +5961,26 @@ async function callLoaderOrAction(type, request, match, skipRedirects, isRouteRe
     type: ResultType.data,
     data: result
   };
-}
+} // Utility method for creating the Request instances for loaders/actions during
+// client-side navigations and fetches.  During SSR we will always have a
+// Request instance from the static handler (query/queryRoute)
 
-function createRequest(location, signal, submission) {
-  let url = createURL(location).toString();
+
+function createClientSideRequest(history, location, signal, submission) {
+  let url = history.createURL(stripHashFromPath(location)).toString();
   let init = {
     signal
   };
 
-  if (submission) {
+  if (submission && isMutationMethod(submission.formMethod)) {
     let {
       formMethod,
       formEncType,
       formData
-    } = submission;
+    } = submission; // Didn't think we needed this but it turns out unlike other methods, patch
+    // won't be properly normalized to uppercase and results in a 405 error.
+    // See: https://fetch.spec.whatwg.org/#concept-method
+
     init.method = formMethod.toUpperCase();
     init.body = formEncType === "application/x-www-form-urlencoded" ? convertFormDataToSearchParams(formData) : formData;
   } // Content-Type is inferred (https://fetch.spec.whatwg.org/#dom-request)
@@ -2869,8 +5993,8 @@ function convertFormDataToSearchParams(formData) {
   let searchParams = new URLSearchParams();
 
   for (let [key, value] of formData.entries()) {
-    invariant(typeof value === "string", 'File inputs are not supported with encType "application/x-www-form-urlencoded", ' + 'please use "multipart/form-data" instead.');
-    searchParams.append(key, value);
+    // https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#converting-an-entry-list-to-a-list-of-name-value-pairs
+    searchParams.append(key, value instanceof File ? value.name : value);
   }
 
   return searchParams;
@@ -2901,9 +6025,14 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
         pendingError = undefined;
       }
 
-      errors = Object.assign(errors || {}, {
-        [boundaryMatch.route.id]: error
-      }); // Once we find our first (highest) error, we set the status code and
+      errors = errors || {}; // Prefer higher error values if lower errors bubble to the same boundary
+
+      if (errors[boundaryMatch.route.id] == null) {
+        errors[boundaryMatch.route.id] = error;
+      } // Clear our any prior loaderData for the throwing route
+
+
+      loaderData[id] = undefined; // Once we find our first (highest) error, we set the status code and
       // prevent deeper status codes from overriding
 
       if (!foundError) {
@@ -2914,14 +6043,17 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
       if (result.headers) {
         loaderHeaders[id] = result.headers;
       }
-    } else if (isDeferredResult(result)) {
-      activeDeferreds && activeDeferreds.set(id, result.deferredData);
-      loaderData[id] = result.deferredData.data; // TODO: Add statusCode/headers once we wire up streaming in Remix
     } else {
-      loaderData[id] = result.data; // Error status codes always override success status codes, but if all
+      if (isDeferredResult(result)) {
+        activeDeferreds.set(id, result.deferredData);
+        loaderData[id] = result.deferredData.data;
+      } else {
+        loaderData[id] = result.data;
+      } // Error status codes always override success status codes, but if all
       // loaders are successful we take the deepest status code.
 
-      if (result.statusCode !== 200 && !foundError) {
+
+      if (result.statusCode != null && result.statusCode !== 200 && !foundError) {
         statusCode = result.statusCode;
       }
 
@@ -2930,10 +6062,12 @@ function processRouteLoaderData(matches, matchesToLoad, results, pendingError, a
       }
     }
   }); // If we didn't consume the pending action error (i.e., all loaders
-  // resolved), then consume it here
+  // resolved), then consume it here.  Also clear out any loaderData for the
+  // throwing route
 
   if (pendingError) {
     errors = pendingError;
+    loaderData[Object.keys(pendingError)[0]] = undefined;
   }
 
   return {
@@ -2951,12 +6085,19 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
   } = processRouteLoaderData(matches, matchesToLoad, results, pendingError, activeDeferreds); // Process results from our revalidating fetchers
 
   for (let index = 0; index < revalidatingFetchers.length; index++) {
-    let [key,, match] = revalidatingFetchers[index];
+    let {
+      key,
+      match,
+      controller
+    } = revalidatingFetchers[index];
     invariant(fetcherResults !== undefined && fetcherResults[index] !== undefined, "Did not find corresponding fetcher result");
     let result = fetcherResults[index]; // Process fetcher non-redirect errors
 
-    if (isErrorResult(result)) {
-      let boundaryMatch = findNearestBoundary(state.matches, match.route.id);
+    if (controller && controller.signal.aborted) {
+      // Nothing to do for aborted fetchers
+      continue;
+    } else if (isErrorResult(result)) {
+      let boundaryMatch = findNearestBoundary(state.matches, match == null ? void 0 : match.route.id);
 
       if (!(errors && errors[boundaryMatch.route.id])) {
         errors = _extends({}, errors, {
@@ -2968,11 +6109,11 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
     } else if (isRedirectResult(result)) {
       // Should never get here, redirects should get processed above, but we
       // keep this to type narrow to a success result in the else
-      throw new Error("Unhandled fetcher revalidation redirect");
+      invariant(false, "Unhandled fetcher revalidation redirect");
     } else if (isDeferredResult(result)) {
       // Should never get here, deferred data should be awaited for fetchers
       // in resolveDeferredResults
-      throw new Error("Unhandled fetcher deferred data");
+      invariant(false, "Unhandled fetcher deferred data");
     } else {
       let doneFetcher = {
         state: "idle",
@@ -2980,7 +6121,8 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
         formMethod: undefined,
         formAction: undefined,
         formEncType: undefined,
-        formData: undefined
+        formData: undefined,
+        " _hasFetcherDoneAnything ": true
       };
       state.fetchers.set(key, doneFetcher);
     }
@@ -2992,16 +6134,28 @@ function processLoaderData(state, matches, matchesToLoad, results, pendingError,
   };
 }
 
-function mergeLoaderData(loaderData, newLoaderData, matches) {
+function mergeLoaderData(loaderData, newLoaderData, matches, errors) {
   let mergedLoaderData = _extends({}, newLoaderData);
 
-  matches.forEach(match => {
+  for (let match of matches) {
     let id = match.route.id;
 
-    if (newLoaderData[id] === undefined && loaderData[id] !== undefined) {
+    if (newLoaderData.hasOwnProperty(id)) {
+      if (newLoaderData[id] !== undefined) {
+        mergedLoaderData[id] = newLoaderData[id];
+      }
+    } else if (loaderData[id] !== undefined && match.route.loader) {
+      // Preserve existing keys not included in newLoaderData and where a loader
+      // wasn't removed by HMR
       mergedLoaderData[id] = loaderData[id];
     }
-  });
+
+    if (errors && errors.hasOwnProperty(id)) {
+      // Don't keep any loader data below the boundary
+      break;
+    }
+  }
+
   return mergedLoaderData;
 } // Find the nearest error boundary, looking upwards from the leaf route (or the
 // route specified by routeId) for the closest ancestor error boundary,
@@ -3013,10 +6167,10 @@ function findNearestBoundary(matches, routeId) {
   return eligibleMatches.reverse().find(m => m.route.hasErrorBoundary === true) || matches[0];
 }
 
-function getNotFoundMatches(routes) {
+function getShortCircuitMatches(routes) {
   // Prefer a root layout route if present, otherwise shim in a route object
-  let route = routes.find(r => r.index || r.path === "" || r.path === "/") || {
-    id: "__shim-404-route__"
+  let route = routes.find(r => r.index || !r.path || r.path === "/") || {
+    id: "__shim-error-route__"
   };
   return {
     matches: [{
@@ -3025,18 +6179,45 @@ function getNotFoundMatches(routes) {
       pathnameBase: "",
       route
     }],
-    route,
-    error: new ErrorResponse(404, "Not Found", null)
+    route
   };
 }
 
-function getMethodNotAllowedResult(path) {
-  let href = typeof path === "string" ? path : createHref(path);
-  console.warn("You're trying to submit to a route that does not have an action.  To " + "fix this, please add an `action` function to the route for " + ("[" + href + "]"));
-  return {
-    type: ResultType.error,
-    error: new ErrorResponse(405, "Method Not Allowed", "No action found for [" + href + "]")
-  };
+function getInternalRouterError(status, _temp4) {
+  let {
+    pathname,
+    routeId,
+    method,
+    type
+  } = _temp4 === void 0 ? {} : _temp4;
+  let statusText = "Unknown Server Error";
+  let errorMessage = "Unknown @remix-run/router error";
+
+  if (status === 400) {
+    statusText = "Bad Request";
+
+    if (method && pathname && routeId) {
+      errorMessage = "You made a " + method + " request to \"" + pathname + "\" but " + ("did not provide a `loader` for route \"" + routeId + "\", ") + "so there is no way to handle the request.";
+    } else if (type === "defer-action") {
+      errorMessage = "defer() is not supported in actions";
+    }
+  } else if (status === 403) {
+    statusText = "Forbidden";
+    errorMessage = "Route \"" + routeId + "\" does not match URL \"" + pathname + "\"";
+  } else if (status === 404) {
+    statusText = "Not Found";
+    errorMessage = "No route matches URL \"" + pathname + "\"";
+  } else if (status === 405) {
+    statusText = "Method Not Allowed";
+
+    if (method && pathname && routeId) {
+      errorMessage = "You made a " + method.toUpperCase() + " request to \"" + pathname + "\" but " + ("did not provide an `action` for route \"" + routeId + "\", ") + "so there is no way to handle the request.";
+    } else if (method) {
+      errorMessage = "Invalid request method \"" + method.toUpperCase() + "\"";
+    }
+  }
+
+  return new ErrorResponse(status || 500, statusText, new Error(errorMessage), true);
 } // Find any returned redirect errors, starting from the lowest match
 
 
@@ -3048,15 +6229,32 @@ function findRedirect(results) {
       return result;
     }
   }
-} // Create an href to represent a "server" URL without the hash
+}
 
-
-function createHref(location) {
-  return (location.pathname || "") + (location.search || "");
+function stripHashFromPath(path) {
+  let parsedPath = typeof path === "string" ? parsePath(path) : path;
+  return createPath(_extends({}, parsedPath, {
+    hash: ""
+  }));
 }
 
 function isHashChangeOnly(a, b) {
-  return a.pathname === b.pathname && a.search === b.search && a.hash !== b.hash;
+  if (a.pathname !== b.pathname || a.search !== b.search) {
+    return false;
+  }
+
+  if (a.hash === "") {
+    // No hash -> hash
+    return b.hash !== "";
+  } else if (a.hash === b.hash) {
+    // current hash -> same hash
+    return true;
+  } else if (b.hash !== "") {
+    // current hash -> new hash
+    return true;
+  }
+
+  return false;
 }
 
 function isDeferredResult(result) {
@@ -3071,10 +6269,48 @@ function isRedirectResult(result) {
   return (result && result.type) === ResultType.redirect;
 }
 
-async function resolveDeferredResults(currentMatches, matchesToLoad, results, signal, isFetcher, currentLoaderData) {
+function isDeferredData(value) {
+  let deferred = value;
+  return deferred && typeof deferred === "object" && typeof deferred.data === "object" && typeof deferred.subscribe === "function" && typeof deferred.cancel === "function" && typeof deferred.resolveData === "function";
+}
+
+function isResponse(value) {
+  return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
+}
+
+function isRedirectResponse(result) {
+  if (!isResponse(result)) {
+    return false;
+  }
+
+  let status = result.status;
+  let location = result.headers.get("Location");
+  return status >= 300 && status <= 399 && location != null;
+}
+
+function isQueryRouteResponse(obj) {
+  return obj && isResponse(obj.response) && (obj.type === ResultType.data || ResultType.error);
+}
+
+function isValidMethod(method) {
+  return validRequestMethods.has(method.toLowerCase());
+}
+
+function isMutationMethod(method) {
+  return validMutationMethods.has(method.toLowerCase());
+}
+
+async function resolveDeferredResults(currentMatches, matchesToLoad, results, signals, isFetcher, currentLoaderData) {
   for (let index = 0; index < results.length; index++) {
     let result = results[index];
-    let match = matchesToLoad[index];
+    let match = matchesToLoad[index]; // If we don't have a match, then we can have a deferred result to do
+    // anything with.  This is for revalidating fetchers where the route was
+    // removed during HMR
+
+    if (!match) {
+      continue;
+    }
+
     let currentMatch = currentMatches.find(m => m.route.id === match.route.id);
     let isRevalidatingLoader = currentMatch != null && !isNewRouteInstance(currentMatch, match) && (currentLoaderData && currentLoaderData[match.route.id]) !== undefined;
 
@@ -3082,6 +6318,8 @@ async function resolveDeferredResults(currentMatches, matchesToLoad, results, si
       // Note: we do not have to touch activeDeferreds here since we race them
       // against the signal in resolveDeferredData and they'll get aborted
       // there if needed
+      let signal = signals[index];
+      invariant(signal, "Expected an AbortSignal for revalidating fetcher deferred result");
       await resolveDeferredData(result, signal, isFetcher).then(result => {
         if (result) {
           results[index] = result || results[index];
@@ -3147,17 +6385,15 @@ function createUseMatchesMatch(match, loaderData) {
 function getTargetMatch(matches, location) {
   let search = typeof location === "string" ? parsePath(location).search : location.search;
 
-  if (matches[matches.length - 1].route.index && !hasNakedIndexQuery(search || "")) {
-    return matches.slice(-2)[0];
-  }
+  if (matches[matches.length - 1].route.index && hasNakedIndexQuery(search || "")) {
+    // Return the leaf index route when index is present
+    return matches[matches.length - 1];
+  } // Otherwise grab the deepest "path contributing" match (ignoring index and
+  // pathless layout routes)
 
-  return matches.slice(-1)[0];
-}
 
-function createURL(location) {
-  let base = typeof window !== "undefined" && typeof window.location !== "undefined" ? window.location.origin : "unknown://unknown";
-  let href = typeof location === "string" ? location : createHref(location);
-  return new URL(href, base);
+  let pathMatches = getPathContributingMatches(matches);
+  return pathMatches[pathMatches.length - 1];
 } //#endregion
 
 
@@ -5643,12 +8879,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
 /* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ContactForm */ "./src/components/ContactForm.js");
 /* harmony import */ var _components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/EmailConfirmation */ "./src/components/EmailConfirmation.js");
-/* harmony import */ var _components_ProjectsTest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/ProjectsTest */ "./src/components/ProjectsTest.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 
 
 
@@ -5657,24 +8890,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement("div", {
-    className: "App"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement((react__WEBPACK_IMPORTED_MODULE_5___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     index: true,
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/contactForm",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/emailConfirmation",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-    path: "/projects/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_ProjectsTest__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_EmailConfirmation__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 /***/ }),
@@ -5693,7 +8920,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
 var AboutMe = function AboutMe() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "section is-primary is-medium has-text-centered is-long"
@@ -5709,7 +8935,6 @@ var AboutMe = function AboutMe() {
     className: "subtitle has-text-white is-size-4-desktop has-text-weight-normal"
   }, "I am a Full Stack Software Engineer located in Maine, USA. As my father-in-law likes to say, I am not your \"average bear\". I discovered my passion for engineering later in my career and I consider this an advantage. The drive, curiousity and compassion I bring to engineering is just who I am.")))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutMe);
 
 /***/ }),
@@ -5728,7 +8953,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-
 
 
 var CallToAction = function CallToAction() {
@@ -5757,7 +8981,6 @@ var CallToAction = function CallToAction() {
     className: "fa-regular fa-hand-spock"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Let's do this!")))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CallToAction);
 
 /***/ }),
@@ -5777,57 +9000,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var emailjs_com__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! emailjs-com */ "./node_modules/emailjs-com/es/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
 
 
 
 var ContactForm = function ContactForm() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useNavigate)();
-
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    name: '',
-    email: '',
-    projectType: '',
-    payRange: '',
-    details: '',
-    to: ''
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      form = _useState2[0],
-      setForm = _useState2[1];
-
+      name: "",
+      email: "",
+      projectType: "",
+      payRange: "",
+      details: "",
+      to: ""
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    form = _useState2[0],
+    setForm = _useState2[1];
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
-    (0,emailjs_com__WEBPACK_IMPORTED_MODULE_1__.send)('service_l0cgp5o', 'contact_form', form, 'pGfeSYBA1M9SEbdKl').then(function (response) {
-      navigate('/emailConfirmation');
-      console.log('SUCCESS!', response.status, response.text);
+    (0,emailjs_com__WEBPACK_IMPORTED_MODULE_1__.send)("service_l0cgp5o", "contact_form", form, "pGfeSYBA1M9SEbdKl").then(function (response) {
+      navigate("/emailConfirmation");
+      console.log("SUCCESS!", response.status, response.text);
     })["catch"](function (error) {
-      console.log('EMAIL FAILED...', error);
+      console.log("EMAIL FAILED...", error);
     });
   };
-
   var handleChange = function handleChange(event) {
     setForm(_objectSpread(_objectSpread({}, form), {}, _defineProperty({}, event.target.name, event.target.value)));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "is-form-page animate-fadeUp"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -5962,7 +9174,6 @@ var ContactForm = function ContactForm() {
     className: "button is-primary is-outlined is-medium is-fullwidth is-rounded"
   }, "Submit")))))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactForm);
 
 /***/ }),
@@ -5980,7 +9191,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
 
 var EmailConfirmation = function EmailConfirmation() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -6006,7 +9216,6 @@ var EmailConfirmation = function EmailConfirmation() {
     href: "/"
   }, "Head back home"))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmailConfirmation);
 
 /***/ }),
@@ -6024,7 +9233,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
 
 var Footer = function Footer() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
@@ -6055,7 +9263,7 @@ var Footer = function Footer() {
     className: "icon is-medium mx-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "button-is-medium",
-    href: "https://www.linkedin.com/in/sarah-lozier-563271195/",
+    href: "https://www.linkedin.com/in/sarah-l-lozier/",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "has-text-danger fa-brands fa-linkedin fas fa-2x"
@@ -6096,7 +9304,6 @@ var Footer = function Footer() {
     height: "31"
   })))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
@@ -6118,7 +9325,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typewriter_effect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(typewriter_effect__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
 var Hero = function Hero() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "hero is-white has-text-centered is-fullheight"
@@ -6136,7 +9342,7 @@ var Hero = function Hero() {
     className: "subtitle  is-size-4-tablet"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((typewriter_effect__WEBPACK_IMPORTED_MODULE_1___default()), {
     onInit: function onInit(typewriter) {
-      typewriter.typeString("Full Stack Web Developer").pauseFor(1000).deleteAll().typeString('I build cool things.').start();
+      typewriter.typeString("Full Stack Web Developer").pauseFor(1000).deleteAll().typeString("I build cool things.").start();
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "avatar",
@@ -6154,7 +9360,6 @@ var Hero = function Hero() {
     alt: ""
   }))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
 
 /***/ }),
@@ -6183,11 +9388,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var Home = function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Hero__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_AboutMe__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Technologies__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ProjectGrid__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CallToAction__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
 /***/ }),
@@ -6208,16 +9411,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 
 
-
 var NavBar = function NavBar() {
-  document.addEventListener('DOMContentLoaded', function () {
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  document.addEventListener("DOMContentLoaded", function () {
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);
     $navbarBurgers.forEach(function (el) {
-      el.addEventListener('click', function () {
+      el.addEventListener("click", function () {
         var target = el.dataset.target;
         var $target = document.getElementById(target);
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
       });
     });
   });
@@ -6250,7 +9452,6 @@ var NavBar = function NavBar() {
     className: "button is-active is-danger is-outlined is-rounded has-text-weight-normal"
   }, "Contact Me"))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavBar);
 
 /***/ }),
@@ -6268,10 +9469,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store_reducers_projectSlice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/reducers/projectSlice */ "./src/store/reducers/projectSlice.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 var ProjectGrid = function ProjectGrid() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+    _useState2 = _slicedToArray(_useState, 2),
+    loading = _useState2[0],
+    setLoading = _useState2[1];
+  var projects = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
+    return state.project.projectList;
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    dispatch((0,_store_reducers_projectSlice__WEBPACK_IMPORTED_MODULE_2__.fetchProjects)());
+  }, [dispatch]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (projects.length > 0) {
+      setLoading(false);
+    }
+  }, [projects]);
+  console.log("PROJECT GRID", projects);
+  return loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Projects Loading...") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "section projects is-medium has-background-white has-text-centered has-border-top"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container is-narrow"
@@ -6282,126 +9510,33 @@ var ProjectGrid = function ProjectGrid() {
   }, "These are a few of my full-stack applications. Let me know if you want to see more.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "has-text-weight-normal has-text-danger",
     href: "mailto:sarah.lozier@gmail.com"
-  }, " Email me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, " ", "Email me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "project-grid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-vcentered is-multiline is-mobile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column is-12-mobile is-half-tablet is-one-third-desktop"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2 hovereffect"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "project-thumb",
-    src: "/piccies/schoolManagement.svg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "title is-size-5 is-size-4-widescreen"
-  }, "Student and campus tracking system"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "info button is-link is-outlined is-rounded",
-    href: "https://lozier-school-management.onrender.com",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-solid fa-angle-right is-link"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column is-12-mobile is-half-tablet is-one-third-desktop"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2 hovereffect"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "project-thumb",
-    src: "/piccies/emotionFlashcards.svg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "title is-size-5 is-size-4-widescreen"
-  }, "Emotion Flashcards"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "info button is-link is-outlined is-rounded",
-    href: "https://emotion-flashcards-project.onrender.com",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-solid fa-angle-right is-link"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column is-12-mobile is-half-tablet is-one-third-desktop"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2 hovereffect"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "project-thumb",
-    src: "/piccies/waybackVinyl.svg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "overlay"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "title is-size-5 is-size-4-widescreen"
-  }, "WayBack Vinyl"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "info button is-link is-outlined is-rounded",
-    href: "https://flintstones-grace-shopper.onrender.com",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fa-solid fa-angle-right is-link"
-  })))))))))));
+  }, projects.map(function (project) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "column is-12-mobile is-half-tablet is-one-third-desktop",
+      key: project.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
+      className: "image is-3by2 hovereffect"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      className: "project-thumb",
+      src: project.image
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figcaption", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "overlay"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "info button is-link is-outlined is-rounded",
+      href: project.repo,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Visit Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+      className: "fa-solid fa-angle-right is-link"
+    })))))));
+  })))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjectGrid);
-
-/***/ }),
-
-/***/ "./src/components/ProjectsTest.js":
-/*!****************************************!*\
-  !*** ./src/components/ProjectsTest.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _store_reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/reducers/singleProjectReducer */ "./src/store/reducers/singleProjectReducer.js");
-
-
-
-
-
-var ProjectsTest = function ProjectsTest() {
-  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
-  var params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.useParams)();
-  var project = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
-    return state.singleProject;
-  });
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    dispatch((0,_store_reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_2__.setSingleProjectThunk)(params.id));
-  }, []);
-  console.log("PROJECTS TEST", project);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "section is-primary has-text-centered"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "columns level has-text-white"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column level-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "title has-text-white"
-  }, project.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column level-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("figure", {
-    className: "image is-3by2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "project-thumb",
-    src: "".concat(project.image)
-  }))))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjectsTest);
 
 /***/ }),
 
@@ -6418,9 +9553,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store_reducers_techSlice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/reducers/techSlice */ "./src/store/reducers/techSlice.js");
+
+
 
 
 var Technologies = function Technologies() {
+  var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  var tech = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
+    return state.tech.techList;
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    dispatch((0,_store_reducers_techSlice__WEBPACK_IMPORTED_MODULE_2__.fetchTech)());
+  }, [dispatch]);
+  var devOps = tech.filter(function (singleTech) {
+    if (singleTech.category === "DevOps") return singleTech;
+  });
+  var core = tech.filter(function (singleTech) {
+    if (singleTech.category === "Core") return singleTech;
+  });
+  var cloud = tech.filter(function (singleTech) {
+    if (singleTech.category === "Cloud") return singleTech;
+  });
+  var frontEnd = tech.filter(function (singleTech) {
+    if (singleTech.category === "Frontend") return singleTech;
+  });
+  var mobile = tech.filter(function (singleTech) {
+    if (singleTech.category === "Mobile") return singleTech;
+  });
+  var testing = tech.filter(function (singleTech) {
+    if (singleTech.category === "Testing") return singleTech;
+  });
+  var misc = tech.filter(function (singleTech) {
+    if (singleTech.category === "Misc") return singleTech;
+  });
+  var future = tech.filter(function (singleTech) {
+    if (singleTech.category === "Future") return singleTech;
+  });
+  console.log("TECHNOLOGIES", tech);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "section skills has-text-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6432,7 +9603,7 @@ var Technologies = function Technologies() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "columns is-centered"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column"
+    className: "column is-one-third"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fa-stack fa-2x"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
@@ -6445,10 +9616,18 @@ var Technologies = function Technologies() {
     className: "mx-4"
   }, "I genuinely enjoy working with a team of developers producing creative designs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "title has-text-primary is-size-4"
-  }, "Team Tools:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "mx-3 is-size-5"
-  }, "Git, Zoom, Google Meet, Slack, Google Docs, Google Spaces")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "column"
+  }, "Team Tools:"), devOps.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "mx-3 is-size-5"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fa-stack fa-2x"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
@@ -6461,9 +9640,55 @@ var Technologies = function Technologies() {
     className: "mx-4"
   }, "I love bringing ideas to reality, and geek out on back-end structure and design."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "title has-text-primary is-size-4"
-  }, "My Languages:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "My Tech Stack:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "columns is-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "mx-3 is-size-5"
-  }, "JS, HTML, CSS, SASS, REACT, PSQL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "CORE"), core.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mx-3 is-size-5"
+  }, "Frontend"), frontEnd.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mx-3 is-size-5"
+  }, "Cloud"), cloud.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mx-3 is-size-5"
+  }, "Mobile"), mobile.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "column"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "fa-stack fa-2x"
@@ -6473,15 +9698,50 @@ var Technologies = function Technologies() {
     className: "fa-layer-plus fa-stack has-text-black fa-1x fa-brands fa-hive"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "title has-text-black is-size-4 is-spaced"
-  }, "Non-Profit Interests"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Driven Learner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "mx-4"
   }, "I am passionate about engineering for the greater-good."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "title has-text-primary is-size-4"
-  }, "Future Projects:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Extra Bits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "columns is-centered"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "mx-3 is-size-5"
-  }, "Updated Amber Alert, Agricultural Tech, Neuro-Diverse Education Tools, Medical Outreach, Veteran's Social Networking")))))));
+  }, "Testing"), testing.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mx-3 is-size-5"
+  }, "Misc"), misc.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "column is-one-third"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mx-3 is-size-5"
+  }, "Future Competencies"), future.map(function (single) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "button-is-medium",
+      href: single.link,
+      target: "_blank"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: single.image
+    })));
+  })))))))));
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Technologies);
 
 /***/ }),
@@ -6495,188 +9755,277 @@ var Technologies = function Technologies() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "persistor": () => (/* binding */ persistor),
 /* harmony export */   "store": () => (/* binding */ store)
 /* harmony export */ });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
-/* harmony import */ var _reducers_projectsReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reducers/projectsReducer */ "./src/store/reducers/projectsReducer.js");
-/* harmony import */ var _reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reducers/singleProjectReducer */ "./src/store/reducers/singleProjectReducer.js");
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
+/* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-logger */ "./node_modules/redux-logger/dist/redux-logger.js");
+/* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_logger__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-persist */ "./node_modules/redux-persist/es/index.js");
+/* harmony import */ var redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-persist/lib/storage */ "./node_modules/redux-persist/lib/storage/index.js");
+/* harmony import */ var _reducers_projectSlice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reducers/projectSlice */ "./src/store/reducers/projectSlice.js");
+/* harmony import */ var _reducers_techSlice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./reducers/techSlice */ "./src/store/reducers/techSlice.js");
 
 
 
- //import reducers here
 
-var rootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)({
-  projects: _reducers_projectsReducer__WEBPACK_IMPORTED_MODULE_0__["default"],
-  singleProject: _reducers_singleProjectReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+
+
+var rootReducer = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__.combineReducers)({
+  project: _reducers_projectSlice__WEBPACK_IMPORTED_MODULE_3__["default"],
+  tech: _reducers_techSlice__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
-var store = (0,redux__WEBPACK_IMPORTED_MODULE_2__.createStore)(rootReducer, (0,redux__WEBPACK_IMPORTED_MODULE_2__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"]));
-
-/***/ }),
-
-/***/ "./src/store/reducers/projectsReducer.js":
-/*!***********************************************!*\
-  !*** ./src/store/reducers/projectsReducer.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ projectsReducer),
-/* harmony export */   "getProjects": () => (/* binding */ getProjects),
-/* harmony export */   "getProjectsThunk": () => (/* binding */ getProjectsThunk)
-/* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-
-var GET_PROJECTS = 'GET_PROJECTS';
-var getProjects = function getProjects(data) {
-  return {
-    type: GET_PROJECTS,
-    projects: data
-  };
+var persistConfig = {
+  key: "root",
+  storage: redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_2__["default"]
 };
-var getProjectsThunk = function getProjectsThunk() {
-  return /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(dispatch) {
-      var projects;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.prev = 0;
-              _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0___default().get('/api/projects');
-
-            case 3:
-              projects = _context.sent;
-              dispatch(getProjects(projects.data));
-              _context.next = 10;
-              break;
-
-            case 7:
-              _context.prev = 7;
-              _context.t0 = _context["catch"](0);
-              console.log('GET PROJECTS THUNK ERROR ', _context.t0);
-
-            case 10:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee, null, [[0, 7]]);
-    }));
-
-    return function (_x) {
-      return _ref.apply(this, arguments);
-    };
-  }();
-};
-function projectsReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var action = arguments.length > 1 ? arguments[1] : undefined;
-
-  switch (action.type) {
-    case GET_PROJECTS:
-      return action.projects;
-
-    default:
-      return state;
+var persistedReducer = (0,redux_persist__WEBPACK_IMPORTED_MODULE_1__.persistReducer)(persistConfig, rootReducer);
+var store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_6__.configureStore)({
+  reducer: persistedReducer,
+  middleware: function middleware(getDefaultMiddleware) {
+    return getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [redux_persist__WEBPACK_IMPORTED_MODULE_1__.FLUSH, redux_persist__WEBPACK_IMPORTED_MODULE_1__.REHYDRATE, redux_persist__WEBPACK_IMPORTED_MODULE_1__.PAUSE, redux_persist__WEBPACK_IMPORTED_MODULE_1__.PERSIST, redux_persist__WEBPACK_IMPORTED_MODULE_1__.PURGE, redux_persist__WEBPACK_IMPORTED_MODULE_1__.REGISTER]
+      }
+    }).concat(redux_logger__WEBPACK_IMPORTED_MODULE_0__.logger);
   }
-}
+});
+var persistor = (0,redux_persist__WEBPACK_IMPORTED_MODULE_1__.persistStore)(store);
 
 /***/ }),
 
-/***/ "./src/store/reducers/singleProjectReducer.js":
-/*!****************************************************!*\
-  !*** ./src/store/reducers/singleProjectReducer.js ***!
-  \****************************************************/
+/***/ "./src/store/reducers/projectSlice.js":
+/*!********************************************!*\
+  !*** ./src/store/reducers/projectSlice.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ singleProjectReducer),
-/* harmony export */   "setProject": () => (/* binding */ setProject),
-/* harmony export */   "setSingleProjectThunk": () => (/* binding */ setSingleProjectThunk)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "fetchProjectData": () => (/* binding */ fetchProjectData),
+/* harmony export */   "fetchProjects": () => (/* binding */ fetchProjects),
+/* harmony export */   "getProjectData": () => (/* binding */ getProjectData),
+/* harmony export */   "getProjectList": () => (/* binding */ getProjectList),
+/* harmony export */   "setErrorMsg": () => (/* binding */ setErrorMsg)
 /* harmony export */ });
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
-var SET_PROJECT = 'SET_PROJECT';
-var setProject = function setProject(data) {
-  return {
-    type: SET_PROJECT,
-    singleProject: data
-  };
-};
-var setSingleProjectThunk = function setSingleProjectThunk(id) {
+var projectSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__.createSlice)({
+  name: "projectSlice",
+  initialState: {
+    projectList: [],
+    projectData: {}
+  },
+  reducers: {
+    getProjectList: function getProjectList(state, action) {
+      state.projectList = action.payload;
+      return state;
+    },
+    getProjectData: function getProjectData(state, action) {
+      state.projectData = action.payload;
+      return state;
+    },
+    setErrorMsg: function setErrorMsg(state, action) {
+      state.errorMsg = action.payload;
+      return state;
+    }
+  }
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (projectSlice.reducer);
+var _projectSlice$actions = projectSlice.actions,
+  getProjectList = _projectSlice$actions.getProjectList,
+  getProjectData = _projectSlice$actions.getProjectData,
+  setErrorMsg = _projectSlice$actions.setErrorMsg;
+
+var fetchProjects = function fetchProjects() {
   return /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(dispatch) {
-      var _yield$axios$get, singleProject;
-
+      var _yield$axios$get, data;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.prev = 0;
-              _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/projects/".concat(id));
-
-            case 3:
-              _yield$axios$get = _context.sent;
-              singleProject = _yield$axios$get.data;
-              dispatch(setProject(singleProject));
-              _context.next = 11;
-              break;
-
-            case 8:
-              _context.prev = 8;
-              _context.t0 = _context["catch"](0);
-              console.log('SINGLE PROJECT THUNK ERROR ', _context.t0);
-
-            case 11:
-            case "end":
-              return _context.stop();
-          }
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/projects");
+          case 3:
+            _yield$axios$get = _context.sent;
+            data = _yield$axios$get.data;
+            dispatch(getProjectList(data));
+            _context.next = 11;
+            break;
+          case 8:
+            _context.prev = 8;
+            _context.t0 = _context["catch"](0);
+            console.log("FETCH PROJECTS ERROR", _context.t0);
+          case 11:
+          case "end":
+            return _context.stop();
         }
       }, _callee, null, [[0, 8]]);
     }));
-
     return function (_x) {
       return _ref.apply(this, arguments);
     };
   }();
 };
-function singleProjectReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var action = arguments.length > 1 ? arguments[1] : undefined;
+var fetchProjectData = function fetchProjectData(projectId) {
+  return /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(dispatch) {
+      var _yield$axios$get2, data;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            _context2.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/projects/".concat(projectId));
+          case 3:
+            _yield$axios$get2 = _context2.sent;
+            data = _yield$axios$get2.data;
+            dispatch(getProjectData(data));
+            _context2.next = 11;
+            break;
+          case 8:
+            _context2.prev = 8;
+            _context2.t0 = _context2["catch"](0);
+            console.log("FETCH SINGLE PROJECT ERROR", _context2.t0);
+          case 11:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[0, 8]]);
+    }));
+    return function (_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+};
 
-  switch (action.type) {
-    case SET_PROJECT:
-      return action.singleProject;
+/***/ }),
 
-    default:
+/***/ "./src/store/reducers/techSlice.js":
+/*!*****************************************!*\
+  !*** ./src/store/reducers/techSlice.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "fetchTech": () => (/* binding */ fetchTech),
+/* harmony export */   "fetchTechData": () => (/* binding */ fetchTechData),
+/* harmony export */   "getTechData": () => (/* binding */ getTechData),
+/* harmony export */   "getTechList": () => (/* binding */ getTechList),
+/* harmony export */   "setErrorMsg": () => (/* binding */ setErrorMsg)
+/* harmony export */ });
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var techSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__.createSlice)({
+  name: "techSlice",
+  initialState: {
+    techList: [],
+    techData: {}
+  },
+  reducers: {
+    getTechList: function getTechList(state, action) {
+      state.techList = action.payload;
       return state;
+    },
+    getTechData: function getTechData(state, action) {
+      state.techData = action.payload;
+      return state;
+    },
+    setErrorMsg: function setErrorMsg(state, action) {
+      state.errorMsg = action.payload;
+      return state;
+    }
   }
-}
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (techSlice.reducer);
+var _techSlice$actions = techSlice.actions,
+  getTechList = _techSlice$actions.getTechList,
+  getTechData = _techSlice$actions.getTechData,
+  setErrorMsg = _techSlice$actions.setErrorMsg;
+
+var fetchTech = function fetchTech() {
+  return /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(dispatch) {
+      var _yield$axios$get, data;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/tech");
+          case 3:
+            _yield$axios$get = _context.sent;
+            data = _yield$axios$get.data;
+            dispatch(getTechList(data));
+            _context.next = 11;
+            break;
+          case 8:
+            _context.prev = 8;
+            _context.t0 = _context["catch"](0);
+            console.log("FETCH TECH ERROR", _context.t0);
+          case 11:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[0, 8]]);
+    }));
+    return function (_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+};
+var fetchTechData = function fetchTechData(techId) {
+  return /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(dispatch) {
+      var _yield$axios$get2, data;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            _context2.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/tech/".concat(techId));
+          case 3:
+            _yield$axios$get2 = _context2.sent;
+            data = _yield$axios$get2.data;
+            dispatch(getTechData(data));
+            _context2.next = 11;
+            break;
+          case 8:
+            _context2.prev = 8;
+            _context2.t0 = _context2["catch"](0);
+            console.log("FETCH TECH DATA ERROR", _context2.t0);
+          case 11:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[0, 8]]);
+    }));
+    return function (_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+};
 
 /***/ }),
 
@@ -39094,11 +42443,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ScrollRestoration": () => (/* binding */ ScrollRestoration),
 /* harmony export */   "UNSAFE_DataRouterContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterContext),
 /* harmony export */   "UNSAFE_DataRouterStateContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterStateContext),
-/* harmony export */   "UNSAFE_DataStaticRouterContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataStaticRouterContext),
 /* harmony export */   "UNSAFE_LocationContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_LocationContext),
 /* harmony export */   "UNSAFE_NavigationContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_NavigationContext),
 /* harmony export */   "UNSAFE_RouteContext": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_RouteContext),
-/* harmony export */   "UNSAFE_enhanceManualRouteObjects": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_enhanceManualRouteObjects),
+/* harmony export */   "UNSAFE_useRouteId": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_useRouteId),
+/* harmony export */   "UNSAFE_useScrollRestoration": () => (/* binding */ useScrollRestoration),
 /* harmony export */   "createBrowserRouter": () => (/* binding */ createBrowserRouter),
 /* harmony export */   "createHashRouter": () => (/* binding */ createHashRouter),
 /* harmony export */   "createMemoryRouter": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.createMemoryRouter),
@@ -39117,9 +42466,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "renderMatches": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.renderMatches),
 /* harmony export */   "resolvePath": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_1__.resolvePath),
 /* harmony export */   "unstable_HistoryRouter": () => (/* binding */ HistoryRouter),
+/* harmony export */   "unstable_useBlocker": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.unstable_useBlocker),
+/* harmony export */   "unstable_usePrompt": () => (/* binding */ usePrompt),
 /* harmony export */   "useActionData": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.useActionData),
 /* harmony export */   "useAsyncError": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.useAsyncError),
 /* harmony export */   "useAsyncValue": () => (/* reexport safe */ react_router__WEBPACK_IMPORTED_MODULE_2__.useAsyncValue),
+/* harmony export */   "useBeforeUnload": () => (/* binding */ useBeforeUnload),
 /* harmony export */   "useFetcher": () => (/* binding */ useFetcher),
 /* harmony export */   "useFetchers": () => (/* binding */ useFetchers),
 /* harmony export */   "useFormAction": () => (/* binding */ useFormAction),
@@ -39149,7 +42501,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @remix-run/router */ "./node_modules/@remix-run/router/dist/router.js");
 /**
- * React Router DOM v6.4.1
+ * React Router DOM v6.11.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -39255,26 +42607,38 @@ function createSearchParams(init) {
 function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
   let searchParams = createSearchParams(locationSearch);
 
-  for (let key of defaultSearchParams.keys()) {
-    if (!searchParams.has(key)) {
-      defaultSearchParams.getAll(key).forEach(value => {
-        searchParams.append(key, value);
-      });
+  if (defaultSearchParams) {
+    for (let key of defaultSearchParams.keys()) {
+      if (!searchParams.has(key)) {
+        defaultSearchParams.getAll(key).forEach(value => {
+          searchParams.append(key, value);
+        });
+      }
     }
   }
 
   return searchParams;
 }
-function getFormSubmissionInfo(target, defaultAction, options) {
+function getFormSubmissionInfo(target, options, basename) {
   let method;
-  let action;
+  let action = null;
   let encType;
   let formData;
 
   if (isFormElement(target)) {
     let submissionTrigger = options.submissionTrigger;
+
+    if (options.action) {
+      action = options.action;
+    } else {
+      // When grabbing the action from the element, it will have had the basename
+      // prefixed to ensure non-JS scenarios work, so strip it since we'll
+      // re-prefix in the router
+      let attr = target.getAttribute("action");
+      action = attr ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.stripBasename)(attr, basename) : null;
+    }
+
     method = options.method || target.getAttribute("method") || defaultMethod;
-    action = options.action || target.getAttribute("action") || defaultAction;
     encType = options.encType || target.getAttribute("enctype") || defaultEncType;
     formData = new FormData(target);
 
@@ -39289,8 +42653,17 @@ function getFormSubmissionInfo(target, defaultAction, options) {
     } // <button>/<input type="submit"> may override attributes of <form>
 
 
+    if (options.action) {
+      action = options.action;
+    } else {
+      // When grabbing the action from the element, it will have had the basename
+      // prefixed to ensure non-JS scenarios work, so strip it since we'll
+      // re-prefix in the router
+      let attr = target.getAttribute("formaction") || form.getAttribute("action");
+      action = attr ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.stripBasename)(attr, basename) : null;
+    }
+
     method = options.method || target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
-    action = options.action || target.getAttribute("formaction") || form.getAttribute("action") || defaultAction;
     encType = options.encType || target.getAttribute("formenctype") || form.getAttribute("enctype") || defaultEncType;
     formData = new FormData(form); // Include name + value from a <button>, appending in case the button name
     // matches an existing input name
@@ -39302,7 +42675,7 @@ function getFormSubmissionInfo(target, defaultAction, options) {
     throw new Error("Cannot submit element that is not <form>, <button>, or " + "<input type=\"submit|image\">");
   } else {
     method = options.method || defaultMethod;
-    action = options.action || defaultAction;
+    action = options.action || null;
     encType = options.encType || defaultEncType;
 
     if (target instanceof FormData) {
@@ -39322,14 +42695,9 @@ function getFormSubmissionInfo(target, defaultAction, options) {
     }
   }
 
-  let {
-    protocol,
-    host
-  } = window.location;
-  let url = new URL(action, protocol + "//" + host);
   return {
-    url,
-    method,
+    action,
+    method: method.toLowerCase(),
     encType,
     formData
   };
@@ -39337,37 +42705,77 @@ function getFormSubmissionInfo(target, defaultAction, options) {
 
 const _excluded = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset"],
       _excluded2 = ["aria-current", "caseSensitive", "className", "end", "style", "to", "children"],
-      _excluded3 = ["reloadDocument", "replace", "method", "action", "onSubmit", "fetcherKey", "routeId", "relative"];
-//#region Routers
-////////////////////////////////////////////////////////////////////////////////
-
+      _excluded3 = ["reloadDocument", "replace", "method", "action", "onSubmit", "fetcherKey", "routeId", "relative", "preventScrollReset"];
 function createBrowserRouter(routes, opts) {
-  var _window;
-
   return (0,react_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
     basename: opts == null ? void 0 : opts.basename,
+    future: _extends({}, opts == null ? void 0 : opts.future, {
+      v7_prependBasename: true
+    }),
     history: (0,react_router__WEBPACK_IMPORTED_MODULE_1__.createBrowserHistory)({
       window: opts == null ? void 0 : opts.window
     }),
-    hydrationData: (opts == null ? void 0 : opts.hydrationData) || ((_window = window) == null ? void 0 : _window.__staticRouterHydrationData),
-    routes: (0,react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_enhanceManualRouteObjects)(routes)
+    hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+    routes,
+    mapRouteProperties: react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_mapRouteProperties
   }).initialize();
 }
 function createHashRouter(routes, opts) {
-  var _window2;
-
   return (0,react_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
     basename: opts == null ? void 0 : opts.basename,
+    future: _extends({}, opts == null ? void 0 : opts.future, {
+      v7_prependBasename: true
+    }),
     history: (0,react_router__WEBPACK_IMPORTED_MODULE_1__.createHashHistory)({
       window: opts == null ? void 0 : opts.window
     }),
-    hydrationData: (opts == null ? void 0 : opts.hydrationData) || ((_window2 = window) == null ? void 0 : _window2.__staticRouterHydrationData),
-    routes: (0,react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_enhanceManualRouteObjects)(routes)
+    hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+    routes,
+    mapRouteProperties: react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_mapRouteProperties
   }).initialize();
+}
+
+function parseHydrationData() {
+  var _window;
+
+  let state = (_window = window) == null ? void 0 : _window.__staticRouterHydrationData;
+
+  if (state && state.errors) {
+    state = _extends({}, state, {
+      errors: deserializeErrors(state.errors)
+    });
+  }
+
+  return state;
+}
+
+function deserializeErrors(errors) {
+  if (!errors) return null;
+  let entries = Object.entries(errors);
+  let serialized = {};
+
+  for (let [key, val] of entries) {
+    // Hey you!  If you change this, please change the corresponding logic in
+    // serializeErrors in react-router-dom/server.tsx :)
+    if (val && val.__type === "RouteErrorResponse") {
+      serialized[key] = new react_router__WEBPACK_IMPORTED_MODULE_1__.ErrorResponse(val.status, val.statusText, val.data, val.internal === true);
+    } else if (val && val.__type === "Error") {
+      let error = new Error(val.message); // Wipe away the client-side stack trace.  Nothing to fill it in with
+      // because we don't serialize SSR stack traces for security reasons
+
+      error.stack = "";
+      serialized[key] = error;
+    } else {
+      serialized[key] = val;
+    }
+  }
+
+  return serialized;
 }
 /**
  * A `<Router>` for use in web browsers. Provides the cleanest URLs.
  */
+
 
 function BrowserRouter(_ref) {
   let {
@@ -39462,6 +42870,8 @@ function HistoryRouter(_ref3) {
 if (true) {
   HistoryRouter.displayName = "unstable_HistoryRouter";
 }
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 /**
  * The public API for rendering a history-aware <a>.
  */
@@ -39478,6 +42888,37 @@ const Link = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function
     preventScrollReset
   } = _ref4,
       rest = _objectWithoutPropertiesLoose(_ref4, _excluded);
+
+  let {
+    basename
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_NavigationContext); // Rendered into <a href> for absolute URLs
+
+  let absoluteHref;
+  let isExternal = false;
+
+  if (typeof to === "string" && ABSOLUTE_URL_REGEX.test(to)) {
+    // Render the absolute href server- and client-side
+    absoluteHref = to; // Only check for external origins client-side
+
+    if (isBrowser) {
+      try {
+        let currentUrl = new URL(window.location.href);
+        let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
+        let path = (0,react_router__WEBPACK_IMPORTED_MODULE_1__.stripBasename)(targetUrl.pathname, basename);
+
+        if (targetUrl.origin === currentUrl.origin && path != null) {
+          // Strip the protocol/origin/basename for same-origin absolute URLs
+          to = path + targetUrl.search + targetUrl.hash;
+        } else {
+          isExternal = true;
+        }
+      } catch (e) {
+        // We can't do external URL detection without a valid URL
+         true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(false, "<Link to=\"" + to + "\"> contains an invalid URL which will probably break " + "when clicked - please update to a valid URL path.") : 0;
+      }
+    }
+  } // Rendered into <a href> for relative URLs
+
 
   let href = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useHref)(to, {
     relative
@@ -39502,8 +42943,8 @@ const Link = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function
     /*#__PURE__*/
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", _extends({}, rest, {
-      href: href,
-      onClick: reloadDocument ? onClick : handleClick,
+      href: absoluteHref || href,
+      onClick: isExternal || reloadDocument ? onClick : handleClick,
       ref: ref,
       target: target
     }))
@@ -39530,22 +42971,26 @@ const NavLink = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(funct
   } = _ref5,
       rest = _objectWithoutPropertiesLoose(_ref5, _excluded2);
 
-  let path = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useResolvedPath)(to);
-  let match = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useMatch)({
-    path: path.pathname,
-    end,
-    caseSensitive
+  let path = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useResolvedPath)(to, {
+    relative: rest.relative
   });
+  let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
   let routerState = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterStateContext);
-  let nextLocation = routerState == null ? void 0 : routerState.navigation.location;
-  let nextPath = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useResolvedPath)(nextLocation || "");
-  let nextMatch = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => nextLocation ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.matchPath)({
-    path: path.pathname,
-    end,
-    caseSensitive
-  }, nextPath.pathname) : null, [nextLocation, path.pathname, caseSensitive, end, nextPath.pathname]);
-  let isPending = nextMatch != null;
-  let isActive = match != null;
+  let {
+    navigator
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_NavigationContext);
+  let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
+  let locationPathname = location.pathname;
+  let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
+
+  if (!caseSensitive) {
+    locationPathname = locationPathname.toLowerCase();
+    nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
+    toPathname = toPathname.toLowerCase();
+  }
+
+  let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(toPathname.length) === "/";
+  let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
   let ariaCurrent = isActive ? ariaCurrentProp : undefined;
   let className;
 
@@ -39609,7 +43054,8 @@ const FormImpl = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((_re
     onSubmit,
     fetcherKey,
     routeId,
-    relative
+    relative,
+    preventScrollReset
   } = _ref6,
       props = _objectWithoutPropertiesLoose(_ref6, _excluded3);
 
@@ -39624,10 +43070,12 @@ const FormImpl = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((_re
     if (event.defaultPrevented) return;
     event.preventDefault();
     let submitter = event.nativeEvent.submitter;
+    let submitMethod = (submitter == null ? void 0 : submitter.getAttribute("formmethod")) || method;
     submit(submitter || event.currentTarget, {
-      method,
+      method: submitMethod,
       replace,
-      relative
+      relative,
+      preventScrollReset
     });
   };
 
@@ -39640,7 +43088,7 @@ const FormImpl = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((_re
 });
 
 if (true) {
-  Form.displayName = "Form";
+  FormImpl.displayName = "FormImpl";
 }
 /**
  * This component will emulate the browser's scroll restoration on location
@@ -39667,6 +43115,37 @@ if (true) {
 //#region Hooks
 ////////////////////////////////////////////////////////////////////////////////
 
+
+var DataRouterHook;
+
+(function (DataRouterHook) {
+  DataRouterHook["UseScrollRestoration"] = "useScrollRestoration";
+  DataRouterHook["UseSubmitImpl"] = "useSubmitImpl";
+  DataRouterHook["UseFetcher"] = "useFetcher";
+})(DataRouterHook || (DataRouterHook = {}));
+
+var DataRouterStateHook;
+
+(function (DataRouterStateHook) {
+  DataRouterStateHook["UseFetchers"] = "useFetchers";
+  DataRouterStateHook["UseScrollRestoration"] = "useScrollRestoration";
+})(DataRouterStateHook || (DataRouterStateHook = {}));
+
+function getDataRouterConsoleError(hookName) {
+  return hookName + " must be used within a data router.  See https://reactrouter.com/routers/picking-a-router.";
+}
+
+function useDataRouterContext(hookName) {
+  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterContext);
+  !ctx ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName)) : 0 : void 0;
+  return ctx;
+}
+
+function useDataRouterState(hookName) {
+  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterStateContext);
+  !state ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName)) : 0 : void 0;
+  return state;
+}
 /**
  * Handles the click behavior for router `<Link>` components. This is useful if
  * you need to create custom `<Link>` components with the same click behavior we
@@ -39708,13 +43187,18 @@ function useLinkClickHandler(to, _temp) {
  */
 
 function useSearchParams(defaultInit) {
-   true ? warning(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not " + "support the URLSearchParams API. If you need to support Internet " + "Explorer 11, we recommend you load a polyfill such as " + "https://github.com/ungap/url-search-params\n\n" + "If you're unsure how to load polyfills, we recommend you check out " + "https://polyfill.io/v3/ which provides some recommendations about how " + "to load polyfills only for users that need them, instead of for every " + "user.") : 0;
+   true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not " + "support the URLSearchParams API. If you need to support Internet " + "Explorer 11, we recommend you load a polyfill such as " + "https://github.com/ungap/url-search-params\n\n" + "If you're unsure how to load polyfills, we recommend you check out " + "https://polyfill.io/v3/ which provides some recommendations about how " + "to load polyfills only for users that need them, instead of for every " + "user.") : 0;
   let defaultSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(createSearchParams(defaultInit));
+  let hasSetSearchParamsRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
   let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
-  let searchParams = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => getSearchParamsForLocation(location.search, defaultSearchParamsRef.current), [location.search]);
+  let searchParams = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => // Only merge in the defaults if we haven't yet called setSearchParams.
+  // Once we call that we want those to take precedence, otherwise you can't
+  // remove a param with setSearchParams({}) if it has an initial value
+  getSearchParamsForLocation(location.search, hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current), [location.search]);
   let navigate = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useNavigate)();
   let setSearchParams = react__WEBPACK_IMPORTED_MODULE_0__.useCallback((nextInit, navigateOptions) => {
     const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
+    hasSetSearchParamsRef.current = true;
     navigate("?" + newSearchParams, navigateOptions);
   }, [navigate, searchParams]);
   return [searchParams, setSearchParams];
@@ -39728,13 +43212,14 @@ function useSubmit() {
   return useSubmitImpl();
 }
 
-function useSubmitImpl(fetcherKey, routeId) {
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterContext);
-  !dataRouterContext ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useSubmitImpl must be used within a Data Router") : 0 : void 0;
+function useSubmitImpl(fetcherKey, fetcherRouteId) {
   let {
     router
-  } = dataRouterContext;
-  let defaultAction = useFormAction();
+  } = useDataRouterContext(DataRouterHook.UseSubmitImpl);
+  let {
+    basename
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_NavigationContext);
+  let currentRouteId = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_useRouteId)();
   return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(function (target, options) {
     if (options === void 0) {
       options = {};
@@ -39745,43 +43230,53 @@ function useSubmitImpl(fetcherKey, routeId) {
     }
 
     let {
+      action,
       method,
       encType,
-      formData,
-      url
-    } = getFormSubmissionInfo(target, defaultAction, options);
-    let href = url.pathname + url.search;
+      formData
+    } = getFormSubmissionInfo(target, options, basename); // Base options shared between fetch() and navigate()
+
     let opts = {
-      replace: options.replace,
+      preventScrollReset: options.preventScrollReset,
       formData,
       formMethod: method,
       formEncType: encType
     };
 
     if (fetcherKey) {
-      !(routeId != null) ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "No routeId available for useFetcher()") : 0 : void 0;
-      router.fetch(fetcherKey, routeId, href, opts);
+      !(fetcherRouteId != null) ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "No routeId available for useFetcher()") : 0 : void 0;
+      router.fetch(fetcherKey, fetcherRouteId, action, opts);
     } else {
-      router.navigate(href, opts);
+      router.navigate(action, _extends({}, opts, {
+        replace: options.replace,
+        fromRouteId: currentRouteId
+      }));
     }
-  }, [defaultAction, router, fetcherKey, routeId]);
-}
+  }, [router, basename, fetcherKey, fetcherRouteId, currentRouteId]);
+} // v7: Eventually we should deprecate this entirely in favor of using the
+// router method directly?
+
 
 function useFormAction(action, _temp2) {
   let {
     relative
   } = _temp2 === void 0 ? {} : _temp2;
+  let {
+    basename
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_NavigationContext);
   let routeContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_RouteContext);
-  !routeContext ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useFormAction must be used inside a RouteContext") : 0 : void 0;
-  let [match] = routeContext.matches.slice(-1);
-  let resolvedAction = action != null ? action : ".";
-  let path = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useResolvedPath)(resolvedAction, {
+  !routeContext ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "useFormAction must be used inside a RouteContext") : 0 : void 0;
+  let [match] = routeContext.matches.slice(-1); // Shallow clone path so we can modify it below, otherwise we modify the
+  // object referenced by useMemo inside useResolvedPath
+
+  let path = _extends({}, (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useResolvedPath)(action ? action : ".", {
     relative
-  }); // Previously we set the default action to ".". The problem with this is that
+  })); // Previously we set the default action to ".". The problem with this is that
   // `useResolvedPath(".")` excludes search params and the hash of the resolved
   // URL. This is the intended behavior of when "." is specifically provided as
   // the form action, but inconsistent w/ browsers when the action is omitted.
   // https://github.com/remix-run/remix/issues/927
+
 
   let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
 
@@ -39803,6 +43298,14 @@ function useFormAction(action, _temp2) {
 
   if ((!action || action === ".") && match.route.index) {
     path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+  } // If we're operating within a basename, prepend it to the pathname prior
+  // to creating the form action.  If this is a root navigation, then just use
+  // the raw basename which allows the basename to have full control over the
+  // presence of a trailing slash on root actions
+
+
+  if (basename !== "/") {
+    path.pathname = path.pathname === "/" ? basename : (0,react_router__WEBPACK_IMPORTED_MODULE_1__.joinPaths)([basename, path.pathname]);
   }
 
   return (0,react_router__WEBPACK_IMPORTED_MODULE_1__.createPath)(path);
@@ -39833,23 +43336,21 @@ let fetcherId = 0;
 function useFetcher() {
   var _route$matches;
 
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterContext);
-  !dataRouterContext ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useFetcher must be used within a Data Router") : 0 : void 0;
   let {
     router
-  } = dataRouterContext;
+  } = useDataRouterContext(DataRouterHook.UseFetcher);
   let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_RouteContext);
-  !route ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useFetcher must be used inside a RouteContext") : 0 : void 0;
+  !route ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "useFetcher must be used inside a RouteContext") : 0 : void 0;
   let routeId = (_route$matches = route.matches[route.matches.length - 1]) == null ? void 0 : _route$matches.route.id;
-  !(routeId != null) ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useFetcher can only be used on routes that contain a unique \"id\"") : 0 : void 0;
+  !(routeId != null) ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "useFetcher can only be used on routes that contain a unique \"id\"") : 0 : void 0;
   let [fetcherKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => String(++fetcherId));
   let [Form] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => {
-    !routeId ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "No routeId available for fetcher.Form()") : 0 : void 0;
+    !routeId ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "No routeId available for fetcher.Form()") : 0 : void 0;
     return createFetcherForm(fetcherKey, routeId);
   });
   let [load] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => href => {
-    !router ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "No router available for fetcher.load()") : 0 : void 0;
-    !routeId ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "No routeId available for fetcher.load()") : 0 : void 0;
+    !router ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "No router available for fetcher.load()") : 0 : void 0;
+    !routeId ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "No routeId available for fetcher.load()") : 0 : void 0;
     router.fetch(fetcherKey, routeId, href);
   });
   let submit = useSubmitImpl(fetcherKey, routeId);
@@ -39865,7 +43366,7 @@ function useFetcher() {
     // fetcher is no longer around.
     return () => {
       if (!router) {
-        console.warn("No fetcher available to clean up from useFetcher()");
+        console.warn("No router available to clean up from useFetcher()");
         return;
       }
 
@@ -39880,8 +43381,7 @@ function useFetcher() {
  */
 
 function useFetchers() {
-  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterStateContext);
-  !state ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useFetchers must be used within a DataRouterStateContext") : 0 : void 0;
+  let state = useDataRouterState(DataRouterStateHook.UseFetchers);
   return [...state.fetchers.values()];
 }
 const SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
@@ -39895,29 +43395,25 @@ function useScrollRestoration(_temp3) {
     getKey,
     storageKey
   } = _temp3 === void 0 ? {} : _temp3;
-  let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
-  let matches = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useMatches)();
-  let navigation = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useNavigation)();
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterContext);
-  !dataRouterContext ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useScrollRestoration must be used within a DataRouterContext") : 0 : void 0;
   let {
     router
-  } = dataRouterContext;
-  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(react_router__WEBPACK_IMPORTED_MODULE_2__.UNSAFE_DataRouterStateContext);
-  !(router != null && state != null) ?  true ? (0,react_router__WEBPACK_IMPORTED_MODULE_1__.invariant)(false, "useScrollRestoration must be used within a DataRouterStateContext") : 0 : void 0;
+  } = useDataRouterContext(DataRouterHook.UseScrollRestoration);
   let {
     restoreScrollPosition,
     preventScrollReset
-  } = state; // Trigger manual scroll restoration while we're active
+  } = useDataRouterState(DataRouterStateHook.UseScrollRestoration);
+  let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
+  let matches = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useMatches)();
+  let navigation = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.useNavigation)(); // Trigger manual scroll restoration while we're active
 
   react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
     window.history.scrollRestoration = "manual";
     return () => {
       window.history.scrollRestoration = "auto";
     };
-  }, []); // Save positions on unload
+  }, []); // Save positions on pagehide
 
-  useBeforeUnload(react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
+  usePageHide(react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
     if (navigation.state === "idle") {
       let key = (getKey ? getKey(location, matches) : null) || location.key;
       savedScrollPositions[key] = window.scrollY;
@@ -39927,82 +43423,138 @@ function useScrollRestoration(_temp3) {
     window.history.scrollRestoration = "auto";
   }, [storageKey, getKey, navigation.state, location, matches])); // Read in any saved scroll locations
 
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-    try {
-      let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
+  if (typeof document !== "undefined") {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      try {
+        let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
 
-      if (sessionPositions) {
-        savedScrollPositions = JSON.parse(sessionPositions);
+        if (sessionPositions) {
+          savedScrollPositions = JSON.parse(sessionPositions);
+        }
+      } catch (e) {// no-op, use default empty object
       }
-    } catch (e) {// no-op, use default empty object
-    }
-  }, [storageKey]); // Enable scroll restoration in the router
+    }, [storageKey]); // Enable scroll restoration in the router
+    // eslint-disable-next-line react-hooks/rules-of-hooks
 
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-    let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, () => window.scrollY, getKey);
-    return () => disableScrollRestoration && disableScrollRestoration();
-  }, [router, getKey]); // Restore scrolling when state.restoreScrollPosition changes
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, () => window.scrollY, getKey);
+      return () => disableScrollRestoration && disableScrollRestoration();
+    }, [router, getKey]); // Restore scrolling when state.restoreScrollPosition changes
+    // eslint-disable-next-line react-hooks/rules-of-hooks
 
-  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
-    // Explicit false means don't do anything (used for submissions)
-    if (restoreScrollPosition === false) {
-      return;
-    } // been here before, scroll to it
-
-
-    if (typeof restoreScrollPosition === "number") {
-      window.scrollTo(0, restoreScrollPosition);
-      return;
-    } // try to scroll to the hash
-
-
-    if (location.hash) {
-      let el = document.getElementById(location.hash.slice(1));
-
-      if (el) {
-        el.scrollIntoView();
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => {
+      // Explicit false means don't do anything (used for submissions)
+      if (restoreScrollPosition === false) {
         return;
-      }
-    } // Opt out of scroll reset if this link requested it
+      } // been here before, scroll to it
 
 
-    if (preventScrollReset === true) {
-      return;
-    } // otherwise go to the top on new locations
+      if (typeof restoreScrollPosition === "number") {
+        window.scrollTo(0, restoreScrollPosition);
+        return;
+      } // try to scroll to the hash
 
 
-    window.scrollTo(0, 0);
-  }, [location, restoreScrollPosition, preventScrollReset]);
-}
+      if (location.hash) {
+        let el = document.getElementById(location.hash.slice(1));
 
-function useBeforeUnload(callback) {
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    window.addEventListener("beforeunload", callback);
-    return () => {
-      window.removeEventListener("beforeunload", callback);
-    };
-  }, [callback]);
-} //#endregion
-////////////////////////////////////////////////////////////////////////////////
-//#region Utils
-////////////////////////////////////////////////////////////////////////////////
+        if (el) {
+          el.scrollIntoView();
+          return;
+        }
+      } // Don't reset if this navigation opted out
 
 
-function warning(cond, message) {
-  if (!cond) {
-    // eslint-disable-next-line no-console
-    if (typeof console !== "undefined") console.warn(message);
+      if (preventScrollReset === true) {
+        return;
+      } // otherwise go to the top on new locations
 
-    try {
-      // Welcome to debugging React Router!
-      //
-      // This error is thrown as a convenience so you can more easily
-      // find the source for a warning that appears in the console by
-      // enabling "pause on exceptions" in your JavaScript debugger.
-      throw new Error(message); // eslint-disable-next-line no-empty
-    } catch (e) {}
+
+      window.scrollTo(0, 0);
+    }, [location, restoreScrollPosition, preventScrollReset]);
   }
-} //#endregion
+}
+/**
+ * Setup a callback to be fired on the window's `beforeunload` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */
+
+function useBeforeUnload(callback, options) {
+  let {
+    capture
+  } = options || {};
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let opts = capture != null ? {
+      capture
+    } : undefined;
+    window.addEventListener("beforeunload", callback, opts);
+    return () => {
+      window.removeEventListener("beforeunload", callback, opts);
+    };
+  }, [callback, capture]);
+}
+/**
+ * Setup a callback to be fired on the window's `pagehide` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.  This event is better supported than beforeunload across browsers.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */
+
+function usePageHide(callback, options) {
+  let {
+    capture
+  } = options || {};
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    let opts = capture != null ? {
+      capture
+    } : undefined;
+    window.addEventListener("pagehide", callback, opts);
+    return () => {
+      window.removeEventListener("pagehide", callback, opts);
+    };
+  }, [callback, capture]);
+}
+/**
+ * Wrapper around useBlocker to show a window.confirm prompt to users instead
+ * of building a custom UI with useBlocker.
+ *
+ * Warning: This has *a lot of rough edges* and behaves very differently (and
+ * very incorrectly in some cases) across browsers if user click addition
+ * back/forward navigations while the confirm is open.  Use at your own risk.
+ */
+
+
+function usePrompt(_ref8) {
+  let {
+    when,
+    message
+  } = _ref8;
+  let blocker = (0,react_router__WEBPACK_IMPORTED_MODULE_2__.unstable_useBlocker)(when);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (blocker.state === "blocked" && !when) {
+      blocker.reset();
+    }
+  }, [blocker, when]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (blocker.state === "blocked") {
+      let proceed = window.confirm(message);
+
+      if (proceed) {
+        setTimeout(blocker.proceed, 0);
+      } else {
+        blocker.reset();
+      }
+    }
+  }, [blocker, message]);
+}
+ //#endregion
 
 
 //# sourceMappingURL=index.js.map
@@ -40019,11 +43571,11 @@ function warning(cond, message) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AbortedDeferredError": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.AbortedDeferredError),
+/* harmony export */   "AbortedDeferredError": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.AbortedDeferredError),
 /* harmony export */   "Await": () => (/* binding */ Await),
 /* harmony export */   "MemoryRouter": () => (/* binding */ MemoryRouter),
 /* harmony export */   "Navigate": () => (/* binding */ Navigate),
-/* harmony export */   "NavigationType": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.Action),
+/* harmony export */   "NavigationType": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.Action),
 /* harmony export */   "Outlet": () => (/* binding */ Outlet),
 /* harmony export */   "Route": () => (/* binding */ Route),
 /* harmony export */   "Router": () => (/* binding */ Router),
@@ -40031,25 +43583,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Routes": () => (/* binding */ Routes),
 /* harmony export */   "UNSAFE_DataRouterContext": () => (/* binding */ DataRouterContext),
 /* harmony export */   "UNSAFE_DataRouterStateContext": () => (/* binding */ DataRouterStateContext),
-/* harmony export */   "UNSAFE_DataStaticRouterContext": () => (/* binding */ DataStaticRouterContext),
 /* harmony export */   "UNSAFE_LocationContext": () => (/* binding */ LocationContext),
 /* harmony export */   "UNSAFE_NavigationContext": () => (/* binding */ NavigationContext),
 /* harmony export */   "UNSAFE_RouteContext": () => (/* binding */ RouteContext),
-/* harmony export */   "UNSAFE_enhanceManualRouteObjects": () => (/* binding */ enhanceManualRouteObjects),
+/* harmony export */   "UNSAFE_mapRouteProperties": () => (/* binding */ mapRouteProperties),
+/* harmony export */   "UNSAFE_useRouteId": () => (/* binding */ useRouteId),
+/* harmony export */   "UNSAFE_useRoutesImpl": () => (/* binding */ useRoutesImpl),
 /* harmony export */   "createMemoryRouter": () => (/* binding */ createMemoryRouter),
-/* harmony export */   "createPath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.createPath),
+/* harmony export */   "createPath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.createPath),
 /* harmony export */   "createRoutesFromChildren": () => (/* binding */ createRoutesFromChildren),
 /* harmony export */   "createRoutesFromElements": () => (/* binding */ createRoutesFromChildren),
-/* harmony export */   "defer": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.defer),
-/* harmony export */   "generatePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.generatePath),
-/* harmony export */   "isRouteErrorResponse": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.isRouteErrorResponse),
-/* harmony export */   "json": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.json),
-/* harmony export */   "matchPath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.matchPath),
-/* harmony export */   "matchRoutes": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.matchRoutes),
-/* harmony export */   "parsePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.parsePath),
-/* harmony export */   "redirect": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.redirect),
+/* harmony export */   "defer": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.defer),
+/* harmony export */   "generatePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.generatePath),
+/* harmony export */   "isRouteErrorResponse": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.isRouteErrorResponse),
+/* harmony export */   "json": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.json),
+/* harmony export */   "matchPath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.matchPath),
+/* harmony export */   "matchRoutes": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.matchRoutes),
+/* harmony export */   "parsePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.parsePath),
+/* harmony export */   "redirect": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.redirect),
 /* harmony export */   "renderMatches": () => (/* binding */ renderMatches),
-/* harmony export */   "resolvePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.resolvePath),
+/* harmony export */   "resolvePath": () => (/* reexport safe */ _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.resolvePath),
+/* harmony export */   "unstable_useBlocker": () => (/* binding */ useBlocker),
 /* harmony export */   "useActionData": () => (/* binding */ useActionData),
 /* harmony export */   "useAsyncError": () => (/* binding */ useAsyncError),
 /* harmony export */   "useAsyncValue": () => (/* binding */ useAsyncValue),
@@ -40071,11 +43625,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "useRouteLoaderData": () => (/* binding */ useRouteLoaderData),
 /* harmony export */   "useRoutes": () => (/* binding */ useRoutes)
 /* harmony export */ });
-/* harmony import */ var _remix_run_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @remix-run/router */ "./node_modules/@remix-run/router/dist/router.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _remix_run_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @remix-run/router */ "./node_modules/@remix-run/router/dist/router.js");
 /**
- * React Router v6.4.1
+ * React Router v6.11.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -40105,231 +43659,47 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-
-function isPolyfill(x, y) {
-  return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
-  ;
-}
-
-const is = typeof Object.is === "function" ? Object.is : isPolyfill; // Intentionally not using named imports because Rollup uses dynamic
-// dispatch for CommonJS interop named imports.
-
-const {
-  useState,
-  useEffect,
-  useLayoutEffect,
-  useDebugValue
-} = react__WEBPACK_IMPORTED_MODULE_1__;
-let didWarnOld18Alpha = false;
-let didWarnUncachedGetSnapshot = false; // Disclaimer: This shim breaks many of the rules of React, and only works
-// because of a very particular set of implementation details and assumptions
-// -- change any one of them and it will break. The most important assumption
-// is that updates are always synchronous, because concurrent rendering is
-// only available in versions of React that also have a built-in
-// useSyncExternalStore API. And we only use this shim when the built-in API
-// does not exist.
-//
-// Do not assume that the clever hacks used by this hook also work in general.
-// The point of this shim is to replace the need for hacks by other libraries.
-
-function useSyncExternalStore$2(subscribe, getSnapshot, // Note: The shim does not use getServerSnapshot, because pre-18 versions of
-// React do not expose a way to check if we're hydrating. So users of the shim
-// will need to track that themselves and return the correct value
-// from `getSnapshot`.
-getServerSnapshot) {
-  if (true) {
-    if (!didWarnOld18Alpha) {
-      if ("startTransition" in react__WEBPACK_IMPORTED_MODULE_1__) {
-        didWarnOld18Alpha = true;
-        console.error("You are using an outdated, pre-release alpha of React 18 that " + "does not support useSyncExternalStore. The " + "use-sync-external-store shim will not work correctly. Upgrade " + "to a newer pre-release.");
-      }
-    }
-  } // Read the current snapshot from the store on every render. Again, this
-  // breaks the rules of React, and only works here because of specific
-  // implementation details, most importantly that updates are
-  // always synchronous.
-
-
-  const value = getSnapshot();
-
-  if (true) {
-    if (!didWarnUncachedGetSnapshot) {
-      const cachedValue = getSnapshot();
-
-      if (!is(value, cachedValue)) {
-        console.error("The result of getSnapshot should be cached to avoid an infinite loop");
-        didWarnUncachedGetSnapshot = true;
-      }
-    }
-  } // Because updates are synchronous, we don't queue them. Instead we force a
-  // re-render whenever the subscribed state changes by updating an some
-  // arbitrary useState hook. Then, during render, we call getSnapshot to read
-  // the current value.
-  //
-  // Because we don't actually use the state returned by the useState hook, we
-  // can save a bit of memory by storing other stuff in that slot.
-  //
-  // To implement the early bailout, we need to track some things on a mutable
-  // object. Usually, we would put that in a useRef hook, but we can stash it in
-  // our useState hook instead.
-  //
-  // To force a re-render, we call forceUpdate({inst}). That works because the
-  // new object always fails an equality check.
-
-
-  const [{
-    inst
-  }, forceUpdate] = useState({
-    inst: {
-      value,
-      getSnapshot
-    }
-  }); // Track the latest getSnapshot function with a ref. This needs to be updated
-  // in the layout phase so we can access it during the tearing check that
-  // happens on subscribe.
-
-  useLayoutEffect(() => {
-    inst.value = value;
-    inst.getSnapshot = getSnapshot; // Whenever getSnapshot or subscribe changes, we need to check in the
-    // commit phase if there was an interleaved mutation. In concurrent mode
-    // this can happen all the time, but even in synchronous mode, an earlier
-    // effect may have mutated the store.
-
-    if (checkIfSnapshotChanged(inst)) {
-      // Force a re-render.
-      forceUpdate({
-        inst
-      });
-    } // eslint-disable-next-line react-hooks/exhaustive-deps
-
-  }, [subscribe, value, getSnapshot]);
-  useEffect(() => {
-    // Check for changes right before subscribing. Subsequent changes will be
-    // detected in the subscription handler.
-    if (checkIfSnapshotChanged(inst)) {
-      // Force a re-render.
-      forceUpdate({
-        inst
-      });
-    }
-
-    const handleStoreChange = () => {
-      // TODO: Because there is no cross-renderer API for batching updates, it's
-      // up to the consumer of this library to wrap their subscription event
-      // with unstable_batchedUpdates. Should we try to detect when this isn't
-      // the case and print a warning in development?
-      // The store changed. Check if the snapshot changed since the last time we
-      // read from the store.
-      if (checkIfSnapshotChanged(inst)) {
-        // Force a re-render.
-        forceUpdate({
-          inst
-        });
-      }
-    }; // Subscribe to the store and return a clean-up function.
-
-
-    return subscribe(handleStoreChange); // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [subscribe]);
-  useDebugValue(value);
-  return value;
-}
-
-function checkIfSnapshotChanged(inst) {
-  const latestGetSnapshot = inst.getSnapshot;
-  const prevValue = inst.value;
-
-  try {
-    const nextValue = latestGetSnapshot();
-    return !is(prevValue, nextValue);
-  } catch (error) {
-    return true;
-  }
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @flow
- */
-function useSyncExternalStore$1(subscribe, getSnapshot, getServerSnapshot) {
-  // Note: The shim does not use getServerSnapshot, because pre-18 versions of
-  // React do not expose a way to check if we're hydrating. So users of the shim
-  // will need to track that themselves and return the correct value
-  // from `getSnapshot`.
-  return getSnapshot();
-}
-
-/**
- * Inlined into the react-router repo since use-sync-external-store does not
- * provide a UMD-compatible package, so we need this to be able to distribute
- * UMD react-router bundles
- */
-const canUseDOM = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
-const isServerEnvironment = !canUseDOM;
-const shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore$2;
-const useSyncExternalStore = "useSyncExternalStore" in react__WEBPACK_IMPORTED_MODULE_1__ ? (module => module.useSyncExternalStore)(react__WEBPACK_IMPORTED_MODULE_1__) : shim;
-
-// Contexts for data routers
-const DataStaticRouterContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
-
-if (true) {
-  DataStaticRouterContext.displayName = "DataStaticRouterContext";
-}
-
-const DataRouterContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const DataRouterContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   DataRouterContext.displayName = "DataRouter";
 }
 
-const DataRouterStateContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const DataRouterStateContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   DataRouterStateContext.displayName = "DataRouterState";
 }
 
-const AwaitContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const AwaitContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   AwaitContext.displayName = "Await";
 }
 
-const NavigationContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const NavigationContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   NavigationContext.displayName = "Navigation";
 }
 
-const LocationContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const LocationContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   LocationContext.displayName = "Location";
 }
 
-const RouteContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext({
+const RouteContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({
   outlet: null,
-  matches: []
+  matches: [],
+  isDataRoute: false
 });
 
 if (true) {
   RouteContext.displayName = "Route";
 }
 
-const RouteErrorContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+const RouteErrorContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   RouteErrorContext.displayName = "RouteError";
@@ -40339,20 +43709,20 @@ if (true) {
  * Returns the full href for the given "to" value. This is useful for building
  * custom links that are also accessible and preserve right-click behavior.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-href
+ * @see https://reactrouter.com/hooks/use-href
  */
 
 function useHref(to, _temp) {
   let {
     relative
   } = _temp === void 0 ? {} : _temp;
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
   // router loaded. We can help them understand how to avoid that.
   "useHref() may be used only in the context of a <Router> component.") : 0 : void 0;
   let {
     basename,
     navigator
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(NavigationContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
   let {
     hash,
     pathname,
@@ -40366,7 +43736,7 @@ function useHref(to, _temp) {
   // of a trailing slash on root links
 
   if (basename !== "/") {
-    joinedPathname = pathname === "/" ? basename : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.joinPaths)([basename, pathname]);
+    joinedPathname = pathname === "/" ? basename : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.joinPaths)([basename, pathname]);
   }
 
   return navigator.createHref({
@@ -40378,11 +43748,11 @@ function useHref(to, _temp) {
 /**
  * Returns true if this component is a descendant of a <Router>.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-in-router-context
+ * @see https://reactrouter.com/hooks/use-in-router-context
  */
 
 function useInRouterContext() {
-  return react__WEBPACK_IMPORTED_MODULE_1__.useContext(LocationContext) != null;
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext) != null;
 }
 /**
  * Returns the current location object, which represents the current URL in web
@@ -40392,103 +43762,102 @@ function useInRouterContext() {
  * "routing" in your app, and we'd like to know what your use case is. We may
  * be able to provide something higher-level to better suit your needs.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-location
+ * @see https://reactrouter.com/hooks/use-location
  */
 
 function useLocation() {
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
   // router loaded. We can help them understand how to avoid that.
   "useLocation() may be used only in the context of a <Router> component.") : 0 : void 0;
-  return react__WEBPACK_IMPORTED_MODULE_1__.useContext(LocationContext).location;
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).location;
 }
 /**
  * Returns the current navigation action which describes how the router came to
  * the current location, either by a pop, push, or replace on the history stack.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-navigation-type
+ * @see https://reactrouter.com/hooks/use-navigation-type
  */
 
 function useNavigationType() {
-  return react__WEBPACK_IMPORTED_MODULE_1__.useContext(LocationContext).navigationType;
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(LocationContext).navigationType;
 }
 /**
- * Returns true if the URL for the given "to" value matches the current URL.
+ * Returns a PathMatch object if the given pattern matches the current URL.
  * This is useful for components that need to know "active" state, e.g.
  * <NavLink>.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-match
+ * @see https://reactrouter.com/hooks/use-match
  */
 
 function useMatch(pattern) {
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
   // router loaded. We can help them understand how to avoid that.
   "useMatch() may be used only in the context of a <Router> component.") : 0 : void 0;
   let {
     pathname
   } = useLocation();
-  return react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.matchPath)(pattern, pathname), [pathname, pattern]);
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.matchPath)(pattern, pathname), [pathname, pattern]);
 }
 /**
  * The interface for the navigate() function returned from useNavigate().
  */
 
-/**
- * When processing relative navigation we want to ignore ancestor routes that
- * do not contribute to the path, such that index/pathless layout routes don't
- * interfere.
- *
- * For example, when moving a route element into an index route and/or a
- * pathless layout route, relative link behavior contained within should stay
- * the same.  Both of the following examples should link back to the root:
- *
- *   <Route path="/">
- *     <Route path="accounts" element={<Link to=".."}>
- *   </Route>
- *
- *   <Route path="/">
- *     <Route path="accounts">
- *       <Route element={<AccountsLayout />}>       // <-- Does not contribute
- *         <Route index element={<Link to=".."} />  // <-- Does not contribute
- *       </Route
- *     </Route>
- *   </Route>
- */
-function getPathContributingMatches(matches) {
-  return matches.filter((match, index) => index === 0 || !match.route.index && match.pathnameBase !== matches[index - 1].pathnameBase);
+const navigateEffectWarning = "You should call navigate() in a React.useEffect(), not when " + "your component is first rendered."; // Mute warnings for calls to useNavigate in SSR environments
+
+function useIsomorphicLayoutEffect(cb) {
+  let isStatic = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext).static;
+
+  if (!isStatic) {
+    // We should be able to get rid of this once react 18.3 is released
+    // See: https://github.com/facebook/react/pull/26395
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(cb);
+  }
 }
 /**
  * Returns an imperative method for changing the location. Used by <Link>s, but
  * may also be used by other elements to change the location.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-navigate
+ * @see https://reactrouter.com/hooks/use-navigate
  */
 
 
 function useNavigate() {
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
+  let {
+    isDataRoute
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext); // Conditional usage is OK here because the usage of a data router is static
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+
+  return isDataRoute ? useNavigateStable() : useNavigateUnstable();
+}
+
+function useNavigateUnstable() {
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
   // router loaded. We can help them understand how to avoid that.
   "useNavigate() may be used only in the context of a <Router> component.") : 0 : void 0;
   let {
     basename,
     navigator
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(NavigationContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
   let {
     matches
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
   let {
     pathname: locationPathname
   } = useLocation();
-  let routePathnamesJson = JSON.stringify(getPathContributingMatches(matches).map(match => match.pathnameBase));
-  let activeRef = react__WEBPACK_IMPORTED_MODULE_1__.useRef(false);
-  react__WEBPACK_IMPORTED_MODULE_1__.useEffect(() => {
+  let routePathnamesJson = JSON.stringify((0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_getPathContributingMatches)(matches).map(match => match.pathnameBase));
+  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  useIsomorphicLayoutEffect(() => {
     activeRef.current = true;
   });
-  let navigate = react__WEBPACK_IMPORTED_MODULE_1__.useCallback(function (to, options) {
+  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(function (to, options) {
     if (options === void 0) {
       options = {};
     }
 
-     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(activeRef.current, "You should call navigate() in a React.useEffect(), not when " + "your component is first rendered.") : 0;
+     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(activeRef.current, navigateEffectWarning) : 0; // Short circuit here since if this happens on first render the navigate
+    // is useless because we haven't wired up our history listener yet
+
     if (!activeRef.current) return;
 
     if (typeof to === "number") {
@@ -40496,41 +43865,42 @@ function useNavigate() {
       return;
     }
 
-    let path = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, options.relative === "path"); // If we're operating within a basename, prepend it to the pathname prior
+    let path = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, options.relative === "path"); // If we're operating within a basename, prepend it to the pathname prior
     // to handing off to history.  If this is a root navigation, then we
     // navigate to the raw basename which allows the basename to have full
     // control over the presence of a trailing slash on root links
 
     if (basename !== "/") {
-      path.pathname = path.pathname === "/" ? basename : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.joinPaths)([basename, path.pathname]);
+      path.pathname = path.pathname === "/" ? basename : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.joinPaths)([basename, path.pathname]);
     }
 
     (!!options.replace ? navigator.replace : navigator.push)(path, options.state, options);
   }, [basename, navigator, routePathnamesJson, locationPathname]);
   return navigate;
 }
-const OutletContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext(null);
+
+const OutletContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 /**
  * Returns the context (if provided) for the child route at this level of the route
  * hierarchy.
- * @see https://reactrouter.com/docs/en/v6/hooks/use-outlet-context
+ * @see https://reactrouter.com/hooks/use-outlet-context
  */
 
 function useOutletContext() {
-  return react__WEBPACK_IMPORTED_MODULE_1__.useContext(OutletContext);
+  return react__WEBPACK_IMPORTED_MODULE_0__.useContext(OutletContext);
 }
 /**
  * Returns the element for the child route at this level of the route
  * hierarchy. Used internally by <Outlet> to render child routes.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-outlet
+ * @see https://reactrouter.com/hooks/use-outlet
  */
 
 function useOutlet(context) {
-  let outlet = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext).outlet;
+  let outlet = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext).outlet;
 
   if (outlet) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(OutletContext.Provider, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(OutletContext.Provider, {
       value: context
     }, outlet);
   }
@@ -40541,20 +43911,20 @@ function useOutlet(context) {
  * Returns an object of key/value pairs of the dynamic params from the current
  * URL that were matched by the route path.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-params
+ * @see https://reactrouter.com/hooks/use-params
  */
 
 function useParams() {
   let {
     matches
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
   let routeMatch = matches[matches.length - 1];
   return routeMatch ? routeMatch.params : {};
 }
 /**
  * Resolves the pathname of the given `to` value against the current location.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-resolved-path
+ * @see https://reactrouter.com/hooks/use-resolved-path
  */
 
 function useResolvedPath(to, _temp2) {
@@ -40563,12 +43933,12 @@ function useResolvedPath(to, _temp2) {
   } = _temp2 === void 0 ? {} : _temp2;
   let {
     matches
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
   let {
     pathname: locationPathname
   } = useLocation();
-  let routePathnamesJson = JSON.stringify(getPathContributingMatches(matches).map(match => match.pathnameBase));
-  return react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [to, routePathnamesJson, locationPathname, relative]);
+  let routePathnamesJson = JSON.stringify((0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_getPathContributingMatches)(matches).map(match => match.pathnameBase));
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [to, routePathnamesJson, locationPathname, relative]);
 }
 /**
  * Returns the element of the route that matched the current location, prepared
@@ -40576,17 +43946,23 @@ function useResolvedPath(to, _temp2) {
  * elements in the tree must render an <Outlet> to render their child route's
  * element.
  *
- * @see https://reactrouter.com/docs/en/v6/hooks/use-routes
+ * @see https://reactrouter.com/hooks/use-routes
  */
 
 function useRoutes(routes, locationArg) {
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
+  return useRoutesImpl(routes, locationArg);
+} // Internal implementation with accept optional param for RouterProvider usage
+
+function useRoutesImpl(routes, locationArg, dataRouterState) {
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of the
   // router loaded. We can help them understand how to avoid that.
   "useRoutes() may be used only in the context of a <Router> component.") : 0 : void 0;
-  let dataRouterStateContext = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataRouterStateContext);
+  let {
+    navigator
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext);
   let {
     matches: parentMatches
-  } = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
   let routeMatch = parentMatches[parentMatches.length - 1];
   let parentParams = routeMatch ? routeMatch.params : {};
   let parentPathname = routeMatch ? routeMatch.pathname : "/";
@@ -40624,8 +44000,8 @@ function useRoutes(routes, locationArg) {
   if (locationArg) {
     var _parsedLocationArg$pa;
 
-    let parsedLocationArg = typeof locationArg === "string" ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.parsePath)(locationArg) : locationArg;
-    !(parentPathnameBase === "/" || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "When overriding the location using `<Routes location>` or `useRoutes(routes, location)`, " + "the location pathname must begin with the portion of the URL pathname that was " + ("matched by all parent routes. The current pathname base is \"" + parentPathnameBase + "\" ") + ("but pathname \"" + parsedLocationArg.pathname + "\" was given in the `location` prop.")) : 0 : void 0;
+    let parsedLocationArg = typeof locationArg === "string" ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.parsePath)(locationArg) : locationArg;
+    !(parentPathnameBase === "/" || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "When overriding the location using `<Routes location>` or `useRoutes(routes, location)`, " + "the location pathname must begin with the portion of the URL pathname that was " + ("matched by all parent routes. The current pathname base is \"" + parentPathnameBase + "\" ") + ("but pathname \"" + parsedLocationArg.pathname + "\" was given in the `location` prop.")) : 0 : void 0;
     location = parsedLocationArg;
   } else {
     location = locationFromContext;
@@ -40633,26 +44009,28 @@ function useRoutes(routes, locationArg) {
 
   let pathname = location.pathname || "/";
   let remainingPathname = parentPathnameBase === "/" ? pathname : pathname.slice(parentPathnameBase.length) || "/";
-  let matches = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.matchRoutes)(routes, {
+  let matches = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.matchRoutes)(routes, {
     pathname: remainingPathname
   });
 
   if (true) {
-     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(parentRoute || matches != null, "No routes matched location \"" + location.pathname + location.search + location.hash + "\" ") : 0;
-     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(matches == null || matches[matches.length - 1].route.element !== undefined, "Matched leaf route at location \"" + location.pathname + location.search + location.hash + "\" does not have an element. " + "This means it will render an <Outlet /> with a null value by default resulting in an \"empty\" page.") : 0;
+     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(parentRoute || matches != null, "No routes matched location \"" + location.pathname + location.search + location.hash + "\" ") : 0;
+     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(matches == null || matches[matches.length - 1].route.element !== undefined || matches[matches.length - 1].route.Component !== undefined, "Matched leaf route at location \"" + location.pathname + location.search + location.hash + "\" " + "does not have an element or Component. This means it will render an <Outlet /> with a " + "null value by default resulting in an \"empty\" page.") : 0;
   }
 
   let renderedMatches = _renderMatches(matches && matches.map(match => Object.assign({}, match, {
     params: Object.assign({}, parentParams, match.params),
-    pathname: (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.joinPaths)([parentPathnameBase, match.pathname]),
-    pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.joinPaths)([parentPathnameBase, match.pathnameBase])
-  })), parentMatches, dataRouterStateContext || undefined); // When a user passes in a `locationArg`, the associated routes need to
+    pathname: (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.joinPaths)([parentPathnameBase, // Re-encode pathnames that were decoded inside matchRoutes
+    navigator.encodeLocation ? navigator.encodeLocation(match.pathname).pathname : match.pathname]),
+    pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.joinPaths)([parentPathnameBase, // Re-encode pathnames that were decoded inside matchRoutes
+    navigator.encodeLocation ? navigator.encodeLocation(match.pathnameBase).pathname : match.pathnameBase])
+  })), parentMatches, dataRouterState); // When a user passes in a `locationArg`, the associated routes need to
   // be wrapped in a new `LocationContext.Provider` in order for `useLocation`
   // to use the scoped location instead of the global location.
 
 
-  if (locationArg) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(LocationContext.Provider, {
+  if (locationArg && renderedMatches) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LocationContext.Provider, {
       value: {
         location: _extends({
           pathname: "/",
@@ -40661,7 +44039,7 @@ function useRoutes(routes, locationArg) {
           state: null,
           key: "default"
         }, location),
-        navigationType: _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.Action.Pop
+        navigationType: _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.Action.Pop
       }
     }, renderedMatches);
   }
@@ -40669,9 +44047,9 @@ function useRoutes(routes, locationArg) {
   return renderedMatches;
 }
 
-function DefaultErrorElement() {
+function DefaultErrorComponent() {
   let error = useRouteError();
-  let message = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.isRouteErrorResponse)(error) ? error.status + " " + error.statusText : error instanceof Error ? error.message : JSON.stringify(error);
+  let message = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.isRouteErrorResponse)(error) ? error.status + " " + error.statusText : error instanceof Error ? error.message : JSON.stringify(error);
   let stack = error instanceof Error ? error.stack : null;
   let lightgrey = "rgba(200,200,200, 0.5)";
   let preStyles = {
@@ -40682,24 +44060,33 @@ function DefaultErrorElement() {
     padding: "2px 4px",
     backgroundColor: lightgrey
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h2", null, "Unhandled Thrown Error!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
+  let devInfo = null;
+
+  if (true) {
+    console.error("Error handled by React Router default ErrorBoundary:", error);
+    devInfo = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\uD83D\uDCBF Hey developer \uD83D\uDC4B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", {
+      style: codeStyles
+    }, "ErrorBoundary"), " or", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", {
+      style: codeStyles
+    }, "errorElement"), " prop on your route."));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Unexpected Application Error!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
     style: {
       fontStyle: "italic"
     }
-  }, message), stack ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("pre", {
+  }, message), stack ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pre", {
     style: preStyles
-  }, stack) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "\uD83D\uDCBF Hey developer \uD83D\uDC4B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("code", {
-    style: codeStyles
-  }, "errorElement"), " props on\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("code", {
-    style: codeStyles
-  }, "<Route>")));
+  }, stack) : null, devInfo);
 }
 
-class RenderErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+const defaultErrorElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(DefaultErrorComponent, null);
+class RenderErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor(props) {
     super(props);
     this.state = {
       location: props.location,
+      revalidation: props.revalidation,
       error: props.error
     };
   }
@@ -40719,10 +44106,11 @@ class RenderErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     // Whether we're in an error state or not, we update the location in state
     // so that when we are in an error state, it gets reset when a new location
     // comes in and the user recovers from the error.
-    if (state.location !== props.location) {
+    if (state.location !== props.location || state.revalidation !== "idle" && props.revalidation === "idle") {
       return {
         error: props.error,
-        location: props.location
+        location: props.location,
+        revalidation: props.revalidation
       };
     } // If we're not changing locations, preserve the location but still surface
     // any new errors that may come through. We retain the existing error, we do
@@ -40732,7 +44120,8 @@ class RenderErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 
     return {
       error: props.error || state.error,
-      location: state.location
+      location: state.location,
+      revalidation: props.revalidation || state.revalidation
     };
   }
 
@@ -40741,10 +44130,12 @@ class RenderErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   }
 
   render() {
-    return this.state.error ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(RouteErrorContext.Provider, {
+    return this.state.error ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, {
+      value: this.props.routeContext
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteErrorContext.Provider, {
       value: this.state.error,
       children: this.props.component
-    }) : this.props.children;
+    })) : this.props.children;
   }
 
 }
@@ -40755,25 +44146,33 @@ function RenderedRoute(_ref) {
     match,
     children
   } = _ref;
-  let dataStaticRouterContext = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataStaticRouterContext); // Track how deep we got in our render pass to emulate SSR componentDidCatch
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext); // Track how deep we got in our render pass to emulate SSR componentDidCatch
   // in a DataStaticRouter
 
-  if (dataStaticRouterContext && match.route.errorElement) {
-    dataStaticRouterContext._deepestRenderedBoundaryId = match.route.id;
+  if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) {
+    dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(RouteContext.Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RouteContext.Provider, {
     value: routeContext
   }, children);
 }
 
 function _renderMatches(matches, parentMatches, dataRouterState) {
+  var _dataRouterState2;
+
   if (parentMatches === void 0) {
     parentMatches = [];
   }
 
+  if (dataRouterState === void 0) {
+    dataRouterState = null;
+  }
+
   if (matches == null) {
-    if (dataRouterState != null && dataRouterState.errors) {
+    var _dataRouterState;
+
+    if ((_dataRouterState = dataRouterState) != null && _dataRouterState.errors) {
       // Don't bail if we have data router errors so we can render them in the
       // boundary.  Use the pre-matched (or shimmed) matches
       matches = dataRouterState.matches;
@@ -40784,63 +44183,139 @@ function _renderMatches(matches, parentMatches, dataRouterState) {
 
   let renderedMatches = matches; // If we have data errors, trim matches to the highest error boundary
 
-  let errors = dataRouterState == null ? void 0 : dataRouterState.errors;
+  let errors = (_dataRouterState2 = dataRouterState) == null ? void 0 : _dataRouterState2.errors;
 
   if (errors != null) {
     let errorIndex = renderedMatches.findIndex(m => m.route.id && (errors == null ? void 0 : errors[m.route.id]));
-    !(errorIndex >= 0) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "Could not find a matching route for the current errors: " + errors) : 0 : void 0;
+    !(errorIndex >= 0) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "Could not find a matching route for errors on route IDs: " + Object.keys(errors).join(",")) : 0 : void 0;
     renderedMatches = renderedMatches.slice(0, Math.min(renderedMatches.length, errorIndex + 1));
   }
 
   return renderedMatches.reduceRight((outlet, match, index) => {
     let error = match.route.id ? errors == null ? void 0 : errors[match.route.id] : null; // Only data routers handle errors
 
-    let errorElement = dataRouterState ? match.route.errorElement || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(DefaultErrorElement, null) : null;
+    let errorElement = null;
 
-    let getChildren = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(RenderedRoute, {
-      match: match,
-      routeContext: {
-        outlet,
-        matches: parentMatches.concat(renderedMatches.slice(0, index + 1))
+    if (dataRouterState) {
+      errorElement = match.route.errorElement || defaultErrorElement;
+    }
+
+    let matches = parentMatches.concat(renderedMatches.slice(0, index + 1));
+
+    let getChildren = () => {
+      let children;
+
+      if (error) {
+        children = errorElement;
+      } else if (match.route.Component) {
+        // Note: This is a de-optimized path since React won't re-use the
+        // ReactElement since it's identity changes with each new
+        // React.createElement call.  We keep this so folks can use
+        // `<Route Component={...}>` in `<Routes>` but generally `Component`
+        // usage is only advised in `RouterProvider` when we can convert it to
+        // `element` ahead of time.
+        children = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(match.route.Component, null);
+      } else if (match.route.element) {
+        children = match.route.element;
+      } else {
+        children = outlet;
       }
-    }, error ? errorElement : match.route.element !== undefined ? match.route.element : outlet); // Only wrap in an error boundary within data router usages when we have an
-    // errorElement on this route.  Otherwise let it bubble up to an ancestor
-    // errorElement
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RenderedRoute, {
+        match: match,
+        routeContext: {
+          outlet,
+          matches,
+          isDataRoute: dataRouterState != null
+        },
+        children: children
+      });
+    }; // Only wrap in an error boundary within data router usages when we have an
+    // ErrorBoundary/errorElement on this route.  Otherwise let it bubble up to
+    // an ancestor ErrorBoundary/errorElement
 
 
-    return dataRouterState && (match.route.errorElement || index === 0) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(RenderErrorBoundary, {
+    return dataRouterState && (match.route.ErrorBoundary || match.route.errorElement || index === 0) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RenderErrorBoundary, {
       location: dataRouterState.location,
+      revalidation: dataRouterState.revalidation,
       component: errorElement,
       error: error,
-      children: getChildren()
+      children: getChildren(),
+      routeContext: {
+        outlet: null,
+        matches,
+        isDataRoute: true
+      }
     }) : getChildren();
   }, null);
 }
 var DataRouterHook;
 
 (function (DataRouterHook) {
-  DataRouterHook["UseLoaderData"] = "useLoaderData";
-  DataRouterHook["UseActionData"] = "useActionData";
-  DataRouterHook["UseRouteError"] = "useRouteError";
-  DataRouterHook["UseNavigation"] = "useNavigation";
-  DataRouterHook["UseRouteLoaderData"] = "useRouteLoaderData";
-  DataRouterHook["UseMatches"] = "useMatches";
+  DataRouterHook["UseBlocker"] = "useBlocker";
   DataRouterHook["UseRevalidator"] = "useRevalidator";
+  DataRouterHook["UseNavigateStable"] = "useNavigate";
 })(DataRouterHook || (DataRouterHook = {}));
 
+var DataRouterStateHook;
+
+(function (DataRouterStateHook) {
+  DataRouterStateHook["UseBlocker"] = "useBlocker";
+  DataRouterStateHook["UseLoaderData"] = "useLoaderData";
+  DataRouterStateHook["UseActionData"] = "useActionData";
+  DataRouterStateHook["UseRouteError"] = "useRouteError";
+  DataRouterStateHook["UseNavigation"] = "useNavigation";
+  DataRouterStateHook["UseRouteLoaderData"] = "useRouteLoaderData";
+  DataRouterStateHook["UseMatches"] = "useMatches";
+  DataRouterStateHook["UseRevalidator"] = "useRevalidator";
+  DataRouterStateHook["UseNavigateStable"] = "useNavigate";
+  DataRouterStateHook["UseRouteId"] = "useRouteId";
+})(DataRouterStateHook || (DataRouterStateHook = {}));
+
+function getDataRouterConsoleError(hookName) {
+  return hookName + " must be used within a data router.  See https://reactrouter.com/routers/picking-a-router.";
+}
+
+function useDataRouterContext(hookName) {
+  let ctx = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterContext);
+  !ctx ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName)) : 0 : void 0;
+  return ctx;
+}
+
 function useDataRouterState(hookName) {
-  let state = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataRouterStateContext);
-  !state ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, hookName + " must be used within a DataRouterStateContext") : 0 : void 0;
+  let state = react__WEBPACK_IMPORTED_MODULE_0__.useContext(DataRouterStateContext);
+  !state ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName)) : 0 : void 0;
   return state;
+}
+
+function useRouteContext(hookName) {
+  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  !route ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName)) : 0 : void 0;
+  return route;
+} // Internal version with hookName-aware debugging
+
+
+function useCurrentRouteId(hookName) {
+  let route = useRouteContext(hookName);
+  let thisRoute = route.matches[route.matches.length - 1];
+  !thisRoute.route.id ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, hookName + " can only be used on routes that contain a unique \"id\"") : 0 : void 0;
+  return thisRoute.route.id;
+}
+/**
+ * Returns the ID for the nearest contextual route
+ */
+
+
+function useRouteId() {
+  return useCurrentRouteId(DataRouterStateHook.UseRouteId);
 }
 /**
  * Returns the current navigation, defaulting to an "idle" navigation when
  * no navigation is in progress
  */
 
-
 function useNavigation() {
-  let state = useDataRouterState(DataRouterHook.UseNavigation);
+  let state = useDataRouterState(DataRouterStateHook.UseNavigation);
   return state.navigation;
 }
 /**
@@ -40849,9 +44324,8 @@ function useNavigation() {
  */
 
 function useRevalidator() {
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataRouterContext);
-  !dataRouterContext ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useRevalidator must be used within a DataRouterContext") : 0 : void 0;
-  let state = useDataRouterState(DataRouterHook.UseRevalidator);
+  let dataRouterContext = useDataRouterContext(DataRouterHook.UseRevalidator);
+  let state = useDataRouterState(DataRouterStateHook.UseRevalidator);
   return {
     revalidate: dataRouterContext.router.revalidate,
     state: state.revalidation
@@ -40866,8 +44340,8 @@ function useMatches() {
   let {
     matches,
     loaderData
-  } = useDataRouterState(DataRouterHook.UseMatches);
-  return react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => matches.map(match => {
+  } = useDataRouterState(DataRouterStateHook.UseMatches);
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => matches.map(match => {
     let {
       pathname,
       params
@@ -40889,19 +44363,22 @@ function useMatches() {
  */
 
 function useLoaderData() {
-  let state = useDataRouterState(DataRouterHook.UseLoaderData);
-  let route = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
-  !route ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useLoaderData must be used inside a RouteContext") : 0 : void 0;
-  let thisRoute = route.matches[route.matches.length - 1];
-  !thisRoute.route.id ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useLoaderData can only be used on routes that contain a unique \"id\"") : 0 : void 0;
-  return state.loaderData[thisRoute.route.id];
+  let state = useDataRouterState(DataRouterStateHook.UseLoaderData);
+  let routeId = useCurrentRouteId(DataRouterStateHook.UseLoaderData);
+
+  if (state.errors && state.errors[routeId] != null) {
+    console.error("You cannot `useLoaderData` in an errorElement (routeId: " + routeId + ")");
+    return undefined;
+  }
+
+  return state.loaderData[routeId];
 }
 /**
  * Returns the loaderData for the given routeId
  */
 
 function useRouteLoaderData(routeId) {
-  let state = useDataRouterState(DataRouterHook.UseRouteLoaderData);
+  let state = useDataRouterState(DataRouterStateHook.UseRouteLoaderData);
   return state.loaderData[routeId];
 }
 /**
@@ -40909,41 +44386,38 @@ function useRouteLoaderData(routeId) {
  */
 
 function useActionData() {
-  let state = useDataRouterState(DataRouterHook.UseActionData);
-  let route = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
-  !route ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useActionData must be used inside a RouteContext") : 0 : void 0;
+  let state = useDataRouterState(DataRouterStateHook.UseActionData);
+  let route = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  !route ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "useActionData must be used inside a RouteContext") : 0 : void 0;
   return Object.values((state == null ? void 0 : state.actionData) || {})[0];
 }
 /**
  * Returns the nearest ancestor Route error, which could be a loader/action
  * error or a render error.  This is intended to be called from your
- * errorElement to display a proper error message.
+ * ErrorBoundary/errorElement to display a proper error message.
  */
 
 function useRouteError() {
   var _state$errors;
 
-  let error = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteErrorContext);
-  let state = useDataRouterState(DataRouterHook.UseRouteError);
-  let route = react__WEBPACK_IMPORTED_MODULE_1__.useContext(RouteContext);
-  let thisRoute = route.matches[route.matches.length - 1]; // If this was a render error, we put it in a RouteError context inside
+  let error = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteErrorContext);
+  let state = useDataRouterState(DataRouterStateHook.UseRouteError);
+  let routeId = useCurrentRouteId(DataRouterStateHook.UseRouteError); // If this was a render error, we put it in a RouteError context inside
   // of RenderErrorBoundary
 
   if (error) {
     return error;
-  }
+  } // Otherwise look for errors from our data router state
 
-  !route ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useRouteError must be used inside a RouteContext") : 0 : void 0;
-  !thisRoute.route.id ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "useRouteError can only be used on routes that contain a unique \"id\"") : 0 : void 0; // Otherwise look for errors from our data router state
 
-  return (_state$errors = state.errors) == null ? void 0 : _state$errors[thisRoute.route.id];
+  return (_state$errors = state.errors) == null ? void 0 : _state$errors[routeId];
 }
 /**
  * Returns the happy-path data from the nearest ancestor <Await /> value
  */
 
 function useAsyncValue() {
-  let value = react__WEBPACK_IMPORTED_MODULE_1__.useContext(AwaitContext);
+  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
   return value == null ? void 0 : value._data;
 }
 /**
@@ -40951,15 +44425,74 @@ function useAsyncValue() {
  */
 
 function useAsyncError() {
-  let value = react__WEBPACK_IMPORTED_MODULE_1__.useContext(AwaitContext);
+  let value = react__WEBPACK_IMPORTED_MODULE_0__.useContext(AwaitContext);
   return value == null ? void 0 : value._error;
 }
+let blockerId = 0;
+/**
+ * Allow the application to block navigations within the SPA and present the
+ * user a confirmation dialog to confirm the navigation.  Mostly used to avoid
+ * using half-filled form data.  This does not handle hard-reloads or
+ * cross-origin navigations.
+ */
+
+function useBlocker(shouldBlock) {
+  let {
+    router
+  } = useDataRouterContext(DataRouterHook.UseBlocker);
+  let state = useDataRouterState(DataRouterStateHook.UseBlocker);
+  let [blockerKey] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => String(++blockerId));
+  let blockerFunction = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(args => {
+    return typeof shouldBlock === "function" ? !!shouldBlock(args) : !!shouldBlock;
+  }, [shouldBlock]);
+  let blocker = router.getBlocker(blockerKey, blockerFunction); // Cleanup on unmount
+
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => () => router.deleteBlocker(blockerKey), [router, blockerKey]); // Prefer the blocker from state since DataRouterContext is memoized so this
+  // ensures we update on blocker state updates
+
+  return state.blockers.get(blockerKey) || blocker;
+}
+/**
+ * Stable version of useNavigate that is used when we are in the context of
+ * a RouterProvider.
+ */
+
+function useNavigateStable() {
+  let {
+    router
+  } = useDataRouterContext(DataRouterHook.UseNavigateStable);
+  let id = useCurrentRouteId(DataRouterStateHook.UseNavigateStable);
+  let activeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  useIsomorphicLayoutEffect(() => {
+    activeRef.current = true;
+  });
+  let navigate = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(function (to, options) {
+    if (options === void 0) {
+      options = {};
+    }
+
+     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(activeRef.current, navigateEffectWarning) : 0; // Short circuit here since if this happens on first render the navigate
+    // is useless because we haven't wired up our router subscriber yet
+
+    if (!activeRef.current) return;
+
+    if (typeof to === "number") {
+      router.navigate(to);
+    } else {
+      router.navigate(to, _extends({
+        fromRouteId: id
+      }, options));
+    }
+  }, [router, id]);
+  return navigate;
+}
+
 const alreadyWarned = {};
 
 function warningOnce(key, cond, message) {
   if (!cond && !alreadyWarned[key]) {
     alreadyWarned[key] = true;
-     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(false, message) : 0;
+     true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(false, message) : 0;
   }
 }
 
@@ -40971,14 +44504,14 @@ function RouterProvider(_ref) {
     fallbackElement,
     router
   } = _ref;
-  // Sync router state to our component state to force re-renders
-  let state = useSyncExternalStore(router.subscribe, () => router.state, // We have to provide this so React@18 doesn't complain during hydration,
-  // but we pass our serialized hydration data into the router so state here
-  // is already synced with what the server saw
-  () => router.state);
-  let navigator = react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => {
+  // Need to use a layout effect here so we are subscribed early enough to
+  // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
+  let [state, setState] = react__WEBPACK_IMPORTED_MODULE_0__.useState(router.state);
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => router.subscribe(setState), [router, setState]);
+  let navigator = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
     return {
       createHref: router.createHref,
+      encodeLocation: router.encodeLocation,
       go: n => router.navigate(n),
       push: (to, state, opts) => router.navigate(to, {
         state,
@@ -40992,40 +44525,57 @@ function RouterProvider(_ref) {
     };
   }, [router]);
   let basename = router.basename || "/";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(DataRouterContext.Provider, {
-    value: {
-      router,
-      navigator,
-      static: false,
-      // Do we need this?
-      basename
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(DataRouterStateContext.Provider, {
+  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => ({
+    router,
+    navigator,
+    static: false,
+    basename
+  }), [router, navigator, basename]); // The fragment and {null} here are important!  We need them to keep React 18's
+  // useId happy when we are server-rendering since we may have a <script> here
+  // containing the hydrated server-side staticContext (from StaticRouterProvider).
+  // useId relies on the component tree structure to generate deterministic id's
+  // so we need to ensure it remains the same on the client even though
+  // we don't need the <script> tag
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterContext.Provider, {
+    value: dataRouterContext
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRouterStateContext.Provider, {
     value: state
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Router, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Router, {
     basename: router.basename,
     location: router.state.location,
     navigationType: router.state.historyAction,
     navigator: navigator
-  }, router.state.initialized ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Routes, null) : fallbackElement)));
+  }, router.state.initialized ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(DataRoutes, {
+    routes: router.routes,
+    state: state
+  }) : fallbackElement))), null);
+}
+
+function DataRoutes(_ref2) {
+  let {
+    routes,
+    state
+  } = _ref2;
+  return useRoutesImpl(routes, undefined, state);
 }
 
 /**
  * A <Router> that stores all entries in memory.
  *
- * @see https://reactrouter.com/docs/en/v6/routers/memory-router
+ * @see https://reactrouter.com/router-components/memory-router
  */
-function MemoryRouter(_ref2) {
+function MemoryRouter(_ref3) {
   let {
     basename,
     children,
     initialEntries,
     initialIndex
-  } = _ref2;
-  let historyRef = react__WEBPACK_IMPORTED_MODULE_1__.useRef();
+  } = _ref3;
+  let historyRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
 
   if (historyRef.current == null) {
-    historyRef.current = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.createMemoryHistory)({
+    historyRef.current = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.createMemoryHistory)({
       initialEntries,
       initialIndex,
       v5Compat: true
@@ -41033,12 +44583,12 @@ function MemoryRouter(_ref2) {
   }
 
   let history = historyRef.current;
-  let [state, setState] = react__WEBPACK_IMPORTED_MODULE_1__.useState({
+  let [state, setState] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
     action: history.action,
     location: history.location
   });
-  react__WEBPACK_IMPORTED_MODULE_1__.useLayoutEffect(() => history.listen(setState), [history]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(Router, {
+  react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect(() => history.listen(setState), [history]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Router, {
     basename: basename,
     children: children,
     location: state.location,
@@ -41054,42 +44604,42 @@ function MemoryRouter(_ref2) {
  * able to use hooks. In functional components, we recommend you use the
  * `useNavigate` hook instead.
  *
- * @see https://reactrouter.com/docs/en/v6/components/navigate
+ * @see https://reactrouter.com/components/navigate
  */
-function Navigate(_ref3) {
+function Navigate(_ref4) {
   let {
     to,
     replace,
     state,
     relative
-  } = _ref3;
-  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, // TODO: This error is probably because they somehow have 2 versions of
+  } = _ref4;
+  !useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, // TODO: This error is probably because they somehow have 2 versions of
   // the router loaded. We can help them understand how to avoid that.
   "<Navigate> may be used only in the context of a <Router> component.") : 0 : void 0;
-   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(!react__WEBPACK_IMPORTED_MODULE_1__.useContext(NavigationContext).static, "<Navigate> must not be used on the initial render in a <StaticRouter>. " + "This is a no-op, but you should modify your code so the <Navigate> is " + "only ever rendered in response to some user interaction or state change.") : 0;
-  let dataRouterState = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataRouterStateContext);
-  let navigate = useNavigate();
-  react__WEBPACK_IMPORTED_MODULE_1__.useEffect(() => {
-    // Avoid kicking off multiple navigations if we're in the middle of a
-    // data-router navigation, since components get re-rendered when we enter
-    // a submitting/loading state
-    if (dataRouterState && dataRouterState.navigation.state !== "idle") {
-      return;
-    }
+   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(!react__WEBPACK_IMPORTED_MODULE_0__.useContext(NavigationContext).static, "<Navigate> must not be used on the initial render in a <StaticRouter>. " + "This is a no-op, but you should modify your code so the <Navigate> is " + "only ever rendered in response to some user interaction or state change.") : 0;
+  let {
+    matches
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(RouteContext);
+  let {
+    pathname: locationPathname
+  } = useLocation();
+  let navigate = useNavigate(); // Resolve the path outside of the effect so that when effects run twice in
+  // StrictMode they navigate to the same place
 
-    navigate(to, {
-      replace,
-      state,
-      relative
-    });
-  });
+  let path = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.resolveTo)(to, (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_getPathContributingMatches)(matches).map(match => match.pathnameBase), locationPathname, relative === "path");
+  let jsonPath = JSON.stringify(path);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => navigate(JSON.parse(jsonPath), {
+    replace,
+    state,
+    relative
+  }), [navigate, jsonPath, relative, replace, state]);
   return null;
 }
 
 /**
  * Renders the child route's element, if there is one.
  *
- * @see https://reactrouter.com/docs/en/v6/components/outlet
+ * @see https://reactrouter.com/components/outlet
  */
 function Outlet(props) {
   return useOutlet(props.context);
@@ -41098,10 +44648,10 @@ function Outlet(props) {
 /**
  * Declares an element that should be rendered at a certain URL path.
  *
- * @see https://reactrouter.com/docs/en/v6/components/route
+ * @see https://reactrouter.com/components/route
  */
 function Route(_props) {
-   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, " + "never rendered directly. Please wrap your <Route> in a <Routes>.") : 0 ;
+   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, " + "never rendered directly. Please wrap your <Route> in a <Routes>.") : 0 ;
 }
 
 /**
@@ -41111,29 +44661,29 @@ function Route(_props) {
  * router that is more specific to your environment such as a <BrowserRouter>
  * in web browsers or a <StaticRouter> for server rendering.
  *
- * @see https://reactrouter.com/docs/en/v6/routers/router
+ * @see https://reactrouter.com/router-components/router
  */
-function Router(_ref4) {
+function Router(_ref5) {
   let {
     basename: basenameProp = "/",
     children = null,
     location: locationProp,
-    navigationType = _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.Action.Pop,
+    navigationType = _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.Action.Pop,
     navigator,
     static: staticProp = false
-  } = _ref4;
-  !!useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "You cannot render a <Router> inside another <Router>." + " You should never have more than one in your app.") : 0 : void 0; // Preserve trailing slashes on basename, so we can let the user control
+  } = _ref5;
+  !!useInRouterContext() ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "You cannot render a <Router> inside another <Router>." + " You should never have more than one in your app.") : 0 : void 0; // Preserve trailing slashes on basename, so we can let the user control
   // the enforcement of trailing slashes throughout the app
 
   let basename = basenameProp.replace(/^\/*/, "/");
-  let navigationContext = react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => ({
+  let navigationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => ({
     basename,
     navigator,
     static: staticProp
   }), [basename, navigator, staticProp]);
 
   if (typeof locationProp === "string") {
-    locationProp = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.parsePath)(locationProp);
+    locationProp = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.parsePath)(locationProp);
   }
 
   let {
@@ -41143,35 +44693,35 @@ function Router(_ref4) {
     state = null,
     key = "default"
   } = locationProp;
-  let location = react__WEBPACK_IMPORTED_MODULE_1__.useMemo(() => {
-    let trailingPathname = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.stripBasename)(pathname, basename);
+  let locationContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    let trailingPathname = (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.stripBasename)(pathname, basename);
 
     if (trailingPathname == null) {
       return null;
     }
 
     return {
-      pathname: trailingPathname,
-      search,
-      hash,
-      state,
-      key
+      location: {
+        pathname: trailingPathname,
+        search,
+        hash,
+        state,
+        key
+      },
+      navigationType
     };
-  }, [basename, pathname, search, hash, state, key]);
-   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.warning)(location != null, "<Router basename=\"" + basename + "\"> is not able to match the URL " + ("\"" + pathname + search + hash + "\" because it does not start with the ") + "basename, so the <Router> won't render anything.") : 0;
+  }, [basename, pathname, search, hash, state, key, navigationType]);
+   true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(locationContext != null, "<Router basename=\"" + basename + "\"> is not able to match the URL " + ("\"" + pathname + search + hash + "\" because it does not start with the ") + "basename, so the <Router> won't render anything.") : 0;
 
-  if (location == null) {
+  if (locationContext == null) {
     return null;
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(NavigationContext.Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(NavigationContext.Provider, {
     value: navigationContext
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(LocationContext.Provider, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LocationContext.Provider, {
     children: children,
-    value: {
-      location,
-      navigationType
-    }
+    value: locationContext
   }));
 }
 
@@ -41179,35 +44729,30 @@ function Router(_ref4) {
  * A container for a nested tree of <Route> elements that renders the branch
  * that best matches the current location.
  *
- * @see https://reactrouter.com/docs/en/v6/components/routes
+ * @see https://reactrouter.com/components/routes
  */
-function Routes(_ref5) {
+function Routes(_ref6) {
   let {
     children,
     location
-  } = _ref5;
-  let dataRouterContext = react__WEBPACK_IMPORTED_MODULE_1__.useContext(DataRouterContext); // When in a DataRouterContext _without_ children, we use the router routes
-  // directly.  If we have children, then we're in a descendant tree and we
-  // need to use child routes.
-
-  let routes = dataRouterContext && !children ? dataRouterContext.router.routes : createRoutesFromChildren(children);
-  return useRoutes(routes, location);
+  } = _ref6;
+  return useRoutes(createRoutesFromChildren(children), location);
 }
 
 /**
  * Component to use for rendering lazily loaded data from returning defer()
  * in a loader function
  */
-function Await(_ref6) {
+function Await(_ref7) {
   let {
     children,
     errorElement,
     resolve
-  } = _ref6;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(AwaitErrorBoundary, {
+  } = _ref7;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitErrorBoundary, {
     resolve: resolve,
     errorElement: errorElement
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(ResolveAwait, null, children));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ResolveAwait, null, children));
 }
 var AwaitRenderStatus;
 
@@ -41219,7 +44764,7 @@ var AwaitRenderStatus;
 
 const neverSettledPromise = new Promise(() => {});
 
-class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41285,7 +44830,7 @@ class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       }));
     }
 
-    if (status === AwaitRenderStatus.error && promise._error instanceof _remix_run_router__WEBPACK_IMPORTED_MODULE_0__.AbortedDeferredError) {
+    if (status === AwaitRenderStatus.error && promise._error instanceof _remix_run_router__WEBPACK_IMPORTED_MODULE_1__.AbortedDeferredError) {
       // Freeze the UI by throwing a never resolved promise
       throw neverSettledPromise;
     }
@@ -41297,7 +44842,7 @@ class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 
     if (status === AwaitRenderStatus.error) {
       // Render via our errorElement
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(AwaitContext.Provider, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, {
         value: promise,
         children: errorElement
       });
@@ -41305,7 +44850,7 @@ class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 
     if (status === AwaitRenderStatus.success) {
       // Render children with resolved value
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(AwaitContext.Provider, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(AwaitContext.Provider, {
         value: promise,
         children: children
       });
@@ -41322,17 +44867,13 @@ class AwaitErrorBoundary extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
  */
 
 
-function ResolveAwait(_ref7) {
+function ResolveAwait(_ref8) {
   let {
     children
-  } = _ref7;
+  } = _ref8;
   let data = useAsyncValue();
-
-  if (typeof children === "function") {
-    return children(data);
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, children);
+  let toRender = typeof children === "function" ? children(data) : children;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, toRender);
 } ///////////////////////////////////////////////////////////////////////////////
 // UTILS
 ///////////////////////////////////////////////////////////////////////////////
@@ -41342,7 +44883,7 @@ function ResolveAwait(_ref7) {
  * either a `<Route>` element or an array of them. Used internally by
  * `<Routes>` to create a route config from its children.
  *
- * @see https://reactrouter.com/docs/en/v6/utils/create-routes-from-children
+ * @see https://reactrouter.com/utils/create-routes-from-children
  */
 
 
@@ -41352,33 +44893,38 @@ function createRoutesFromChildren(children, parentPath) {
   }
 
   let routes = [];
-  react__WEBPACK_IMPORTED_MODULE_1__.Children.forEach(children, (element, index) => {
-    if (! /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.isValidElement(element)) {
+  react__WEBPACK_IMPORTED_MODULE_0__.Children.forEach(children, (element, index) => {
+    if (! /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(element)) {
       // Ignore non-elements. This allows people to more easily inline
       // conditionals in their route config.
       return;
     }
 
-    if (element.type === react__WEBPACK_IMPORTED_MODULE_1__.Fragment) {
+    let treePath = [...parentPath, index];
+
+    if (element.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
       // Transparently support React.Fragment and its children.
-      routes.push.apply(routes, createRoutesFromChildren(element.props.children, parentPath));
+      routes.push.apply(routes, createRoutesFromChildren(element.props.children, treePath));
       return;
     }
 
-    !(element.type === Route) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.invariant)(false, "[" + (typeof element.type === "string" ? element.type : element.type.name) + "] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>") : 0 : void 0;
-    let treePath = [...parentPath, index];
+    !(element.type === Route) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "[" + (typeof element.type === "string" ? element.type : element.type.name) + "] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>") : 0 : void 0;
+    !(!element.props.index || !element.props.children) ?  true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_invariant)(false, "An index route cannot have child routes.") : 0 : void 0;
     let route = {
       id: element.props.id || treePath.join("-"),
       caseSensitive: element.props.caseSensitive,
       element: element.props.element,
+      Component: element.props.Component,
       index: element.props.index,
       path: element.props.path,
       loader: element.props.loader,
       action: element.props.action,
       errorElement: element.props.errorElement,
-      hasErrorBoundary: element.props.errorElement != null,
+      ErrorBoundary: element.props.ErrorBoundary,
+      hasErrorBoundary: element.props.ErrorBoundary != null || element.props.errorElement != null,
       shouldRevalidate: element.props.shouldRevalidate,
-      handle: element.props.handle
+      handle: element.props.handle,
+      lazy: element.props.lazy
     };
 
     if (element.props.children) {
@@ -41396,37 +44942,56 @@ function createRoutesFromChildren(children, parentPath) {
 function renderMatches(matches) {
   return _renderMatches(matches);
 }
-/**
- * @private
- * Walk the route tree and add hasErrorBoundary if it's not provided, so that
- * users providing manual route arrays can just specify errorElement
- */
 
-function enhanceManualRouteObjects(routes) {
-  return routes.map(route => {
-    let routeClone = _extends({}, route);
+function mapRouteProperties(route) {
+  let updates = {
+    // Note: this check also occurs in createRoutesFromChildren so update
+    // there if you change this -- please and thank you!
+    hasErrorBoundary: route.ErrorBoundary != null || route.errorElement != null
+  };
 
-    if (routeClone.hasErrorBoundary == null) {
-      routeClone.hasErrorBoundary = routeClone.errorElement != null;
+  if (route.Component) {
+    if (true) {
+      if (route.element) {
+         true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(false, "You should not include both `Component` and `element` on your route - " + "`Component` will be used.") : 0;
+      }
     }
 
-    if (routeClone.children) {
-      routeClone.children = enhanceManualRouteObjects(routeClone.children);
+    Object.assign(updates, {
+      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.Component),
+      Component: undefined
+    });
+  }
+
+  if (route.ErrorBoundary) {
+    if (true) {
+      if (route.errorElement) {
+         true ? (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.UNSAFE_warning)(false, "You should not include both `ErrorBoundary` and `errorElement` on your route - " + "`ErrorBoundary` will be used.") : 0;
+      }
     }
 
-    return routeClone;
-  });
+    Object.assign(updates, {
+      errorElement: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(route.ErrorBoundary),
+      ErrorBoundary: undefined
+    });
+  }
+
+  return updates;
 }
 
 function createMemoryRouter(routes, opts) {
-  return (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.createRouter)({
+  return (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
     basename: opts == null ? void 0 : opts.basename,
-    history: (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_0__.createMemoryHistory)({
+    future: _extends({}, opts == null ? void 0 : opts.future, {
+      v7_prependBasename: true
+    }),
+    history: (0,_remix_run_router__WEBPACK_IMPORTED_MODULE_1__.createMemoryHistory)({
       initialEntries: opts == null ? void 0 : opts.initialEntries,
       initialIndex: opts == null ? void 0 : opts.initialIndex
     }),
     hydrationData: opts == null ? void 0 : opts.hydrationData,
-    routes: enhanceManualRouteObjects(routes)
+    routes,
+    mapRouteProperties
   }).initialize();
 } ///////////////////////////////////////////////////////////////////////////////
 
@@ -44203,6 +47768,1100 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/redux-logger/dist/redux-logger.js":
+/*!********************************************************!*\
+  !*** ./node_modules/redux-logger/dist/redux-logger.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+!function(e,t){ true?t(exports):0}(this,function(e){"use strict";function t(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}function r(e,t){Object.defineProperty(this,"kind",{value:e,enumerable:!0}),t&&t.length&&Object.defineProperty(this,"path",{value:t,enumerable:!0})}function n(e,t,r){n.super_.call(this,"E",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0}),Object.defineProperty(this,"rhs",{value:r,enumerable:!0})}function o(e,t){o.super_.call(this,"N",e),Object.defineProperty(this,"rhs",{value:t,enumerable:!0})}function i(e,t){i.super_.call(this,"D",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0})}function a(e,t,r){a.super_.call(this,"A",e),Object.defineProperty(this,"index",{value:t,enumerable:!0}),Object.defineProperty(this,"item",{value:r,enumerable:!0})}function f(e,t,r){var n=e.slice((r||t)+1||e.length);return e.length=t<0?e.length+t:t,e.push.apply(e,n),e}function u(e){var t="undefined"==typeof e?"undefined":N(e);return"object"!==t?t:e===Math?"math":null===e?"null":Array.isArray(e)?"array":"[object Date]"===Object.prototype.toString.call(e)?"date":"function"==typeof e.toString&&/^\/.*\//.test(e.toString())?"regexp":"object"}function l(e,t,r,c,s,d,p){s=s||[],p=p||[];var g=s.slice(0);if("undefined"!=typeof d){if(c){if("function"==typeof c&&c(g,d))return;if("object"===("undefined"==typeof c?"undefined":N(c))){if(c.prefilter&&c.prefilter(g,d))return;if(c.normalize){var h=c.normalize(g,d,e,t);h&&(e=h[0],t=h[1])}}}g.push(d)}"regexp"===u(e)&&"regexp"===u(t)&&(e=e.toString(),t=t.toString());var y="undefined"==typeof e?"undefined":N(e),v="undefined"==typeof t?"undefined":N(t),b="undefined"!==y||p&&p[p.length-1].lhs&&p[p.length-1].lhs.hasOwnProperty(d),m="undefined"!==v||p&&p[p.length-1].rhs&&p[p.length-1].rhs.hasOwnProperty(d);if(!b&&m)r(new o(g,t));else if(!m&&b)r(new i(g,e));else if(u(e)!==u(t))r(new n(g,e,t));else if("date"===u(e)&&e-t!==0)r(new n(g,e,t));else if("object"===y&&null!==e&&null!==t)if(p.filter(function(t){return t.lhs===e}).length)e!==t&&r(new n(g,e,t));else{if(p.push({lhs:e,rhs:t}),Array.isArray(e)){var w;e.length;for(w=0;w<e.length;w++)w>=t.length?r(new a(g,w,new i(void 0,e[w]))):l(e[w],t[w],r,c,g,w,p);for(;w<t.length;)r(new a(g,w,new o(void 0,t[w++])))}else{var x=Object.keys(e),S=Object.keys(t);x.forEach(function(n,o){var i=S.indexOf(n);i>=0?(l(e[n],t[n],r,c,g,n,p),S=f(S,i)):l(e[n],void 0,r,c,g,n,p)}),S.forEach(function(e){l(void 0,t[e],r,c,g,e,p)})}p.length=p.length-1}else e!==t&&("number"===y&&isNaN(e)&&isNaN(t)||r(new n(g,e,t)))}function c(e,t,r,n){return n=n||[],l(e,t,function(e){e&&n.push(e)},r),n.length?n:void 0}function s(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":s(o[r.path[n]],r.index,r.item);break;case"D":delete o[r.path[n]];break;case"E":case"N":o[r.path[n]]=r.rhs}}else switch(r.kind){case"A":s(e[t],r.index,r.item);break;case"D":e=f(e,t);break;case"E":case"N":e[t]=r.rhs}return e}function d(e,t,r){if(e&&t&&r&&r.kind){for(var n=e,o=-1,i=r.path?r.path.length-1:0;++o<i;)"undefined"==typeof n[r.path[o]]&&(n[r.path[o]]="number"==typeof r.path[o]?[]:{}),n=n[r.path[o]];switch(r.kind){case"A":s(r.path?n[r.path[o]]:n,r.index,r.item);break;case"D":delete n[r.path[o]];break;case"E":case"N":n[r.path[o]]=r.rhs}}}function p(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":p(o[r.path[n]],r.index,r.item);break;case"D":o[r.path[n]]=r.lhs;break;case"E":o[r.path[n]]=r.lhs;break;case"N":delete o[r.path[n]]}}else switch(r.kind){case"A":p(e[t],r.index,r.item);break;case"D":e[t]=r.lhs;break;case"E":e[t]=r.lhs;break;case"N":e=f(e,t)}return e}function g(e,t,r){if(e&&t&&r&&r.kind){var n,o,i=e;for(o=r.path.length-1,n=0;n<o;n++)"undefined"==typeof i[r.path[n]]&&(i[r.path[n]]={}),i=i[r.path[n]];switch(r.kind){case"A":p(i[r.path[n]],r.index,r.item);break;case"D":i[r.path[n]]=r.lhs;break;case"E":i[r.path[n]]=r.lhs;break;case"N":delete i[r.path[n]]}}}function h(e,t,r){if(e&&t){var n=function(n){r&&!r(e,t,n)||d(e,t,n)};l(e,t,n)}}function y(e){return"color: "+F[e].color+"; font-weight: bold"}function v(e){var t=e.kind,r=e.path,n=e.lhs,o=e.rhs,i=e.index,a=e.item;switch(t){case"E":return[r.join("."),n,"→",o];case"N":return[r.join("."),o];case"D":return[r.join(".")];case"A":return[r.join(".")+"["+i+"]",a];default:return[]}}function b(e,t,r,n){var o=c(e,t);try{n?r.groupCollapsed("diff"):r.group("diff")}catch(e){r.log("diff")}o?o.forEach(function(e){var t=e.kind,n=v(e);r.log.apply(r,["%c "+F[t].text,y(t)].concat(P(n)))}):r.log("—— no diff ——");try{r.groupEnd()}catch(e){r.log("—— diff end —— ")}}function m(e,t,r,n){switch("undefined"==typeof e?"undefined":N(e)){case"object":return"function"==typeof e[n]?e[n].apply(e,P(r)):e[n];case"function":return e(t);default:return e}}function w(e){var t=e.timestamp,r=e.duration;return function(e,n,o){var i=["action"];return i.push("%c"+String(e.type)),t&&i.push("%c@ "+n),r&&i.push("%c(in "+o.toFixed(2)+" ms)"),i.join(" ")}}function x(e,t){var r=t.logger,n=t.actionTransformer,o=t.titleFormatter,i=void 0===o?w(t):o,a=t.collapsed,f=t.colors,u=t.level,l=t.diff,c="undefined"==typeof t.titleFormatter;e.forEach(function(o,s){var d=o.started,p=o.startedTime,g=o.action,h=o.prevState,y=o.error,v=o.took,w=o.nextState,x=e[s+1];x&&(w=x.prevState,v=x.started-d);var S=n(g),k="function"==typeof a?a(function(){return w},g,o):a,j=D(p),E=f.title?"color: "+f.title(S)+";":"",A=["color: gray; font-weight: lighter;"];A.push(E),t.timestamp&&A.push("color: gray; font-weight: lighter;"),t.duration&&A.push("color: gray; font-weight: lighter;");var O=i(S,j,v);try{k?f.title&&c?r.groupCollapsed.apply(r,["%c "+O].concat(A)):r.groupCollapsed(O):f.title&&c?r.group.apply(r,["%c "+O].concat(A)):r.group(O)}catch(e){r.log(O)}var N=m(u,S,[h],"prevState"),P=m(u,S,[S],"action"),C=m(u,S,[y,h],"error"),F=m(u,S,[w],"nextState");if(N)if(f.prevState){var L="color: "+f.prevState(h)+"; font-weight: bold";r[N]("%c prev state",L,h)}else r[N]("prev state",h);if(P)if(f.action){var T="color: "+f.action(S)+"; font-weight: bold";r[P]("%c action    ",T,S)}else r[P]("action    ",S);if(y&&C)if(f.error){var M="color: "+f.error(y,h)+"; font-weight: bold;";r[C]("%c error     ",M,y)}else r[C]("error     ",y);if(F)if(f.nextState){var _="color: "+f.nextState(w)+"; font-weight: bold";r[F]("%c next state",_,w)}else r[F]("next state",w);l&&b(h,w,r,k);try{r.groupEnd()}catch(e){r.log("—— log end ——")}})}function S(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=Object.assign({},L,e),r=t.logger,n=t.stateTransformer,o=t.errorTransformer,i=t.predicate,a=t.logErrors,f=t.diffPredicate;if("undefined"==typeof r)return function(){return function(e){return function(t){return e(t)}}};if(e.getState&&e.dispatch)return console.error("[redux-logger] redux-logger not installed. Make sure to pass logger instance as middleware:\n// Logger with default options\nimport { logger } from 'redux-logger'\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n// Or you can create your own logger with custom options http://bit.ly/redux-logger-options\nimport createLogger from 'redux-logger'\nconst logger = createLogger({\n  // ...options\n});\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n"),function(){return function(e){return function(t){return e(t)}}};var u=[];return function(e){var r=e.getState;return function(e){return function(l){if("function"==typeof i&&!i(r,l))return e(l);var c={};u.push(c),c.started=O.now(),c.startedTime=new Date,c.prevState=n(r()),c.action=l;var s=void 0;if(a)try{s=e(l)}catch(e){c.error=o(e)}else s=e(l);c.took=O.now()-c.started,c.nextState=n(r());var d=t.diff&&"function"==typeof f?f(r,l):t.diff;if(x(u,Object.assign({},t,{diff:d})),u.length=0,c.error)throw c.error;return s}}}}var k,j,E=function(e,t){return new Array(t+1).join(e)},A=function(e,t){return E("0",t-e.toString().length)+e},D=function(e){return A(e.getHours(),2)+":"+A(e.getMinutes(),2)+":"+A(e.getSeconds(),2)+"."+A(e.getMilliseconds(),3)},O="undefined"!=typeof performance&&null!==performance&&"function"==typeof performance.now?performance:Date,N="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},P=function(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)},C=[];k="object"===("undefined"==typeof __webpack_require__.g?"undefined":N(__webpack_require__.g))&&__webpack_require__.g?__webpack_require__.g:"undefined"!=typeof window?window:{},j=k.DeepDiff,j&&C.push(function(){"undefined"!=typeof j&&k.DeepDiff===c&&(k.DeepDiff=j,j=void 0)}),t(n,r),t(o,r),t(i,r),t(a,r),Object.defineProperties(c,{diff:{value:c,enumerable:!0},observableDiff:{value:l,enumerable:!0},applyDiff:{value:h,enumerable:!0},applyChange:{value:d,enumerable:!0},revertChange:{value:g,enumerable:!0},isConflict:{value:function(){return"undefined"!=typeof j},enumerable:!0},noConflict:{value:function(){return C&&(C.forEach(function(e){e()}),C=null),c},enumerable:!0}});var F={E:{color:"#2196F3",text:"CHANGED:"},N:{color:"#4CAF50",text:"ADDED:"},D:{color:"#F44336",text:"DELETED:"},A:{color:"#2196F3",text:"ARRAY:"}},L={level:"log",logger:console,logErrors:!0,collapsed:void 0,predicate:void 0,duration:!1,timestamp:!0,stateTransformer:function(e){return e},actionTransformer:function(e){return e},errorTransformer:function(e){return e},colors:{title:function(){return"inherit"},prevState:function(){return"#9E9E9E"},action:function(){return"#03A9F4"},nextState:function(){return"#4CAF50"},error:function(){return"#F20404"}},diff:!1,diffPredicate:void 0,transformer:void 0},T=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.dispatch,r=e.getState;return"function"==typeof t||"function"==typeof r?S()({dispatch:t,getState:r}):void console.error("\n[redux-logger v3] BREAKING CHANGE\n[redux-logger v3] Since 3.0.0 redux-logger exports by default logger with default settings.\n[redux-logger v3] Change\n[redux-logger v3] import createLogger from 'redux-logger'\n[redux-logger v3] to\n[redux-logger v3] import { createLogger } from 'redux-logger'\n")};e.defaults=L,e.createLogger=S,e.logger=T,e.default=T,Object.defineProperty(e,"__esModule",{value:!0})});
+
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/constants.js":
+/*!****************************************************!*\
+  !*** ./node_modules/redux-persist/es/constants.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_VERSION": () => (/* binding */ DEFAULT_VERSION),
+/* harmony export */   "FLUSH": () => (/* binding */ FLUSH),
+/* harmony export */   "KEY_PREFIX": () => (/* binding */ KEY_PREFIX),
+/* harmony export */   "PAUSE": () => (/* binding */ PAUSE),
+/* harmony export */   "PERSIST": () => (/* binding */ PERSIST),
+/* harmony export */   "PURGE": () => (/* binding */ PURGE),
+/* harmony export */   "REGISTER": () => (/* binding */ REGISTER),
+/* harmony export */   "REHYDRATE": () => (/* binding */ REHYDRATE)
+/* harmony export */ });
+var KEY_PREFIX = 'persist:';
+var FLUSH = 'persist/FLUSH';
+var REHYDRATE = 'persist/REHYDRATE';
+var PAUSE = 'persist/PAUSE';
+var PERSIST = 'persist/PERSIST';
+var PURGE = 'persist/PURGE';
+var REGISTER = 'persist/REGISTER';
+var DEFAULT_VERSION = -1;
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/createMigrate.js":
+/*!********************************************************!*\
+  !*** ./node_modules/redux-persist/es/createMigrate.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createMigrate)
+/* harmony export */ });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+
+function createMigrate(migrations, config) {
+  var _ref = config || {},
+      debug = _ref.debug;
+
+  return function (state, currentVersion) {
+    if (!state) {
+      if ( true && debug) console.log('redux-persist: no inbound state, skipping migration');
+      return Promise.resolve(undefined);
+    }
+
+    var inboundVersion = state._persist && state._persist.version !== undefined ? state._persist.version : _constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_VERSION;
+
+    if (inboundVersion === currentVersion) {
+      if ( true && debug) console.log('redux-persist: versions match, noop migration');
+      return Promise.resolve(state);
+    }
+
+    if (inboundVersion > currentVersion) {
+      if (true) console.error('redux-persist: downgrading version is not supported');
+      return Promise.resolve(state);
+    }
+
+    var migrationKeys = Object.keys(migrations).map(function (ver) {
+      return parseInt(ver);
+    }).filter(function (key) {
+      return currentVersion >= key && key > inboundVersion;
+    }).sort(function (a, b) {
+      return a - b;
+    });
+    if ( true && debug) console.log('redux-persist: migrationKeys', migrationKeys);
+
+    try {
+      var migratedState = migrationKeys.reduce(function (state, versionKey) {
+        if ( true && debug) console.log('redux-persist: running migration for versionKey', versionKey);
+        return migrations[versionKey](state);
+      }, state);
+      return Promise.resolve(migratedState);
+    } catch (err) {
+      return Promise.reject(err);
+    }
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/createPersistoid.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/redux-persist/es/createPersistoid.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createPersistoid)
+/* harmony export */ });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+
+// @TODO remove once flow < 0.63 support is no longer required.
+function createPersistoid(config) {
+  // defaults
+  var blacklist = config.blacklist || null;
+  var whitelist = config.whitelist || null;
+  var transforms = config.transforms || [];
+  var throttle = config.throttle || 0;
+  var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : _constants__WEBPACK_IMPORTED_MODULE_0__.KEY_PREFIX).concat(config.key);
+  var storage = config.storage;
+  var serialize;
+
+  if (config.serialize === false) {
+    serialize = function serialize(x) {
+      return x;
+    };
+  } else if (typeof config.serialize === 'function') {
+    serialize = config.serialize;
+  } else {
+    serialize = defaultSerialize;
+  }
+
+  var writeFailHandler = config.writeFailHandler || null; // initialize stateful values
+
+  var lastState = {};
+  var stagedState = {};
+  var keysToProcess = [];
+  var timeIterator = null;
+  var writePromise = null;
+
+  var update = function update(state) {
+    // add any changed keys to the queue
+    Object.keys(state).forEach(function (key) {
+      if (!passWhitelistBlacklist(key)) return; // is keyspace ignored? noop
+
+      if (lastState[key] === state[key]) return; // value unchanged? noop
+
+      if (keysToProcess.indexOf(key) !== -1) return; // is key already queued? noop
+
+      keysToProcess.push(key); // add key to queue
+    }); //if any key is missing in the new state which was present in the lastState,
+    //add it for processing too
+
+    Object.keys(lastState).forEach(function (key) {
+      if (state[key] === undefined && passWhitelistBlacklist(key) && keysToProcess.indexOf(key) === -1 && lastState[key] !== undefined) {
+        keysToProcess.push(key);
+      }
+    }); // start the time iterator if not running (read: throttle)
+
+    if (timeIterator === null) {
+      timeIterator = setInterval(processNextKey, throttle);
+    }
+
+    lastState = state;
+  };
+
+  function processNextKey() {
+    if (keysToProcess.length === 0) {
+      if (timeIterator) clearInterval(timeIterator);
+      timeIterator = null;
+      return;
+    }
+
+    var key = keysToProcess.shift();
+    var endState = transforms.reduce(function (subState, transformer) {
+      return transformer.in(subState, key, lastState);
+    }, lastState[key]);
+
+    if (endState !== undefined) {
+      try {
+        stagedState[key] = serialize(endState);
+      } catch (err) {
+        console.error('redux-persist/createPersistoid: error serializing state', err);
+      }
+    } else {
+      //if the endState is undefined, no need to persist the existing serialized content
+      delete stagedState[key];
+    }
+
+    if (keysToProcess.length === 0) {
+      writeStagedState();
+    }
+  }
+
+  function writeStagedState() {
+    // cleanup any removed keys just before write.
+    Object.keys(stagedState).forEach(function (key) {
+      if (lastState[key] === undefined) {
+        delete stagedState[key];
+      }
+    });
+    writePromise = storage.setItem(storageKey, serialize(stagedState)).catch(onWriteFail);
+  }
+
+  function passWhitelistBlacklist(key) {
+    if (whitelist && whitelist.indexOf(key) === -1 && key !== '_persist') return false;
+    if (blacklist && blacklist.indexOf(key) !== -1) return false;
+    return true;
+  }
+
+  function onWriteFail(err) {
+    // @TODO add fail handlers (typically storage full)
+    if (writeFailHandler) writeFailHandler(err);
+
+    if (err && "development" !== 'production') {
+      console.error('Error storing data', err);
+    }
+  }
+
+  var flush = function flush() {
+    while (keysToProcess.length !== 0) {
+      processNextKey();
+    }
+
+    return writePromise || Promise.resolve();
+  }; // return `persistoid`
+
+
+  return {
+    update: update,
+    flush: flush
+  };
+} // @NOTE in the future this may be exposed via config
+
+function defaultSerialize(data) {
+  return JSON.stringify(data);
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/createTransform.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/redux-persist/es/createTransform.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createTransform)
+/* harmony export */ });
+function createTransform( // @NOTE inbound: transform state coming from redux on its way to being serialized and stored
+inbound, // @NOTE outbound: transform state coming from storage, on its way to be rehydrated into redux
+outbound) {
+  var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var whitelist = config.whitelist || null;
+  var blacklist = config.blacklist || null;
+
+  function whitelistBlacklistCheck(key) {
+    if (whitelist && whitelist.indexOf(key) === -1) return true;
+    if (blacklist && blacklist.indexOf(key) !== -1) return true;
+    return false;
+  }
+
+  return {
+    in: function _in(state, key, fullState) {
+      return !whitelistBlacklistCheck(key) && inbound ? inbound(state, key, fullState) : state;
+    },
+    out: function out(state, key, fullState) {
+      return !whitelistBlacklistCheck(key) && outbound ? outbound(state, key, fullState) : state;
+    }
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/getStoredState.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/redux-persist/es/getStoredState.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ getStoredState)
+/* harmony export */ });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+
+function getStoredState(config) {
+  var transforms = config.transforms || [];
+  var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : _constants__WEBPACK_IMPORTED_MODULE_0__.KEY_PREFIX).concat(config.key);
+  var storage = config.storage;
+  var debug = config.debug;
+  var deserialize;
+
+  if (config.deserialize === false) {
+    deserialize = function deserialize(x) {
+      return x;
+    };
+  } else if (typeof config.deserialize === 'function') {
+    deserialize = config.deserialize;
+  } else {
+    deserialize = defaultDeserialize;
+  }
+
+  return storage.getItem(storageKey).then(function (serialized) {
+    if (!serialized) return undefined;else {
+      try {
+        var state = {};
+        var rawState = deserialize(serialized);
+        Object.keys(rawState).forEach(function (key) {
+          state[key] = transforms.reduceRight(function (subState, transformer) {
+            return transformer.out(subState, key, rawState);
+          }, deserialize(rawState[key]));
+        });
+        return state;
+      } catch (err) {
+        if ( true && debug) console.log("redux-persist/getStoredState: Error restoring data ".concat(serialized), err);
+        throw err;
+      }
+    }
+  });
+}
+
+function defaultDeserialize(serial) {
+  return JSON.parse(serial);
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/redux-persist/es/index.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_VERSION": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.DEFAULT_VERSION),
+/* harmony export */   "FLUSH": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.FLUSH),
+/* harmony export */   "KEY_PREFIX": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.KEY_PREFIX),
+/* harmony export */   "PAUSE": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.PAUSE),
+/* harmony export */   "PERSIST": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.PERSIST),
+/* harmony export */   "PURGE": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.PURGE),
+/* harmony export */   "REGISTER": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.REGISTER),
+/* harmony export */   "REHYDRATE": () => (/* reexport safe */ _constants__WEBPACK_IMPORTED_MODULE_8__.REHYDRATE),
+/* harmony export */   "createMigrate": () => (/* reexport safe */ _createMigrate__WEBPACK_IMPORTED_MODULE_3__["default"]),
+/* harmony export */   "createPersistoid": () => (/* reexport safe */ _createPersistoid__WEBPACK_IMPORTED_MODULE_6__["default"]),
+/* harmony export */   "createTransform": () => (/* reexport safe */ _createTransform__WEBPACK_IMPORTED_MODULE_4__["default"]),
+/* harmony export */   "getStoredState": () => (/* reexport safe */ _getStoredState__WEBPACK_IMPORTED_MODULE_5__["default"]),
+/* harmony export */   "persistCombineReducers": () => (/* reexport safe */ _persistCombineReducers__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "persistReducer": () => (/* reexport safe */ _persistReducer__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "persistStore": () => (/* reexport safe */ _persistStore__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "purgeStoredState": () => (/* reexport safe */ _purgeStoredState__WEBPACK_IMPORTED_MODULE_7__["default"])
+/* harmony export */ });
+/* harmony import */ var _persistReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./persistReducer */ "./node_modules/redux-persist/es/persistReducer.js");
+/* harmony import */ var _persistCombineReducers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./persistCombineReducers */ "./node_modules/redux-persist/es/persistCombineReducers.js");
+/* harmony import */ var _persistStore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./persistStore */ "./node_modules/redux-persist/es/persistStore.js");
+/* harmony import */ var _createMigrate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./createMigrate */ "./node_modules/redux-persist/es/createMigrate.js");
+/* harmony import */ var _createTransform__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./createTransform */ "./node_modules/redux-persist/es/createTransform.js");
+/* harmony import */ var _getStoredState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./getStoredState */ "./node_modules/redux-persist/es/getStoredState.js");
+/* harmony import */ var _createPersistoid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./createPersistoid */ "./node_modules/redux-persist/es/createPersistoid.js");
+/* harmony import */ var _purgeStoredState__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./purgeStoredState */ "./node_modules/redux-persist/es/purgeStoredState.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/integration/react.js":
+/*!************************************************************!*\
+  !*** ./node_modules/redux-persist/es/integration/react.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PersistGate": () => (/* binding */ PersistGate)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+ // eslint-disable-line import/no-unresolved
+
+var PersistGate =
+/*#__PURE__*/
+function (_PureComponent) {
+  _inherits(PersistGate, _PureComponent);
+
+  function PersistGate() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, PersistGate);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(PersistGate)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      bootstrapped: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "_unsubscribe", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "handlePersistorState", function () {
+      var persistor = _this.props.persistor;
+
+      var _persistor$getState = persistor.getState(),
+          bootstrapped = _persistor$getState.bootstrapped;
+
+      if (bootstrapped) {
+        if (_this.props.onBeforeLift) {
+          Promise.resolve(_this.props.onBeforeLift()).finally(function () {
+            return _this.setState({
+              bootstrapped: true
+            });
+          });
+        } else {
+          _this.setState({
+            bootstrapped: true
+          });
+        }
+
+        _this._unsubscribe && _this._unsubscribe();
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(PersistGate, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this._unsubscribe = this.props.persistor.subscribe(this.handlePersistorState);
+      this.handlePersistorState();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this._unsubscribe && this._unsubscribe();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (true) {
+        if (typeof this.props.children === 'function' && this.props.loading) console.error('redux-persist: PersistGate expects either a function child or loading prop, but not both. The loading prop will be ignored.');
+      }
+
+      if (typeof this.props.children === 'function') {
+        return this.props.children(this.state.bootstrapped);
+      }
+
+      return this.state.bootstrapped ? this.props.children : this.props.loading;
+    }
+  }]);
+
+  return PersistGate;
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+_defineProperty(PersistGate, "defaultProps", {
+  children: null,
+  loading: null
+});
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/persistCombineReducers.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/redux-persist/es/persistCombineReducers.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ persistCombineReducers)
+/* harmony export */ });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _persistReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./persistReducer */ "./node_modules/redux-persist/es/persistReducer.js");
+/* harmony import */ var _stateReconciler_autoMergeLevel2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stateReconciler/autoMergeLevel2 */ "./node_modules/redux-persist/es/stateReconciler/autoMergeLevel2.js");
+
+
+
+// combineReducers + persistReducer with stateReconciler defaulted to autoMergeLevel2
+function persistCombineReducers(config, reducers) {
+  config.stateReconciler = config.stateReconciler === undefined ? _stateReconciler_autoMergeLevel2__WEBPACK_IMPORTED_MODULE_1__["default"] : config.stateReconciler;
+  return (0,_persistReducer__WEBPACK_IMPORTED_MODULE_0__["default"])(config, (0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)(reducers));
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/persistReducer.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/redux-persist/es/persistReducer.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ persistReducer)
+/* harmony export */ });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+/* harmony import */ var _stateReconciler_autoMergeLevel1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stateReconciler/autoMergeLevel1 */ "./node_modules/redux-persist/es/stateReconciler/autoMergeLevel1.js");
+/* harmony import */ var _createPersistoid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createPersistoid */ "./node_modules/redux-persist/es/createPersistoid.js");
+/* harmony import */ var _getStoredState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getStoredState */ "./node_modules/redux-persist/es/getStoredState.js");
+/* harmony import */ var _purgeStoredState__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./purgeStoredState */ "./node_modules/redux-persist/es/purgeStoredState.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+
+var DEFAULT_TIMEOUT = 5000;
+/*
+  @TODO add validation / handling for:
+  - persisting a reducer which has nested _persist
+  - handling actions that fire before reydrate is called
+*/
+
+function persistReducer(config, baseReducer) {
+  if (true) {
+    if (!config) throw new Error('config is required for persistReducer');
+    if (!config.key) throw new Error('key is required in persistor config');
+    if (!config.storage) throw new Error("redux-persist: config.storage is required. Try using one of the provided storage engines `import storage from 'redux-persist/lib/storage'`");
+  }
+
+  var version = config.version !== undefined ? config.version : _constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_VERSION;
+  var debug = config.debug || false;
+  var stateReconciler = config.stateReconciler === undefined ? _stateReconciler_autoMergeLevel1__WEBPACK_IMPORTED_MODULE_1__["default"] : config.stateReconciler;
+  var getStoredState = config.getStoredState || _getStoredState__WEBPACK_IMPORTED_MODULE_3__["default"];
+  var timeout = config.timeout !== undefined ? config.timeout : DEFAULT_TIMEOUT;
+  var _persistoid = null;
+  var _purge = false;
+  var _paused = true;
+
+  var conditionalUpdate = function conditionalUpdate(state) {
+    // update the persistoid only if we are rehydrated and not paused
+    state._persist.rehydrated && _persistoid && !_paused && _persistoid.update(state);
+    return state;
+  };
+
+  return function (state, action) {
+    var _ref = state || {},
+        _persist = _ref._persist,
+        rest = _objectWithoutProperties(_ref, ["_persist"]); // $FlowIgnore need to update State type
+
+
+    var restState = rest;
+
+    if (action.type === _constants__WEBPACK_IMPORTED_MODULE_0__.PERSIST) {
+      var _sealed = false;
+
+      var _rehydrate = function _rehydrate(payload, err) {
+        // dev warning if we are already sealed
+        if ( true && _sealed) console.error("redux-persist: rehydrate for \"".concat(config.key, "\" called after timeout."), payload, err); // only rehydrate if we are not already sealed
+
+        if (!_sealed) {
+          action.rehydrate(config.key, payload, err);
+          _sealed = true;
+        }
+      };
+
+      timeout && setTimeout(function () {
+        !_sealed && _rehydrate(undefined, new Error("redux-persist: persist timed out for persist key \"".concat(config.key, "\"")));
+      }, timeout); // @NOTE PERSIST resumes if paused.
+
+      _paused = false; // @NOTE only ever create persistoid once, ensure we call it at least once, even if _persist has already been set
+
+      if (!_persistoid) _persistoid = (0,_createPersistoid__WEBPACK_IMPORTED_MODULE_2__["default"])(config); // @NOTE PERSIST can be called multiple times, noop after the first
+
+      if (_persist) {
+        // We still need to call the base reducer because there might be nested
+        // uses of persistReducer which need to be aware of the PERSIST action
+        return _objectSpread({}, baseReducer(restState, action), {
+          _persist: _persist
+        });
+      }
+
+      if (typeof action.rehydrate !== 'function' || typeof action.register !== 'function') throw new Error('redux-persist: either rehydrate or register is not a function on the PERSIST action. This can happen if the action is being replayed. This is an unexplored use case, please open an issue and we will figure out a resolution.');
+      action.register(config.key);
+      getStoredState(config).then(function (restoredState) {
+        var migrate = config.migrate || function (s, v) {
+          return Promise.resolve(s);
+        };
+
+        migrate(restoredState, version).then(function (migratedState) {
+          _rehydrate(migratedState);
+        }, function (migrateErr) {
+          if ( true && migrateErr) console.error('redux-persist: migration error', migrateErr);
+
+          _rehydrate(undefined, migrateErr);
+        });
+      }, function (err) {
+        _rehydrate(undefined, err);
+      });
+      return _objectSpread({}, baseReducer(restState, action), {
+        _persist: {
+          version: version,
+          rehydrated: false
+        }
+      });
+    } else if (action.type === _constants__WEBPACK_IMPORTED_MODULE_0__.PURGE) {
+      _purge = true;
+      action.result((0,_purgeStoredState__WEBPACK_IMPORTED_MODULE_4__["default"])(config));
+      return _objectSpread({}, baseReducer(restState, action), {
+        _persist: _persist
+      });
+    } else if (action.type === _constants__WEBPACK_IMPORTED_MODULE_0__.FLUSH) {
+      action.result(_persistoid && _persistoid.flush());
+      return _objectSpread({}, baseReducer(restState, action), {
+        _persist: _persist
+      });
+    } else if (action.type === _constants__WEBPACK_IMPORTED_MODULE_0__.PAUSE) {
+      _paused = true;
+    } else if (action.type === _constants__WEBPACK_IMPORTED_MODULE_0__.REHYDRATE) {
+      // noop on restState if purging
+      if (_purge) return _objectSpread({}, restState, {
+        _persist: _objectSpread({}, _persist, {
+          rehydrated: true
+        }) // @NOTE if key does not match, will continue to default else below
+
+      });
+
+      if (action.key === config.key) {
+        var reducedState = baseReducer(restState, action);
+        var inboundState = action.payload; // only reconcile state if stateReconciler and inboundState are both defined
+
+        var reconciledRest = stateReconciler !== false && inboundState !== undefined ? stateReconciler(inboundState, state, reducedState, config) : reducedState;
+
+        var _newState = _objectSpread({}, reconciledRest, {
+          _persist: _objectSpread({}, _persist, {
+            rehydrated: true
+          })
+        });
+
+        return conditionalUpdate(_newState);
+      }
+    } // if we have not already handled PERSIST, straight passthrough
+
+
+    if (!_persist) return baseReducer(state, action); // run base reducer:
+    // is state modified ? return original : return updated
+
+    var newState = baseReducer(restState, action);
+    if (newState === restState) return state;
+    return conditionalUpdate(_objectSpread({}, newState, {
+      _persist: _persist
+    }));
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/persistStore.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/redux-persist/es/persistStore.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ persistStore)
+/* harmony export */ });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+var initialState = {
+  registry: [],
+  bootstrapped: false
+};
+
+var persistorReducer = function persistorReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _constants__WEBPACK_IMPORTED_MODULE_0__.REGISTER:
+      return _objectSpread({}, state, {
+        registry: [].concat(_toConsumableArray(state.registry), [action.key])
+      });
+
+    case _constants__WEBPACK_IMPORTED_MODULE_0__.REHYDRATE:
+      var firstIndex = state.registry.indexOf(action.key);
+
+      var registry = _toConsumableArray(state.registry);
+
+      registry.splice(firstIndex, 1);
+      return _objectSpread({}, state, {
+        registry: registry,
+        bootstrapped: registry.length === 0
+      });
+
+    default:
+      return state;
+  }
+};
+
+function persistStore(store, options, cb) {
+  // help catch incorrect usage of passing PersistConfig in as PersistorOptions
+  if (true) {
+    var optionsToTest = options || {};
+    var bannedKeys = ['blacklist', 'whitelist', 'transforms', 'storage', 'keyPrefix', 'migrate'];
+    bannedKeys.forEach(function (k) {
+      if (!!optionsToTest[k]) console.error("redux-persist: invalid option passed to persistStore: \"".concat(k, "\". You may be incorrectly passing persistConfig into persistStore, whereas it should be passed into persistReducer."));
+    });
+  }
+
+  var boostrappedCb = cb || false;
+
+  var _pStore = (0,redux__WEBPACK_IMPORTED_MODULE_1__.createStore)(persistorReducer, initialState, options && options.enhancer ? options.enhancer : undefined);
+
+  var register = function register(key) {
+    _pStore.dispatch({
+      type: _constants__WEBPACK_IMPORTED_MODULE_0__.REGISTER,
+      key: key
+    });
+  };
+
+  var rehydrate = function rehydrate(key, payload, err) {
+    var rehydrateAction = {
+      type: _constants__WEBPACK_IMPORTED_MODULE_0__.REHYDRATE,
+      payload: payload,
+      err: err,
+      key: key // dispatch to `store` to rehydrate and `persistor` to track result
+
+    };
+    store.dispatch(rehydrateAction);
+
+    _pStore.dispatch(rehydrateAction);
+
+    if (boostrappedCb && persistor.getState().bootstrapped) {
+      boostrappedCb();
+      boostrappedCb = false;
+    }
+  };
+
+  var persistor = _objectSpread({}, _pStore, {
+    purge: function purge() {
+      var results = [];
+      store.dispatch({
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.PURGE,
+        result: function result(purgeResult) {
+          results.push(purgeResult);
+        }
+      });
+      return Promise.all(results);
+    },
+    flush: function flush() {
+      var results = [];
+      store.dispatch({
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.FLUSH,
+        result: function result(flushResult) {
+          results.push(flushResult);
+        }
+      });
+      return Promise.all(results);
+    },
+    pause: function pause() {
+      store.dispatch({
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.PAUSE
+      });
+    },
+    persist: function persist() {
+      store.dispatch({
+        type: _constants__WEBPACK_IMPORTED_MODULE_0__.PERSIST,
+        register: register,
+        rehydrate: rehydrate
+      });
+    }
+  });
+
+  if (!(options && options.manualPersist)) {
+    persistor.persist();
+  }
+
+  return persistor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/purgeStoredState.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/redux-persist/es/purgeStoredState.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ purgeStoredState)
+/* harmony export */ });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./node_modules/redux-persist/es/constants.js");
+
+function purgeStoredState(config) {
+  var storage = config.storage;
+  var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : _constants__WEBPACK_IMPORTED_MODULE_0__.KEY_PREFIX).concat(config.key);
+  return storage.removeItem(storageKey, warnIfRemoveError);
+}
+
+function warnIfRemoveError(err) {
+  if (err && "development" !== 'production') {
+    console.error('redux-persist/purgeStoredState: Error purging data stored state', err);
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/stateReconciler/autoMergeLevel1.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/redux-persist/es/stateReconciler/autoMergeLevel1.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ autoMergeLevel1)
+/* harmony export */ });
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/*
+  autoMergeLevel1: 
+    - merges 1 level of substate
+    - skips substate if already modified
+*/
+function autoMergeLevel1(inboundState, originalState, reducedState, _ref) {
+  var debug = _ref.debug;
+
+  var newState = _objectSpread({}, reducedState); // only rehydrate if inboundState exists and is an object
+
+
+  if (inboundState && _typeof(inboundState) === 'object') {
+    Object.keys(inboundState).forEach(function (key) {
+      // ignore _persist data
+      if (key === '_persist') return; // if reducer modifies substate, skip auto rehydration
+
+      if (originalState[key] !== reducedState[key]) {
+        if ( true && debug) console.log('redux-persist/stateReconciler: sub state for key `%s` modified, skipping.', key);
+        return;
+      } // otherwise hard set the new value
+
+
+      newState[key] = inboundState[key];
+    });
+  }
+
+  if ( true && debug && inboundState && _typeof(inboundState) === 'object') console.log("redux-persist/stateReconciler: rehydrated keys '".concat(Object.keys(inboundState).join(', '), "'"));
+  return newState;
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/es/stateReconciler/autoMergeLevel2.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/redux-persist/es/stateReconciler/autoMergeLevel2.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ autoMergeLevel2)
+/* harmony export */ });
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/*
+  autoMergeLevel2: 
+    - merges 2 level of substate
+    - skips substate if already modified
+    - this is essentially redux-perist v4 behavior
+*/
+function autoMergeLevel2(inboundState, originalState, reducedState, _ref) {
+  var debug = _ref.debug;
+
+  var newState = _objectSpread({}, reducedState); // only rehydrate if inboundState exists and is an object
+
+
+  if (inboundState && _typeof(inboundState) === 'object') {
+    Object.keys(inboundState).forEach(function (key) {
+      // ignore _persist data
+      if (key === '_persist') return; // if reducer modifies substate, skip auto rehydration
+
+      if (originalState[key] !== reducedState[key]) {
+        if ( true && debug) console.log('redux-persist/stateReconciler: sub state for key `%s` modified, skipping.', key);
+        return;
+      }
+
+      if (isPlainEnoughObject(reducedState[key])) {
+        // if object is plain enough shallow merge the new values (hence "Level2")
+        newState[key] = _objectSpread({}, newState[key], {}, inboundState[key]);
+        return;
+      } // otherwise hard set
+
+
+      newState[key] = inboundState[key];
+    });
+  }
+
+  if ( true && debug && inboundState && _typeof(inboundState) === 'object') console.log("redux-persist/stateReconciler: rehydrated keys '".concat(Object.keys(inboundState).join(', '), "'"));
+  return newState;
+}
+
+function isPlainEnoughObject(o) {
+  return o !== null && !Array.isArray(o) && _typeof(o) === 'object';
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/lib/storage/createWebStorage.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/redux-persist/lib/storage/createWebStorage.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports["default"] = createWebStorage;
+
+var _getStorage = _interopRequireDefault(__webpack_require__(/*! ./getStorage */ "./node_modules/redux-persist/lib/storage/getStorage.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function createWebStorage(type) {
+  var storage = (0, _getStorage.default)(type);
+  return {
+    getItem: function getItem(key) {
+      return new Promise(function (resolve, reject) {
+        resolve(storage.getItem(key));
+      });
+    },
+    setItem: function setItem(key, item) {
+      return new Promise(function (resolve, reject) {
+        resolve(storage.setItem(key, item));
+      });
+    },
+    removeItem: function removeItem(key) {
+      return new Promise(function (resolve, reject) {
+        resolve(storage.removeItem(key));
+      });
+    }
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/lib/storage/getStorage.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/redux-persist/lib/storage/getStorage.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports["default"] = getStorage;
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function noop() {}
+
+var noopStorage = {
+  getItem: noop,
+  setItem: noop,
+  removeItem: noop
+};
+
+function hasStorage(storageType) {
+  if ((typeof self === "undefined" ? "undefined" : _typeof(self)) !== 'object' || !(storageType in self)) {
+    return false;
+  }
+
+  try {
+    var storage = self[storageType];
+    var testKey = "redux-persist ".concat(storageType, " test");
+    storage.setItem(testKey, 'test');
+    storage.getItem(testKey);
+    storage.removeItem(testKey);
+  } catch (e) {
+    if (true) console.warn("redux-persist ".concat(storageType, " test failed, persistence will be disabled."));
+    return false;
+  }
+
+  return true;
+}
+
+function getStorage(type) {
+  var storageType = "".concat(type, "Storage");
+  if (hasStorage(storageType)) return self[storageType];else {
+    if (true) {
+      console.error("redux-persist failed to create sync storage. falling back to noop storage.");
+    }
+
+    return noopStorage;
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/redux-persist/lib/storage/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/redux-persist/lib/storage/index.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports["default"] = void 0;
+
+var _createWebStorage = _interopRequireDefault(__webpack_require__(/*! ./createWebStorage */ "./node_modules/redux-persist/lib/storage/createWebStorage.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _default = (0, _createWebStorage.default)('local');
+
+exports["default"] = _default;
+
+/***/ }),
+
 /***/ "./node_modules/redux-thunk/es/index.js":
 /*!**********************************************!*\
   !*** ./node_modules/redux-thunk/es/index.js ***!
@@ -44971,19 +49630,320 @@ function applyMiddleware() {
   };
 }
 
-/*
- * This is a dummy function to check if the function name has been altered by minification.
- * If the function has been minified and NODE_ENV !== 'production', warn the user.
- */
 
-function isCrushed() {}
 
-if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
-  warning('You are currently using minified code outside of NODE_ENV === "production". ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or setting mode to production in webpack (https://webpack.js.org/concepts/mode/) ' + 'to ensure you have the correct code for your production build.');
+
+/***/ }),
+
+/***/ "./node_modules/reselect/es/defaultMemoize.js":
+/*!****************************************************!*\
+  !*** ./node_modules/reselect/es/defaultMemoize.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createCacheKeyComparator": () => (/* binding */ createCacheKeyComparator),
+/* harmony export */   "defaultEqualityCheck": () => (/* binding */ defaultEqualityCheck),
+/* harmony export */   "defaultMemoize": () => (/* binding */ defaultMemoize)
+/* harmony export */ });
+// Cache implementation based on Erik Rasmussen's `lru-memoize`:
+// https://github.com/erikras/lru-memoize
+var NOT_FOUND = 'NOT_FOUND';
+
+function createSingletonCache(equals) {
+  var entry;
+  return {
+    get: function get(key) {
+      if (entry && equals(entry.key, key)) {
+        return entry.value;
+      }
+
+      return NOT_FOUND;
+    },
+    put: function put(key, value) {
+      entry = {
+        key: key,
+        value: value
+      };
+    },
+    getEntries: function getEntries() {
+      return entry ? [entry] : [];
+    },
+    clear: function clear() {
+      entry = undefined;
+    }
+  };
 }
 
+function createLruCache(maxSize, equals) {
+  var entries = [];
+
+  function get(key) {
+    var cacheIndex = entries.findIndex(function (entry) {
+      return equals(key, entry.key);
+    }); // We found a cached entry
+
+    if (cacheIndex > -1) {
+      var entry = entries[cacheIndex]; // Cached entry not at top of cache, move it to the top
+
+      if (cacheIndex > 0) {
+        entries.splice(cacheIndex, 1);
+        entries.unshift(entry);
+      }
+
+      return entry.value;
+    } // No entry found in cache, return sentinel
 
 
+    return NOT_FOUND;
+  }
+
+  function put(key, value) {
+    if (get(key) === NOT_FOUND) {
+      // TODO Is unshift slow?
+      entries.unshift({
+        key: key,
+        value: value
+      });
+
+      if (entries.length > maxSize) {
+        entries.pop();
+      }
+    }
+  }
+
+  function getEntries() {
+    return entries;
+  }
+
+  function clear() {
+    entries = [];
+  }
+
+  return {
+    get: get,
+    put: put,
+    getEntries: getEntries,
+    clear: clear
+  };
+}
+
+var defaultEqualityCheck = function defaultEqualityCheck(a, b) {
+  return a === b;
+};
+function createCacheKeyComparator(equalityCheck) {
+  return function areArgumentsShallowlyEqual(prev, next) {
+    if (prev === null || next === null || prev.length !== next.length) {
+      return false;
+    } // Do this in a for loop (and not a `forEach` or an `every`) so we can determine equality as fast as possible.
+
+
+    var length = prev.length;
+
+    for (var i = 0; i < length; i++) {
+      if (!equalityCheck(prev[i], next[i])) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+}
+// defaultMemoize now supports a configurable cache size with LRU behavior,
+// and optional comparison of the result value with existing values
+function defaultMemoize(func, equalityCheckOrOptions) {
+  var providedOptions = typeof equalityCheckOrOptions === 'object' ? equalityCheckOrOptions : {
+    equalityCheck: equalityCheckOrOptions
+  };
+  var _providedOptions$equa = providedOptions.equalityCheck,
+      equalityCheck = _providedOptions$equa === void 0 ? defaultEqualityCheck : _providedOptions$equa,
+      _providedOptions$maxS = providedOptions.maxSize,
+      maxSize = _providedOptions$maxS === void 0 ? 1 : _providedOptions$maxS,
+      resultEqualityCheck = providedOptions.resultEqualityCheck;
+  var comparator = createCacheKeyComparator(equalityCheck);
+  var cache = maxSize === 1 ? createSingletonCache(comparator) : createLruCache(maxSize, comparator); // we reference arguments instead of spreading them for performance reasons
+
+  function memoized() {
+    var value = cache.get(arguments);
+
+    if (value === NOT_FOUND) {
+      // @ts-ignore
+      value = func.apply(null, arguments);
+
+      if (resultEqualityCheck) {
+        var entries = cache.getEntries();
+        var matchingEntry = entries.find(function (entry) {
+          return resultEqualityCheck(entry.value, value);
+        });
+
+        if (matchingEntry) {
+          value = matchingEntry.value;
+        }
+      }
+
+      cache.put(arguments, value);
+    }
+
+    return value;
+  }
+
+  memoized.clearCache = function () {
+    return cache.clear();
+  };
+
+  return memoized;
+}
+
+/***/ }),
+
+/***/ "./node_modules/reselect/es/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/reselect/es/index.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createSelector": () => (/* binding */ createSelector),
+/* harmony export */   "createSelectorCreator": () => (/* binding */ createSelectorCreator),
+/* harmony export */   "createStructuredSelector": () => (/* binding */ createStructuredSelector),
+/* harmony export */   "defaultEqualityCheck": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultEqualityCheck),
+/* harmony export */   "defaultMemoize": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultMemoize)
+/* harmony export */ });
+/* harmony import */ var _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultMemoize */ "./node_modules/reselect/es/defaultMemoize.js");
+
+
+
+function getDependencies(funcs) {
+  var dependencies = Array.isArray(funcs[0]) ? funcs[0] : funcs;
+
+  if (!dependencies.every(function (dep) {
+    return typeof dep === 'function';
+  })) {
+    var dependencyTypes = dependencies.map(function (dep) {
+      return typeof dep === 'function' ? "function " + (dep.name || 'unnamed') + "()" : typeof dep;
+    }).join(', ');
+    throw new Error("createSelector expects all input-selectors to be functions, but received the following types: [" + dependencyTypes + "]");
+  }
+
+  return dependencies;
+}
+
+function createSelectorCreator(memoize) {
+  for (var _len = arguments.length, memoizeOptionsFromArgs = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    memoizeOptionsFromArgs[_key - 1] = arguments[_key];
+  }
+
+  var createSelector = function createSelector() {
+    for (var _len2 = arguments.length, funcs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      funcs[_key2] = arguments[_key2];
+    }
+
+    var _recomputations = 0;
+
+    var _lastResult; // Due to the intricacies of rest params, we can't do an optional arg after `...funcs`.
+    // So, start by declaring the default value here.
+    // (And yes, the words 'memoize' and 'options' appear too many times in this next sequence.)
+
+
+    var directlyPassedOptions = {
+      memoizeOptions: undefined
+    }; // Normally, the result func or "output selector" is the last arg
+
+    var resultFunc = funcs.pop(); // If the result func is actually an _object_, assume it's our options object
+
+    if (typeof resultFunc === 'object') {
+      directlyPassedOptions = resultFunc; // and pop the real result func off
+
+      resultFunc = funcs.pop();
+    }
+
+    if (typeof resultFunc !== 'function') {
+      throw new Error("createSelector expects an output function after the inputs, but received: [" + typeof resultFunc + "]");
+    } // Determine which set of options we're using. Prefer options passed directly,
+    // but fall back to options given to createSelectorCreator.
+
+
+    var _directlyPassedOption = directlyPassedOptions,
+        _directlyPassedOption2 = _directlyPassedOption.memoizeOptions,
+        memoizeOptions = _directlyPassedOption2 === void 0 ? memoizeOptionsFromArgs : _directlyPassedOption2; // Simplifying assumption: it's unlikely that the first options arg of the provided memoizer
+    // is an array. In most libs I've looked at, it's an equality function or options object.
+    // Based on that, if `memoizeOptions` _is_ an array, we assume it's a full
+    // user-provided array of options. Otherwise, it must be just the _first_ arg, and so
+    // we wrap it in an array so we can apply it.
+
+    var finalMemoizeOptions = Array.isArray(memoizeOptions) ? memoizeOptions : [memoizeOptions];
+    var dependencies = getDependencies(funcs);
+    var memoizedResultFunc = memoize.apply(void 0, [function recomputationWrapper() {
+      _recomputations++; // apply arguments instead of spreading for performance.
+
+      return resultFunc.apply(null, arguments);
+    }].concat(finalMemoizeOptions)); // If a selector is called with the exact same arguments we don't need to traverse our dependencies again.
+
+    var selector = memoize(function dependenciesChecker() {
+      var params = [];
+      var length = dependencies.length;
+
+      for (var i = 0; i < length; i++) {
+        // apply arguments instead of spreading and mutate a local list of params for performance.
+        // @ts-ignore
+        params.push(dependencies[i].apply(null, arguments));
+      } // apply arguments instead of spreading for performance.
+
+
+      _lastResult = memoizedResultFunc.apply(null, params);
+      return _lastResult;
+    });
+    Object.assign(selector, {
+      resultFunc: resultFunc,
+      memoizedResultFunc: memoizedResultFunc,
+      dependencies: dependencies,
+      lastResult: function lastResult() {
+        return _lastResult;
+      },
+      recomputations: function recomputations() {
+        return _recomputations;
+      },
+      resetRecomputations: function resetRecomputations() {
+        return _recomputations = 0;
+      }
+    });
+    return selector;
+  }; // @ts-ignore
+
+
+  return createSelector;
+}
+var createSelector = /* #__PURE__ */createSelectorCreator(_defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultMemoize);
+// Manual definition of state and output arguments
+var createStructuredSelector = function createStructuredSelector(selectors, selectorCreator) {
+  if (selectorCreator === void 0) {
+    selectorCreator = createSelector;
+  }
+
+  if (typeof selectors !== 'object') {
+    throw new Error('createStructuredSelector expects first argument to be an object ' + ("where each property is a selector, instead received a " + typeof selectors));
+  }
+
+  var objectKeys = Object.keys(selectors);
+  var resultSelector = selectorCreator( // @ts-ignore
+  objectKeys.map(function (key) {
+    return selectors[key];
+  }), function () {
+    for (var _len3 = arguments.length, values = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+      values[_key3] = arguments[_key3];
+    }
+
+    return values.reduce(function (composition, value, index) {
+      composition[objectKeys[index]] = value;
+      return composition;
+    }, {});
+  });
+  return resultSelector;
+};
 
 /***/ }),
 
@@ -46127,7 +51087,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _defineProperty)
 /* harmony export */ });
+/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ "./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js");
+
 function _defineProperty(obj, key, value) {
+  key = (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__["default"])(key);
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -46138,7 +51101,6 @@ function _defineProperty(obj, key, value) {
   } else {
     obj[key] = value;
   }
-
   return obj;
 }
 
@@ -46159,14 +51121,12 @@ function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
-
       for (var key in source) {
         if (Object.prototype.hasOwnProperty.call(source, key)) {
           target[key] = source[key];
         }
       }
     }
-
     return target;
   };
   return _extends.apply(this, arguments);
@@ -46187,20 +51147,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
-
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
-
   if (Object.getOwnPropertySymbols) {
     var symbols = Object.getOwnPropertySymbols(object);
     enumerableOnly && (symbols = symbols.filter(function (sym) {
       return Object.getOwnPropertyDescriptor(object, sym).enumerable;
     })), keys.push.apply(keys, symbols);
   }
-
   return keys;
 }
-
 function _objectSpread2(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = null != arguments[i] ? arguments[i] : {};
@@ -46210,7 +51166,6 @@ function _objectSpread2(target) {
       Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
     });
   }
-
   return target;
 }
 
@@ -46232,15 +51187,122 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   var target = {};
   var sourceKeys = Object.keys(source);
   var key, i;
-
   for (i = 0; i < sourceKeys.length; i++) {
     key = sourceKeys[i];
     if (excluded.indexOf(key) >= 0) continue;
     target[key] = source[key];
   }
-
   return target;
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPrimitive.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _toPrimitive)
+/* harmony export */ });
+/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+
+function _toPrimitive(input, hint) {
+  if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(input) !== "object" || input === null) return input;
+  var prim = input[Symbol.toPrimitive];
+  if (prim !== undefined) {
+    var res = prim.call(input, hint || "default");
+    if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(res) !== "object") return res;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return (hint === "string" ? String : Number)(input);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _toPropertyKey)
+/* harmony export */ });
+/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toPrimitive.js */ "./node_modules/@babel/runtime/helpers/esm/toPrimitive.js");
+
+
+function _toPropertyKey(arg) {
+  var key = (0,_toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__["default"])(arg, "string");
+  return (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__["default"])(key) === "symbol" ? key : String(key);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ _typeof)
+/* harmony export */ });
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof(obj);
+}
+
+/***/ }),
+
+/***/ "./node_modules/immer/dist/immer.esm.mjs":
+/*!***********************************************!*\
+  !*** ./node_modules/immer/dist/immer.esm.mjs ***!
+  \***********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Immer": () => (/* binding */ un),
+/* harmony export */   "applyPatches": () => (/* binding */ pn),
+/* harmony export */   "castDraft": () => (/* binding */ K),
+/* harmony export */   "castImmutable": () => (/* binding */ $),
+/* harmony export */   "createDraft": () => (/* binding */ ln),
+/* harmony export */   "current": () => (/* binding */ R),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "enableAllPlugins": () => (/* binding */ J),
+/* harmony export */   "enableES5": () => (/* binding */ F),
+/* harmony export */   "enableMapSet": () => (/* binding */ C),
+/* harmony export */   "enablePatches": () => (/* binding */ T),
+/* harmony export */   "finishDraft": () => (/* binding */ dn),
+/* harmony export */   "freeze": () => (/* binding */ d),
+/* harmony export */   "immerable": () => (/* binding */ L),
+/* harmony export */   "isDraft": () => (/* binding */ r),
+/* harmony export */   "isDraftable": () => (/* binding */ t),
+/* harmony export */   "nothing": () => (/* binding */ H),
+/* harmony export */   "original": () => (/* binding */ e),
+/* harmony export */   "produce": () => (/* binding */ fn),
+/* harmony export */   "produceWithPatches": () => (/* binding */ cn),
+/* harmony export */   "setAutoFreeze": () => (/* binding */ sn),
+/* harmony export */   "setUseProxies": () => (/* binding */ vn)
+/* harmony export */ });
+function n(n){for(var r=arguments.length,t=Array(r>1?r-1:0),e=1;e<r;e++)t[e-1]=arguments[e];if(true){var i=Y[n],o=i?"function"==typeof i?i.apply(null,t):i:"unknown error nr: "+n;throw Error("[Immer] "+o)}throw Error("[Immer] minified error nr: "+n+(t.length?" "+t.map((function(n){return"'"+n+"'"})).join(","):"")+". Find the full error at: https://bit.ly/3cXEKWf")}function r(n){return!!n&&!!n[Q]}function t(n){var r;return!!n&&(function(n){if(!n||"object"!=typeof n)return!1;var r=Object.getPrototypeOf(n);if(null===r)return!0;var t=Object.hasOwnProperty.call(r,"constructor")&&r.constructor;return t===Object||"function"==typeof t&&Function.toString.call(t)===Z}(n)||Array.isArray(n)||!!n[L]||!!(null===(r=n.constructor)||void 0===r?void 0:r[L])||s(n)||v(n))}function e(t){return r(t)||n(23,t),t[Q].t}function i(n,r,t){void 0===t&&(t=!1),0===o(n)?(t?Object.keys:nn)(n).forEach((function(e){t&&"symbol"==typeof e||r(e,n[e],n)})):n.forEach((function(t,e){return r(e,t,n)}))}function o(n){var r=n[Q];return r?r.i>3?r.i-4:r.i:Array.isArray(n)?1:s(n)?2:v(n)?3:0}function u(n,r){return 2===o(n)?n.has(r):Object.prototype.hasOwnProperty.call(n,r)}function a(n,r){return 2===o(n)?n.get(r):n[r]}function f(n,r,t){var e=o(n);2===e?n.set(r,t):3===e?n.add(t):n[r]=t}function c(n,r){return n===r?0!==n||1/n==1/r:n!=n&&r!=r}function s(n){return X&&n instanceof Map}function v(n){return q&&n instanceof Set}function p(n){return n.o||n.t}function l(n){if(Array.isArray(n))return Array.prototype.slice.call(n);var r=rn(n);delete r[Q];for(var t=nn(r),e=0;e<t.length;e++){var i=t[e],o=r[i];!1===o.writable&&(o.writable=!0,o.configurable=!0),(o.get||o.set)&&(r[i]={configurable:!0,writable:!0,enumerable:o.enumerable,value:n[i]})}return Object.create(Object.getPrototypeOf(n),r)}function d(n,e){return void 0===e&&(e=!1),y(n)||r(n)||!t(n)||(o(n)>1&&(n.set=n.add=n.clear=n.delete=h),Object.freeze(n),e&&i(n,(function(n,r){return d(r,!0)}),!0)),n}function h(){n(2)}function y(n){return null==n||"object"!=typeof n||Object.isFrozen(n)}function b(r){var t=tn[r];return t||n(18,r),t}function m(n,r){tn[n]||(tn[n]=r)}function _(){return false||U||n(0),U}function j(n,r){r&&(b("Patches"),n.u=[],n.s=[],n.v=r)}function g(n){O(n),n.p.forEach(S),n.p=null}function O(n){n===U&&(U=n.l)}function w(n){return U={p:[],l:U,h:n,m:!0,_:0}}function S(n){var r=n[Q];0===r.i||1===r.i?r.j():r.g=!0}function P(r,e){e._=e.p.length;var i=e.p[0],o=void 0!==r&&r!==i;return e.h.O||b("ES5").S(e,r,o),o?(i[Q].P&&(g(e),n(4)),t(r)&&(r=M(e,r),e.l||x(e,r)),e.u&&b("Patches").M(i[Q].t,r,e.u,e.s)):r=M(e,i,[]),g(e),e.u&&e.v(e.u,e.s),r!==H?r:void 0}function M(n,r,t){if(y(r))return r;var e=r[Q];if(!e)return i(r,(function(i,o){return A(n,e,r,i,o,t)}),!0),r;if(e.A!==n)return r;if(!e.P)return x(n,e.t,!0),e.t;if(!e.I){e.I=!0,e.A._--;var o=4===e.i||5===e.i?e.o=l(e.k):e.o,u=o,a=!1;3===e.i&&(u=new Set(o),o.clear(),a=!0),i(u,(function(r,i){return A(n,e,o,r,i,t,a)})),x(n,o,!1),t&&n.u&&b("Patches").N(e,t,n.u,n.s)}return e.o}function A(e,i,o,a,c,s,v){if( true&&c===o&&n(5),r(c)){var p=M(e,c,s&&i&&3!==i.i&&!u(i.R,a)?s.concat(a):void 0);if(f(o,a,p),!r(p))return;e.m=!1}else v&&o.add(c);if(t(c)&&!y(c)){if(!e.h.D&&e._<1)return;M(e,c),i&&i.A.l||x(e,c)}}function x(n,r,t){void 0===t&&(t=!1),!n.l&&n.h.D&&n.m&&d(r,t)}function z(n,r){var t=n[Q];return(t?p(t):n)[r]}function I(n,r){if(r in n)for(var t=Object.getPrototypeOf(n);t;){var e=Object.getOwnPropertyDescriptor(t,r);if(e)return e;t=Object.getPrototypeOf(t)}}function k(n){n.P||(n.P=!0,n.l&&k(n.l))}function E(n){n.o||(n.o=l(n.t))}function N(n,r,t){var e=s(r)?b("MapSet").F(r,t):v(r)?b("MapSet").T(r,t):n.O?function(n,r){var t=Array.isArray(n),e={i:t?1:0,A:r?r.A:_(),P:!1,I:!1,R:{},l:r,t:n,k:null,o:null,j:null,C:!1},i=e,o=en;t&&(i=[e],o=on);var u=Proxy.revocable(i,o),a=u.revoke,f=u.proxy;return e.k=f,e.j=a,f}(r,t):b("ES5").J(r,t);return(t?t.A:_()).p.push(e),e}function R(e){return r(e)||n(22,e),function n(r){if(!t(r))return r;var e,u=r[Q],c=o(r);if(u){if(!u.P&&(u.i<4||!b("ES5").K(u)))return u.t;u.I=!0,e=D(r,c),u.I=!1}else e=D(r,c);return i(e,(function(r,t){u&&a(u.t,r)===t||f(e,r,n(t))})),3===c?new Set(e):e}(e)}function D(n,r){switch(r){case 2:return new Map(n);case 3:return Array.from(n)}return l(n)}function F(){function t(n,r){var t=s[n];return t?t.enumerable=r:s[n]=t={configurable:!0,enumerable:r,get:function(){var r=this[Q];return true&&f(r),en.get(r,n)},set:function(r){var t=this[Q]; true&&f(t),en.set(t,n,r)}},t}function e(n){for(var r=n.length-1;r>=0;r--){var t=n[r][Q];if(!t.P)switch(t.i){case 5:a(t)&&k(t);break;case 4:o(t)&&k(t)}}}function o(n){for(var r=n.t,t=n.k,e=nn(t),i=e.length-1;i>=0;i--){var o=e[i];if(o!==Q){var a=r[o];if(void 0===a&&!u(r,o))return!0;var f=t[o],s=f&&f[Q];if(s?s.t!==a:!c(f,a))return!0}}var v=!!r[Q];return e.length!==nn(r).length+(v?0:1)}function a(n){var r=n.k;if(r.length!==n.t.length)return!0;var t=Object.getOwnPropertyDescriptor(r,r.length-1);if(t&&!t.get)return!0;for(var e=0;e<r.length;e++)if(!r.hasOwnProperty(e))return!0;return!1}function f(r){r.g&&n(3,JSON.stringify(p(r)))}var s={};m("ES5",{J:function(n,r){var e=Array.isArray(n),i=function(n,r){if(n){for(var e=Array(r.length),i=0;i<r.length;i++)Object.defineProperty(e,""+i,t(i,!0));return e}var o=rn(r);delete o[Q];for(var u=nn(o),a=0;a<u.length;a++){var f=u[a];o[f]=t(f,n||!!o[f].enumerable)}return Object.create(Object.getPrototypeOf(r),o)}(e,n),o={i:e?5:4,A:r?r.A:_(),P:!1,I:!1,R:{},l:r,t:n,k:i,o:null,g:!1,C:!1};return Object.defineProperty(i,Q,{value:o,writable:!0}),i},S:function(n,t,o){o?r(t)&&t[Q].A===n&&e(n.p):(n.u&&function n(r){if(r&&"object"==typeof r){var t=r[Q];if(t){var e=t.t,o=t.k,f=t.R,c=t.i;if(4===c)i(o,(function(r){r!==Q&&(void 0!==e[r]||u(e,r)?f[r]||n(o[r]):(f[r]=!0,k(t)))})),i(e,(function(n){void 0!==o[n]||u(o,n)||(f[n]=!1,k(t))}));else if(5===c){if(a(t)&&(k(t),f.length=!0),o.length<e.length)for(var s=o.length;s<e.length;s++)f[s]=!1;else for(var v=e.length;v<o.length;v++)f[v]=!0;for(var p=Math.min(o.length,e.length),l=0;l<p;l++)o.hasOwnProperty(l)||(f[l]=!0),void 0===f[l]&&n(o[l])}}}}(n.p[0]),e(n.p))},K:function(n){return 4===n.i?o(n):a(n)}})}function T(){function e(n){if(!t(n))return n;if(Array.isArray(n))return n.map(e);if(s(n))return new Map(Array.from(n.entries()).map((function(n){return[n[0],e(n[1])]})));if(v(n))return new Set(Array.from(n).map(e));var r=Object.create(Object.getPrototypeOf(n));for(var i in n)r[i]=e(n[i]);return u(n,L)&&(r[L]=n[L]),r}function f(n){return r(n)?e(n):n}var c="add";m("Patches",{$:function(r,t){return t.forEach((function(t){for(var i=t.path,u=t.op,f=r,s=0;s<i.length-1;s++){var v=o(f),p=i[s];"string"!=typeof p&&"number"!=typeof p&&(p=""+p),0!==v&&1!==v||"__proto__"!==p&&"constructor"!==p||n(24),"function"==typeof f&&"prototype"===p&&n(24),"object"!=typeof(f=a(f,p))&&n(15,i.join("/"))}var l=o(f),d=e(t.value),h=i[i.length-1];switch(u){case"replace":switch(l){case 2:return f.set(h,d);case 3:n(16);default:return f[h]=d}case c:switch(l){case 1:return"-"===h?f.push(d):f.splice(h,0,d);case 2:return f.set(h,d);case 3:return f.add(d);default:return f[h]=d}case"remove":switch(l){case 1:return f.splice(h,1);case 2:return f.delete(h);case 3:return f.delete(t.value);default:return delete f[h]}default:n(17,u)}})),r},N:function(n,r,t,e){switch(n.i){case 0:case 4:case 2:return function(n,r,t,e){var o=n.t,s=n.o;i(n.R,(function(n,i){var v=a(o,n),p=a(s,n),l=i?u(o,n)?"replace":c:"remove";if(v!==p||"replace"!==l){var d=r.concat(n);t.push("remove"===l?{op:l,path:d}:{op:l,path:d,value:p}),e.push(l===c?{op:"remove",path:d}:"remove"===l?{op:c,path:d,value:f(v)}:{op:"replace",path:d,value:f(v)})}}))}(n,r,t,e);case 5:case 1:return function(n,r,t,e){var i=n.t,o=n.R,u=n.o;if(u.length<i.length){var a=[u,i];i=a[0],u=a[1];var s=[e,t];t=s[0],e=s[1]}for(var v=0;v<i.length;v++)if(o[v]&&u[v]!==i[v]){var p=r.concat([v]);t.push({op:"replace",path:p,value:f(u[v])}),e.push({op:"replace",path:p,value:f(i[v])})}for(var l=i.length;l<u.length;l++){var d=r.concat([l]);t.push({op:c,path:d,value:f(u[l])})}i.length<u.length&&e.push({op:"replace",path:r.concat(["length"]),value:i.length})}(n,r,t,e);case 3:return function(n,r,t,e){var i=n.t,o=n.o,u=0;i.forEach((function(n){if(!o.has(n)){var i=r.concat([u]);t.push({op:"remove",path:i,value:n}),e.unshift({op:c,path:i,value:n})}u++})),u=0,o.forEach((function(n){if(!i.has(n)){var o=r.concat([u]);t.push({op:c,path:o,value:n}),e.unshift({op:"remove",path:o,value:n})}u++}))}(n,r,t,e)}},M:function(n,r,t,e){t.push({op:"replace",path:[],value:r===H?void 0:r}),e.push({op:"replace",path:[],value:n})}})}function C(){function r(n,r){function t(){this.constructor=n}a(n,r),n.prototype=(t.prototype=r.prototype,new t)}function e(n){n.o||(n.R=new Map,n.o=new Map(n.t))}function o(n){n.o||(n.o=new Set,n.t.forEach((function(r){if(t(r)){var e=N(n.A.h,r,n);n.p.set(r,e),n.o.add(e)}else n.o.add(r)})))}function u(r){r.g&&n(3,JSON.stringify(p(r)))}var a=function(n,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,r){n.__proto__=r}||function(n,r){for(var t in r)r.hasOwnProperty(t)&&(n[t]=r[t])})(n,r)},f=function(){function n(n,r){return this[Q]={i:2,l:r,A:r?r.A:_(),P:!1,I:!1,o:void 0,R:void 0,t:n,k:this,C:!1,g:!1},this}r(n,Map);var o=n.prototype;return Object.defineProperty(o,"size",{get:function(){return p(this[Q]).size}}),o.has=function(n){return p(this[Q]).has(n)},o.set=function(n,r){var t=this[Q];return u(t),p(t).has(n)&&p(t).get(n)===r||(e(t),k(t),t.R.set(n,!0),t.o.set(n,r),t.R.set(n,!0)),this},o.delete=function(n){if(!this.has(n))return!1;var r=this[Q];return u(r),e(r),k(r),r.t.has(n)?r.R.set(n,!1):r.R.delete(n),r.o.delete(n),!0},o.clear=function(){var n=this[Q];u(n),p(n).size&&(e(n),k(n),n.R=new Map,i(n.t,(function(r){n.R.set(r,!1)})),n.o.clear())},o.forEach=function(n,r){var t=this;p(this[Q]).forEach((function(e,i){n.call(r,t.get(i),i,t)}))},o.get=function(n){var r=this[Q];u(r);var i=p(r).get(n);if(r.I||!t(i))return i;if(i!==r.t.get(n))return i;var o=N(r.A.h,i,r);return e(r),r.o.set(n,o),o},o.keys=function(){return p(this[Q]).keys()},o.values=function(){var n,r=this,t=this.keys();return(n={})[V]=function(){return r.values()},n.next=function(){var n=t.next();return n.done?n:{done:!1,value:r.get(n.value)}},n},o.entries=function(){var n,r=this,t=this.keys();return(n={})[V]=function(){return r.entries()},n.next=function(){var n=t.next();if(n.done)return n;var e=r.get(n.value);return{done:!1,value:[n.value,e]}},n},o[V]=function(){return this.entries()},n}(),c=function(){function n(n,r){return this[Q]={i:3,l:r,A:r?r.A:_(),P:!1,I:!1,o:void 0,t:n,k:this,p:new Map,g:!1,C:!1},this}r(n,Set);var t=n.prototype;return Object.defineProperty(t,"size",{get:function(){return p(this[Q]).size}}),t.has=function(n){var r=this[Q];return u(r),r.o?!!r.o.has(n)||!(!r.p.has(n)||!r.o.has(r.p.get(n))):r.t.has(n)},t.add=function(n){var r=this[Q];return u(r),this.has(n)||(o(r),k(r),r.o.add(n)),this},t.delete=function(n){if(!this.has(n))return!1;var r=this[Q];return u(r),o(r),k(r),r.o.delete(n)||!!r.p.has(n)&&r.o.delete(r.p.get(n))},t.clear=function(){var n=this[Q];u(n),p(n).size&&(o(n),k(n),n.o.clear())},t.values=function(){var n=this[Q];return u(n),o(n),n.o.values()},t.entries=function(){var n=this[Q];return u(n),o(n),n.o.entries()},t.keys=function(){return this.values()},t[V]=function(){return this.values()},t.forEach=function(n,r){for(var t=this.values(),e=t.next();!e.done;)n.call(r,e.value,e.value,this),e=t.next()},n}();m("MapSet",{F:function(n,r){return new f(n,r)},T:function(n,r){return new c(n,r)}})}function J(){F(),C(),T()}function K(n){return n}function $(n){return n}var G,U,W="undefined"!=typeof Symbol&&"symbol"==typeof Symbol("x"),X="undefined"!=typeof Map,q="undefined"!=typeof Set,B="undefined"!=typeof Proxy&&void 0!==Proxy.revocable&&"undefined"!=typeof Reflect,H=W?Symbol.for("immer-nothing"):((G={})["immer-nothing"]=!0,G),L=W?Symbol.for("immer-draftable"):"__$immer_draftable",Q=W?Symbol.for("immer-state"):"__$immer_state",V="undefined"!=typeof Symbol&&Symbol.iterator||"@@iterator",Y={0:"Illegal state",1:"Immer drafts cannot have computed properties",2:"This object has been frozen and should not be mutated",3:function(n){return"Cannot use a proxy that has been revoked. Did you pass an object from inside an immer function to an async process? "+n},4:"An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft.",5:"Immer forbids circular references",6:"The first or second argument to `produce` must be a function",7:"The third argument to `produce` must be a function or undefined",8:"First argument to `createDraft` must be a plain object, an array, or an immerable object",9:"First argument to `finishDraft` must be a draft returned by `createDraft`",10:"The given draft is already finalized",11:"Object.defineProperty() cannot be used on an Immer draft",12:"Object.setPrototypeOf() cannot be used on an Immer draft",13:"Immer only supports deleting array indices",14:"Immer only supports setting array indices and the 'length' property",15:function(n){return"Cannot apply patch, path doesn't resolve: "+n},16:'Sets cannot have "replace" patches.',17:function(n){return"Unsupported patch operation: "+n},18:function(n){return"The plugin for '"+n+"' has not been loaded into Immer. To enable the plugin, import and call `enable"+n+"()` when initializing your application."},20:"Cannot use proxies if Proxy, Proxy.revocable or Reflect are not available",21:function(n){return"produce can only be called on things that are draftable: plain objects, arrays, Map, Set or classes that are marked with '[immerable]: true'. Got '"+n+"'"},22:function(n){return"'current' expects a draft, got: "+n},23:function(n){return"'original' expects a draft, got: "+n},24:"Patching reserved attributes like __proto__, prototype and constructor is not allowed"},Z=""+Object.prototype.constructor,nn="undefined"!=typeof Reflect&&Reflect.ownKeys?Reflect.ownKeys:void 0!==Object.getOwnPropertySymbols?function(n){return Object.getOwnPropertyNames(n).concat(Object.getOwnPropertySymbols(n))}:Object.getOwnPropertyNames,rn=Object.getOwnPropertyDescriptors||function(n){var r={};return nn(n).forEach((function(t){r[t]=Object.getOwnPropertyDescriptor(n,t)})),r},tn={},en={get:function(n,r){if(r===Q)return n;var e=p(n);if(!u(e,r))return function(n,r,t){var e,i=I(r,t);return i?"value"in i?i.value:null===(e=i.get)||void 0===e?void 0:e.call(n.k):void 0}(n,e,r);var i=e[r];return n.I||!t(i)?i:i===z(n.t,r)?(E(n),n.o[r]=N(n.A.h,i,n)):i},has:function(n,r){return r in p(n)},ownKeys:function(n){return Reflect.ownKeys(p(n))},set:function(n,r,t){var e=I(p(n),r);if(null==e?void 0:e.set)return e.set.call(n.k,t),!0;if(!n.P){var i=z(p(n),r),o=null==i?void 0:i[Q];if(o&&o.t===t)return n.o[r]=t,n.R[r]=!1,!0;if(c(t,i)&&(void 0!==t||u(n.t,r)))return!0;E(n),k(n)}return n.o[r]===t&&(void 0!==t||r in n.o)||Number.isNaN(t)&&Number.isNaN(n.o[r])||(n.o[r]=t,n.R[r]=!0),!0},deleteProperty:function(n,r){return void 0!==z(n.t,r)||r in n.t?(n.R[r]=!1,E(n),k(n)):delete n.R[r],n.o&&delete n.o[r],!0},getOwnPropertyDescriptor:function(n,r){var t=p(n),e=Reflect.getOwnPropertyDescriptor(t,r);return e?{writable:!0,configurable:1!==n.i||"length"!==r,enumerable:e.enumerable,value:t[r]}:e},defineProperty:function(){n(11)},getPrototypeOf:function(n){return Object.getPrototypeOf(n.t)},setPrototypeOf:function(){n(12)}},on={};i(en,(function(n,r){on[n]=function(){return arguments[0]=arguments[0][0],r.apply(this,arguments)}})),on.deleteProperty=function(r,t){return true&&isNaN(parseInt(t))&&n(13),on.set.call(this,r,t,void 0)},on.set=function(r,t,e){return true&&"length"!==t&&isNaN(parseInt(t))&&n(14),en.set.call(this,r[0],t,e,r[0])};var un=function(){function e(r){var e=this;this.O=B,this.D=!0,this.produce=function(r,i,o){if("function"==typeof r&&"function"!=typeof i){var u=i;i=r;var a=e;return function(n){var r=this;void 0===n&&(n=u);for(var t=arguments.length,e=Array(t>1?t-1:0),o=1;o<t;o++)e[o-1]=arguments[o];return a.produce(n,(function(n){var t;return(t=i).call.apply(t,[r,n].concat(e))}))}}var f;if("function"!=typeof i&&n(6),void 0!==o&&"function"!=typeof o&&n(7),t(r)){var c=w(e),s=N(e,r,void 0),v=!0;try{f=i(s),v=!1}finally{v?g(c):O(c)}return"undefined"!=typeof Promise&&f instanceof Promise?f.then((function(n){return j(c,o),P(n,c)}),(function(n){throw g(c),n})):(j(c,o),P(f,c))}if(!r||"object"!=typeof r){if(void 0===(f=i(r))&&(f=r),f===H&&(f=void 0),e.D&&d(f,!0),o){var p=[],l=[];b("Patches").M(r,f,p,l),o(p,l)}return f}n(21,r)},this.produceWithPatches=function(n,r){if("function"==typeof n)return function(r){for(var t=arguments.length,i=Array(t>1?t-1:0),o=1;o<t;o++)i[o-1]=arguments[o];return e.produceWithPatches(r,(function(r){return n.apply(void 0,[r].concat(i))}))};var t,i,o=e.produce(n,r,(function(n,r){t=n,i=r}));return"undefined"!=typeof Promise&&o instanceof Promise?o.then((function(n){return[n,t,i]})):[o,t,i]},"boolean"==typeof(null==r?void 0:r.useProxies)&&this.setUseProxies(r.useProxies),"boolean"==typeof(null==r?void 0:r.autoFreeze)&&this.setAutoFreeze(r.autoFreeze)}var i=e.prototype;return i.createDraft=function(e){t(e)||n(8),r(e)&&(e=R(e));var i=w(this),o=N(this,e,void 0);return o[Q].C=!0,O(i),o},i.finishDraft=function(r,t){var e=r&&r[Q]; true&&(e&&e.C||n(9),e.I&&n(10));var i=e.A;return j(i,t),P(void 0,i)},i.setAutoFreeze=function(n){this.D=n},i.setUseProxies=function(r){r&&!B&&n(20),this.O=r},i.applyPatches=function(n,t){var e;for(e=t.length-1;e>=0;e--){var i=t[e];if(0===i.path.length&&"replace"===i.op){n=i.value;break}}e>-1&&(t=t.slice(e+1));var o=b("Patches").$;return r(n)?o(n,t):this.produce(n,(function(n){return o(n,t)}))},e}(),an=new un,fn=an.produce,cn=an.produceWithPatches.bind(an),sn=an.setAutoFreeze.bind(an),vn=an.setUseProxies.bind(an),pn=an.applyPatches.bind(an),ln=an.createDraft.bind(an),dn=an.finishDraft.bind(an);/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fn);
+//# sourceMappingURL=immer.esm.js.map
+
 
 /***/ })
 
@@ -46298,6 +51360,18 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -46338,17 +51412,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./src/store/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var redux_persist_integration_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! redux-persist/integration/react */ "./node_modules/redux-persist/es/integration/react.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 
 
 
 
 
 
-var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('root'));
-root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {
+
+var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("root"));
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {
   store: _store__WEBPACK_IMPORTED_MODULE_4__.store
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(redux_persist_integration_react__WEBPACK_IMPORTED_MODULE_5__.PersistGate, {
+  loading: null,
+  persistor: _store__WEBPACK_IMPORTED_MODULE_4__.persistor
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
 })();
 
 /******/ })()

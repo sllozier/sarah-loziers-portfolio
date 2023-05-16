@@ -13,23 +13,11 @@ const Project = db.define("project", {
     type: Sequelize.STRING,
     defaultValue: "/public/piccies/image-not-found.jpg",
   },
-  gitHub: {
+  repo: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
   },
-  onRender: {
+  link: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
-  },
-  techUsed: {
-    type: Sequelize.ARRAY(Sequelize.STRING),
-    defaultValue: [],
   },
   description: {
     type: Sequelize.TEXT,

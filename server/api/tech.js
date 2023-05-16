@@ -3,13 +3,13 @@ const { Project, Tech, TechUsed } = require("../db");
 
 router.get("/", async (req, res, next) => {
   try {
-    const projects = await Project.findAll({
+    const tech = await Tech.findAll({
       include: {
-        model: Tech,
-        attributes: ["id", "name", "image", "link", "category"],
+        model: Project,
+        attributes: ["id", "title", "image", "repo", "link", "description"],
       },
     });
-    res.send(projects);
+    res.send(tech);
   } catch (error) {
     next(error);
   }
@@ -17,13 +17,13 @@ router.get("/", async (req, res, next) => {
 
 router.get("/:id", async (req, res, next) => {
   try {
-    const singleProject = await Project.findByPk(req.params.id, {
+    const singleTech = await Tech.findByPk(req.params.id, {
       include: {
-        model: Tech,
-        attributes: ["id", "name", "image", "link", "category"],
+        model: Project,
+        attributes: ["id", "title", "image", "repo", "link", "description"],
       },
     });
-    res.send(singleProject);
+    res.send(singleTech);
   } catch (error) {
     next(error);
   }

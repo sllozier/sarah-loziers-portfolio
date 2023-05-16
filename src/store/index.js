@@ -1,12 +1,39 @@
-import { createStore, applyMiddleware, combineReducers } from "redux";
-import thunk from "redux-thunk";
-import projectsReducer from "./reducers/projectsReducer";
-import singleProjectReducer from "./reducers/singleProjectReducer";
-//import reducers here
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import { logger } from "redux-logger";
+import {
+  persistReducer,
+  persistStore,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import projectReducer from "./reducers/projectSlice";
+import techReducer from "./reducers/techSlice";
 
 const rootReducer = combineReducers({
-  projects: projectsReducer,
-  singleProject: singleProjectReducer,
+  project: projectReducer,
+  tech: techReducer,
 });
 
-export const store = createStore(rootReducer, applyMiddleware(thunk));
+const persistConfig = {
+  key: "root",
+  storage,
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }).concat(logger),
+});
+
+export const persistor = persistStore(store);
