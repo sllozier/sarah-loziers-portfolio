@@ -1,9 +1,11 @@
-// import React from "react";
+import React from "react";
 
-// const PausedOverlay = () => {
-//     return(
-//         <div>
-//             <img src=""
-//         </div>
-//     )
-// }
+const PausedOverlay = ({ project }) => {
+  return (
+    <figure image is-square>
+      <img src={project.image} className="paused-overlay" />
+    </figure>
+  );
+};
+
+export default PausedOverlay;

@@ -47,6 +47,17 @@ const NavBar = () => {
                 Contact Me
               </Link>
             </div>
+            <div className="navbar-item is-active ">
+              <span className="icon is-medium mx-2 ">
+                <a
+                  className="has-tooltip-arrow has-tooltip-bottom has-tooltip-success"
+                  data-tooltip="Download Resume"
+                  href="https://github.com/sllozier/resume/raw/main/sarah_lozier_resume%20.pdf"
+                >
+                  <i className="has-text-danger fa-solid fa-paperclip fas fa-2x "></i>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>

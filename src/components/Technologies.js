@@ -41,7 +41,6 @@ const Technologies = () => {
     if (singleTech.category === "Future") return singleTech;
   });
 
-  console.log("TECHNOLOGIES", tech);
   return (
     <section className="section skills has-text-centered">
       <div className="container is-narrow">
@@ -62,7 +61,7 @@ const Technologies = () => {
                 </p>
                 <p className="title has-text-primary is-size-4">Team Tools:</p>
                 {devOps.map((single) => (
-                  <p className="mx-3 is-size-5">
+                  <p className="mx-3 is-size-5" key={single.id}>
                     <a
                       className="button-is-medium"
                       href={single.link}
@@ -92,7 +91,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">CORE</p>
                     {core.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -106,7 +105,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">Frontend</p>
                     {frontEnd.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -120,7 +119,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">Cloud</p>
                     {cloud.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -132,7 +131,7 @@ const Technologies = () => {
                     ))}
                     <p className="mx-3 is-size-5">Mobile</p>
                     {mobile.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -151,7 +150,7 @@ const Technologies = () => {
                   <i className="fa-layer-plus fa-stack has-text-black fa-1x fa-brands fa-hive"></i>
                 </span>
                 <h1 className="title has-text-black is-size-4 is-spaced">
-                  Driven Learner
+                  Life-long Learner
                 </h1>
                 <p className="mx-4">
                   I am passionate about engineering for the greater-good.
@@ -161,7 +160,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">Testing</p>
                     {testing.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -175,7 +174,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">Misc</p>
                     {misc.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}
@@ -189,7 +188,7 @@ const Technologies = () => {
                   <div className="column is-one-third">
                     <p className="mx-3 is-size-5">Future Competencies</p>
                     {future.map((single) => (
-                      <p>
+                      <p key={single.id}>
                         <a
                           className="button-is-medium"
                           href={single.link}

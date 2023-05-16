@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store, persistor } from "./store";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter } from "react-router-dom";
+import "../public/sass/mystyles.scss";
 
 const root = createRoot(document.getElementById("root"));
 

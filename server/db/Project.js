@@ -11,7 +11,7 @@ const Project = db.define("project", {
   },
   image: {
     type: Sequelize.STRING,
-    defaultValue: "/public/piccies/image-not-found.jpg",
+    defaultValue: "/public/piccies/projects/not_found_16by9.png",
   },
   repo: {
     type: Sequelize.STRING,
@@ -21,6 +21,13 @@ const Project = db.define("project", {
   },
   description: {
     type: Sequelize.TEXT,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+    },
+  },
+  video: {
+    type: Sequelize.STRING,
     allowNull: false,
     validate: {
       notEmpty: true,

@@ -8,66 +8,66 @@ const seed = async () => {
     const projectsData = [
       {
         title: "Emotions Flashcards",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/400f829907c75c1233635af99fbe81e116f5fc95/2.svg",
+        image: "/piccies/projects/emotions_flashcards_square.svg",
         repo: "https://github.com/sllozier/emotion-flashcards-project",
         link: "https://www.emotionsflashcards.com/",
         techUsed: ["css", "postsql", "node", "express", "redux", "react"],
         description:
           "A simple flashcard website designed to assist individuals with emotion-blindness. This fun weekend project has images created using Canva to save on time and integrated AOS for animations. I look forward to redesigning the flashcards soon!",
+        video: "/videos/Emotions_Flashcards_square.webm",
       },
 
       {
         title: "Lozier School Management System",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/400f829907c75c1233635af99fbe81e116f5fc95/1.svg",
+        image: "/piccies/projects/school_management_square.svg",
         repo: "https://github.com/sllozier/lozier-school-management",
         link: "https://www.lozierschoolmanagement.com/",
         techUsed: ["css", "postsql", "node", "express", "redux", "react"],
         description:
           "A RESTful web platform that allows you to manage your students and campuses. This project uses Express to handle HTTP requests and Sequelize to interface with the database. In addition, it uses React, Redux and React-Redux on the front-end.",
+        video: "/videos/Lozier_School_Management_square.webm",
       },
 
       {
         title: "Wayback Vinyl E-Commerce",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/400f829907c75c1233635af99fbe81e116f5fc95/3.svg",
+        image: "/piccies/projects/wayback_vinyl_square.svg",
         repo: "https://github.com/sllozier/lozier-ecommerce-site",
         techUsed: ["css", "postsql", "node", "express", "redux", "react"],
         description:
           "An e-commerce website with user and administrative experiences. This project integrates JWT authorization with Express routing and Sequelize database management. Front-end designed with React and React-Redux.",
+        video: "/videos/WayBack_Vinyl_square.webm",
       },
 
       {
         title: "Wicked Good Wordsmiths Content Management",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/400f829907c75c1233635af99fbe81e116f5fc95/5.svg",
+        image: "/piccies/projects/wicked_good_square.svg",
         repo: "https://github.com/sllozier/wicked-good-wordsmiths",
         techUsed: ["css", "postsql", "node", "express", "redux", "react"],
         description:
           "A content creation tool for children to create their own ebooks. Parents can manage their children's profile and share notes on the child's writing. Guests can place an order to hae an ebook printed and shipped.",
+        video: "/videos/Wicked_Good_square.webm",
       },
 
       {
         title: "Bookshelf App",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/cc644e8ca40e688db10e5ae891bf1278c7b3a246/6.svg",
+        image: "/piccies/projects/bookshelf_app_square.svg",
         repo: "https://github.com/sllozier/bookshelf-app",
         link: "https://sllozier.github.io/bookshelf-app/",
         techUsed: ["css", "HTML", "Javascript"],
         description:
           "Bookshelf app maintains a list of books you like! You can add new books, sort the list of books, search by title and count books by certain properties.",
+        video: "/videos/Bookshelf_App_square.webm",
       },
 
       {
         title: "Guessing Game",
-        image:
-          "https://raw.githubusercontent.com/gist/sllozier/f4352f4d4c0cf81d6152c1f8b050afd7/raw/cc644e8ca40e688db10e5ae891bf1278c7b3a246/7.svg",
+        image: "/piccies/projects/guessing_game_square.svg",
         repo: "https://github.com/sllozier/guessing-game",
         link: "https://sllozier.github.io/guessing-game/",
         techUsed: ["css", "HTML", "Javascript"],
         description:
           "Guessing Game will randomely generate a number from 1-100 and the player will try to guess that number in 5 attemts. It gives you hints and lets you know if you are burning up, lukewarm, chilly or ice cold.",
+        video: "/videos/Guessing_Game_square.webm",
       },
     ];
 

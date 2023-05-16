@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import HoverVideoPlayer from "react-hover-video-player";
+import PausedOverlay from "./PausedOverlay";
+import LoadingOverlay from "./LoadingOverlay";
 import { fetchProjects } from "../store/reducers/projectSlice";
 
 const ProjectGrid = () => {
@@ -18,9 +20,6 @@ const ProjectGrid = () => {
     }
   }, [projects]);
 
-  console.log("PROJECT GRID", projects);
-  const repos = projects.map((p) => p.repo);
-  console.log("REPO", repos);
   return (
     <section className="section projects is-medium has-background-white has-text-centered has-border-top">
       <div className="container is-narrow">
@@ -45,30 +44,45 @@ const ProjectGrid = () => {
                 className="column is-12-mobile is-half-tablet is-one-third-desktop"
                 key={project.id}
               >
-                <figure className="image is-3by2 hovereffect">
-                  <img className="project-thumb" src={project.image} />
-                  {/* Change this to be a video on hover using : https://www.npmjs.com/package/react-hover-video-player 
-              and https://codesandbox.io/s/hovervideoplayer-example-6y0fn?file=/src/PausedOverlay.js */}
-                  <figcaption>
-                    <div className="overlay">
-                      {/* <h2 className="title is-size-5 is-size-4-widescreen">
-                      Student and campus tracking system
-                    </h2> */}
+                <HoverVideoPlayer
+                  videoSrc={project.video}
+                  className="hovereffect "
+                  pausedOverlay={<PausedOverlay project={project} />}
+                  loadingOverlay={<LoadingOverlay />}
+                  hoverOverlay={
+                    <div className="hover-overlay">
                       <a
-                        className="info button is-link is-outlined is-rounded"
+                        className="button is-primary has-text-white"
                         href={project.repo}
                         target="_blank"
                       >
-                        {/* Change this to be a small arrow icon that goes to individual project description and
-                        holds the links for each project there. */}
-                        <span>Visit Website</span>
+                        <span>More Details </span>
                         <span className="icon">
-                          <i className="fa-solid fa-angle-right is-link"></i>
+                          <i className="fa-solid fa-angle-right"></i>
                         </span>
                       </a>
                     </div>
+                  }
+                />
+
+                {/* <figure className="image is-3by2 hovereffect">
+                  <img className="project-thumb" src={project.image} />
+
+                  <figcaption>
+                    <div className="overlay">
+                      <a
+                        className="button is-primary has-text-black"
+                        href={project.repo}
+                        target="_blank"
+                      > */}
+                {/* Change this to be a small arrow icon that goes to individual project description and
+                        holds the links for each project there. */}
+
+                {/* <i className="fa-solid fa-angle-right"></i>
+                      </a>
+                    </div>
                   </figcaption>
-                </figure>
+                </figure> */}
               </div>
             ))}
           </div>
